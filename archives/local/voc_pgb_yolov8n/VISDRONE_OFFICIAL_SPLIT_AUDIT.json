@@ -1,0 +1,23 @@
+{
+  "status": "official_provenance_split_ready",
+  "source_map": "/home/ubuntu/rz/object_detection_dataset_test/processed_yolo/VisDrone2019-DET/source_map.tsv",
+  "source_map_sha256": "34015f7ae8f20270c5bb1a8de0a0ea0febfc281eded3a97d9b92d60380118d7a",
+  "processed_data_read_only": "/home/ubuntu/rz/object_detection_dataset_test/processed_yolo/VisDrone2019-DET",
+  "yaml": "/home/ubuntu/rz/progressive_blur_detection_research/data_splits/visdrone_official/dataset.yaml",
+  "manifests": {
+    "train": {
+      "count": 6471,
+      "sha256": "ee2bef72cec4141c1926f3fac4e6c6e44846f7f9436e04756ef18e591d6ea712"
+    },
+    "val": {
+      "count": 548,
+      "sha256": "dc54c818fb1050655fda38624d61fe20ce54be72414a9cc9d74b0489407ff994"
+    },
+    "test": {
+      "count": 1610,
+      "sha256": "f3810409e95fd497a794d32571e4f12ea9d136d84a1eeb0a3c1b905a0b4ce455"
+    }
+  },
+  "all_images_and_labels_exist": true,
+  "test_dev_not_used_for_training_or_validation": true
+}

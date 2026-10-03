@@ -1,0 +1,10 @@
+{
+  "status": "sigterm_sent_after_completed_target",
+  "group": "F_scharr",
+  "target_epoch": 125,
+  "pid": 364169,
+  "config_sha256": "1a13855d67b72a9697dcb1ed383ff1de44f35f8a94669bf25bdc89c4abc606c6",
+  "observed_csv_rows": 125,
+  "utc": "2026-09-30T18:23:37.768565+00:00",
+  "note": "Checkpoint must pass a separate CPU audit."
+}

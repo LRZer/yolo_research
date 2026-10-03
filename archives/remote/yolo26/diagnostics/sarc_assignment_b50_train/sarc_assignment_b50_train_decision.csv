@@ -1,0 +1,2 @@
+verdict,reason,max_primary_pooled_between_level_js,max_primary_consecutive_epoch_js,similarity_no_go,instability_no_go,unique_gt_similarity_no_go,panel_sha256
+GO,level separation exists and consecutive-checkpoint distributions remain within the stability bound,0.12338601544826075,0.007918144192691481,False,False,False,0586e541229571cbe4849dc1efab4008f6e3a051a262dba6892f902893818472

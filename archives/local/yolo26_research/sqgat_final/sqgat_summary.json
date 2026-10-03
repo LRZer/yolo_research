@@ -1,0 +1,186 @@
+{
+  "decision_rule": "fixed final epoch only; intermediate phases are diagnostic",
+  "warning": "Single-seed faulty-host exploratory result; publication claims require healthy-hardware paired seeds.",
+  "sources": {
+    "method": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-17\\referenced-chatgpt-conversation-this-is-an\\outputs\\yolo26_research\\runs\\sqgat_state_quality_kd_g033_e50_g4567_s42_w4_pin_numa1\\results.csv",
+    "baseline": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-17\\referenced-chatgpt-conversation-this-is-an\\outputs\\yolo26_research\\runs\\b50_no_kd_e50_g4567_s42\\results.csv",
+    "control": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-17\\referenced-chatgpt-conversation-this-is-an\\outputs\\yolo26_research\\runs\\d2_gm_quality_gated_kd_g033_e50_g4567_s42_w4_pin_numa1\\results.csv"
+  },
+  "epochs": 50,
+  "final": {
+    "method": {
+      "precision": 0.74123,
+      "recall": 0.64627,
+      "map50": 0.72065,
+      "map50_95": 0.51175
+    },
+    "baseline": {
+      "precision": 0.74053,
+      "recall": 0.65166,
+      "map50": 0.72216,
+      "map50_95": 0.51276
+    },
+    "delta_vs_baseline": {
+      "precision": 0.0007000000000000339,
+      "recall": -0.005390000000000006,
+      "map50": -0.0015100000000000113,
+      "map50_95": -0.0010099999999999554
+    },
+    "control": {
+      "precision": 0.73349,
+      "recall": 0.65498,
+      "map50": 0.71774,
+      "map50_95": 0.51277
+    },
+    "delta_vs_control": {
+      "precision": 0.00774000000000008,
+      "recall": -0.008709999999999996,
+      "map50": 0.002909999999999968,
+      "map50_95": -0.0010199999999999099
+    }
+  },
+  "controller": {
+    "first_state_below_one_epoch": 7,
+    "first_retired_epoch": 40,
+    "minimum_state": 0.0,
+    "final_state": 0.0,
+    "final_reliability": 0.39019,
+    "final_reliability_ref": 0.76636
+  },
+  "warmup_prefix_max_abs_diff_vs_baseline": {
+    "train/o2o_box_loss": 0.0,
+    "train/o2o_cls_loss": 0.0,
+    "train/o2o_l1_loss": 0.0,
+    "train/o2m_box_loss": 0.0,
+    "train/o2m_cls_loss": 0.0,
+    "train/o2m_l1_loss": 0.0,
+    "metrics/precision(B)": 0.0,
+    "metrics/recall(B)": 0.0,
+    "metrics/mAP50(B)": 0.0,
+    "metrics/mAP50-95(B)": 0.0
+  },
+  "phases": [
+    {
+      "epochs": "1-5",
+      "count": 5,
+      "method_map50_95_mean": 0.03442,
+      "delta_vs_baseline_mean": 0.0,
+      "delta_vs_control_mean": 0.0,
+      "schedule_mean": 0.0,
+      "state_mean": 1.0,
+      "reliability_mean": 0.790115,
+      "reliability_ref_mean": null,
+      "combined_scale_mean": 0.0,
+      "kd_loss_mean": 0.0,
+      "candidate_rate_mean": 0.092096,
+      "effective_rate_mean": 0.092096
+    },
+    {
+      "epochs": "6-10",
+      "count": 5,
+      "method_map50_95_mean": 0.18846400000000002,
+      "delta_vs_baseline_mean": -0.0011279999999999901,
+      "delta_vs_control_mean": -0.0029999999999999914,
+      "schedule_mean": 0.3,
+      "state_mean": 0.753484,
+      "reliability_mean": 0.7007019999999999,
+      "reliability_ref_mean": 0.76636,
+      "combined_scale_mean": 0.20625200000000002,
+      "kd_loss_mean": 0.005203999999999999,
+      "candidate_rate_mean": 0.191382,
+      "effective_rate_mean": 0.191382
+    },
+    {
+      "epochs": "11-20",
+      "count": 10,
+      "method_map50_95_mean": 0.32305,
+      "delta_vs_baseline_mean": -0.001800999999999997,
+      "delta_vs_control_mean": 0.0047289999999999945,
+      "schedule_mean": 0.9,
+      "state_mean": 0.394369,
+      "reliability_mean": 0.605121,
+      "reliability_ref_mean": 0.76636,
+      "combined_scale_mean": 0.344922,
+      "kd_loss_mean": 0.008117000000000001,
+      "candidate_rate_mean": 0.18757,
+      "effective_rate_mean": 0.18757
+    },
+    {
+      "epochs": "21-30",
+      "count": 10,
+      "method_map50_95_mean": 0.427061,
+      "delta_vs_baseline_mean": -0.0017509999999999859,
+      "delta_vs_control_mean": 0.004907999999999996,
+      "schedule_mean": 1.0,
+      "state_mean": 0.17434,
+      "reliability_mean": 0.5476530000000001,
+      "reliability_ref_mean": 0.76636,
+      "combined_scale_mean": 0.17434,
+      "kd_loss_mean": 0.004229999999999999,
+      "candidate_rate_mean": 0.183333,
+      "effective_rate_mean": 0.183333
+    },
+    {
+      "epochs": "31-40",
+      "count": 10,
+      "method_map50_95_mean": 0.484666,
+      "delta_vs_baseline_mean": -0.002876000000000006,
+      "delta_vs_control_mean": 0.002248,
+      "schedule_mean": 1.0,
+      "state_mean": 0.048655,
+      "reliability_mean": 0.513588,
+      "reliability_ref_mean": 0.76636,
+      "combined_scale_mean": 0.048655,
+      "kd_loss_mean": 0.001211,
+      "candidate_rate_mean": 0.17493799999999998,
+      "effective_rate_mean": 0.17493799999999998
+    },
+    {
+      "epochs": "41-50",
+      "count": 10,
+      "method_map50_95_mean": 0.508692,
+      "delta_vs_baseline_mean": -0.0009470000000000089,
+      "delta_vs_control_mean": -2.2999999999995246e-05,
+      "schedule_mean": 1.0,
+      "state_mean": 0.0,
+      "reliability_mean": 0.43699000000000005,
+      "reliability_ref_mean": 0.76636,
+      "combined_scale_mean": 0.0,
+      "kd_loss_mean": 0.0,
+      "candidate_rate_mean": 0.16698600000000002,
+      "effective_rate_mean": 0.16698600000000002
+    }
+  ],
+  "rolling": {
+    "last_5": {
+      "epochs": "46-50",
+      "count": 5,
+      "method_map50_95_mean": 0.511956,
+      "delta_vs_baseline_mean": -0.0008759999999999879,
+      "delta_vs_control_mean": 0.0005640000000000089,
+      "schedule_mean": 1.0,
+      "state_mean": 0.0,
+      "reliability_mean": 0.41112400000000004,
+      "reliability_ref_mean": 0.76636,
+      "combined_scale_mean": 0.0,
+      "kd_loss_mean": 0.0,
+      "candidate_rate_mean": 0.156652,
+      "effective_rate_mean": 0.156652
+    },
+    "last_10": {
+      "epochs": "41-50",
+      "count": 10,
+      "method_map50_95_mean": 0.508692,
+      "delta_vs_baseline_mean": -0.0009470000000000089,
+      "delta_vs_control_mean": -2.2999999999995246e-05,
+      "schedule_mean": 1.0,
+      "state_mean": 0.0,
+      "reliability_mean": 0.43699000000000005,
+      "reliability_ref_mean": 0.76636,
+      "combined_scale_mean": 0.0,
+      "kd_loss_mean": 0.0,
+      "candidate_rate_mean": 0.16698600000000002,
+      "effective_rate_mean": 0.16698600000000002
+    }
+  }
+}

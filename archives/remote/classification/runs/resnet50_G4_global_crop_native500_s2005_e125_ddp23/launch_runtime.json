@@ -1,0 +1,21 @@
+{
+  "config_sha256": "f3581f75fe29751a7a27667c11c08745cd91e7bf0284caa29d126b201a820ba7",
+  "source_sha256": {
+    "trainer": "55a65aa4717c531c852ad68f8f1523be10c8324aa138874c1211c64fabf6c464",
+    "historical_engine": "6aa91ec82be7cee3dc985e2e5824ed8a5470cd7e7f2dc7cfd5e6a1f702a9f8a2",
+    "stats": "e1caf32dd617b8d91720d117ff8527c75a5dbc1b82c71fbb1eabaecd88a7b309",
+    "bbox": "c19d9f096c15564793408e5ba054b8d715a6805819d98f037c977f369ef4abd3"
+  },
+  "rank0_pid": 1849665,
+  "devices_physical": [
+    2,
+    3
+  ],
+  "numa_policy": "0-1",
+  "boot_id": "b825af41-86a3-4fe6-821b-c1ecb4b5fb9e",
+  "torch": "2.6.0+cu118",
+  "torchvision": "0.21.0+cu118",
+  "pillow": "12.3.0",
+  "shared_gpu": true,
+  "oracle_train_and_test": true
+}

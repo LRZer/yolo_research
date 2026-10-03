@@ -1,0 +1,5 @@
+{
+  "status": "intentional_interruption_after_checkpoint",
+  "epoch": 0,
+  "last": "/home/ubuntu/rz/progressive_blur_detection_research/runs/tiny_trainer_audit/resume_audit/weights/last.pt"
+}

@@ -1,0 +1,113 @@
+{
+  "checkpoint": "/home/ubuntu/rz/progressive_blur_detection_research/runs/set_hbs_visdrone_960_e125/hbs_only_s2027_g0123_numa0/weights/last.pt",
+  "checkpoint_sha256": "2687fd29f9258a510567a21d03c1a134cbb50258f858b15c2ea978360a9ae915",
+  "data": "/home/ubuntu/rz/progressive_blur_detection_research/data_splits/visdrone_official/view_dataset.yaml",
+  "data_sha256": "715bfbfc0116fd90a2dc489f1cce1f6042311810aeb309def37a8caa2e84e334",
+  "mode": "hbs",
+  "evaluation": {
+    "split": "val",
+    "imgsz": 960,
+    "batch": 8,
+    "workers": 4,
+    "conf": 0.001,
+    "iou": 0.7,
+    "max_det": 1000,
+    "half": false,
+    "rect": true,
+    "protocol": "Ultralytics YOLO.val on converted labels, not official VisDrone toolkit"
+  },
+  "precision": 0.5084153531832197,
+  "recall": 0.3783925336923658,
+  "map50": 0.38083326388778926,
+  "map50_95": 0.21473273055366046,
+  "per_class": [
+    {
+      "id": 0,
+      "name": "pedestrian",
+      "precision": 0.5893488306869995,
+      "recall": 0.41866855002396036,
+      "ap50": 0.4570564258589378,
+      "ap50_95": 0.19658989226136553
+    },
+    {
+      "id": 1,
+      "name": "people",
+      "precision": 0.6203662846542066,
+      "recall": 0.2899512195121951,
+      "ap50": 0.3420862345176908,
+      "ap50_95": 0.1219757624837671
+    },
+    {
+      "id": 2,
+      "name": "bicycle",
+      "precision": 0.2887134912288752,
+      "recall": 0.1627400211240588,
+      "ap50": 0.12317576535291755,
+      "ap50_95": 0.0476985651017256
+    },
+    {
+      "id": 3,
+      "name": "car",
+      "precision": 0.7228540825567068,
+      "recall": 0.794155290102389,
+      "ap50": 0.8040175278743205,
+      "ap50_95": 0.5438475986457088
+    },
+    {
+      "id": 4,
+      "name": "van",
+      "precision": 0.5802156467541205,
+      "recall": 0.4040506329113924,
+      "ap50": 0.43612572046333964,
+      "ap50_95": 0.30014456055661864
+    },
+    {
+      "id": 5,
+      "name": "truck",
+      "precision": 0.38229664534143853,
+      "recall": 0.348,
+      "ap50": 0.29654702550450385,
+      "ap50_95": 0.19057902620994063
+    },
+    {
+      "id": 6,
+      "name": "tricycle",
+      "precision": 0.40303336491142544,
+      "recall": 0.3033492822966507,
+      "ap50": 0.26433962061988153,
+      "ap50_95": 0.13546940619120734
+    },
+    {
+      "id": 7,
+      "name": "awning-tricycle",
+      "precision": 0.2913268032484678,
+      "recall": 0.14285714285714285,
+      "ap50": 0.11809027985273385,
+      "ap50_95": 0.06756341833938274
+    },
+    {
+      "id": 8,
+      "name": "bus",
+      "precision": 0.6240951283425215,
+      "recall": 0.4860557768924303,
+      "ap50": 0.5115048851458018,
+      "ap50_95": 0.35472423882477566
+    },
+    {
+      "id": 9,
+      "name": "motor",
+      "precision": 0.581903254107436,
+      "recall": 0.4340974212034384,
+      "ap50": 0.45538915368776545,
+      "ap50_95": 0.18873483692211285
+    }
+  ],
+  "speed_ms_per_image": {
+    "preprocess": 0.5535085510264319,
+    "inference": 1.3837508540214964,
+    "loss": 0.000517558409274984,
+    "postprocess": 2.810690005449663
+  },
+  "speed_scope_note": "Ultralytics validator timing; same path/config for both paired models",
+  "save_dir": "/home/ubuntu/rz/progressive_blur_detection_research/reports/set_hbs_visdrone_960_e125/hbs_last_val548"
+}

@@ -1,0 +1,82 @@
+{
+  "checkpoint": "/home/ubuntu/rz/progressive_blur_detection_research/runs/visdrone_official/yolov8n_scratch_official_960_s2027_e125/weights/last.pt",
+  "checkpoint_sha256": "e352a00f73fe7926b87e3ae7a5f3b595265a3d95ee24d3e0a10ed2aab4491cc7",
+  "manifest": "/home/ubuntu/rz/progressive_blur_detection_research/data_splits/visdrone_official/val.txt",
+  "manifest_sha256": "dc54c818fb1050655fda38624d61fe20ce54be72414a9cc9d74b0489407ff994",
+  "images": 16,
+  "reference_merge_exactly_equal_first_images": 16,
+  "fixed_diagnostic": {
+    "min_conf": 0.25,
+    "iou": 0.5,
+    "classes": {
+      "0": "pedestrian",
+      "1": "people",
+      "5": "truck",
+      "8": "bus"
+    }
+  },
+  "summary": {
+    "pedestrian": {
+      "gt": 257,
+      "full_tp": 119,
+      "fused_tp": 163,
+      "lost_gt": 0,
+      "gained_gt": 44,
+      "stable_tp": 119,
+      "stable_fn": 94,
+      "full_preds_at_conf": 209,
+      "fused_preds_at_conf": 424,
+      "gained_by_crop": 44,
+      "full_fp_at_conf": 90,
+      "fused_fp_at_conf": 261
+    },
+    "people": {
+      "gt": 254,
+      "full_tp": 56,
+      "fused_tp": 92,
+      "lost_gt": 0,
+      "gained_gt": 36,
+      "stable_tp": 56,
+      "stable_fn": 162,
+      "full_preds_at_conf": 86,
+      "fused_preds_at_conf": 179,
+      "gained_by_crop": 36,
+      "full_fp_at_conf": 30,
+      "fused_fp_at_conf": 87
+    },
+    "truck": {
+      "gt": 1,
+      "full_tp": 0,
+      "fused_tp": 1,
+      "lost_gt": 0,
+      "gained_gt": 1,
+      "stable_tp": 0,
+      "stable_fn": 0,
+      "full_preds_at_conf": 3,
+      "fused_preds_at_conf": 7,
+      "gained_by_crop": 1,
+      "full_fp_at_conf": 3,
+      "fused_fp_at_conf": 6
+    },
+    "bus": {
+      "gt": 0,
+      "full_tp": 0,
+      "fused_tp": 0,
+      "lost_gt": 0,
+      "gained_gt": 0,
+      "stable_tp": 0,
+      "stable_fn": 0,
+      "full_preds_at_conf": 0,
+      "fused_preds_at_conf": 2,
+      "full_fp_at_conf": 0,
+      "fused_fp_at_conf": 2
+    }
+  },
+  "lost_examples_first_12_per_class": {
+    "pedestrian": [],
+    "people": [],
+    "truck": [],
+    "bus": []
+  },
+  "caveat": "One-to-one IoU-first matching at fixed confidence is a diagnostic, not AP or the entire PR curve. Lost reason is associated with the original matched full prediction; a different fused prediction may still cover an object at lower confidence. The experiment reuses the sealed pilot's selector and fusion without GT in candidate selection."
+}

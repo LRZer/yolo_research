@@ -1,0 +1,293 @@
+{
+  "purpose": "Preview only; no training started",
+  "data_root": "E:\\datasets\\CUB-200-2011\\extracted\\CUB_200_2011",
+  "source_split": "official_train_only",
+  "gt_bbox_required": true,
+  "bbox_margin": 0,
+  "blur": false,
+  "augmentation": false,
+  "coordinates": "same xywh convention as prior project; floor lower, ceil upper, clip to image; upper endpoints exclusive",
+  "resize": "Pillow RGB BICUBIC, isotropic nominal scale 500/max(crop_width,crop_height); round dimensions",
+  "local_canvas": [
+    500,
+    500
+  ],
+  "padding_rgb": [
+    124,
+    128,
+    111
+  ],
+  "green_box_display_only": true,
+  "model_input_annotations": false,
+  "normalization_applied_to_saved_png": false,
+  "pillow_version": "12.3.0",
+  "script_sha256": "c1c86e5d64565b2edc29177a185672f03ea4337d46c1cc241fe14e6c6a1400f0",
+  "bbox_file_sha256": "c19d9f096c15564793408e5ba054b8d715a6805819d98f037c977f369ef4abd3",
+  "samples": [
+    {
+      "image_id": 10140,
+      "original_width": 500,
+      "original_height": 333,
+      "crop_width": 185,
+      "crop_height": 126,
+      "resized_width": 500,
+      "resized_height": 341,
+      "nominal_scale": 2.7027027027027026,
+      "input_width": 500,
+      "input_height": 500,
+      "bbox_clipped_to_image": false,
+      "relative_path": "173.Orange_crowned_Warbler/Orange_Crowned_Warbler_0051_168002.jpg",
+      "official_train": true,
+      "source_sha256": "eac9794ba5e6ebb2c102b4ef0906f38c44904ae4f44cf94482802178ee9a8224",
+      "raw_box_xywh": [
+        268.0,
+        103.0,
+        185.0,
+        126.0
+      ],
+      "integer_crop_xyxy_exclusive": [
+        268,
+        103,
+        453,
+        229
+      ],
+      "global_padding_offset_xy": [
+        0,
+        83
+      ],
+      "local_padding_offset_xy": [
+        0,
+        79
+      ],
+      "output_sha256": {
+        "comparison_labeled.png": "93351f077c182c615451f42c49682db6acbeaf8da6b21aff8de512e0d4fe3e79",
+        "crop_native.png": "01daaa08353c3286c94a4dfff6d4c868c3dd88600af1e0f54c5e58fbfaa10c07",
+        "crop_resized.png": "f0111fe8d4b03e55de2c105332dadd8c8b13a5f3ae910ee53ca3befb4b8d1b89",
+        "global_input_500.png": "7e45763b31ae1c9fc82f1e30fe18b048a347a209c6187ae7d1c7ab338b7cb47d",
+        "local_input_500.png": "e10ea3610966a7bebd659ca1086b683cc2a2e9c71b7fb38e47a724ceb0aab4f4",
+        "original_native.png": "cdd6031e346269a61a05e7857e9ef997f34fcff601669dc3cd9111dfa267dc6a"
+      }
+    },
+    {
+      "image_id": 2568,
+      "original_width": 500,
+      "original_height": 369,
+      "crop_width": 228,
+      "crop_height": 259,
+      "resized_width": 440,
+      "resized_height": 500,
+      "nominal_scale": 1.9305019305019304,
+      "input_width": 500,
+      "input_height": 500,
+      "bbox_clipped_to_image": false,
+      "relative_path": "045.Northern_Fulmar/Northern_Fulmar_0047_43698.jpg",
+      "official_train": true,
+      "source_sha256": "34050877c7cbee369c5588a06b4a8071184702ddcb7b93bd620876bceb6f675b",
+      "raw_box_xywh": [
+        102.0,
+        53.0,
+        228.0,
+        259.0
+      ],
+      "integer_crop_xyxy_exclusive": [
+        102,
+        53,
+        330,
+        312
+      ],
+      "global_padding_offset_xy": [
+        0,
+        65
+      ],
+      "local_padding_offset_xy": [
+        30,
+        0
+      ],
+      "output_sha256": {
+        "comparison_labeled.png": "b38edd98c65ced49c15539c5fcddacf3f81badeda671b345708220fdb2b21a68",
+        "crop_native.png": "fa8bf1564c6f8c17ea80cd4e19697ff6d68b00dcd446ccf4ad965d879e6ccc4a",
+        "crop_resized.png": "ce0cacd8f0c5a5c9221b4e66b65f9d2d4943ae9ffb82c03d0ee842ac8356c278",
+        "global_input_500.png": "589e7044af8bc7c9ad5d502124f434113b9d0d788a73f4377970baf0718e53d3",
+        "local_input_500.png": "9232ea61516014b5346a2af16c4ba1d7aaf6be82dae409f9591bce36a77b0b0b",
+        "original_native.png": "10bf6dd22899a3bc633ea3871f248db8e92a8910861a771676244231875c4b12"
+      }
+    },
+    {
+      "image_id": 6223,
+      "original_width": 500,
+      "original_height": 333,
+      "crop_width": 334,
+      "crop_height": 289,
+      "resized_width": 500,
+      "resized_height": 433,
+      "nominal_scale": 1.4970059880239521,
+      "input_width": 500,
+      "input_height": 500,
+      "bbox_clipped_to_image": false,
+      "relative_path": "107.Common_Raven/Common_Raven_0007_102020.jpg",
+      "official_train": true,
+      "source_sha256": "0d0e55a072578cbc86cd3b130a9671b6c3ff6766ee1b1310943e5cf58ca1e0b6",
+      "raw_box_xywh": [
+        125.0,
+        37.0,
+        334.0,
+        289.0
+      ],
+      "integer_crop_xyxy_exclusive": [
+        125,
+        37,
+        459,
+        326
+      ],
+      "global_padding_offset_xy": [
+        0,
+        83
+      ],
+      "local_padding_offset_xy": [
+        0,
+        33
+      ],
+      "output_sha256": {
+        "comparison_labeled.png": "493fdedf399e5170b90b130f6e49b6dbfc4803b7895bb3eb2cda80c26b57f421",
+        "crop_native.png": "8c8de410eb8e49bd4f77599e1e958f087937afee6ffdf8eeb864c7c010300e3e",
+        "crop_resized.png": "f0894dfea8dc7c3809e037a2d9a3313f2f14ab526d31f057e120d4fe165f30c1",
+        "global_input_500.png": "e8e551362b1b9c3fc37c3b0f8a8f3cc304d12fc2a218632aa5532e97096908ea",
+        "local_input_500.png": "891a31e6ab7e11bdc62dfd2542acfb40490e81f841412a3a968425c5d7029018",
+        "original_native.png": "61496b7d1abe3f244978fd8d660d7df0b55d6b247239035c41b24ac14b40b1ed"
+      }
+    },
+    {
+      "image_id": 4786,
+      "original_width": 317,
+      "original_height": 500,
+      "crop_width": 186,
+      "crop_height": 273,
+      "resized_width": 341,
+      "resized_height": 500,
+      "nominal_scale": 1.8315018315018314,
+      "input_width": 500,
+      "input_height": 500,
+      "bbox_clipped_to_image": false,
+      "relative_path": "082.Ringed_Kingfisher/Ringed_Kingfisher_0008_72943.jpg",
+      "official_train": true,
+      "source_sha256": "d597072353353a29bf04f00c8628a3d86ab9967739f6646255d34ebdb02af07a",
+      "raw_box_xywh": [
+        35.0,
+        63.0,
+        186.0,
+        273.0
+      ],
+      "integer_crop_xyxy_exclusive": [
+        35,
+        63,
+        221,
+        336
+      ],
+      "global_padding_offset_xy": [
+        91,
+        0
+      ],
+      "local_padding_offset_xy": [
+        79,
+        0
+      ],
+      "output_sha256": {
+        "comparison_labeled.png": "69945aae36df00bf5fd2a13e64dd2a8694b40906e5978a9748615ff8d569ff1a",
+        "crop_native.png": "ecfc54cac82c7512b80c8e2a7575ec0d85305c2b02eee329d540abc8ba47965d",
+        "crop_resized.png": "e3a3928f8f7979845f3745a908897c6aee05b07a97b851deba02deee70b885fb",
+        "global_input_500.png": "7a03793608e1661f54a440d65fb863cb64ae8b9dcc02b40ca55b6dde661fa353",
+        "local_input_500.png": "8a91bdeb87e2c6ec3dcad3ece44434465561dc9c580703a7d50535eabd466e51",
+        "original_native.png": "1f8928b1b28f16e3f38f300c624654f74cd634ab3c52c82574754ce11e029381"
+      }
+    },
+    {
+      "image_id": 1767,
+      "original_width": 300,
+      "original_height": 288,
+      "crop_width": 124,
+      "crop_height": 221,
+      "resized_width": 281,
+      "resized_height": 500,
+      "nominal_scale": 2.262443438914027,
+      "input_width": 500,
+      "input_height": 500,
+      "bbox_clipped_to_image": false,
+      "relative_path": "032.Mangrove_Cuckoo/Mangrove_Cuckoo_0020_794629.jpg",
+      "official_train": true,
+      "source_sha256": "2cb2069b307dcedad930a6124caa37dbced8558c5eae4164faa351bf7d1ae438",
+      "raw_box_xywh": [
+        81.0,
+        48.0,
+        124.0,
+        221.0
+      ],
+      "integer_crop_xyxy_exclusive": [
+        81,
+        48,
+        205,
+        269
+      ],
+      "global_padding_offset_xy": [
+        100,
+        106
+      ],
+      "local_padding_offset_xy": [
+        109,
+        0
+      ],
+      "output_sha256": {
+        "comparison_labeled.png": "a30239e505adb510d493010205784e38b975e5334756d8bb559825e606628758",
+        "crop_native.png": "708ea5439ef5b602f28cce4a67c50a4af7dd731c821cb97a58d408dffdb95acf",
+        "crop_resized.png": "df934acc4b3f67b5f95d7ebea1f41a0a18c79354acd7866ec870605c4dd1f029",
+        "global_input_500.png": "c510daa14cfaa1e8086b6e6b4893047f56ede98a91921f7d0bb7a52525cef57d",
+        "local_input_500.png": "2954db78d70da015ec89e39cc4bc8437999e6a1cc18dc1e0ab3f892927a1222f",
+        "original_native.png": "11f7ee1d53b7f8fe2839e152dfcae8f9e12c8b11ef111a527c701a6539a3c8a7"
+      }
+    },
+    {
+      "image_id": 1592,
+      "original_width": 357,
+      "original_height": 500,
+      "crop_width": 328,
+      "crop_height": 168,
+      "resized_width": 500,
+      "resized_height": 256,
+      "nominal_scale": 1.524390243902439,
+      "input_width": 500,
+      "input_height": 500,
+      "bbox_clipped_to_image": true,
+      "relative_path": "029.American_Crow/American_Crow_0003_25130.jpg",
+      "official_train": true,
+      "source_sha256": "611399b27f6040cd9725d9b683b37c344006cbb67891800803fae23478deb200",
+      "raw_box_xywh": [
+        29.0,
+        136.0,
+        329.0,
+        168.0
+      ],
+      "integer_crop_xyxy_exclusive": [
+        29,
+        136,
+        357,
+        304
+      ],
+      "global_padding_offset_xy": [
+        71,
+        0
+      ],
+      "local_padding_offset_xy": [
+        0,
+        122
+      ],
+      "output_sha256": {
+        "comparison_labeled.png": "85ac5b92e12cfc77f0ceba5c7021d923346c032f6f2f941e923519034c4e71a3",
+        "crop_native.png": "d74ab5716eacfcb13828c417436f1224372a703f583417b02b318966b783223d",
+        "crop_resized.png": "3e48897a7dd73e4169cb54745f89f1adef775a326299ecab662c08b1fbd03303",
+        "global_input_500.png": "0c3a649a28a6759495012a7ec0b2e210a960834e318bd3f378332578f8782abf",
+        "local_input_500.png": "8400914f0385c1b1ae2ccaed619bf18cdb2882f593749e713c67223aee67dedd",
+        "original_native.png": "937832d2302e57b46bcca44290d206e62380d26d1dd51a343617a223d36e7dd4"
+      }
+    }
+  ],
+  "overview_sha256": "8f295242455d06235528bca29a8621f42710b6ac4f0e08d5b564018312678a80"
+}

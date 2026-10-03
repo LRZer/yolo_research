@@ -1,0 +1,10 @@
+{"utc": "2026-09-23T21:53:55.153339+00:00", "event": "manager_started", "pid": 169059}
+{"utc": "2026-09-23T21:53:55.352942+00:00", "event": "preflight_passed", "job": "hbs", "edac_ue": [0, 52], "numa0_free_mb": 51966, "disk_free_gib": 362.7, "other_gpu_processes": [[7, "30205"]]}
+{"utc": "2026-09-23T21:53:55.355797+00:00", "event": "job_started", "job": "hbs", "pid": 169129, "command": ["numactl", "--cpunodebind=0", "--membind=0", "/home/ubuntu/rz/yolo_study/.conda/yolo26/bin/python", "/home/ubuntu/rz/progressive_blur_detection_research/tools/run_experiment.py", "hbs_only", "/home/ubuntu/rz/progressive_blur_detection_research/configs/set_hbs_only_visdrone_960_s2027_e125.json"]}
+{"utc": "2026-09-23T22:52:57.031226+00:00", "event": "job_exited", "job": "hbs", "pid": 169129, "return_code": 0}
+{"utc": "2026-09-23T22:52:57.157271+00:00", "event": "job_verified_complete", "job": "hbs", "run": "/home/ubuntu/rz/progressive_blur_detection_research/runs/set_hbs_visdrone_960_e125/hbs_only_s2027_g0123_numa0"}
+{"utc": "2026-09-23T22:52:57.516762+00:00", "event": "preflight_passed", "job": "identity", "edac_ue": [0, 52], "numa0_free_mb": 48407, "disk_free_gib": 362.3, "other_gpu_processes": [[7, "30205"]]}
+{"utc": "2026-09-23T22:52:57.519415+00:00", "event": "job_started", "job": "identity", "pid": 178814, "command": ["numactl", "--cpunodebind=0", "--membind=0", "/home/ubuntu/rz/yolo_study/.conda/yolo26/bin/python", "/home/ubuntu/rz/progressive_blur_detection_research/tools/run_experiment.py", "hbs_only", "/home/ubuntu/rz/progressive_blur_detection_research/configs/set_hbs_identity_visdrone_960_s2027_e125.json"]}
+{"utc": "2026-09-23T23:29:00.334200+00:00", "event": "job_exited", "job": "identity", "pid": 178814, "return_code": 0}
+{"utc": "2026-09-23T23:29:00.399801+00:00", "event": "job_verified_complete", "job": "identity", "run": "/home/ubuntu/rz/progressive_blur_detection_research/runs/set_hbs_visdrone_960_e125/identity_aux_s2027_g0123_numa0"}
+{"utc": "2026-09-23T23:29:00.574477+00:00", "event": "pair_verified_complete"}

@@ -1,0 +1,86 @@
+# YOLO26n + PASCAL VOC 的正式基线实验“记录卡”。
+# 它不是直接传给 Ultralytics 的默认参数文件；后续的训练脚本会读取它，
+# 再把其中每项训练参数传给 model.train()。这样便于人读、审计和复现实验。
+# YAML 规则：缩进表示从属关系；冒号左侧是字段名，右侧是字段值；# 之后是注释。
+
+experiment:
+  # 本次实验的稳定名称。输出目录也使用它，论文表格可用它作为原版基线的编号。
+  id: voc_yolo26n_smoke_4x3090_b64_g4567_s42
+  # 说明这次实验的唯一目的：未改模块的 YOLO26n 参考成绩。
+  purpose: "One-epoch pipeline smoke test on RTX 3090 GPUs 4,5,6,7"
+
+provenance:
+  # 安装并实际调用的 Ultralytics 代码版本；版本变化可能会改变默认训练行为。
+  ultralytics_version: "8.4.146"
+  # 该版本源码的精确 Git 提交号；任何人 checkout 到这个提交即可获得相同的源码状态。
+  ultralytics_git_commit: "9d45ee4613e79d7bceef7a39e42c15c278b0d4e8"
+  # PyTorch 与 CUDA 构建版本；深度学习结果会受框架和 CUDA 版本影响，所以要记录。
+  torch_version: "2.6.0+cu118"
+  # 从官方源码复制前的 yolo26.yaml 的 SHA-256 校验值，用于确认上游图纸没有被替换。
+  upstream_model_sha256: "B1D1FA0C69ECED64F9939536038BD8D697C32E72200B34187A767DE431AF7EF0"
+
+model:
+  # 模型图纸相对于项目根目录的路径；这是已注释、已锁定 Nano 尺度的原版结构快照。
+  yaml: "configs/models/yolo26n_baseline.yaml"
+  # 选择 Nano 尺度；该值也写在模型 YAML 内，双重记录以防误用其他尺度。
+  scale: n
+  # 任务类型是目标检测；模型将预测边界框、类别和置信度，而不是分割或姿态关键点。
+  task: detect
+  # False 表示从随机权重开始训练。训练时绝不能把任何 .pt 预训练权重传给模型。
+  pretrained: false
+  # 官方模型结构默认按 COCO 的 80 类写的 nc；这只是原始图纸的默认值。
+  upstream_default_nc: 80
+  # VOC 只有 20 类。训练器读取 VOC.yaml 后会自动据此重建最后的 Detect 检测头。
+  effective_nc_from_dataset: 20
+
+dataset:
+  # 数据集描述文件；其中规定 train/val 划分与 20 个类别名称，路径使用 / 以兼容 Python。
+  data_yaml: "/home/ubuntu/rz/yolo_study/yolo26_voc_research/configs/datasets/voc_server.yaml"
+  # 图片和 YOLO 标签真正存放的位置；数据与代码分盘，避免复制数 GB 文件进项目。
+  root: "/home/ubuntu/rz/yolo_study/datasets/VOC"
+  # 训练图像数量：VOC 2007 train+val 与 VOC 2012 train+val 合并后的总数。
+  train_images: 16551
+  # 验证图像数量：VOC 2007 test；每个 epoch 用它计算验证指标。
+  val_images: 4952
+  # 目标类别数量；必须与 VOC.yaml 的 names 条目数一致。
+  classes: 20
+
+training:
+  # 训练 100 次完整遍历训练集；1 个 epoch 就是把 16,551 张训练图各看一次（含数据增强）。
+  epochs: 1
+  # 输入图像会缩放/填充到 640x640；分辨率越大越利于小目标，但越占显存、越慢。
+  imgsz: 640
+  # 每次反向传播同时处理 8 张图；该值已在 8 GB 显存的 RTX 4060 上完成流程验证。
+  batch: 64
+  # 使用第 0 块 GPU，也就是当前这块 RTX 4060 Laptop GPU；引号使其明确是设备编号字符串。
+  device: "4,5,6,7"
+  # Windows 下用 0 个额外数据加载子进程，稳定性最好；代价是读数据可能稍慢。
+  workers: 4
+  # 使用 BF16 自动混合精度：部分计算用 BF16、关键计算仍保留 FP32；已在本机完整验证。
+  amp: bf16
+  # 让 Ultralytics 依据模型和数据自动选择优化器与学习率；最终选择会写入该次 runs/*/args.yaml。
+  optimizer: auto
+  # 1.0 表示使用全部训练集；检查训练里的 0.01/0.002 都不能用于正式基线。
+  fraction: 1.0
+  # 固定随机种子。数据打乱、随机增强和初始权重会尽量保持一致，方便公平比较。
+  seed: 42
+  # 启用较强的可重复性设置；通常会略微限制速度，但更适合作为论文基线。
+  deterministic: true
+  # 每个 epoch 都在 4,952 张验证集上计算 Precision、Recall、mAP50、mAP50-95。
+  val: false
+  # 连续 100 个 epoch 没有改善才允许早停；等同于本次 100 epoch 计划中通常不会提前停止。
+  patience: 100
+
+output:
+  # 所有运行结果的父目录；模型权重和图片绝不写进官方源码目录。
+  project: "/home/ubuntu/rz/yolo_study/yolo26_voc_research/runs"
+  # 本次正式基线的专属子目录名称；s42 表示使用 seed=42。
+  name: "voc_yolo26n_smoke_4x3090_b64_g4567_s42"
+  # 保存 last.pt 与 best.pt；best.pt 是验证集综合指标最好的那个 epoch 的权重。
+  save: true
+  # 每 10 个 epoch 额外保存一个检查点，便于训练中断后排查或恢复。
+  save_period: 10
+  # 保存训练曲线、混淆矩阵、训练样例和验证预测图，便于后续写论文和检查异常。
+  plots: true
+  # 禁止覆盖同名旧结果；若目录已存在，训练会报错，避免意外损坏实验记录。
+  exist_ok: false

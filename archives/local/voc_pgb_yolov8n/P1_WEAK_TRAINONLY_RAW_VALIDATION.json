@@ -1,0 +1,63 @@
+{
+  "status": "raw_development_images_no_oracle_mask",
+  "generated": "2026-09-23T03:34:08.558882+08:00",
+  "data": "/home/ubuntu/rz/progressive_blur_detection_research/data_splits/voc_strict_seed2027.yaml",
+  "split": "val",
+  "model_input": "unaltered 640-pixel letterboxed images",
+  "checkpoints": [
+    {
+      "checkpoint": "runs/voc_p1/oracle_weak_trainonly_s8_e20_b64_s2027/weights/best.pt",
+      "checkpoint_sha256": "ce6589eda9b4d1ddee0b9418f04dfbdb204d8625b4ef8345a254635af2e95c97",
+      "checkpoint_epoch": null,
+      "precision": 0.35932747383758257,
+      "recall": 0.3293363766074745,
+      "mAP50": 0.28898257042613507,
+      "mAP50_95": 0.16131213786985898
+    },
+    {
+      "checkpoint": "runs/voc_p1/oracle_weak_trainonly_s8_e20_b64_s2027/weights/last.pt",
+      "checkpoint_sha256": "79600fd6b77eb7e6b23981f7c45942b94248671655e9f319dc607878be626b54",
+      "checkpoint_epoch": null,
+      "precision": 0.36066623802827646,
+      "recall": 0.30968223119677474,
+      "mAP50": 0.26589627635169516,
+      "mAP50_95": 0.1439035632433414
+    },
+    {
+      "checkpoint": "runs/voc_p1/oracle_weak_trainonly_s8_e20_b64_s2027/weights/epoch0.pt",
+      "checkpoint_sha256": "8c78e74d7b0b4d97543c9848597563a7fc230097f48608d1da1dfeb37dd2b71e",
+      "checkpoint_epoch": 1,
+      "precision": 0.6573533958492213,
+      "recall": 0.01965717859329764,
+      "mAP50": 0.0052853394133282865,
+      "mAP50_95": 0.0012911921108886622
+    },
+    {
+      "checkpoint": "runs/voc_p1/oracle_weak_trainonly_s8_e20_b64_s2027/weights/epoch5.pt",
+      "checkpoint_sha256": "d9341aa740fe6e4e8d7106503249cfb5ad0823327ff5cbd763c5ee7d45629923",
+      "checkpoint_epoch": 6,
+      "precision": 0.2933844608819112,
+      "recall": 0.24868397033681347,
+      "mAP50": 0.19963516869462644,
+      "mAP50_95": 0.1037210935017464
+    },
+    {
+      "checkpoint": "runs/voc_p1/oracle_weak_trainonly_s8_e20_b64_s2027/weights/epoch10.pt",
+      "checkpoint_sha256": "21d424d4066624d2aea9a42ec00d439707882cdb4eae496adc39581fafce0f85",
+      "checkpoint_epoch": 11,
+      "precision": 0.36629679758516726,
+      "recall": 0.2912029512220771,
+      "mAP50": 0.272315422326161,
+      "mAP50_95": 0.14788374570773957
+    },
+    {
+      "checkpoint": "runs/voc_p1/oracle_weak_trainonly_s8_e20_b64_s2027/weights/epoch15.pt",
+      "checkpoint_sha256": "8bf988ccf3e2ba94cbd9fa98eb4e8f1efee37fb86e3c9ad688ae6f87d8db40f8",
+      "checkpoint_epoch": 16,
+      "precision": 0.3462113188629007,
+      "recall": 0.3105478178648044,
+      "mAP50": 0.28015804983790954,
+      "mAP50_95": 0.15231562185498784
+    }
+  ]
+}

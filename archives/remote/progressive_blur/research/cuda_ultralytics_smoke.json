@@ -1,0 +1,18 @@
+Overriding model.yaml nc=80 with nc=2
+{
+  "status": "passed",
+  "scope": "combined PGB+YOLOv8n CUDA/AMP loss and backward graph",
+  "visible_gpu": "NVIDIA GeForce RTX 3090",
+  "loss_keys": [
+    "box_loss",
+    "cls_loss",
+    "dfl_loss",
+    "map_loss"
+  ],
+  "total_loss": 27.791391372680664,
+  "map_loss": 0.2972659766674042,
+  "frontend_gradient_l1": 13.2435302734375,
+  "detector_gradient_l1": 536.4563598632812,
+  "checkpoint_contains_frontend": true,
+  "peak_allocated_mib": 42.126953125
+}

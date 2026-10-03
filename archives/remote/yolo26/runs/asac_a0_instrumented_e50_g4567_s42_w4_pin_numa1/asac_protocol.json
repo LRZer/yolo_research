@@ -1,0 +1,67 @@
+{
+  "config": {
+    "formal": true,
+    "run_note": "faulty-host exploratory; instrumented official affine policy q=1",
+    "schedule": {},
+    "schedule_manifest": null,
+    "schema": "ASAC-Phase1-v2",
+    "sha256": "9d5cb067b8d779b79a800b351cc94f0ae874bd97cccc59526a018e6cd69da216",
+    "variant": "A0"
+  },
+  "created_unix": 1789829784.3053384,
+  "panel": {
+    "dataset_augment": false,
+    "dataset_length": 16551,
+    "dataset_rect": false,
+    "loader_pin_memory": true,
+    "loader_sampler_classes": [
+      "torch.utils.data.sampler.SequentialSampler",
+      "torch.utils.data.sampler.BatchSampler"
+    ],
+    "loader_workers": 4,
+    "panel_content_sha256": "8636cc2983ff65e77de6351629817fb43d75ebb36a440df44e4026c13747a0fa",
+    "population_count": 624,
+    "population_intersection_strengths": [
+      "clean",
+      0.25,
+      0.5,
+      0.75
+    ],
+    "population_sha256": "f57cffdeb8bc29ef66a21c384ac0c3cd7ceff9552c48245263cb6c7c51b14926",
+    "protocol": {
+      "batch": 64,
+      "expected_panel_content_sha256": "8636cc2983ff65e77de6351629817fb43d75ebb36a440df44e4026c13747a0fa",
+      "expected_population_count": 624,
+      "expected_population_sha256": "f57cffdeb8bc29ef66a21c384ac0c3cd7ceff9552c48245263cb6c7c51b14926",
+      "grid_bins": 13,
+      "grid_extent": 1.5,
+      "kernel_sigma": 0.25,
+      "max_batches": 4,
+      "max_scale_delta": 0.5,
+      "max_translate": 0.1,
+      "min_assignment_coverage": 0.95,
+      "min_box_pixels": 2.0,
+      "min_object_pairs": 100,
+      "min_visibility": 0.7,
+      "panel_images": 256,
+      "population_strength": 0.75,
+      "probe_strength": 0.5,
+      "seed": 42,
+      "workers": 4
+    },
+    "retained_counts_by_strength": {
+      "0.25": 647,
+      "0.50": 634,
+      "0.75": 624,
+      "clean": 657
+    }
+  },
+  "schema": "ASAC-Phase1-v2",
+  "source": {
+    "bundle_sha256": "fddc1300836dfe13e39445740a164f033ae3c8a5d6ddaaffaf142ce945c0483d",
+    "measurement": "/home/ubuntu/rz/yolo_study/asac_research/snapshot/ultralytics_research/ultralytics/utils/asac.py",
+    "measurement_sha256": "88a204beed3b18742bf4b03cd201252d499ef2da19827a7d31f8c1a78b5bc7aa",
+    "trainer": "/home/ubuntu/rz/yolo_study/asac_research/snapshot/ultralytics_research/ultralytics/models/yolo/detect/asac_train.py",
+    "trainer_sha256": "e997d4fc3852203f487732ddc086d982231bf87044885265a33c9e5633f4fdf6"
+  }
+}

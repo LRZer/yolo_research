@@ -1,0 +1,8 @@
+{
+  "error": "model head is not the native end-to-end O2M/O2O YOLO26 path",
+  "error_type": "RuntimeError",
+  "failed_unix": 1789813488.4274533,
+  "started_unix": 1789813485.1158798,
+  "status": "FAILED",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/ubuntu/rz/yolo_study/ultralytics_research/scripts/probe_final_coverage_audit.py\", line 1592, in main\n    scan, image_rows, quality = scan_checkpoint(\n                                ^^^^^^^^^^^^^^^^\n  File \"/home/ubuntu/rz/yolo_study/ultralytics_research/scripts/probe_final_coverage_audit.py\", line 1198, in scan_checkpoint\n    contract = validate_contract(trainer)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/ubuntu/rz/yolo_study/ultralytics_research/scripts/probe_final_coverage_audit.py\", line 506, in validate_contract\n    contract = runtime_base.validate_criterion_contract(trainer, list(EXPECTED_STRIDES))\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/ubuntu/rz/yolo_study/yolo26_voc_research/scripts/probe_asac_assignment_stability.py\", line 1191, in validate_criterion_contract\n    raise RuntimeError(\"model head is not the native end-to-end O2M/O2O YOLO26 path\")\nRuntimeError: model head is not the native end-to-end O2M/O2O YOLO26 path\n"
+}

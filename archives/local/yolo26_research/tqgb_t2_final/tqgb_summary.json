@@ -1,0 +1,442 @@
+{
+  "primary_rule": "fixed final epoch only",
+  "warning": "Single-seed faulty-host exploratory screening; not publication-level evidence.",
+  "baseline": "B50",
+  "runs": [
+    {
+      "name": "B50",
+      "source": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-17\\referenced-chatgpt-conversation-this-is-an\\outputs\\yolo26_research\\runs\\b50_no_kd_e50_g4567_s42\\results.csv",
+      "epochs": 50,
+      "final": {
+        "precision": 0.74053,
+        "recall": 0.65166,
+        "map50": 0.72216,
+        "map50_95": 0.51276
+      },
+      "delta_vs_baseline": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "map50": 0.0,
+        "map50_95": 0.0
+      },
+      "first_five_max_abs_diff_vs_baseline": {
+        "train/o2o_box_loss": 0.0,
+        "train/o2o_cls_loss": 0.0,
+        "train/o2o_l1_loss": 0.0,
+        "train/o2m_box_loss": 0.0,
+        "train/o2m_cls_loss": 0.0,
+        "train/o2m_l1_loss": 0.0,
+        "metrics/precision(B)": 0.0,
+        "metrics/recall(B)": 0.0,
+        "metrics/mAP50(B)": 0.0,
+        "metrics/mAP50-95(B)": 0.0
+      },
+      "phases": [
+        {
+          "epochs": "1-5",
+          "map50_95_mean": 0.03442,
+          "delta_vs_baseline_mean": 0.0,
+          "m2o_rate_mean": null,
+          "o2m_rate_mean": null,
+          "m2o_keep_mean": null,
+          "o2m_keep_mean": null,
+          "m2o_raw_loss_mean": null,
+          "o2m_raw_loss_mean": null,
+          "m2o_scaled_loss_mean": null,
+          "o2m_scaled_loss_mean": null,
+          "route_loss_mean": null
+        },
+        {
+          "epochs": "6-10",
+          "map50_95_mean": 0.18959200000000004,
+          "delta_vs_baseline_mean": 0.0,
+          "m2o_rate_mean": null,
+          "o2m_rate_mean": null,
+          "m2o_keep_mean": null,
+          "o2m_keep_mean": null,
+          "m2o_raw_loss_mean": null,
+          "o2m_raw_loss_mean": null,
+          "m2o_scaled_loss_mean": null,
+          "o2m_scaled_loss_mean": null,
+          "route_loss_mean": null
+        },
+        {
+          "epochs": "11-20",
+          "map50_95_mean": 0.32485099999999995,
+          "delta_vs_baseline_mean": 0.0,
+          "m2o_rate_mean": null,
+          "o2m_rate_mean": null,
+          "m2o_keep_mean": null,
+          "o2m_keep_mean": null,
+          "m2o_raw_loss_mean": null,
+          "o2m_raw_loss_mean": null,
+          "m2o_scaled_loss_mean": null,
+          "o2m_scaled_loss_mean": null,
+          "route_loss_mean": null
+        },
+        {
+          "epochs": "21-30",
+          "map50_95_mean": 0.4288119999999999,
+          "delta_vs_baseline_mean": 0.0,
+          "m2o_rate_mean": null,
+          "o2m_rate_mean": null,
+          "m2o_keep_mean": null,
+          "o2m_keep_mean": null,
+          "m2o_raw_loss_mean": null,
+          "o2m_raw_loss_mean": null,
+          "m2o_scaled_loss_mean": null,
+          "o2m_scaled_loss_mean": null,
+          "route_loss_mean": null
+        },
+        {
+          "epochs": "31-40",
+          "map50_95_mean": 0.48754200000000003,
+          "delta_vs_baseline_mean": 0.0,
+          "m2o_rate_mean": null,
+          "o2m_rate_mean": null,
+          "m2o_keep_mean": null,
+          "o2m_keep_mean": null,
+          "m2o_raw_loss_mean": null,
+          "o2m_raw_loss_mean": null,
+          "m2o_scaled_loss_mean": null,
+          "o2m_scaled_loss_mean": null,
+          "route_loss_mean": null
+        },
+        {
+          "epochs": "41-50",
+          "map50_95_mean": 0.5096390000000001,
+          "delta_vs_baseline_mean": 0.0,
+          "m2o_rate_mean": null,
+          "o2m_rate_mean": null,
+          "m2o_keep_mean": null,
+          "o2m_keep_mean": null,
+          "m2o_raw_loss_mean": null,
+          "o2m_raw_loss_mean": null,
+          "m2o_scaled_loss_mean": null,
+          "o2m_scaled_loss_mean": null,
+          "route_loss_mean": null
+        }
+      ],
+      "rolling": {
+        "last_5": {
+          "epochs": "46-50",
+          "map50_95_mean": 0.5128320000000001,
+          "delta_vs_baseline_mean": 0.0,
+          "m2o_rate_mean": null,
+          "o2m_rate_mean": null,
+          "m2o_keep_mean": null,
+          "o2m_keep_mean": null,
+          "m2o_raw_loss_mean": null,
+          "o2m_raw_loss_mean": null,
+          "m2o_scaled_loss_mean": null,
+          "o2m_scaled_loss_mean": null,
+          "route_loss_mean": null
+        },
+        "last_10": {
+          "epochs": "41-50",
+          "map50_95_mean": 0.5096390000000001,
+          "delta_vs_baseline_mean": 0.0,
+          "m2o_rate_mean": null,
+          "o2m_rate_mean": null,
+          "m2o_keep_mean": null,
+          "o2m_keep_mean": null,
+          "m2o_raw_loss_mean": null,
+          "o2m_raw_loss_mean": null,
+          "m2o_scaled_loss_mean": null,
+          "o2m_scaled_loss_mean": null,
+          "route_loss_mean": null
+        }
+      }
+    },
+    {
+      "name": "T1",
+      "source": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-17\\referenced-chatgpt-conversation-this-is-an\\outputs\\yolo26_research\\runs\\tqgb_t1_cls_m2o_proj_g008_e50_g4567_s42_w4_pin_numa1\\results.csv",
+      "epochs": 50,
+      "final": {
+        "precision": 0.74619,
+        "recall": 0.65231,
+        "map50": 0.72862,
+        "map50_95": 0.51946
+      },
+      "delta_vs_baseline": {
+        "precision": 0.005659999999999998,
+        "recall": 0.0006499999999999284,
+        "map50": 0.006460000000000021,
+        "map50_95": 0.006700000000000039
+      },
+      "first_five_max_abs_diff_vs_baseline": {
+        "train/o2o_box_loss": 0.013270000000000115,
+        "train/o2o_cls_loss": 0.043159999999999865,
+        "train/o2o_l1_loss": 0.0004399999999999994,
+        "train/o2m_box_loss": 0.028930000000000344,
+        "train/o2m_cls_loss": 0.03616999999999981,
+        "train/o2m_l1_loss": 0.0006700000000000039,
+        "metrics/precision(B)": 0.04416999999999999,
+        "metrics/recall(B)": 0.05308,
+        "metrics/mAP50(B)": 0.0199,
+        "metrics/mAP50-95(B)": 0.007339999999999999
+      },
+      "phases": [
+        {
+          "epochs": "1-5",
+          "map50_95_mean": 0.03316,
+          "delta_vs_baseline_mean": -0.0012600000000000018,
+          "m2o_rate_mean": 0.035044,
+          "o2m_rate_mean": 0.0,
+          "m2o_keep_mean": 0.532038,
+          "o2m_keep_mean": 0.0,
+          "m2o_raw_loss_mean": 0.006972000000000001,
+          "o2m_raw_loss_mean": 0.0,
+          "m2o_scaled_loss_mean": 0.000558,
+          "o2m_scaled_loss_mean": 0.0,
+          "route_loss_mean": 0.000558
+        },
+        {
+          "epochs": "6-10",
+          "map50_95_mean": 0.188508,
+          "delta_vs_baseline_mean": -0.0010840000000000016,
+          "m2o_rate_mean": 0.117722,
+          "o2m_rate_mean": 0.0,
+          "m2o_keep_mean": 0.99258,
+          "o2m_keep_mean": 0.0,
+          "m2o_raw_loss_mean": 0.01937,
+          "o2m_raw_loss_mean": 0.0,
+          "m2o_scaled_loss_mean": 0.001548,
+          "o2m_scaled_loss_mean": 0.0,
+          "route_loss_mean": 0.001548
+        },
+        {
+          "epochs": "11-20",
+          "map50_95_mean": 0.323221,
+          "delta_vs_baseline_mean": -0.0016299999999999843,
+          "m2o_rate_mean": 0.127048,
+          "o2m_rate_mean": 0.0,
+          "m2o_keep_mean": 0.994074,
+          "o2m_keep_mean": 0.0,
+          "m2o_raw_loss_mean": 0.017619,
+          "o2m_raw_loss_mean": 0.0,
+          "m2o_scaled_loss_mean": 0.001408,
+          "o2m_scaled_loss_mean": 0.0,
+          "route_loss_mean": 0.001408
+        },
+        {
+          "epochs": "21-30",
+          "map50_95_mean": 0.43264,
+          "delta_vs_baseline_mean": 0.0038280000000000093,
+          "m2o_rate_mean": 0.129087,
+          "o2m_rate_mean": 0.0,
+          "m2o_keep_mean": 0.9935899999999999,
+          "o2m_keep_mean": 0.0,
+          "m2o_raw_loss_mean": 0.016411000000000002,
+          "o2m_raw_loss_mean": 0.0,
+          "m2o_scaled_loss_mean": 0.0013130000000000001,
+          "o2m_scaled_loss_mean": 0.0,
+          "route_loss_mean": 0.0013130000000000001
+        },
+        {
+          "epochs": "31-40",
+          "map50_95_mean": 0.49039800000000006,
+          "delta_vs_baseline_mean": 0.0028560000000000087,
+          "m2o_rate_mean": 0.13003599999999998,
+          "o2m_rate_mean": 0.0,
+          "m2o_keep_mean": 0.994078,
+          "o2m_keep_mean": 0.0,
+          "m2o_raw_loss_mean": 0.015604000000000002,
+          "o2m_raw_loss_mean": 0.0,
+          "m2o_scaled_loss_mean": 0.0012490000000000001,
+          "o2m_scaled_loss_mean": 0.0,
+          "route_loss_mean": 0.0012490000000000001
+        },
+        {
+          "epochs": "41-50",
+          "map50_95_mean": 0.5146899999999999,
+          "delta_vs_baseline_mean": 0.0050509999999999835,
+          "m2o_rate_mean": 0.13415200000000002,
+          "o2m_rate_mean": 0.0,
+          "m2o_keep_mean": 0.9777579999999999,
+          "o2m_keep_mean": 0.0,
+          "m2o_raw_loss_mean": 0.01723,
+          "o2m_raw_loss_mean": 0.0,
+          "m2o_scaled_loss_mean": 0.0013779999999999999,
+          "o2m_scaled_loss_mean": 0.0,
+          "route_loss_mean": 0.0013779999999999999
+        }
+      ],
+      "rolling": {
+        "last_5": {
+          "epochs": "46-50",
+          "map50_95_mean": 0.5180779999999999,
+          "delta_vs_baseline_mean": 0.0052459999999999955,
+          "m2o_rate_mean": 0.12379799999999999,
+          "o2m_rate_mean": 0.0,
+          "m2o_keep_mean": 0.9750499999999999,
+          "o2m_keep_mean": 0.0,
+          "m2o_raw_loss_mean": 0.015790000000000002,
+          "o2m_raw_loss_mean": 0.0,
+          "m2o_scaled_loss_mean": 0.001264,
+          "o2m_scaled_loss_mean": 0.0,
+          "route_loss_mean": 0.001264
+        },
+        "last_10": {
+          "epochs": "41-50",
+          "map50_95_mean": 0.5146899999999999,
+          "delta_vs_baseline_mean": 0.0050509999999999835,
+          "m2o_rate_mean": 0.13415200000000002,
+          "o2m_rate_mean": 0.0,
+          "m2o_keep_mean": 0.9777579999999999,
+          "o2m_keep_mean": 0.0,
+          "m2o_raw_loss_mean": 0.01723,
+          "o2m_raw_loss_mean": 0.0,
+          "m2o_scaled_loss_mean": 0.0013779999999999999,
+          "o2m_scaled_loss_mean": 0.0,
+          "route_loss_mean": 0.0013779999999999999
+        }
+      }
+    },
+    {
+      "name": "T2",
+      "source": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-17\\referenced-chatgpt-conversation-this-is-an\\outputs\\yolo26_research\\runs\\tqgb_t2_cls_bidir_proj_g008_g0015_e50_g4567_s42_w4_pin_numa1\\results.csv",
+      "epochs": 50,
+      "final": {
+        "precision": 0.74251,
+        "recall": 0.64853,
+        "map50": 0.72419,
+        "map50_95": 0.51685
+      },
+      "delta_vs_baseline": {
+        "precision": 0.0019799999999999818,
+        "recall": -0.003129999999999966,
+        "map50": 0.0020299999999999763,
+        "map50_95": 0.004090000000000038
+      },
+      "first_five_max_abs_diff_vs_baseline": {
+        "train/o2o_box_loss": 0.02017000000000002,
+        "train/o2o_cls_loss": 0.037900000000000045,
+        "train/o2o_l1_loss": 0.0005299999999999992,
+        "train/o2m_box_loss": 0.03017000000000003,
+        "train/o2m_cls_loss": 0.037909999999999666,
+        "train/o2m_l1_loss": 0.000789999999999999,
+        "metrics/precision(B)": 0.025959999999999983,
+        "metrics/recall(B)": 0.03274999999999999,
+        "metrics/mAP50(B)": 0.030949999999999978,
+        "metrics/mAP50-95(B)": 0.012889999999999999
+      },
+      "phases": [
+        {
+          "epochs": "1-5",
+          "map50_95_mean": 0.033168,
+          "delta_vs_baseline_mean": -0.0012519999999999996,
+          "m2o_rate_mean": 0.034053999999999994,
+          "o2m_rate_mean": 0.011902000000000001,
+          "m2o_keep_mean": 0.5276419999999999,
+          "o2m_keep_mean": 0.29607799999999995,
+          "m2o_raw_loss_mean": 0.0066040000000000005,
+          "o2m_raw_loss_mean": 0.00063,
+          "m2o_scaled_loss_mean": 0.000528,
+          "o2m_scaled_loss_mean": 8.000000000000001e-06,
+          "route_loss_mean": 0.0005380000000000001
+        },
+        {
+          "epochs": "6-10",
+          "map50_95_mean": 0.191258,
+          "delta_vs_baseline_mean": 0.0016660000000000065,
+          "m2o_rate_mean": 0.12110400000000002,
+          "o2m_rate_mean": 0.086172,
+          "m2o_keep_mean": 0.9945600000000001,
+          "o2m_keep_mean": 0.858934,
+          "m2o_raw_loss_mean": 0.019015999999999998,
+          "o2m_raw_loss_mean": 0.00415,
+          "m2o_scaled_loss_mean": 0.001522,
+          "o2m_scaled_loss_mean": 6.000000000000001e-05,
+          "route_loss_mean": 0.0015819999999999996
+        },
+        {
+          "epochs": "11-20",
+          "map50_95_mean": 0.321768,
+          "delta_vs_baseline_mean": -0.0030829999999999885,
+          "m2o_rate_mean": 0.136604,
+          "o2m_rate_mean": 0.15644399999999997,
+          "m2o_keep_mean": 0.994965,
+          "o2m_keep_mean": 0.812,
+          "m2o_raw_loss_mean": 0.019082000000000002,
+          "o2m_raw_loss_mean": 0.005805,
+          "m2o_scaled_loss_mean": 0.001526,
+          "o2m_scaled_loss_mean": 8.700000000000001e-05,
+          "route_loss_mean": 0.0016139999999999998
+        },
+        {
+          "epochs": "21-30",
+          "map50_95_mean": 0.42812599999999995,
+          "delta_vs_baseline_mean": -0.0006859999999999977,
+          "m2o_rate_mean": 0.137944,
+          "o2m_rate_mean": 0.19342499999999999,
+          "m2o_keep_mean": 0.993371,
+          "o2m_keep_mean": 0.790457,
+          "m2o_raw_loss_mean": 0.018161,
+          "o2m_raw_loss_mean": 0.006206000000000001,
+          "m2o_scaled_loss_mean": 0.0014540000000000002,
+          "o2m_scaled_loss_mean": 9.200000000000001e-05,
+          "route_loss_mean": 0.001545
+        },
+        {
+          "epochs": "31-40",
+          "map50_95_mean": 0.488248,
+          "delta_vs_baseline_mean": 0.0007060000000000011,
+          "m2o_rate_mean": 0.141886,
+          "o2m_rate_mean": 0.21203,
+          "m2o_keep_mean": 0.9930049999999999,
+          "o2m_keep_mean": 0.772201,
+          "m2o_raw_loss_mean": 0.017299,
+          "o2m_raw_loss_mean": 0.006125,
+          "m2o_scaled_loss_mean": 0.0013839999999999998,
+          "o2m_scaled_loss_mean": 9.300000000000001e-05,
+          "route_loss_mean": 0.001476
+        },
+        {
+          "epochs": "41-50",
+          "map50_95_mean": 0.511531,
+          "delta_vs_baseline_mean": 0.0018919999999999937,
+          "m2o_rate_mean": 0.15672199999999997,
+          "o2m_rate_mean": 0.27295300000000006,
+          "m2o_keep_mean": 0.984047,
+          "o2m_keep_mean": 0.717868,
+          "m2o_raw_loss_mean": 0.01902,
+          "o2m_raw_loss_mean": 0.007069000000000001,
+          "m2o_scaled_loss_mean": 0.001523,
+          "o2m_scaled_loss_mean": 0.00010700000000000003,
+          "route_loss_mean": 0.0016270000000000004
+        }
+      ],
+      "rolling": {
+        "last_5": {
+          "epochs": "46-50",
+          "map50_95_mean": 0.5155239999999999,
+          "delta_vs_baseline_mean": 0.0026920000000000056,
+          "m2o_rate_mean": 0.15099200000000002,
+          "o2m_rate_mean": 0.27066399999999996,
+          "m2o_keep_mean": 0.9832940000000001,
+          "o2m_keep_mean": 0.7081379999999999,
+          "m2o_raw_loss_mean": 0.018222,
+          "o2m_raw_loss_mean": 0.006368,
+          "m2o_scaled_loss_mean": 0.0014579999999999999,
+          "o2m_scaled_loss_mean": 9.6e-05,
+          "route_loss_mean": 0.001552
+        },
+        "last_10": {
+          "epochs": "41-50",
+          "map50_95_mean": 0.511531,
+          "delta_vs_baseline_mean": 0.0018919999999999937,
+          "m2o_rate_mean": 0.15672199999999997,
+          "o2m_rate_mean": 0.27295300000000006,
+          "m2o_keep_mean": 0.984047,
+          "o2m_keep_mean": 0.717868,
+          "m2o_raw_loss_mean": 0.01902,
+          "o2m_raw_loss_mean": 0.007069000000000001,
+          "m2o_scaled_loss_mean": 0.001523,
+          "o2m_scaled_loss_mean": 0.00010700000000000003,
+          "route_loss_mean": 0.0016270000000000004
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "status": "launched",
+  "pid": 525246,
+  "physical_gpu": 0,
+  "numa_node": 0,
+  "gpu0_memory_mib_before": 4,
+  "numa0_free_mb_before": 108693,
+  "mc0_uncorrected_this_boot_before": 0,
+  "launched_utc": "2026-09-25T08:38:20.029290+00:00",
+  "command": [
+    "numactl",
+    "--cpunodebind=0",
+    "--membind=0",
+    "/home/ubuntu/miniconda3/envs/LZCyolo/bin/python",
+    "-u",
+    "/home/ubuntu/rz/foveated_classification_research/src/train_cub_resnet50_e.py",
+    "--config",
+    "/home/ubuntu/rz/foveated_classification_research/configs/cub_resnet50_E_grayscale_native500_s2005_e200_gpu0.json",
+    "--train"
+  ],
+  "log": "/home/ubuntu/rz/foveated_classification_research/runs/resnet50_E_grayscale_native500_s2005_e200/train.log"
+}

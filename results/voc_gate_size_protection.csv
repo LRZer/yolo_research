@@ -1,0 +1,4 @@
+size,total,safe_at_0_1,safe_fraction,source_json
+small,101,93,0.9207920792079208,archives/local/voc_pgb_yolov8n/SAFE_BACKGROUND_LONG_E125_METHOD_GATE_FULL_DEV.json
+medium,927,871,0.9395900755124056,archives/local/voc_pgb_yolov8n/SAFE_BACKGROUND_LONG_E125_METHOD_GATE_FULL_DEV.json
+large,2854,2560,0.8969866853538893,archives/local/voc_pgb_yolov8n/SAFE_BACKGROUND_LONG_E125_METHOD_GATE_FULL_DEV.json

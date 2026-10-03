@@ -1,0 +1,187 @@
+{
+  "generated": "2026-09-23T22:30:20.641183+08:00",
+  "warning": "privileged GT Oracle visualization; true evaluation boxes were used in image processing",
+  "weights": "/home/ubuntu/rz/yolo_study/yolo26_voc_research/runs/voc_yolo26n_baseline_4x3090_b64_e150_g4567_s42/weights/last.pt",
+  "weights_sha256": "df69f740b204377d010374c31d111f0ed943338a979c5bae188d2fdf4be5cd10",
+  "data": "/home/ubuntu/rz/yolo_study/yolo26_voc_research/configs/datasets/voc_server.yaml",
+  "data_sha256": "5650b70651a70021b0a58fdb228db71cdc3324972352ef406cd1bd977d321d40",
+  "model": "YOLO26n VOC150 last.pt, O2O nms=false",
+  "transform": "current LetterBox model input; GT rectangles unchanged; no margin; feather sigma=8; Gaussian background sigma=3/8/16",
+  "raw_validation_mAP50_95": 0.5770064130246745,
+  "samples": {
+    "000014": {
+      "source": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/test2007/000014.jpg",
+      "original_shape_hw": [
+        333,
+        500
+      ],
+      "model_input_shape_hw": [
+        448,
+        672
+      ],
+      "gt_box_count": 6,
+      "hard_protection_fraction": 0.3052588105201721,
+      "mean_abs_pixel_change_255": {
+        "light": 8.203298568725586,
+        "medium": 14.399415969848633,
+        "heavy": 19.62380599975586
+      },
+      "files": [
+        "comparison_2x2.jpg",
+        "hard_protection_mask.png",
+        "heavy_sigma16.png",
+        "input_raw.png",
+        "input_with_gt_boxes.png",
+        "light_sigma3.png",
+        "medium_sigma8.png",
+        "soft_protection_mask.png",
+        "source_original.jpg"
+      ]
+    },
+    "000076": {
+      "source": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/test2007/000076.jpg",
+      "original_shape_hw": [
+        375,
+        500
+      ],
+      "model_input_shape_hw": [
+        512,
+        672
+      ],
+      "gt_box_count": 11,
+      "hard_protection_fraction": 0.6095203161239624,
+      "mean_abs_pixel_change_255": {
+        "light": 3.8797450065612793,
+        "medium": 7.529390811920166,
+        "heavy": 11.816047668457031
+      },
+      "files": [
+        "comparison_2x2.jpg",
+        "hard_protection_mask.png",
+        "heavy_sigma16.png",
+        "input_raw.png",
+        "input_with_gt_boxes.png",
+        "light_sigma3.png",
+        "medium_sigma8.png",
+        "soft_protection_mask.png",
+        "source_original.jpg"
+      ]
+    },
+    "000025": {
+      "source": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/test2007/000025.jpg",
+      "original_shape_hw": [
+        375,
+        500
+      ],
+      "model_input_shape_hw": [
+        512,
+        672
+      ],
+      "gt_box_count": 10,
+      "hard_protection_fraction": 0.7957502007484436,
+      "mean_abs_pixel_change_255": {
+        "light": 1.3149442672729492,
+        "medium": 2.3671252727508545,
+        "heavy": 3.1822288036346436
+      },
+      "files": [
+        "comparison_2x2.jpg",
+        "hard_protection_mask.png",
+        "heavy_sigma16.png",
+        "input_raw.png",
+        "input_with_gt_boxes.png",
+        "light_sigma3.png",
+        "medium_sigma8.png",
+        "soft_protection_mask.png",
+        "source_original.jpg"
+      ]
+    },
+    "000004": {
+      "source": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/test2007/000004.jpg",
+      "original_shape_hw": [
+        406,
+        500
+      ],
+      "model_input_shape_hw": [
+        544,
+        672
+      ],
+      "gt_box_count": 7,
+      "hard_protection_fraction": 0.099097840487957,
+      "mean_abs_pixel_change_255": {
+        "light": 8.583532333374023,
+        "medium": 14.415107727050781,
+        "heavy": 19.99565887451172
+      },
+      "files": [
+        "comparison_2x2.jpg",
+        "hard_protection_mask.png",
+        "heavy_sigma16.png",
+        "input_raw.png",
+        "input_with_gt_boxes.png",
+        "light_sigma3.png",
+        "medium_sigma8.png",
+        "soft_protection_mask.png",
+        "source_original.jpg"
+      ]
+    },
+    "000001": {
+      "source": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/test2007/000001.jpg",
+      "original_shape_hw": [
+        500,
+        353
+      ],
+      "model_input_shape_hw": [
+        672,
+        480
+      ],
+      "gt_box_count": 2,
+      "hard_protection_fraction": 0.8536892533302307,
+      "mean_abs_pixel_change_255": {
+        "light": 1.0560742616653442,
+        "medium": 2.590228319168091,
+        "heavy": 4.46854305267334
+      },
+      "files": [
+        "comparison_2x2.jpg",
+        "hard_protection_mask.png",
+        "heavy_sigma16.png",
+        "input_raw.png",
+        "input_with_gt_boxes.png",
+        "light_sigma3.png",
+        "medium_sigma8.png",
+        "soft_protection_mask.png",
+        "source_original.jpg"
+      ]
+    },
+    "000002": {
+      "source": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/test2007/000002.jpg",
+      "original_shape_hw": [
+        500,
+        335
+      ],
+      "model_input_shape_hw": [
+        672,
+        448
+      ],
+      "gt_box_count": 1,
+      "hard_protection_fraction": 0.03799957409501076,
+      "mean_abs_pixel_change_255": {
+        "light": 13.274187088012695,
+        "medium": 19.433692932128906,
+        "heavy": 23.306751251220703
+      },
+      "files": [
+        "comparison_2x2.jpg",
+        "hard_protection_mask.png",
+        "heavy_sigma16.png",
+        "input_raw.png",
+        "input_with_gt_boxes.png",
+        "light_sigma3.png",
+        "medium_sigma8.png",
+        "soft_protection_mask.png",
+        "source_original.jpg"
+      ]
+    }
+  }
+}

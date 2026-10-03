@@ -1,0 +1,7 @@
+{
+  "status": "passed",
+  "device": "cpu",
+  "torch_version": "2.10.0+cpu",
+  "trainable_frontend_parameters": 38513,
+  "scope": "核心张量运算、目标保护、凸组合、梯度、空标注、存取与640输入；未跑VOC/YOLO训练"
+}

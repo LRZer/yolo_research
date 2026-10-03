@@ -1,0 +1,16 @@
+{
+  "status": "verified_revised_e125",
+  "group": "E_grayscale",
+  "epochs": 125,
+  "original_config_epochs": 200,
+  "learning_rate_schedule_total_epochs": 200,
+  "last_test_top1_percent": 27.096996893337934,
+  "last_test_top5_percent": 55.79910251984812,
+  "mean_epoch_seconds": 49.84153936984829,
+  "final_epoch_seconds": 49.983239318000415,
+  "config_sha256": "9d731cacbaaa17724ecfc486bbbfa7dad3d6b7cb573bcf5c5376687b71c38a74",
+  "stats_sha256": "e1caf32dd617b8d91720d117ff8527c75a5dbc1b82c71fbb1eabaecd88a7b309",
+  "results_sha256": "24137bad94a0db7e6f244c5e2cc4d3ce90d5589d8f48f2786c27b34ea4cff5a3",
+  "last_checkpoint_sha256": "df03bc7caad7320078b5a396c47b0a2e08ba0e931e3c21946e4e035042d8258b",
+  "audited_utc": "2026-09-25T10:36:19.534995+00:00"
+}

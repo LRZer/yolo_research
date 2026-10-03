@@ -1,0 +1,53 @@
+{
+  "checkpoint": "/home/ubuntu/rz/progressive_blur_detection_research/runs/sbg_long_e125/sbg_joint_voc_train90_e125_s2027_g0123_numa0/weights/last.pt",
+  "images": 1655,
+  "instances": 3882,
+  "instance_safe_fraction_at_0_1": 0.9077794951056156,
+  "instance_by_size": {
+    "small": {
+      "total": 101,
+      "safe_at_0_1": 93,
+      "safe_fraction": 0.9207920792079208
+    },
+    "medium": {
+      "total": 927,
+      "safe_at_0_1": 871,
+      "safe_fraction": 0.9395900755124056
+    },
+    "large": {
+      "total": 2854,
+      "safe_at_0_1": 2560,
+      "safe_fraction": 0.8969866853538893
+    }
+  },
+  "max_permission": 0.9999784231185913,
+  "pixel_region": {
+    "protected": {
+      "pixels": 270572728,
+      "mean_permission": 0.0205078895310868,
+      "fraction_permission_above": {
+        "0.1": 0.048659608443612244,
+        "0.25": 0.02051768868590481,
+        "0.5": 0.007040716978689737
+      }
+    },
+    "far": {
+      "pixels": 63224598,
+      "mean_permission": 0.3824497679655872,
+      "fraction_permission_above": {
+        "0.1": 0.7052197310926358,
+        "0.25": 0.5594616987521218,
+        "0.5": 0.37407102216766963
+      }
+    },
+    "all_valid": {
+      "pixels": 490469760,
+      "mean_permission": 0.12586755396546667,
+      "fraction_permission_above": {
+        "0.1": 0.258893859225898,
+        "0.25": 0.1778321195581966,
+        "0.5": 0.10439437081707137
+      }
+    }
+  }
+}

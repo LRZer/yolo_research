@@ -1,0 +1,43 @@
+{
+  "status": "verified_splitstats_syncbn_ddp",
+  "world_size": 2,
+  "synchronized_per_view_moments": true,
+  "shared_affine_ddp_gradients": true,
+  "input_gradients_verified": true,
+  "independent_eval_buffers": true,
+  "source_sha256": {
+    "trainer": "eed9a33d7f8f3e4b76cfc8f66e20b020677f656d055fa146881db59166a0615f",
+    "historical_engine": "6aa91ec82be7cee3dc985e2e5824ed8a5470cd7e7f2dc7cfd5e6a1f702a9f8a2",
+    "stats": "e1caf32dd617b8d91720d117ff8527c75a5dbc1b82c71fbb1eabaecd88a7b309",
+    "bbox": "c19d9f096c15564793408e5ba054b8d715a6805819d98f037c977f369ef4abd3",
+    "paired_trainer": "55a65aa4717c531c852ad68f8f1523be10c8324aa138874c1211c64fabf6c464"
+  },
+  "preflight": {
+    "checked_at_utc": "2026-10-02T07:20:47.125252+00:00",
+    "boot_id": "b825af41-86a3-4fe6-821b-c1ecb4b5fb9e",
+    "gpus": [
+      {
+        "index": 2,
+        "uuid": "GPU-66f2712d-a00e-2fdb-e6da-be24056fa1d4",
+        "free_mib": 12373,
+        "utilization": 100
+      },
+      {
+        "index": 3,
+        "uuid": "GPU-a47e8163-6e6f-6686-c5ee-c98142f6cb27",
+        "free_mib": 12371,
+        "utilization": 100
+      }
+    ],
+    "numa_node": 0,
+    "ue_counts": {
+      "/sys/devices/system/edac/mc/mc0/ue_count": 0,
+      "/sys/devices/system/edac/mc/mc1/ue_count": 0
+    },
+    "memory_budget_mb": 59873.7080078125,
+    "psi": "some avg10=0.00 avg60=0.00 avg300=0.00 total=3048708\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=3041629\n",
+    "historical_socket1_bert_replay": true,
+    "hardware_repaired_not_claimed": true,
+    "shared_gpus_user_authorized": true
+  }
+}

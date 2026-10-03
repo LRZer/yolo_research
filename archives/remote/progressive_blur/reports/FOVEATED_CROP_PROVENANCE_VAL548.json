@@ -1,0 +1,378 @@
+{
+  "checkpoint": "/home/ubuntu/rz/progressive_blur_detection_research/runs/visdrone_official/yolov8n_scratch_official_960_s2027_e125/weights/last.pt",
+  "checkpoint_sha256": "e352a00f73fe7926b87e3ae7a5f3b595265a3d95ee24d3e0a10ed2aab4491cc7",
+  "manifest": "/home/ubuntu/rz/progressive_blur_detection_research/data_splits/visdrone_official/val.txt",
+  "manifest_sha256": "dc54c818fb1050655fda38624d61fe20ce54be72414a9cc9d74b0489407ff994",
+  "images": 548,
+  "reference_merge_exactly_equal_first_images": 16,
+  "fixed_diagnostic": {
+    "min_conf": 0.25,
+    "iou": 0.5,
+    "classes": {
+      "0": "pedestrian",
+      "1": "people",
+      "5": "truck",
+      "8": "bus"
+    }
+  },
+  "summary": {
+    "pedestrian": {
+      "gt": 8844,
+      "full_tp": 3746,
+      "fused_tp": 5078,
+      "lost_gt": 13,
+      "gained_gt": 1345,
+      "stable_tp": 3733,
+      "stable_fn": 3753,
+      "full_preds_at_conf": 6174,
+      "fused_preds_at_conf": 12183,
+      "gained_by_crop": 1345,
+      "lost_nms_by_crop": 13,
+      "lost_fully_in_selected_crop": 13,
+      "full_fp_at_conf": 2428,
+      "fused_fp_at_conf": 7105
+    },
+    "people": {
+      "gt": 5125,
+      "full_tp": 1605,
+      "fused_tp": 1984,
+      "lost_gt": 5,
+      "gained_gt": 384,
+      "stable_tp": 1600,
+      "stable_fn": 3136,
+      "full_preds_at_conf": 2785,
+      "fused_preds_at_conf": 4106,
+      "gained_by_crop": 384,
+      "lost_nms_by_crop": 5,
+      "lost_fully_in_selected_crop": 5,
+      "full_fp_at_conf": 1180,
+      "fused_fp_at_conf": 2122
+    },
+    "truck": {
+      "gt": 750,
+      "full_tp": 236,
+      "fused_tp": 308,
+      "lost_gt": 0,
+      "gained_gt": 72,
+      "stable_tp": 236,
+      "stable_fn": 442,
+      "full_preds_at_conf": 471,
+      "fused_preds_at_conf": 1092,
+      "gained_by_crop": 72,
+      "full_fp_at_conf": 235,
+      "fused_fp_at_conf": 784
+    },
+    "bus": {
+      "gt": 251,
+      "full_tp": 113,
+      "fused_tp": 147,
+      "lost_gt": 0,
+      "gained_gt": 34,
+      "stable_tp": 113,
+      "stable_fn": 104,
+      "full_preds_at_conf": 182,
+      "fused_preds_at_conf": 399,
+      "gained_by_crop": 34,
+      "full_fp_at_conf": 69,
+      "fused_fp_at_conf": 252
+    }
+  },
+  "lost_examples_first_12_per_class": {
+    "pedestrian": [
+      {
+        "image": "/home/ubuntu/rz/object_detection_dataset_test/processed_yolo/VisDrone2019-DET/images/train/val_50_0000086_01443_d_0000004.jpg",
+        "gt_xyxy": [
+          499.0,
+          95.0,
+          513.0,
+          127.0
+        ],
+        "selected_cells": [
+          1,
+          2,
+          3,
+          6
+        ],
+        "reason": "nms_by_crop",
+        "gt_fully_in_selected_crop": true
+      },
+      {
+        "image": "/home/ubuntu/rz/object_detection_dataset_test/processed_yolo/VisDrone2019-DET/images/train/val_63_0000115_00796_d_0000081.jpg",
+        "gt_xyxy": [
+          228.0,
+          302.0,
+          235.0,
+          328.0
+        ],
+        "selected_cells": [
+          9,
+          8,
+          5,
+          4
+        ],
+        "reason": "nms_by_crop",
+        "gt_fully_in_selected_crop": true
+      },
+      {
+        "image": "/home/ubuntu/rz/object_detection_dataset_test/processed_yolo/VisDrone2019-DET/images/train/val_72_0000117_02708_d_0000090.jpg",
+        "gt_xyxy": [
+          1187.0,
+          199.0,
+          1203.0,
+          233.0
+        ],
+        "selected_cells": [
+          6,
+          7,
+          8,
+          0
+        ],
+        "reason": "nms_by_crop",
+        "gt_fully_in_selected_crop": true
+      },
+      {
+        "image": "/home/ubuntu/rz/object_detection_dataset_test/processed_yolo/VisDrone2019-DET/images/train/val_72_0000117_02708_d_0000090.jpg",
+        "gt_xyxy": [
+          959.0,
+          222.0,
+          970.0,
+          249.0
+        ],
+        "selected_cells": [
+          6,
+          7,
+          8,
+          0
+        ],
+        "reason": "nms_by_crop",
+        "gt_fully_in_selected_crop": true
+      },
+      {
+        "image": "/home/ubuntu/rz/object_detection_dataset_test/processed_yolo/VisDrone2019-DET/images/train/val_299_0000287_02801_d_0000773.jpg",
+        "gt_xyxy": [
+          967.0,
+          4.999998092651367,
+          974.0,
+          26.999998092651367
+        ],
+        "selected_cells": [
+          1,
+          2,
+          0,
+          6
+        ],
+        "reason": "nms_by_crop",
+        "gt_fully_in_selected_crop": true
+      },
+      {
+        "image": "/home/ubuntu/rz/object_detection_dataset_test/processed_yolo/VisDrone2019-DET/images/train/val_358_0000291_04201_d_0000889.jpg",
+        "gt_xyxy": [
+          60.000003814697266,
+          488.0,
+          91.00000762939453,
+          545.0
+        ],
+        "selected_cells": [
+          2,
+          5,
+          3,
+          8
+        ],
+        "reason": "nms_by_crop",
+        "gt_fully_in_selected_crop": true
+      },
+      {
+        "image": "/home/ubuntu/rz/object_detection_dataset_test/processed_yolo/VisDrone2019-DET/images/train/val_371_0000295_01800_d_0000030.jpg",
+        "gt_xyxy": [
+          1098.0,
+          434.0,
+          1110.0,
+          463.0
+        ],
+        "selected_cells": [
+          6,
+          5,
+          10,
+          11
+        ],
+        "reason": "nms_by_crop",
+        "gt_fully_in_selected_crop": true
+      },
+      {
+        "image": "/home/ubuntu/rz/object_detection_dataset_test/processed_yolo/VisDrone2019-DET/images/train/val_375_0000295_02900_d_0000034.jpg",
+        "gt_xyxy": [
+          1272.0,
+          533.0,
+          1288.0,
+          577.0
+        ],
+        "selected_cells": [
+          5,
+          11,
+          15,
+          7
+        ],
+        "reason": "nms_by_crop",
+        "gt_fully_in_selected_crop": true
+      },
+      {
+        "image": "/home/ubuntu/rz/object_detection_dataset_test/processed_yolo/VisDrone2019-DET/images/train/val_382_0000301_01201_d_0000162.jpg",
+        "gt_xyxy": [
+          996.0,
+          283.0,
+          1011.0,
+          324.0
+        ],
+        "selected_cells": [
+          6,
+          2,
+          1,
+          7
+        ],
+        "reason": "nms_by_crop",
+        "gt_fully_in_selected_crop": true
+      },
+      {
+        "image": "/home/ubuntu/rz/object_detection_dataset_test/processed_yolo/VisDrone2019-DET/images/train/val_389_0000312_01201_d_0000420.jpg",
+        "gt_xyxy": [
+          708.0,
+          120.0,
+          724.0,
+          155.0
+        ],
+        "selected_cells": [
+          1,
+          4,
+          2,
+          6
+        ],
+        "reason": "nms_by_crop",
+        "gt_fully_in_selected_crop": true
+      },
+      {
+        "image": "/home/ubuntu/rz/object_detection_dataset_test/processed_yolo/VisDrone2019-DET/images/train/val_430_0000330_00401_d_0000802.jpg",
+        "gt_xyxy": [
+          1117.0,
+          385.0,
+          1133.0,
+          424.0
+        ],
+        "selected_cells": [
+          2,
+          1,
+          6,
+          11
+        ],
+        "reason": "nms_by_crop",
+        "gt_fully_in_selected_crop": true
+      },
+      {
+        "image": "/home/ubuntu/rz/object_detection_dataset_test/processed_yolo/VisDrone2019-DET/images/train/val_430_0000330_00401_d_0000802.jpg",
+        "gt_xyxy": [
+          1333.0,
+          446.0,
+          1352.0,
+          492.0
+        ],
+        "selected_cells": [
+          2,
+          1,
+          6,
+          11
+        ],
+        "reason": "nms_by_crop",
+        "gt_fully_in_selected_crop": true
+      }
+    ],
+    "people": [
+      {
+        "image": "/home/ubuntu/rz/object_detection_dataset_test/processed_yolo/VisDrone2019-DET/images/train/val_86_0000154_02001_d_0000001.jpg",
+        "gt_xyxy": [
+          456.0,
+          349.0,
+          464.0,
+          361.0
+        ],
+        "selected_cells": [
+          9,
+          5,
+          8,
+          10
+        ],
+        "reason": "nms_by_crop",
+        "gt_fully_in_selected_crop": true
+      },
+      {
+        "image": "/home/ubuntu/rz/object_detection_dataset_test/processed_yolo/VisDrone2019-DET/images/train/val_87_0000155_00001_d_0000001.jpg",
+        "gt_xyxy": [
+          418.0,
+          94.0,
+          424.0,
+          100.0
+        ],
+        "selected_cells": [
+          1,
+          5,
+          15,
+          10
+        ],
+        "reason": "nms_by_crop",
+        "gt_fully_in_selected_crop": true
+      },
+      {
+        "image": "/home/ubuntu/rz/object_detection_dataset_test/processed_yolo/VisDrone2019-DET/images/train/val_178_0000249_02073_d_0000007.jpg",
+        "gt_xyxy": [
+          503.0,
+          294.0,
+          507.0,
+          305.0
+        ],
+        "selected_cells": [
+          9,
+          6,
+          10,
+          5
+        ],
+        "reason": "nms_by_crop",
+        "gt_fully_in_selected_crop": true
+      },
+      {
+        "image": "/home/ubuntu/rz/object_detection_dataset_test/processed_yolo/VisDrone2019-DET/images/train/val_254_0000277_02601_d_0000552.jpg",
+        "gt_xyxy": [
+          394.0,
+          161.0,
+          402.0,
+          173.0
+        ],
+        "selected_cells": [
+          0,
+          6,
+          5,
+          1
+        ],
+        "reason": "nms_by_crop",
+        "gt_fully_in_selected_crop": true
+      },
+      {
+        "image": "/home/ubuntu/rz/object_detection_dataset_test/processed_yolo/VisDrone2019-DET/images/train/val_430_0000330_00401_d_0000802.jpg",
+        "gt_xyxy": [
+          727.0,
+          160.0,
+          734.0,
+          177.0
+        ],
+        "selected_cells": [
+          2,
+          1,
+          6,
+          11
+        ],
+        "reason": "nms_by_crop",
+        "gt_fully_in_selected_crop": true
+      }
+    ],
+    "truck": [],
+    "bus": []
+  },
+  "caveat": "One-to-one IoU-first matching at fixed confidence is a diagnostic, not AP or the entire PR curve. Lost reason is associated with the original matched full prediction; a different fused prediction may still cover an object at lower confidence. The experiment reuses the sealed pilot's selector and fusion without GT in candidate selection."
+}

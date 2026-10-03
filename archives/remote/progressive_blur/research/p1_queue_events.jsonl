@@ -1,0 +1,14 @@
+{"time": "2026-09-23T01:03:00.659013+08:00", "event": "manager_started", "pid": null}
+{"time": "2026-09-23T01:04:29.076129+08:00", "event": "manager_started", "pid": null}
+{"time": "2026-09-23T01:04:29.076680+08:00", "event": "task_started", "kind": "baseline", "mode": "new", "command": ["/home/ubuntu/rz/yolo_study/.conda/yolo26/bin/python", "-u", "/home/ubuntu/rz/progressive_blur_detection_research/tools/run_experiment.py", "baseline", "/home/ubuntu/rz/progressive_blur_detection_research/configs/voc_a0_baseline_p1_e20.json"]}
+{"time": "2026-09-23T01:10:07.080301+08:00", "event": "task_verified_complete", "kind": "baseline", "epochs": 20}
+{"time": "2026-09-23T01:10:07.163399+08:00", "event": "task_started", "kind": "pgb", "mode": "new", "command": ["/home/ubuntu/rz/yolo_study/.conda/yolo26/bin/python", "-u", "/home/ubuntu/rz/progressive_blur_detection_research/tools/run_experiment.py", "pgb", "/home/ubuntu/rz/progressive_blur_detection_research/configs/voc_d_pgb_p1_e20.json"]}
+{"time": "2026-09-23T01:22:42.052359+08:00", "event": "task_verified_complete", "kind": "pgb", "epochs": 20}
+{"time": "2026-09-23T01:22:42.145921+08:00", "event": "queue_verified_complete"}
+{"time": "2026-09-23T01:30:46.689162+08:00", "event": "manager_started", "pid": null}
+{"time": "2026-09-23T01:30:47.827657+08:00", "event": "task_skipped_complete", "kind": "baseline"}
+{"time": "2026-09-23T01:30:47.941390+08:00", "event": "manager_blocked", "kind": "pgb", "reason": "best=ModuleNotFoundError(\"No module named 'pgb.ultralytics_integration'\"); last=ModuleNotFoundError(\"No module named 'pgb.ultralytics_integration'\")"}
+{"time": "2026-09-23T01:32:01.587286+08:00", "event": "manager_started", "pid": null}
+{"time": "2026-09-23T01:32:01.792414+08:00", "event": "task_skipped_complete", "kind": "baseline"}
+{"time": "2026-09-23T01:32:01.886303+08:00", "event": "task_skipped_complete", "kind": "pgb"}
+{"time": "2026-09-23T01:32:01.980306+08:00", "event": "queue_verified_complete"}

@@ -1,0 +1,17 @@
+arm,size_bucket,iou,matched,targets,recall,source_json
+IdentityAux,tiny_lt16,0.5,17807,27103,0.657012138877615,archives/local/voc_pgb_yolov8n/SET_HBS_VISDRONE_IDENTITY_LAST_SIZE_RECALL.json
+IdentityAux,tiny_lt16,0.75,8096,27103,0.2987123196694093,archives/local/voc_pgb_yolov8n/SET_HBS_VISDRONE_IDENTITY_LAST_SIZE_RECALL.json
+IdentityAux,small_16to32,0.5,7698,8724,0.8823933975240715,archives/local/voc_pgb_yolov8n/SET_HBS_VISDRONE_IDENTITY_LAST_SIZE_RECALL.json
+IdentityAux,small_16to32,0.75,6158,8724,0.7058688674919762,archives/local/voc_pgb_yolov8n/SET_HBS_VISDRONE_IDENTITY_LAST_SIZE_RECALL.json
+IdentityAux,medium_32to96,0.5,2669,2897,0.9212978943734899,archives/local/voc_pgb_yolov8n/SET_HBS_VISDRONE_IDENTITY_LAST_SIZE_RECALL.json
+IdentityAux,medium_32to96,0.75,2490,2897,0.8595098377632033,archives/local/voc_pgb_yolov8n/SET_HBS_VISDRONE_IDENTITY_LAST_SIZE_RECALL.json
+IdentityAux,large_ge96,0.5,32,35,0.9142857142857143,archives/local/voc_pgb_yolov8n/SET_HBS_VISDRONE_IDENTITY_LAST_SIZE_RECALL.json
+IdentityAux,large_ge96,0.75,26,35,0.7428571428571429,archives/local/voc_pgb_yolov8n/SET_HBS_VISDRONE_IDENTITY_LAST_SIZE_RECALL.json
+HBSonly,tiny_lt16,0.5,17030,27103,0.6283437257868133,archives/local/voc_pgb_yolov8n/SET_HBS_VISDRONE_HBS_LAST_SIZE_RECALL.json
+HBSonly,tiny_lt16,0.75,7195,27103,0.26546876729513336,archives/local/voc_pgb_yolov8n/SET_HBS_VISDRONE_HBS_LAST_SIZE_RECALL.json
+HBSonly,small_16to32,0.5,7682,8724,0.880559376432829,archives/local/voc_pgb_yolov8n/SET_HBS_VISDRONE_HBS_LAST_SIZE_RECALL.json
+HBSonly,small_16to32,0.75,6051,8724,0.6936038514442916,archives/local/voc_pgb_yolov8n/SET_HBS_VISDRONE_HBS_LAST_SIZE_RECALL.json
+HBSonly,medium_32to96,0.5,2694,2897,0.9299275112185019,archives/local/voc_pgb_yolov8n/SET_HBS_VISDRONE_HBS_LAST_SIZE_RECALL.json
+HBSonly,medium_32to96,0.75,2481,2897,0.8564031756989989,archives/local/voc_pgb_yolov8n/SET_HBS_VISDRONE_HBS_LAST_SIZE_RECALL.json
+HBSonly,large_ge96,0.5,29,35,0.8285714285714286,archives/local/voc_pgb_yolov8n/SET_HBS_VISDRONE_HBS_LAST_SIZE_RECALL.json
+HBSonly,large_ge96,0.75,21,35,0.6,archives/local/voc_pgb_yolov8n/SET_HBS_VISDRONE_HBS_LAST_SIZE_RECALL.json

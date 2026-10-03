@@ -1,0 +1,14 @@
+{
+  "status": "verified_running_checkpoint_prefix",
+  "group": "G4_global_crop",
+  "checkpoint_epoch": 1,
+  "continuous_csv_epochs": 1,
+  "model_loadable": true,
+  "finite_parameters": true,
+  "fusion_shape": [
+    200,
+    4096
+  ],
+  "config_sha256": "f3581f75fe29751a7a27667c11c08745cd91e7bf0284caa29d126b201a820ba7",
+  "not_final_e125_audit": true
+}

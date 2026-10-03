@@ -1,0 +1,38 @@
+{
+  "status": "extreme_label_leaking_diagnostic_not_deployable",
+  "generated": "2026-09-23T02:38:54.936231+08:00",
+  "selection": "maximum development mAP50-95",
+  "baseline": {
+    "best_epoch": 12,
+    "precision": 0.4263,
+    "recall": 0.2902,
+    "mAP50": 0.29178,
+    "mAP50_95": 0.16173
+  },
+  "blur_oracle": {
+    "best_epoch": 12,
+    "precision": 0.38119,
+    "recall": 0.33975,
+    "mAP50": 0.30918,
+    "mAP50_95": 0.17042
+  },
+  "blackout_oracle": {
+    "best_epoch": 14,
+    "precision": 0.52022,
+    "recall": 0.48237,
+    "mAP50": 0.49652,
+    "mAP50_95": 0.44016
+  },
+  "blackout_minus_baseline": {
+    "precision": 0.09392,
+    "recall": 0.19217,
+    "mAP50": 0.20474000000000003,
+    "mAP50_95": 0.27842999999999996
+  },
+  "blackout_minus_blur_oracle": {
+    "precision": 0.13903000000000004,
+    "recall": 0.14262000000000002,
+    "mAP50": 0.18734,
+    "mAP50_95": 0.26974
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "status": "running",
+  "completed_epoch": 1,
+  "target_epochs": 125,
+  "lr_horizon": 200,
+  "config_sha256": "f3581f75fe29751a7a27667c11c08745cd91e7bf0284caa29d126b201a820ba7",
+  "rank0_pid": 1849665,
+  "row": {
+    "epoch": 1,
+    "lr": 0.005,
+    "train_loss": 5.600752657081113,
+    "train_top1": 0.9175842509175842,
+    "train_top5": 3.9706373039706375,
+    "test_loss": 5.4492134884138705,
+    "test_top1": 1.4325163962720056,
+    "test_top5": 6.213324128408699,
+    "train_seconds": 160.1720242559968,
+    "test_seconds": 23.261927323997952,
+    "epoch_seconds": 183.43395157999475,
+    "gpu_max_memory_gib": 3.8278121948242188,
+    "train_images": 5994,
+    "test_images": 5794,
+    "optimizer_steps": 94,
+    "update_groups": 94,
+    "amp_skipped_steps": 0
+  },
+  "best_top1": 1.4325163962720056,
+  "best_epoch": 1,
+  "updated_at_cst": "2026-10-01T18:45:38.126589+08:00",
+  "remaining_seconds_estimate": 22745.80999591935
+}

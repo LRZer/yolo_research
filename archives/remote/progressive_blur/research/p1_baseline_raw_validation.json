@@ -1,0 +1,63 @@
+{
+  "status": "raw_development_images_no_oracle_mask",
+  "generated": "2026-09-23T02:40:21.005085+08:00",
+  "data": "/home/ubuntu/rz/progressive_blur_detection_research/data_splits/voc_strict_seed2027.yaml",
+  "split": "val",
+  "model_input": "unaltered 640-pixel letterboxed images",
+  "checkpoints": [
+    {
+      "checkpoint": "runs/voc_p1/a0_yolov8n_scratch_e20_b64_s2027/weights/best.pt",
+      "checkpoint_sha256": "e83bf8bc2ac209c493c1686c6404183efc11ef6f0a33dc60a0511497dbfc1ba3",
+      "checkpoint_epoch": null,
+      "precision": 0.4107278320823725,
+      "recall": 0.2951634235912163,
+      "mAP50": 0.2909265155407089,
+      "mAP50_95": 0.16169125181844748
+    },
+    {
+      "checkpoint": "runs/voc_p1/a0_yolov8n_scratch_e20_b64_s2027/weights/last.pt",
+      "checkpoint_sha256": "c416c6c4ba91d1dfdb9099e9f1d0bc6f298e1bc4a0464601e8ec9fb39b925d76",
+      "checkpoint_epoch": null,
+      "precision": 0.3900544670372365,
+      "recall": 0.2818664859174361,
+      "mAP50": 0.26482720079362554,
+      "mAP50_95": 0.14252996449660973
+    },
+    {
+      "checkpoint": "runs/voc_p1/a0_yolov8n_scratch_e20_b64_s2027/weights/epoch0.pt",
+      "checkpoint_sha256": "3d6aadd453e538878a82ba90fc3723327cd25c7d9a38cea02f3f9982682cd9c1",
+      "checkpoint_epoch": 1,
+      "precision": 0.6573533958492213,
+      "recall": 0.01965717859329764,
+      "mAP50": 0.0052853394133282865,
+      "mAP50_95": 0.0012911921108886622
+    },
+    {
+      "checkpoint": "runs/voc_p1/a0_yolov8n_scratch_e20_b64_s2027/weights/epoch5.pt",
+      "checkpoint_sha256": "48cb6cdf066499316f1a4917e3ace0da30087c8e1bc0050a6bd833e65953d44f",
+      "checkpoint_epoch": 6,
+      "precision": 0.2980797907341382,
+      "recall": 0.24530661280377042,
+      "mAP50": 0.19803545554118446,
+      "mAP50_95": 0.1014184710406466
+    },
+    {
+      "checkpoint": "runs/voc_p1/a0_yolov8n_scratch_e20_b64_s2027/weights/epoch10.pt",
+      "checkpoint_sha256": "17b7299007e0470c81b9c276e76e70eb300d02101ce1d4b00e00dc535607d0d8",
+      "checkpoint_epoch": 11,
+      "precision": 0.37830164987589854,
+      "recall": 0.2949730595017373,
+      "mAP50": 0.27521533222405475,
+      "mAP50_95": 0.14722615083154664
+    },
+    {
+      "checkpoint": "runs/voc_p1/a0_yolov8n_scratch_e20_b64_s2027/weights/epoch15.pt",
+      "checkpoint_sha256": "f78541187a028342cdc0f577f7bfff72110f2144ce2776705f22b840722a0c3e",
+      "checkpoint_epoch": 16,
+      "precision": 0.3696593727604002,
+      "recall": 0.31316153033937955,
+      "mAP50": 0.2820084761776767,
+      "mAP50_95": 0.15453677850761582
+    }
+  ]
+}

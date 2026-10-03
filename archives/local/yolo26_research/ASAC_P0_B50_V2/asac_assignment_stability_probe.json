@@ -1,0 +1,5080 @@
+{
+  "schema_version": 2,
+  "method": {
+    "split": "train only",
+    "loader_mode": "val (deterministic/no dataset augmentation)",
+    "views": "clean reference vs deterministic nested scale+translate",
+    "branches": [
+      "O2M",
+      "O2O"
+    ],
+    "workers_actual_required": 4,
+    "pinned_memory_required": true,
+    "occupancy": "unweighted Gaussian occupancy over (P3/P4/P5, GT-relative dx,dy)",
+    "stability": "exp(-base2_JS); missing foreground is assigned stability 0",
+    "quality": "max per-GT sqrt(class_probability * assigned-box IoU), used only for correlation",
+    "args": {
+      "checkpoints": [
+        "runs/b50_no_kd_e50_g4567_s42/weights/epoch10.pt",
+        "runs/b50_no_kd_e50_g4567_s42/weights/epoch20.pt",
+        "runs/b50_no_kd_e50_g4567_s42/weights/epoch30.pt",
+        "runs/b50_no_kd_e50_g4567_s42/weights/epoch40.pt",
+        "runs/b50_no_kd_e50_g4567_s42/weights/last.pt"
+      ],
+      "data": "/home/ubuntu/rz/yolo_study/yolo26_voc_research/configs/datasets/voc_server.yaml",
+      "physical_device": 4,
+      "batch": 64,
+      "imgsz": 640,
+      "workers": 4,
+      "max_batches": 4,
+      "seed": 42,
+      "strengths": [
+        0.25,
+        0.5,
+        0.75
+      ],
+      "max_scale_delta": 0.5,
+      "max_translate": 0.1,
+      "min_visibility": 0.7,
+      "min_box_pixels": 2.0,
+      "grid_bins": 13,
+      "grid_extent": 1.5,
+      "kernel_sigma": 0.25,
+      "expected_strides": [
+        8.0,
+        16.0,
+        32.0
+      ],
+      "expected_epochs": [
+        11,
+        21,
+        31,
+        41,
+        50
+      ],
+      "min_object_pairs": 100,
+      "min_assignment_coverage": 0.5,
+      "monotonic_tolerance": 0.01,
+      "min_weak_strong_drop": 0.02,
+      "min_monotonic_checkpoints": 3,
+      "min_spearman": 0.2,
+      "min_correlated_checkpoints": 2,
+      "output_dir": "/home/ubuntu/rz/yolo_study/yolo26_voc_research/diagnostics/asac_p0_b50_v2",
+      "name": "asac_assignment_stability_probe",
+      "dry_run": false
+    },
+    "frozen_protocol": {
+      "batch": 64,
+      "imgsz": 640,
+      "workers": 4,
+      "max_batches": 4,
+      "panel_images": 256,
+      "seed": 42,
+      "strengths": [
+        0.25,
+        0.5,
+        0.75
+      ],
+      "max_scale_delta": 0.5,
+      "max_translate": 0.1,
+      "min_visibility": 0.7,
+      "min_box_pixels": 2.0,
+      "grid_bins": 13,
+      "grid_extent": 1.5,
+      "kernel_sigma": 0.25,
+      "expected_strides": [
+        8.0,
+        16.0,
+        32.0
+      ],
+      "expected_epochs": [
+        11,
+        21,
+        31,
+        41,
+        50
+      ],
+      "min_object_pairs": 100,
+      "min_assignment_coverage": 0.5,
+      "monotonic_tolerance": 0.01,
+      "min_weak_strong_drop": 0.02,
+      "min_monotonic_checkpoints": 3,
+      "min_spearman": 0.2,
+      "min_correlated_checkpoints": 2
+    }
+  },
+  "provenance": {
+    "trajectory": {
+      "signature_sha256": "0e6b09538be74edefb21185dc1edca18541fc454d5d87e365f2b6e0abdde9292",
+      "trajectory_args": {
+        "task": "detect",
+        "mode": "train",
+        "model": "/home/ubuntu/rz/yolo_study/yolo26_voc_research/configs/models/yolo26n_baseline.yaml",
+        "data": "/home/ubuntu/rz/yolo_study/yolo26_voc_research/configs/datasets/voc_server.yaml",
+        "epochs": 50,
+        "time": null,
+        "patience": 50,
+        "batch": 64,
+        "imgsz": 640,
+        "save": true,
+        "save_period": 10,
+        "cache": false,
+        "device": "4,5,6,7",
+        "workers": 4,
+        "project": "/home/ubuntu/rz/yolo_study/yolo26_voc_research/runs",
+        "name": "b50_no_kd_e50_g4567_s42",
+        "exist_ok": false,
+        "pretrained": false,
+        "cls_remap": true,
+        "optimizer": "auto",
+        "verbose": true,
+        "seed": 42,
+        "deterministic": true,
+        "single_cls": false,
+        "rect": false,
+        "cos_lr": false,
+        "close_mosaic": 10,
+        "resume": false,
+        "amp": "bf16",
+        "fraction": 1.0,
+        "profile": false,
+        "freeze": null,
+        "multi_scale": 0.0,
+        "compile": false,
+        "channels_last": null,
+        "overlap_mask": true,
+        "mask_ratio": 4,
+        "dropout": 0.0,
+        "val": true,
+        "split": "val",
+        "save_json": false,
+        "conf": null,
+        "iou": 0.7,
+        "max_det": 300,
+        "quantize": null,
+        "dnn": false,
+        "plots": false,
+        "nms": false,
+        "source": null,
+        "vid_stride": 1,
+        "stream_buffer": false,
+        "visualize": false,
+        "augment": false,
+        "agnostic_nms": false,
+        "classes": null,
+        "retina_masks": false,
+        "embed": null,
+        "show": false,
+        "save_frames": false,
+        "save_txt": false,
+        "save_conf": false,
+        "save_crop": false,
+        "show_labels": true,
+        "show_conf": true,
+        "show_boxes": true,
+        "line_width": null,
+        "format": "torchscript",
+        "keras": false,
+        "optimize": false,
+        "dynamic": false,
+        "simplify": true,
+        "opset": null,
+        "workspace": null,
+        "lr0": 0.01,
+        "lrf": 0.01,
+        "momentum": 0.937,
+        "weight_decay": 0.0005,
+        "warmup_epochs": 3.0,
+        "warmup_momentum": 0.8,
+        "warmup_bias_lr": 0.0,
+        "distill_model": null,
+        "dis": 6.0,
+        "o2o_kd_gain": 0.0,
+        "o2o_kd_temp": 1.0,
+        "o2o_kd_min_quality": 0.25,
+        "o2o_kd_margin": 0.05,
+        "o2o_kd_warmup": 5.0,
+        "o2o_kd_ramp": 10.0,
+        "o2o_kd_fade": 10.0,
+        "o2o_kd_gate": true,
+        "o2o_kd_supervision_gate": "none",
+        "box": 7.5,
+        "cls": 0.5,
+        "cls_pw": 0.0,
+        "dfl": 1.5,
+        "pose": 12.0,
+        "kobj": 1.0,
+        "rle": 1.0,
+        "angle": 1.0,
+        "dlog": 1.0,
+        "dgrad": 0.5,
+        "dlam": 1.0,
+        "nbs": 64,
+        "hsv_h": 0.015,
+        "hsv_s": 0.7,
+        "hsv_v": 0.4,
+        "degrees": 0.0,
+        "translate": 0.1,
+        "scale": 0.5,
+        "shear": 0.0,
+        "perspective": 0.0,
+        "flipud": 0.0,
+        "fliplr": 0.5,
+        "bgr": 0.0,
+        "mosaic": 1.0,
+        "mixup": 0.0,
+        "cutmix": 0.0,
+        "copy_paste": 0.0,
+        "copy_paste_mode": "flip",
+        "auto_augment": "randaugment",
+        "erasing": 0.4,
+        "cfg": null,
+        "tracker": "tracktrack.yaml",
+        "save_dir": "/home/ubuntu/rz/yolo_study/yolo26_voc_research/runs/b50_no_kd_e50_g4567_s42",
+        "tqgb_cls_m2o_gain": 0.0,
+        "tqgb_cls_o2m_gain": 0.0,
+        "tqgb_direction": "none"
+      },
+      "frozen_manifest_sha256": "58054c007178b94fccd87d8c6d1ae265a5487cc3b3609cd58301c7fa68c1fe7a",
+      "frozen_checkpoint_manifest_sha256": "a6bf4472b2eb23597babdea8190948dfeae56fa45fdcf764dd0196454b466d41",
+      "production_frozen_manifest_sha256": "58054c007178b94fccd87d8c6d1ae265a5487cc3b3609cd58301c7fa68c1fe7a",
+      "production_frozen_checkpoint_manifest_sha256": "a6bf4472b2eb23597babdea8190948dfeae56fa45fdcf764dd0196454b466d41",
+      "runtime_manifest_transforms": {
+        "warmup_bias_lr": {
+          "launch_value": 0.1,
+          "checkpoint_value": 0.0,
+          "precondition": {
+            "optimizer": "auto"
+          },
+          "reason": "Ultralytics build_optimizer(name='auto') sets self.args.warmup_bias_lr=0.0"
+        }
+      },
+      "model_structure": {
+        "model_class": "ultralytics.nn.tasks.DetectionModel",
+        "yaml": {
+          "scale": "n",
+          "nc": 20,
+          "end2end": true,
+          "reg_max": 1,
+          "scales": {
+            "n": [
+              0.5,
+              0.25,
+              1024
+            ],
+            "s": [
+              0.5,
+              0.5,
+              1024
+            ],
+            "m": [
+              0.5,
+              1.0,
+              512
+            ],
+            "l": [
+              1.0,
+              1.0,
+              512
+            ],
+            "x": [
+              1.0,
+              1.5,
+              512
+            ]
+          },
+          "backbone": [
+            [
+              -1,
+              1,
+              "Conv",
+              [
+                64,
+                3,
+                2
+              ]
+            ],
+            [
+              -1,
+              1,
+              "Conv",
+              [
+                128,
+                3,
+                2
+              ]
+            ],
+            [
+              -1,
+              2,
+              "C3k2",
+              [
+                256,
+                false,
+                0.25
+              ]
+            ],
+            [
+              -1,
+              1,
+              "Conv",
+              [
+                256,
+                3,
+                2
+              ]
+            ],
+            [
+              -1,
+              2,
+              "C3k2",
+              [
+                512,
+                false,
+                0.25
+              ]
+            ],
+            [
+              -1,
+              1,
+              "Conv",
+              [
+                512,
+                3,
+                2
+              ]
+            ],
+            [
+              -1,
+              2,
+              "C3k2",
+              [
+                512,
+                true
+              ]
+            ],
+            [
+              -1,
+              1,
+              "Conv",
+              [
+                1024,
+                3,
+                2
+              ]
+            ],
+            [
+              -1,
+              2,
+              "C3k2",
+              [
+                1024,
+                true
+              ]
+            ],
+            [
+              -1,
+              1,
+              "SPPF",
+              [
+                1024,
+                5,
+                3,
+                true
+              ]
+            ],
+            [
+              -1,
+              2,
+              "C2PSA",
+              [
+                1024
+              ]
+            ]
+          ],
+          "head": [
+            [
+              -1,
+              1,
+              "nn.Upsample",
+              [
+                "None",
+                2,
+                "nearest"
+              ]
+            ],
+            [
+              [
+                -1,
+                6
+              ],
+              1,
+              "Concat",
+              [
+                1
+              ]
+            ],
+            [
+              -1,
+              2,
+              "C3k2",
+              [
+                512,
+                true
+              ]
+            ],
+            [
+              -1,
+              1,
+              "nn.Upsample",
+              [
+                "None",
+                2,
+                "nearest"
+              ]
+            ],
+            [
+              [
+                -1,
+                4
+              ],
+              1,
+              "Concat",
+              [
+                1
+              ]
+            ],
+            [
+              -1,
+              2,
+              "C3k2",
+              [
+                256,
+                true
+              ]
+            ],
+            [
+              -1,
+              1,
+              "Conv",
+              [
+                256,
+                3,
+                2
+              ]
+            ],
+            [
+              [
+                -1,
+                13
+              ],
+              1,
+              "Concat",
+              [
+                1
+              ]
+            ],
+            [
+              -1,
+              2,
+              "C3k2",
+              [
+                512,
+                true
+              ]
+            ],
+            [
+              -1,
+              1,
+              "Conv",
+              [
+                512,
+                3,
+                2
+              ]
+            ],
+            [
+              [
+                -1,
+                10
+              ],
+              1,
+              "Concat",
+              [
+                1
+              ]
+            ],
+            [
+              -1,
+              1,
+              "C3k2",
+              [
+                1024,
+                true,
+                0.5,
+                true
+              ]
+            ],
+            [
+              [
+                16,
+                19,
+                22
+              ],
+              1,
+              "Detect",
+              [
+                "nc"
+              ]
+            ]
+          ],
+          "yaml_file": "/home/ubuntu/rz/yolo_study/yolo26_voc_research/configs/models/yolo26n_baseline.yaml",
+          "channels": 3
+        },
+        "names": {
+          "0": "aeroplane",
+          "1": "bicycle",
+          "2": "bird",
+          "3": "boat",
+          "4": "bottle",
+          "5": "bus",
+          "6": "car",
+          "7": "cat",
+          "8": "chair",
+          "9": "cow",
+          "10": "diningtable",
+          "11": "dog",
+          "12": "horse",
+          "13": "motorbike",
+          "14": "person",
+          "15": "pottedplant",
+          "16": "sheep",
+          "17": "sofa",
+          "18": "train",
+          "19": "tvmonitor"
+        },
+        "head_class": "ultralytics.nn.modules.head.Detect",
+        "nc": 20,
+        "stride": [
+          8.0,
+          16.0,
+          32.0
+        ],
+        "parameter_count": 2511600,
+        "sha256": "1d29e66acb37999576edb617d4fb124a6a093a5547821ec7e62cd2b1b461bcb8"
+      },
+      "validated_model_structure": {
+        "sha256": "1d29e66acb37999576edb617d4fb124a6a093a5547821ec7e62cd2b1b461bcb8",
+        "model_class": "ultralytics.nn.tasks.DetectionModel",
+        "head_class": "ultralytics.nn.modules.head.Detect",
+        "nc": 20,
+        "stride": [
+          8.0,
+          16.0,
+          32.0
+        ],
+        "parameter_count": 2511600,
+        "names": [
+          "aeroplane",
+          "bicycle",
+          "bird",
+          "boat",
+          "bottle",
+          "bus",
+          "car",
+          "cat",
+          "chair",
+          "cow",
+          "diningtable",
+          "dog",
+          "horse",
+          "motorbike",
+          "person",
+          "pottedplant",
+          "sheep",
+          "sofa",
+          "train",
+          "tvmonitor"
+        ],
+        "yaml_nc": 20,
+        "yaml_scale": "n",
+        "yaml_end2end": true
+      },
+      "git": {
+        "root": "/home/ubuntu/rz/yolo_study/ultralytics_research",
+        "branch": "research/dual-head-diagnostics",
+        "commit": "9d45ee4613e79d7bceef7a39e42c15c278b0d4e8",
+        "message": null,
+        "origin": "/home/ubuntu/rz/yolo_study/ultralytics"
+      },
+      "run_evidence": {
+        "run_dir": "/home/ubuntu/rz/yolo_study/yolo26_voc_research/runs/b50_no_kd_e50_g4567_s42",
+        "weights_dir": "/home/ubuntu/rz/yolo_study/yolo26_voc_research/runs/b50_no_kd_e50_g4567_s42/weights",
+        "project_name_relation_verified": true,
+        "config_files": {
+          "model": {
+            "path": "/home/ubuntu/rz/yolo_study/yolo26_voc_research/configs/models/yolo26n_baseline.yaml",
+            "sha256": "afc4600876cc3a996aa65f5894d2a3005f25baa29b574bf46eff373779451b26",
+            "expected_sha256": "afc4600876cc3a996aa65f5894d2a3005f25baa29b574bf46eff373779451b26",
+            "content_pinned": true
+          },
+          "data": {
+            "path": "/home/ubuntu/rz/yolo_study/yolo26_voc_research/configs/datasets/voc_server.yaml",
+            "sha256": "5650b70651a70021b0a58fdb228db71cdc3324972352ef406cd1bd977d321d40",
+            "expected_sha256": "5650b70651a70021b0a58fdb228db71cdc3324972352ef406cd1bd977d321d40",
+            "content_pinned": true
+          }
+        },
+        "args_yaml": {
+          "path": "/home/ubuntu/rz/yolo_study/yolo26_voc_research/runs/b50_no_kd_e50_g4567_s42/args.yaml",
+          "sha256": "d7a98308306ac9ca7d5691233cd80850cf5555d4452fd9926260b5239a5f46f8",
+          "normalized_manifest_sha256": "58054c007178b94fccd87d8c6d1ae265a5487cc3b3609cd58301c7fa68c1fe7a",
+          "checkpoint_runtime_manifest_sha256": "a6bf4472b2eb23597babdea8190948dfeae56fa45fdcf764dd0196454b466d41",
+          "runtime_transforms": {
+            "warmup_bias_lr": {
+              "launch_value": 0.1,
+              "checkpoint_value": 0.0,
+              "precondition": {
+                "optimizer": "auto"
+              },
+              "reason": "Ultralytics build_optimizer(name='auto') sets self.args.warmup_bias_lr=0.0"
+            }
+          }
+        },
+        "results_csv": {
+          "path": "/home/ubuntu/rz/yolo_study/yolo26_voc_research/runs/b50_no_kd_e50_g4567_s42/results.csv",
+          "sha256": "b99171972f1e319a17d014afcdb594996ca322f5b818c1ccfe863751093883d2",
+          "rows": 50,
+          "final_epoch": 50.0
+        }
+      }
+    },
+    "checkpoints": [
+      {
+        "path": "/home/ubuntu/rz/yolo_study/yolo26_voc_research/runs/b50_no_kd_e50_g4567_s42/weights/epoch10.pt",
+        "filename": "epoch10.pt",
+        "epoch": 11,
+        "internal_epoch": 10,
+        "stripped": false,
+        "train_results_rows": 11,
+        "train_results_final_epoch": 11.0,
+        "trajectory_args": {
+          "task": "detect",
+          "mode": "train",
+          "model": "/home/ubuntu/rz/yolo_study/yolo26_voc_research/configs/models/yolo26n_baseline.yaml",
+          "data": "/home/ubuntu/rz/yolo_study/yolo26_voc_research/configs/datasets/voc_server.yaml",
+          "epochs": 50,
+          "time": null,
+          "patience": 50,
+          "batch": 64,
+          "imgsz": 640,
+          "save": true,
+          "save_period": 10,
+          "cache": false,
+          "device": "4,5,6,7",
+          "workers": 4,
+          "project": "/home/ubuntu/rz/yolo_study/yolo26_voc_research/runs",
+          "name": "b50_no_kd_e50_g4567_s42",
+          "exist_ok": false,
+          "pretrained": false,
+          "cls_remap": true,
+          "optimizer": "auto",
+          "verbose": true,
+          "seed": 42,
+          "deterministic": true,
+          "single_cls": false,
+          "rect": false,
+          "cos_lr": false,
+          "close_mosaic": 10,
+          "resume": false,
+          "amp": "bf16",
+          "fraction": 1.0,
+          "profile": false,
+          "freeze": null,
+          "multi_scale": 0.0,
+          "compile": false,
+          "channels_last": null,
+          "overlap_mask": true,
+          "mask_ratio": 4,
+          "dropout": 0.0,
+          "val": true,
+          "split": "val",
+          "save_json": false,
+          "conf": null,
+          "iou": 0.7,
+          "max_det": 300,
+          "quantize": null,
+          "dnn": false,
+          "plots": false,
+          "nms": false,
+          "source": null,
+          "vid_stride": 1,
+          "stream_buffer": false,
+          "visualize": false,
+          "augment": false,
+          "agnostic_nms": false,
+          "classes": null,
+          "retina_masks": false,
+          "embed": null,
+          "show": false,
+          "save_frames": false,
+          "save_txt": false,
+          "save_conf": false,
+          "save_crop": false,
+          "show_labels": true,
+          "show_conf": true,
+          "show_boxes": true,
+          "line_width": null,
+          "format": "torchscript",
+          "keras": false,
+          "optimize": false,
+          "dynamic": false,
+          "simplify": true,
+          "opset": null,
+          "workspace": null,
+          "lr0": 0.01,
+          "lrf": 0.01,
+          "momentum": 0.937,
+          "weight_decay": 0.0005,
+          "warmup_epochs": 3.0,
+          "warmup_momentum": 0.8,
+          "warmup_bias_lr": 0.0,
+          "distill_model": null,
+          "dis": 6.0,
+          "o2o_kd_gain": 0.0,
+          "o2o_kd_temp": 1.0,
+          "o2o_kd_min_quality": 0.25,
+          "o2o_kd_margin": 0.05,
+          "o2o_kd_warmup": 5.0,
+          "o2o_kd_ramp": 10.0,
+          "o2o_kd_fade": 10.0,
+          "o2o_kd_gate": true,
+          "o2o_kd_supervision_gate": "none",
+          "box": 7.5,
+          "cls": 0.5,
+          "cls_pw": 0.0,
+          "dfl": 1.5,
+          "pose": 12.0,
+          "kobj": 1.0,
+          "rle": 1.0,
+          "angle": 1.0,
+          "dlog": 1.0,
+          "dgrad": 0.5,
+          "dlam": 1.0,
+          "nbs": 64,
+          "hsv_h": 0.015,
+          "hsv_s": 0.7,
+          "hsv_v": 0.4,
+          "degrees": 0.0,
+          "translate": 0.1,
+          "scale": 0.5,
+          "shear": 0.0,
+          "perspective": 0.0,
+          "flipud": 0.0,
+          "fliplr": 0.5,
+          "bgr": 0.0,
+          "mosaic": 1.0,
+          "mixup": 0.0,
+          "cutmix": 0.0,
+          "copy_paste": 0.0,
+          "copy_paste_mode": "flip",
+          "auto_augment": "randaugment",
+          "erasing": 0.4,
+          "cfg": null,
+          "tracker": "tracktrack.yaml",
+          "save_dir": "/home/ubuntu/rz/yolo_study/yolo26_voc_research/runs/b50_no_kd_e50_g4567_s42",
+          "tqgb_cls_m2o_gain": 0.0,
+          "tqgb_cls_o2m_gain": 0.0,
+          "tqgb_direction": "none"
+        },
+        "trajectory_args_sha256": "a6bf4472b2eb23597babdea8190948dfeae56fa45fdcf764dd0196454b466d41",
+        "terminal_stripped_recovery": null,
+        "git": {
+          "root": "/home/ubuntu/rz/yolo_study/ultralytics_research",
+          "branch": "research/dual-head-diagnostics",
+          "commit": "9d45ee4613e79d7bceef7a39e42c15c278b0d4e8",
+          "message": null,
+          "origin": "/home/ubuntu/rz/yolo_study/ultralytics"
+        },
+        "checkpoint_version": "8.4.146",
+        "model_structure": {
+          "model_class": "ultralytics.nn.tasks.DetectionModel",
+          "yaml": {
+            "scale": "n",
+            "nc": 20,
+            "end2end": true,
+            "reg_max": 1,
+            "scales": {
+              "n": [
+                0.5,
+                0.25,
+                1024
+              ],
+              "s": [
+                0.5,
+                0.5,
+                1024
+              ],
+              "m": [
+                0.5,
+                1.0,
+                512
+              ],
+              "l": [
+                1.0,
+                1.0,
+                512
+              ],
+              "x": [
+                1.0,
+                1.5,
+                512
+              ]
+            },
+            "backbone": [
+              [
+                -1,
+                1,
+                "Conv",
+                [
+                  64,
+                  3,
+                  2
+                ]
+              ],
+              [
+                -1,
+                1,
+                "Conv",
+                [
+                  128,
+                  3,
+                  2
+                ]
+              ],
+              [
+                -1,
+                2,
+                "C3k2",
+                [
+                  256,
+                  false,
+                  0.25
+                ]
+              ],
+              [
+                -1,
+                1,
+                "Conv",
+                [
+                  256,
+                  3,
+                  2
+                ]
+              ],
+              [
+                -1,
+                2,
+                "C3k2",
+                [
+                  512,
+                  false,
+                  0.25
+                ]
+              ],
+              [
+                -1,
+                1,
+                "Conv",
+                [
+                  512,
+                  3,
+                  2
+                ]
+              ],
+              [
+                -1,
+                2,
+                "C3k2",
+                [
+                  512,
+                  true
+                ]
+              ],
+              [
+                -1,
+                1,
+                "Conv",
+                [
+                  1024,
+                  3,
+                  2
+                ]
+              ],
+              [
+                -1,
+                2,
+                "C3k2",
+                [
+                  1024,
+                  true
+                ]
+              ],
+              [
+                -1,
+                1,
+                "SPPF",
+                [
+                  1024,
+                  5,
+                  3,
+                  true
+                ]
+              ],
+              [
+                -1,
+                2,
+                "C2PSA",
+                [
+                  1024
+                ]
+              ]
+            ],
+            "head": [
+              [
+                -1,
+                1,
+                "nn.Upsample",
+                [
+                  "None",
+                  2,
+                  "nearest"
+                ]
+              ],
+              [
+                [
+                  -1,
+                  6
+                ],
+                1,
+                "Concat",
+                [
+                  1
+                ]
+              ],
+              [
+                -1,
+                2,
+                "C3k2",
+                [
+                  512,
+                  true
+                ]
+              ],
+              [
+                -1,
+                1,
+                "nn.Upsample",
+                [
+                  "None",
+                  2,
+                  "nearest"
+                ]
+              ],
+              [
+                [
+                  -1,
+                  4
+                ],
+                1,
+                "Concat",
+                [
+                  1
+                ]
+              ],
+              [
+                -1,
+                2,
+                "C3k2",
+                [
+                  256,
+                  true
+                ]
+              ],
+              [
+                -1,
+                1,
+                "Conv",
+                [
+                  256,
+                  3,
+                  2
+                ]
+              ],
+              [
+                [
+                  -1,
+                  13
+                ],
+                1,
+                "Concat",
+                [
+                  1
+                ]
+              ],
+              [
+                -1,
+                2,
+                "C3k2",
+                [
+                  512,
+                  true
+                ]
+              ],
+              [
+                -1,
+                1,
+                "Conv",
+                [
+                  512,
+                  3,
+                  2
+                ]
+              ],
+              [
+                [
+                  -1,
+                  10
+                ],
+                1,
+                "Concat",
+                [
+                  1
+                ]
+              ],
+              [
+                -1,
+                1,
+                "C3k2",
+                [
+                  1024,
+                  true,
+                  0.5,
+                  true
+                ]
+              ],
+              [
+                [
+                  16,
+                  19,
+                  22
+                ],
+                1,
+                "Detect",
+                [
+                  "nc"
+                ]
+              ]
+            ],
+            "yaml_file": "/home/ubuntu/rz/yolo_study/yolo26_voc_research/configs/models/yolo26n_baseline.yaml",
+            "channels": 3
+          },
+          "names": {
+            "0": "aeroplane",
+            "1": "bicycle",
+            "2": "bird",
+            "3": "boat",
+            "4": "bottle",
+            "5": "bus",
+            "6": "car",
+            "7": "cat",
+            "8": "chair",
+            "9": "cow",
+            "10": "diningtable",
+            "11": "dog",
+            "12": "horse",
+            "13": "motorbike",
+            "14": "person",
+            "15": "pottedplant",
+            "16": "sheep",
+            "17": "sofa",
+            "18": "train",
+            "19": "tvmonitor"
+          },
+          "head_class": "ultralytics.nn.modules.head.Detect",
+          "nc": 20,
+          "stride": [
+            8.0,
+            16.0,
+            32.0
+          ],
+          "parameter_count": 2511600,
+          "sha256": "1d29e66acb37999576edb617d4fb124a6a093a5547821ec7e62cd2b1b461bcb8"
+        },
+        "checkpoint_sha256": "ac6833319b8b39509ac4b02cedcdd90994220620fc2559b6d0549eddc94e21d6"
+      },
+      {
+        "path": "/home/ubuntu/rz/yolo_study/yolo26_voc_research/runs/b50_no_kd_e50_g4567_s42/weights/epoch20.pt",
+        "filename": "epoch20.pt",
+        "epoch": 21,
+        "internal_epoch": 20,
+        "stripped": false,
+        "train_results_rows": 21,
+        "train_results_final_epoch": 21.0,
+        "trajectory_args": {
+          "task": "detect",
+          "mode": "train",
+          "model": "/home/ubuntu/rz/yolo_study/yolo26_voc_research/configs/models/yolo26n_baseline.yaml",
+          "data": "/home/ubuntu/rz/yolo_study/yolo26_voc_research/configs/datasets/voc_server.yaml",
+          "epochs": 50,
+          "time": null,
+          "patience": 50,
+          "batch": 64,
+          "imgsz": 640,
+          "save": true,
+          "save_period": 10,
+          "cache": false,
+          "device": "4,5,6,7",
+          "workers": 4,
+          "project": "/home/ubuntu/rz/yolo_study/yolo26_voc_research/runs",
+          "name": "b50_no_kd_e50_g4567_s42",
+          "exist_ok": false,
+          "pretrained": false,
+          "cls_remap": true,
+          "optimizer": "auto",
+          "verbose": true,
+          "seed": 42,
+          "deterministic": true,
+          "single_cls": false,
+          "rect": false,
+          "cos_lr": false,
+          "close_mosaic": 10,
+          "resume": false,
+          "amp": "bf16",
+          "fraction": 1.0,
+          "profile": false,
+          "freeze": null,
+          "multi_scale": 0.0,
+          "compile": false,
+          "channels_last": null,
+          "overlap_mask": true,
+          "mask_ratio": 4,
+          "dropout": 0.0,
+          "val": true,
+          "split": "val",
+          "save_json": false,
+          "conf": null,
+          "iou": 0.7,
+          "max_det": 300,
+          "quantize": null,
+          "dnn": false,
+          "plots": false,
+          "nms": false,
+          "source": null,
+          "vid_stride": 1,
+          "stream_buffer": false,
+          "visualize": false,
+          "augment": false,
+          "agnostic_nms": false,
+          "classes": null,
+          "retina_masks": false,
+          "embed": null,
+          "show": false,
+          "save_frames": false,
+          "save_txt": false,
+          "save_conf": false,
+          "save_crop": false,
+          "show_labels": true,
+          "show_conf": true,
+          "show_boxes": true,
+          "line_width": null,
+          "format": "torchscript",
+          "keras": false,
+          "optimize": false,
+          "dynamic": false,
+          "simplify": true,
+          "opset": null,
+          "workspace": null,
+          "lr0": 0.01,
+          "lrf": 0.01,
+          "momentum": 0.937,
+          "weight_decay": 0.0005,
+          "warmup_epochs": 3.0,
+          "warmup_momentum": 0.8,
+          "warmup_bias_lr": 0.0,
+          "distill_model": null,
+          "dis": 6.0,
+          "o2o_kd_gain": 0.0,
+          "o2o_kd_temp": 1.0,
+          "o2o_kd_min_quality": 0.25,
+          "o2o_kd_margin": 0.05,
+          "o2o_kd_warmup": 5.0,
+          "o2o_kd_ramp": 10.0,
+          "o2o_kd_fade": 10.0,
+          "o2o_kd_gate": true,
+          "o2o_kd_supervision_gate": "none",
+          "box": 7.5,
+          "cls": 0.5,
+          "cls_pw": 0.0,
+          "dfl": 1.5,
+          "pose": 12.0,
+          "kobj": 1.0,
+          "rle": 1.0,
+          "angle": 1.0,
+          "dlog": 1.0,
+          "dgrad": 0.5,
+          "dlam": 1.0,
+          "nbs": 64,
+          "hsv_h": 0.015,
+          "hsv_s": 0.7,
+          "hsv_v": 0.4,
+          "degrees": 0.0,
+          "translate": 0.1,
+          "scale": 0.5,
+          "shear": 0.0,
+          "perspective": 0.0,
+          "flipud": 0.0,
+          "fliplr": 0.5,
+          "bgr": 0.0,
+          "mosaic": 1.0,
+          "mixup": 0.0,
+          "cutmix": 0.0,
+          "copy_paste": 0.0,
+          "copy_paste_mode": "flip",
+          "auto_augment": "randaugment",
+          "erasing": 0.4,
+          "cfg": null,
+          "tracker": "tracktrack.yaml",
+          "save_dir": "/home/ubuntu/rz/yolo_study/yolo26_voc_research/runs/b50_no_kd_e50_g4567_s42",
+          "tqgb_cls_m2o_gain": 0.0,
+          "tqgb_cls_o2m_gain": 0.0,
+          "tqgb_direction": "none"
+        },
+        "trajectory_args_sha256": "a6bf4472b2eb23597babdea8190948dfeae56fa45fdcf764dd0196454b466d41",
+        "terminal_stripped_recovery": null,
+        "git": {
+          "root": "/home/ubuntu/rz/yolo_study/ultralytics_research",
+          "branch": "research/dual-head-diagnostics",
+          "commit": "9d45ee4613e79d7bceef7a39e42c15c278b0d4e8",
+          "message": null,
+          "origin": "/home/ubuntu/rz/yolo_study/ultralytics"
+        },
+        "checkpoint_version": "8.4.146",
+        "model_structure": {
+          "model_class": "ultralytics.nn.tasks.DetectionModel",
+          "yaml": {
+            "scale": "n",
+            "nc": 20,
+            "end2end": true,
+            "reg_max": 1,
+            "scales": {
+              "n": [
+                0.5,
+                0.25,
+                1024
+              ],
+              "s": [
+                0.5,
+                0.5,
+                1024
+              ],
+              "m": [
+                0.5,
+                1.0,
+                512
+              ],
+              "l": [
+                1.0,
+                1.0,
+                512
+              ],
+              "x": [
+                1.0,
+                1.5,
+                512
+              ]
+            },
+            "backbone": [
+              [
+                -1,
+                1,
+                "Conv",
+                [
+                  64,
+                  3,
+                  2
+                ]
+              ],
+              [
+                -1,
+                1,
+                "Conv",
+                [
+                  128,
+                  3,
+                  2
+                ]
+              ],
+              [
+                -1,
+                2,
+                "C3k2",
+                [
+                  256,
+                  false,
+                  0.25
+                ]
+              ],
+              [
+                -1,
+                1,
+                "Conv",
+                [
+                  256,
+                  3,
+                  2
+                ]
+              ],
+              [
+                -1,
+                2,
+                "C3k2",
+                [
+                  512,
+                  false,
+                  0.25
+                ]
+              ],
+              [
+                -1,
+                1,
+                "Conv",
+                [
+                  512,
+                  3,
+                  2
+                ]
+              ],
+              [
+                -1,
+                2,
+                "C3k2",
+                [
+                  512,
+                  true
+                ]
+              ],
+              [
+                -1,
+                1,
+                "Conv",
+                [
+                  1024,
+                  3,
+                  2
+                ]
+              ],
+              [
+                -1,
+                2,
+                "C3k2",
+                [
+                  1024,
+                  true
+                ]
+              ],
+              [
+                -1,
+                1,
+                "SPPF",
+                [
+                  1024,
+                  5,
+                  3,
+                  true
+                ]
+              ],
+              [
+                -1,
+                2,
+                "C2PSA",
+                [
+                  1024
+                ]
+              ]
+            ],
+            "head": [
+              [
+                -1,
+                1,
+                "nn.Upsample",
+                [
+                  "None",
+                  2,
+                  "nearest"
+                ]
+              ],
+              [
+                [
+                  -1,
+                  6
+                ],
+                1,
+                "Concat",
+                [
+                  1
+                ]
+              ],
+              [
+                -1,
+                2,
+                "C3k2",
+                [
+                  512,
+                  true
+                ]
+              ],
+              [
+                -1,
+                1,
+                "nn.Upsample",
+                [
+                  "None",
+                  2,
+                  "nearest"
+                ]
+              ],
+              [
+                [
+                  -1,
+                  4
+                ],
+                1,
+                "Concat",
+                [
+                  1
+                ]
+              ],
+              [
+                -1,
+                2,
+                "C3k2",
+                [
+                  256,
+                  true
+                ]
+              ],
+              [
+                -1,
+                1,
+                "Conv",
+                [
+                  256,
+                  3,
+                  2
+                ]
+              ],
+              [
+                [
+                  -1,
+                  13
+                ],
+                1,
+                "Concat",
+                [
+                  1
+                ]
+              ],
+              [
+                -1,
+                2,
+                "C3k2",
+                [
+                  512,
+                  true
+                ]
+              ],
+              [
+                -1,
+                1,
+                "Conv",
+                [
+                  512,
+                  3,
+                  2
+                ]
+              ],
+              [
+                [
+                  -1,
+                  10
+                ],
+                1,
+                "Concat",
+                [
+                  1
+                ]
+              ],
+              [
+                -1,
+                1,
+                "C3k2",
+                [
+                  1024,
+                  true,
+                  0.5,
+                  true
+                ]
+              ],
+              [
+                [
+                  16,
+                  19,
+                  22
+                ],
+                1,
+                "Detect",
+                [
+                  "nc"
+                ]
+              ]
+            ],
+            "yaml_file": "/home/ubuntu/rz/yolo_study/yolo26_voc_research/configs/models/yolo26n_baseline.yaml",
+            "channels": 3
+          },
+          "names": {
+            "0": "aeroplane",
+            "1": "bicycle",
+            "2": "bird",
+            "3": "boat",
+            "4": "bottle",
+            "5": "bus",
+            "6": "car",
+            "7": "cat",
+            "8": "chair",
+            "9": "cow",
+            "10": "diningtable",
+            "11": "dog",
+            "12": "horse",
+            "13": "motorbike",
+            "14": "person",
+            "15": "pottedplant",
+            "16": "sheep",
+            "17": "sofa",
+            "18": "train",
+            "19": "tvmonitor"
+          },
+          "head_class": "ultralytics.nn.modules.head.Detect",
+          "nc": 20,
+          "stride": [
+            8.0,
+            16.0,
+            32.0
+          ],
+          "parameter_count": 2511600,
+          "sha256": "1d29e66acb37999576edb617d4fb124a6a093a5547821ec7e62cd2b1b461bcb8"
+        },
+        "checkpoint_sha256": "ea4b17ae9f09c8774cf17970fc0071e95c1cc8abf48b7bdeac4315c79da4e9de"
+      },
+      {
+        "path": "/home/ubuntu/rz/yolo_study/yolo26_voc_research/runs/b50_no_kd_e50_g4567_s42/weights/epoch30.pt",
+        "filename": "epoch30.pt",
+        "epoch": 31,
+        "internal_epoch": 30,
+        "stripped": false,
+        "train_results_rows": 31,
+        "train_results_final_epoch": 31.0,
+        "trajectory_args": {
+          "task": "detect",
+          "mode": "train",
+          "model": "/home/ubuntu/rz/yolo_study/yolo26_voc_research/configs/models/yolo26n_baseline.yaml",
+          "data": "/home/ubuntu/rz/yolo_study/yolo26_voc_research/configs/datasets/voc_server.yaml",
+          "epochs": 50,
+          "time": null,
+          "patience": 50,
+          "batch": 64,
+          "imgsz": 640,
+          "save": true,
+          "save_period": 10,
+          "cache": false,
+          "device": "4,5,6,7",
+          "workers": 4,
+          "project": "/home/ubuntu/rz/yolo_study/yolo26_voc_research/runs",
+          "name": "b50_no_kd_e50_g4567_s42",
+          "exist_ok": false,
+          "pretrained": false,
+          "cls_remap": true,
+          "optimizer": "auto",
+          "verbose": true,
+          "seed": 42,
+          "deterministic": true,
+          "single_cls": false,
+          "rect": false,
+          "cos_lr": false,
+          "close_mosaic": 10,
+          "resume": false,
+          "amp": "bf16",
+          "fraction": 1.0,
+          "profile": false,
+          "freeze": null,
+          "multi_scale": 0.0,
+          "compile": false,
+          "channels_last": null,
+          "overlap_mask": true,
+          "mask_ratio": 4,
+          "dropout": 0.0,
+          "val": true,
+          "split": "val",
+          "save_json": false,
+          "conf": null,
+          "iou": 0.7,
+          "max_det": 300,
+          "quantize": null,
+          "dnn": false,
+          "plots": false,
+          "nms": false,
+          "source": null,
+          "vid_stride": 1,
+          "stream_buffer": false,
+          "visualize": false,
+          "augment": false,
+          "agnostic_nms": false,
+          "classes": null,
+          "retina_masks": false,
+          "embed": null,
+          "show": false,
+          "save_frames": false,
+          "save_txt": false,
+          "save_conf": false,
+          "save_crop": false,
+          "show_labels": true,
+          "show_conf": true,
+          "show_boxes": true,
+          "line_width": null,
+          "format": "torchscript",
+          "keras": false,
+          "optimize": false,
+          "dynamic": false,
+          "simplify": true,
+          "opset": null,
+          "workspace": null,
+          "lr0": 0.01,
+          "lrf": 0.01,
+          "momentum": 0.937,
+          "weight_decay": 0.0005,
+          "warmup_epochs": 3.0,
+          "warmup_momentum": 0.8,
+          "warmup_bias_lr": 0.0,
+          "distill_model": null,
+          "dis": 6.0,
+          "o2o_kd_gain": 0.0,
+          "o2o_kd_temp": 1.0,
+          "o2o_kd_min_quality": 0.25,
+          "o2o_kd_margin": 0.05,
+          "o2o_kd_warmup": 5.0,
+          "o2o_kd_ramp": 10.0,
+          "o2o_kd_fade": 10.0,
+          "o2o_kd_gate": true,
+          "o2o_kd_supervision_gate": "none",
+          "box": 7.5,
+          "cls": 0.5,
+          "cls_pw": 0.0,
+          "dfl": 1.5,
+          "pose": 12.0,
+          "kobj": 1.0,
+          "rle": 1.0,
+          "angle": 1.0,
+          "dlog": 1.0,
+          "dgrad": 0.5,
+          "dlam": 1.0,
+          "nbs": 64,
+          "hsv_h": 0.015,
+          "hsv_s": 0.7,
+          "hsv_v": 0.4,
+          "degrees": 0.0,
+          "translate": 0.1,
+          "scale": 0.5,
+          "shear": 0.0,
+          "perspective": 0.0,
+          "flipud": 0.0,
+          "fliplr": 0.5,
+          "bgr": 0.0,
+          "mosaic": 1.0,
+          "mixup": 0.0,
+          "cutmix": 0.0,
+          "copy_paste": 0.0,
+          "copy_paste_mode": "flip",
+          "auto_augment": "randaugment",
+          "erasing": 0.4,
+          "cfg": null,
+          "tracker": "tracktrack.yaml",
+          "save_dir": "/home/ubuntu/rz/yolo_study/yolo26_voc_research/runs/b50_no_kd_e50_g4567_s42",
+          "tqgb_cls_m2o_gain": 0.0,
+          "tqgb_cls_o2m_gain": 0.0,
+          "tqgb_direction": "none"
+        },
+        "trajectory_args_sha256": "a6bf4472b2eb23597babdea8190948dfeae56fa45fdcf764dd0196454b466d41",
+        "terminal_stripped_recovery": null,
+        "git": {
+          "root": "/home/ubuntu/rz/yolo_study/ultralytics_research",
+          "branch": "research/dual-head-diagnostics",
+          "commit": "9d45ee4613e79d7bceef7a39e42c15c278b0d4e8",
+          "message": null,
+          "origin": "/home/ubuntu/rz/yolo_study/ultralytics"
+        },
+        "checkpoint_version": "8.4.146",
+        "model_structure": {
+          "model_class": "ultralytics.nn.tasks.DetectionModel",
+          "yaml": {
+            "scale": "n",
+            "nc": 20,
+            "end2end": true,
+            "reg_max": 1,
+            "scales": {
+              "n": [
+                0.5,
+                0.25,
+                1024
+              ],
+              "s": [
+                0.5,
+                0.5,
+                1024
+              ],
+              "m": [
+                0.5,
+                1.0,
+                512
+              ],
+              "l": [
+                1.0,
+                1.0,
+                512
+              ],
+              "x": [
+                1.0,
+                1.5,
+                512
+              ]
+            },
+            "backbone": [
+              [
+                -1,
+                1,
+                "Conv",
+                [
+                  64,
+                  3,
+                  2
+                ]
+              ],
+              [
+                -1,
+                1,
+                "Conv",
+                [
+                  128,
+                  3,
+                  2
+                ]
+              ],
+              [
+                -1,
+                2,
+                "C3k2",
+                [
+                  256,
+                  false,
+                  0.25
+                ]
+              ],
+              [
+                -1,
+                1,
+                "Conv",
+                [
+                  256,
+                  3,
+                  2
+                ]
+              ],
+              [
+                -1,
+                2,
+                "C3k2",
+                [
+                  512,
+                  false,
+                  0.25
+                ]
+              ],
+              [
+                -1,
+                1,
+                "Conv",
+                [
+                  512,
+                  3,
+                  2
+                ]
+              ],
+              [
+                -1,
+                2,
+                "C3k2",
+                [
+                  512,
+                  true
+                ]
+              ],
+              [
+                -1,
+                1,
+                "Conv",
+                [
+                  1024,
+                  3,
+                  2
+                ]
+              ],
+              [
+                -1,
+                2,
+                "C3k2",
+                [
+                  1024,
+                  true
+                ]
+              ],
+              [
+                -1,
+                1,
+                "SPPF",
+                [
+                  1024,
+                  5,
+                  3,
+                  true
+                ]
+              ],
+              [
+                -1,
+                2,
+                "C2PSA",
+                [
+                  1024
+                ]
+              ]
+            ],
+            "head": [
+              [
+                -1,
+                1,
+                "nn.Upsample",
+                [
+                  "None",
+                  2,
+                  "nearest"
+                ]
+              ],
+              [
+                [
+                  -1,
+                  6
+                ],
+                1,
+                "Concat",
+                [
+                  1
+                ]
+              ],
+              [
+                -1,
+                2,
+                "C3k2",
+                [
+                  512,
+                  true
+                ]
+              ],
+              [
+                -1,
+                1,
+                "nn.Upsample",
+                [
+                  "None",
+                  2,
+                  "nearest"
+                ]
+              ],
+              [
+                [
+                  -1,
+                  4
+                ],
+                1,
+                "Concat",
+                [
+                  1
+                ]
+              ],
+              [
+                -1,
+                2,
+                "C3k2",
+                [
+                  256,
+                  true
+                ]
+              ],
+              [
+                -1,
+                1,
+                "Conv",
+                [
+                  256,
+                  3,
+                  2
+                ]
+              ],
+              [
+                [
+                  -1,
+                  13
+                ],
+                1,
+                "Concat",
+                [
+                  1
+                ]
+              ],
+              [
+                -1,
+                2,
+                "C3k2",
+                [
+                  512,
+                  true
+                ]
+              ],
+              [
+                -1,
+                1,
+                "Conv",
+                [
+                  512,
+                  3,
+                  2
+                ]
+              ],
+              [
+                [
+                  -1,
+                  10
+                ],
+                1,
+                "Concat",
+                [
+                  1
+                ]
+              ],
+              [
+                -1,
+                1,
+                "C3k2",
+                [
+                  1024,
+                  true,
+                  0.5,
+                  true
+                ]
+              ],
+              [
+                [
+                  16,
+                  19,
+                  22
+                ],
+                1,
+                "Detect",
+                [
+                  "nc"
+                ]
+              ]
+            ],
+            "yaml_file": "/home/ubuntu/rz/yolo_study/yolo26_voc_research/configs/models/yolo26n_baseline.yaml",
+            "channels": 3
+          },
+          "names": {
+            "0": "aeroplane",
+            "1": "bicycle",
+            "2": "bird",
+            "3": "boat",
+            "4": "bottle",
+            "5": "bus",
+            "6": "car",
+            "7": "cat",
+            "8": "chair",
+            "9": "cow",
+            "10": "diningtable",
+            "11": "dog",
+            "12": "horse",
+            "13": "motorbike",
+            "14": "person",
+            "15": "pottedplant",
+            "16": "sheep",
+            "17": "sofa",
+            "18": "train",
+            "19": "tvmonitor"
+          },
+          "head_class": "ultralytics.nn.modules.head.Detect",
+          "nc": 20,
+          "stride": [
+            8.0,
+            16.0,
+            32.0
+          ],
+          "parameter_count": 2511600,
+          "sha256": "1d29e66acb37999576edb617d4fb124a6a093a5547821ec7e62cd2b1b461bcb8"
+        },
+        "checkpoint_sha256": "cdbb6e3d72b587aba9754a3fd0450a64a50170ea1cdb13e318a046ddd16e6aa9"
+      },
+      {
+        "path": "/home/ubuntu/rz/yolo_study/yolo26_voc_research/runs/b50_no_kd_e50_g4567_s42/weights/epoch40.pt",
+        "filename": "epoch40.pt",
+        "epoch": 41,
+        "internal_epoch": 40,
+        "stripped": false,
+        "train_results_rows": 41,
+        "train_results_final_epoch": 41.0,
+        "trajectory_args": {
+          "task": "detect",
+          "mode": "train",
+          "model": "/home/ubuntu/rz/yolo_study/yolo26_voc_research/configs/models/yolo26n_baseline.yaml",
+          "data": "/home/ubuntu/rz/yolo_study/yolo26_voc_research/configs/datasets/voc_server.yaml",
+          "epochs": 50,
+          "time": null,
+          "patience": 50,
+          "batch": 64,
+          "imgsz": 640,
+          "save": true,
+          "save_period": 10,
+          "cache": false,
+          "device": "4,5,6,7",
+          "workers": 4,
+          "project": "/home/ubuntu/rz/yolo_study/yolo26_voc_research/runs",
+          "name": "b50_no_kd_e50_g4567_s42",
+          "exist_ok": false,
+          "pretrained": false,
+          "cls_remap": true,
+          "optimizer": "auto",
+          "verbose": true,
+          "seed": 42,
+          "deterministic": true,
+          "single_cls": false,
+          "rect": false,
+          "cos_lr": false,
+          "close_mosaic": 10,
+          "resume": false,
+          "amp": "bf16",
+          "fraction": 1.0,
+          "profile": false,
+          "freeze": null,
+          "multi_scale": 0.0,
+          "compile": false,
+          "channels_last": null,
+          "overlap_mask": true,
+          "mask_ratio": 4,
+          "dropout": 0.0,
+          "val": true,
+          "split": "val",
+          "save_json": false,
+          "conf": null,
+          "iou": 0.7,
+          "max_det": 300,
+          "quantize": null,
+          "dnn": false,
+          "plots": false,
+          "nms": false,
+          "source": null,
+          "vid_stride": 1,
+          "stream_buffer": false,
+          "visualize": false,
+          "augment": false,
+          "agnostic_nms": false,
+          "classes": null,
+          "retina_masks": false,
+          "embed": null,
+          "show": false,
+          "save_frames": false,
+          "save_txt": false,
+          "save_conf": false,
+          "save_crop": false,
+          "show_labels": true,
+          "show_conf": true,
+          "show_boxes": true,
+          "line_width": null,
+          "format": "torchscript",
+          "keras": false,
+          "optimize": false,
+          "dynamic": false,
+          "simplify": true,
+          "opset": null,
+          "workspace": null,
+          "lr0": 0.01,
+          "lrf": 0.01,
+          "momentum": 0.937,
+          "weight_decay": 0.0005,
+          "warmup_epochs": 3.0,
+          "warmup_momentum": 0.8,
+          "warmup_bias_lr": 0.0,
+          "distill_model": null,
+          "dis": 6.0,
+          "o2o_kd_gain": 0.0,
+          "o2o_kd_temp": 1.0,
+          "o2o_kd_min_quality": 0.25,
+          "o2o_kd_margin": 0.05,
+          "o2o_kd_warmup": 5.0,
+          "o2o_kd_ramp": 10.0,
+          "o2o_kd_fade": 10.0,
+          "o2o_kd_gate": true,
+          "o2o_kd_supervision_gate": "none",
+          "box": 7.5,
+          "cls": 0.5,
+          "cls_pw": 0.0,
+          "dfl": 1.5,
+          "pose": 12.0,
+          "kobj": 1.0,
+          "rle": 1.0,
+          "angle": 1.0,
+          "dlog": 1.0,
+          "dgrad": 0.5,
+          "dlam": 1.0,
+          "nbs": 64,
+          "hsv_h": 0.015,
+          "hsv_s": 0.7,
+          "hsv_v": 0.4,
+          "degrees": 0.0,
+          "translate": 0.1,
+          "scale": 0.5,
+          "shear": 0.0,
+          "perspective": 0.0,
+          "flipud": 0.0,
+          "fliplr": 0.5,
+          "bgr": 0.0,
+          "mosaic": 1.0,
+          "mixup": 0.0,
+          "cutmix": 0.0,
+          "copy_paste": 0.0,
+          "copy_paste_mode": "flip",
+          "auto_augment": "randaugment",
+          "erasing": 0.4,
+          "cfg": null,
+          "tracker": "tracktrack.yaml",
+          "save_dir": "/home/ubuntu/rz/yolo_study/yolo26_voc_research/runs/b50_no_kd_e50_g4567_s42",
+          "tqgb_cls_m2o_gain": 0.0,
+          "tqgb_cls_o2m_gain": 0.0,
+          "tqgb_direction": "none"
+        },
+        "trajectory_args_sha256": "a6bf4472b2eb23597babdea8190948dfeae56fa45fdcf764dd0196454b466d41",
+        "terminal_stripped_recovery": null,
+        "git": {
+          "root": "/home/ubuntu/rz/yolo_study/ultralytics_research",
+          "branch": "research/dual-head-diagnostics",
+          "commit": "9d45ee4613e79d7bceef7a39e42c15c278b0d4e8",
+          "message": null,
+          "origin": "/home/ubuntu/rz/yolo_study/ultralytics"
+        },
+        "checkpoint_version": "8.4.146",
+        "model_structure": {
+          "model_class": "ultralytics.nn.tasks.DetectionModel",
+          "yaml": {
+            "scale": "n",
+            "nc": 20,
+            "end2end": true,
+            "reg_max": 1,
+            "scales": {
+              "n": [
+                0.5,
+                0.25,
+                1024
+              ],
+              "s": [
+                0.5,
+                0.5,
+                1024
+              ],
+              "m": [
+                0.5,
+                1.0,
+                512
+              ],
+              "l": [
+                1.0,
+                1.0,
+                512
+              ],
+              "x": [
+                1.0,
+                1.5,
+                512
+              ]
+            },
+            "backbone": [
+              [
+                -1,
+                1,
+                "Conv",
+                [
+                  64,
+                  3,
+                  2
+                ]
+              ],
+              [
+                -1,
+                1,
+                "Conv",
+                [
+                  128,
+                  3,
+                  2
+                ]
+              ],
+              [
+                -1,
+                2,
+                "C3k2",
+                [
+                  256,
+                  false,
+                  0.25
+                ]
+              ],
+              [
+                -1,
+                1,
+                "Conv",
+                [
+                  256,
+                  3,
+                  2
+                ]
+              ],
+              [
+                -1,
+                2,
+                "C3k2",
+                [
+                  512,
+                  false,
+                  0.25
+                ]
+              ],
+              [
+                -1,
+                1,
+                "Conv",
+                [
+                  512,
+                  3,
+                  2
+                ]
+              ],
+              [
+                -1,
+                2,
+                "C3k2",
+                [
+                  512,
+                  true
+                ]
+              ],
+              [
+                -1,
+                1,
+                "Conv",
+                [
+                  1024,
+                  3,
+                  2
+                ]
+              ],
+              [
+                -1,
+                2,
+                "C3k2",
+                [
+                  1024,
+                  true
+                ]
+              ],
+              [
+                -1,
+                1,
+                "SPPF",
+                [
+                  1024,
+                  5,
+                  3,
+                  true
+                ]
+              ],
+              [
+                -1,
+                2,
+                "C2PSA",
+                [
+                  1024
+                ]
+              ]
+            ],
+            "head": [
+              [
+                -1,
+                1,
+                "nn.Upsample",
+                [
+                  "None",
+                  2,
+                  "nearest"
+                ]
+              ],
+              [
+                [
+                  -1,
+                  6
+                ],
+                1,
+                "Concat",
+                [
+                  1
+                ]
+              ],
+              [
+                -1,
+                2,
+                "C3k2",
+                [
+                  512,
+                  true
+                ]
+              ],
+              [
+                -1,
+                1,
+                "nn.Upsample",
+                [
+                  "None",
+                  2,
+                  "nearest"
+                ]
+              ],
+              [
+                [
+                  -1,
+                  4
+                ],
+                1,
+                "Concat",
+                [
+                  1
+                ]
+              ],
+              [
+                -1,
+                2,
+                "C3k2",
+                [
+                  256,
+                  true
+                ]
+              ],
+              [
+                -1,
+                1,
+                "Conv",
+                [
+                  256,
+                  3,
+                  2
+                ]
+              ],
+              [
+                [
+                  -1,
+                  13
+                ],
+                1,
+                "Concat",
+                [
+                  1
+                ]
+              ],
+              [
+                -1,
+                2,
+                "C3k2",
+                [
+                  512,
+                  true
+                ]
+              ],
+              [
+                -1,
+                1,
+                "Conv",
+                [
+                  512,
+                  3,
+                  2
+                ]
+              ],
+              [
+                [
+                  -1,
+                  10
+                ],
+                1,
+                "Concat",
+                [
+                  1
+                ]
+              ],
+              [
+                -1,
+                1,
+                "C3k2",
+                [
+                  1024,
+                  true,
+                  0.5,
+                  true
+                ]
+              ],
+              [
+                [
+                  16,
+                  19,
+                  22
+                ],
+                1,
+                "Detect",
+                [
+                  "nc"
+                ]
+              ]
+            ],
+            "yaml_file": "/home/ubuntu/rz/yolo_study/yolo26_voc_research/configs/models/yolo26n_baseline.yaml",
+            "channels": 3
+          },
+          "names": {
+            "0": "aeroplane",
+            "1": "bicycle",
+            "2": "bird",
+            "3": "boat",
+            "4": "bottle",
+            "5": "bus",
+            "6": "car",
+            "7": "cat",
+            "8": "chair",
+            "9": "cow",
+            "10": "diningtable",
+            "11": "dog",
+            "12": "horse",
+            "13": "motorbike",
+            "14": "person",
+            "15": "pottedplant",
+            "16": "sheep",
+            "17": "sofa",
+            "18": "train",
+            "19": "tvmonitor"
+          },
+          "head_class": "ultralytics.nn.modules.head.Detect",
+          "nc": 20,
+          "stride": [
+            8.0,
+            16.0,
+            32.0
+          ],
+          "parameter_count": 2511600,
+          "sha256": "1d29e66acb37999576edb617d4fb124a6a093a5547821ec7e62cd2b1b461bcb8"
+        },
+        "checkpoint_sha256": "a2f334e6c260790f5ba03702e26746f856dcde20cb31a36229be25f9d62b0765"
+      },
+      {
+        "path": "/home/ubuntu/rz/yolo_study/yolo26_voc_research/runs/b50_no_kd_e50_g4567_s42/weights/last.pt",
+        "filename": "last.pt",
+        "epoch": 50,
+        "internal_epoch": -1,
+        "stripped": true,
+        "train_results_rows": 50,
+        "train_results_final_epoch": 50.0,
+        "trajectory_args": {
+          "task": "detect",
+          "mode": "train",
+          "model": "/home/ubuntu/rz/yolo_study/yolo26_voc_research/configs/models/yolo26n_baseline.yaml",
+          "data": "/home/ubuntu/rz/yolo_study/yolo26_voc_research/configs/datasets/voc_server.yaml",
+          "epochs": 50,
+          "time": null,
+          "patience": 50,
+          "batch": 64,
+          "imgsz": 640,
+          "save": true,
+          "save_period": 10,
+          "cache": false,
+          "device": "4,5,6,7",
+          "workers": 4,
+          "project": "/home/ubuntu/rz/yolo_study/yolo26_voc_research/runs",
+          "name": "b50_no_kd_e50_g4567_s42",
+          "exist_ok": false,
+          "pretrained": false,
+          "cls_remap": true,
+          "optimizer": "auto",
+          "verbose": true,
+          "seed": 42,
+          "deterministic": true,
+          "single_cls": false,
+          "rect": false,
+          "cos_lr": false,
+          "close_mosaic": 10,
+          "resume": false,
+          "amp": "bf16",
+          "fraction": 1.0,
+          "profile": false,
+          "freeze": null,
+          "multi_scale": 0.0,
+          "compile": false,
+          "channels_last": null,
+          "overlap_mask": true,
+          "mask_ratio": 4,
+          "dropout": 0.0,
+          "val": true,
+          "split": "val",
+          "save_json": false,
+          "conf": null,
+          "iou": 0.7,
+          "max_det": 300,
+          "quantize": null,
+          "dnn": false,
+          "plots": false,
+          "nms": false,
+          "source": null,
+          "vid_stride": 1,
+          "stream_buffer": false,
+          "visualize": false,
+          "augment": false,
+          "agnostic_nms": false,
+          "classes": null,
+          "retina_masks": false,
+          "embed": null,
+          "show": false,
+          "save_frames": false,
+          "save_txt": false,
+          "save_conf": false,
+          "save_crop": false,
+          "show_labels": true,
+          "show_conf": true,
+          "show_boxes": true,
+          "line_width": null,
+          "format": "torchscript",
+          "keras": false,
+          "optimize": false,
+          "dynamic": false,
+          "simplify": true,
+          "opset": null,
+          "workspace": null,
+          "lr0": 0.01,
+          "lrf": 0.01,
+          "momentum": 0.937,
+          "weight_decay": 0.0005,
+          "warmup_epochs": 3.0,
+          "warmup_momentum": 0.8,
+          "warmup_bias_lr": 0.0,
+          "distill_model": null,
+          "dis": 6.0,
+          "o2o_kd_gain": 0.0,
+          "o2o_kd_temp": 1.0,
+          "o2o_kd_min_quality": 0.25,
+          "o2o_kd_margin": 0.05,
+          "o2o_kd_warmup": 5.0,
+          "o2o_kd_ramp": 10.0,
+          "o2o_kd_fade": 10.0,
+          "o2o_kd_gate": true,
+          "o2o_kd_supervision_gate": "none",
+          "box": 7.5,
+          "cls": 0.5,
+          "cls_pw": 0.0,
+          "dfl": 1.5,
+          "pose": 12.0,
+          "kobj": 1.0,
+          "rle": 1.0,
+          "angle": 1.0,
+          "dlog": 1.0,
+          "dgrad": 0.5,
+          "dlam": 1.0,
+          "nbs": 64,
+          "hsv_h": 0.015,
+          "hsv_s": 0.7,
+          "hsv_v": 0.4,
+          "degrees": 0.0,
+          "translate": 0.1,
+          "scale": 0.5,
+          "shear": 0.0,
+          "perspective": 0.0,
+          "flipud": 0.0,
+          "fliplr": 0.5,
+          "bgr": 0.0,
+          "mosaic": 1.0,
+          "mixup": 0.0,
+          "cutmix": 0.0,
+          "copy_paste": 0.0,
+          "copy_paste_mode": "flip",
+          "auto_augment": "randaugment",
+          "erasing": 0.4,
+          "cfg": null,
+          "tracker": "tracktrack.yaml",
+          "save_dir": "/home/ubuntu/rz/yolo_study/yolo26_voc_research/runs/b50_no_kd_e50_g4567_s42",
+          "tqgb_cls_m2o_gain": 0.0,
+          "tqgb_cls_o2m_gain": 0.0,
+          "tqgb_direction": "none"
+        },
+        "trajectory_args_sha256": "a6bf4472b2eb23597babdea8190948dfeae56fa45fdcf764dd0196454b466d41",
+        "terminal_stripped_recovery": {
+          "provenance_revision": 5,
+          "reason": "Ultralytics terminal strip_optimizer(last.pt)",
+          "recovered_fields": [
+            "save_dir"
+          ],
+          "save_dir_source": "checkpoint_path.parent.parent",
+          "derived_save_dir": "/home/ubuntu/rz/yolo_study/yolo26_voc_research/runs/b50_no_kd_e50_g4567_s42"
+        },
+        "git": {
+          "root": "/home/ubuntu/rz/yolo_study/ultralytics_research",
+          "branch": "research/dual-head-diagnostics",
+          "commit": "9d45ee4613e79d7bceef7a39e42c15c278b0d4e8",
+          "message": null,
+          "origin": "/home/ubuntu/rz/yolo_study/ultralytics"
+        },
+        "checkpoint_version": "8.4.146",
+        "model_structure": {
+          "model_class": "ultralytics.nn.tasks.DetectionModel",
+          "yaml": {
+            "scale": "n",
+            "nc": 20,
+            "end2end": true,
+            "reg_max": 1,
+            "scales": {
+              "n": [
+                0.5,
+                0.25,
+                1024
+              ],
+              "s": [
+                0.5,
+                0.5,
+                1024
+              ],
+              "m": [
+                0.5,
+                1.0,
+                512
+              ],
+              "l": [
+                1.0,
+                1.0,
+                512
+              ],
+              "x": [
+                1.0,
+                1.5,
+                512
+              ]
+            },
+            "backbone": [
+              [
+                -1,
+                1,
+                "Conv",
+                [
+                  64,
+                  3,
+                  2
+                ]
+              ],
+              [
+                -1,
+                1,
+                "Conv",
+                [
+                  128,
+                  3,
+                  2
+                ]
+              ],
+              [
+                -1,
+                2,
+                "C3k2",
+                [
+                  256,
+                  false,
+                  0.25
+                ]
+              ],
+              [
+                -1,
+                1,
+                "Conv",
+                [
+                  256,
+                  3,
+                  2
+                ]
+              ],
+              [
+                -1,
+                2,
+                "C3k2",
+                [
+                  512,
+                  false,
+                  0.25
+                ]
+              ],
+              [
+                -1,
+                1,
+                "Conv",
+                [
+                  512,
+                  3,
+                  2
+                ]
+              ],
+              [
+                -1,
+                2,
+                "C3k2",
+                [
+                  512,
+                  true
+                ]
+              ],
+              [
+                -1,
+                1,
+                "Conv",
+                [
+                  1024,
+                  3,
+                  2
+                ]
+              ],
+              [
+                -1,
+                2,
+                "C3k2",
+                [
+                  1024,
+                  true
+                ]
+              ],
+              [
+                -1,
+                1,
+                "SPPF",
+                [
+                  1024,
+                  5,
+                  3,
+                  true
+                ]
+              ],
+              [
+                -1,
+                2,
+                "C2PSA",
+                [
+                  1024
+                ]
+              ]
+            ],
+            "head": [
+              [
+                -1,
+                1,
+                "nn.Upsample",
+                [
+                  "None",
+                  2,
+                  "nearest"
+                ]
+              ],
+              [
+                [
+                  -1,
+                  6
+                ],
+                1,
+                "Concat",
+                [
+                  1
+                ]
+              ],
+              [
+                -1,
+                2,
+                "C3k2",
+                [
+                  512,
+                  true
+                ]
+              ],
+              [
+                -1,
+                1,
+                "nn.Upsample",
+                [
+                  "None",
+                  2,
+                  "nearest"
+                ]
+              ],
+              [
+                [
+                  -1,
+                  4
+                ],
+                1,
+                "Concat",
+                [
+                  1
+                ]
+              ],
+              [
+                -1,
+                2,
+                "C3k2",
+                [
+                  256,
+                  true
+                ]
+              ],
+              [
+                -1,
+                1,
+                "Conv",
+                [
+                  256,
+                  3,
+                  2
+                ]
+              ],
+              [
+                [
+                  -1,
+                  13
+                ],
+                1,
+                "Concat",
+                [
+                  1
+                ]
+              ],
+              [
+                -1,
+                2,
+                "C3k2",
+                [
+                  512,
+                  true
+                ]
+              ],
+              [
+                -1,
+                1,
+                "Conv",
+                [
+                  512,
+                  3,
+                  2
+                ]
+              ],
+              [
+                [
+                  -1,
+                  10
+                ],
+                1,
+                "Concat",
+                [
+                  1
+                ]
+              ],
+              [
+                -1,
+                1,
+                "C3k2",
+                [
+                  1024,
+                  true,
+                  0.5,
+                  true
+                ]
+              ],
+              [
+                [
+                  16,
+                  19,
+                  22
+                ],
+                1,
+                "Detect",
+                [
+                  "nc"
+                ]
+              ]
+            ],
+            "yaml_file": "/home/ubuntu/rz/yolo_study/yolo26_voc_research/configs/models/yolo26n_baseline.yaml",
+            "channels": 3
+          },
+          "names": {
+            "0": "aeroplane",
+            "1": "bicycle",
+            "2": "bird",
+            "3": "boat",
+            "4": "bottle",
+            "5": "bus",
+            "6": "car",
+            "7": "cat",
+            "8": "chair",
+            "9": "cow",
+            "10": "diningtable",
+            "11": "dog",
+            "12": "horse",
+            "13": "motorbike",
+            "14": "person",
+            "15": "pottedplant",
+            "16": "sheep",
+            "17": "sofa",
+            "18": "train",
+            "19": "tvmonitor"
+          },
+          "head_class": "ultralytics.nn.modules.head.Detect",
+          "nc": 20,
+          "stride": [
+            8.0,
+            16.0,
+            32.0
+          ],
+          "parameter_count": 2511600,
+          "sha256": "1d29e66acb37999576edb617d4fb124a6a093a5547821ec7e62cd2b1b461bcb8"
+        },
+        "checkpoint_sha256": "49076ee6878d1478423bf714cdbe257fcd08e7dc67b5a9afa701b5e8e25e96fb"
+      }
+    ]
+  },
+  "checkpoints": [
+    {
+      "checkpoint": "/home/ubuntu/rz/yolo_study/yolo26_voc_research/runs/b50_no_kd_e50_g4567_s42/weights/epoch10.pt",
+      "checkpoint_sha256": "ac6833319b8b39509ac4b02cedcdd90994220620fc2559b6d0549eddc94e21d6",
+      "epoch": 11,
+      "images": 256,
+      "batches": 4,
+      "unique_image_paths": 256,
+      "panel_sha256": "5bc7260afc2919b071948b2e496f017cdc72d9f5d424bb62cd7f02705dea8266",
+      "panel_content_count": 256,
+      "panel_content_sha256": "8636cc2983ff65e77de6351629817fb43d75ebb36a440df44e4026c13747a0fa",
+      "geometry_sha256": "baeae282f7f3810370b5633eb8f0fc46f1461afd5d35bacb553213d2c95ddaec",
+      "geometry": {
+        "clean_gt_total": 657,
+        "per_strength": {
+          "q0.25": {
+            "count": 647,
+            "rate": 0.984779299847793
+          },
+          "q0.50": {
+            "count": 634,
+            "rate": 0.9649923896499238
+          },
+          "q0.75": {
+            "count": 624,
+            "rate": 0.9497716894977168
+          }
+        },
+        "intersection_count": 624,
+        "intersection_rate": 0.9497716894977168,
+        "retained_distributions": {
+          "area_fraction": {
+            "count": 624,
+            "mean": 0.15465076722121474,
+            "p10": 0.007620578755232666,
+            "p25": 0.02212500550597979,
+            "p50": 0.08039007448333835,
+            "p75": 0.23142132412007577,
+            "p90": 0.4298992282159316
+          },
+          "sqrt_area_fraction": {
+            "count": 624,
+            "mean": 0.3296244762975099,
+            "p10": 0.08729590469895347,
+            "p25": 0.14874474067264168,
+            "p50": 0.2835298937971955,
+            "p75": 0.48105917708419915,
+            "p90": 0.6556638660684104
+          },
+          "box_boundary_margin": {
+            "count": 624,
+            "mean": 0.13508220284114567,
+            "p10": 0.001999974250793457,
+            "p25": 0.0350625216960907,
+            "p50": 0.12700005248188972,
+            "p75": 0.2030312530696392,
+            "p90": 0.3000000102445483
+          },
+          "center_edge_distance": {
+            "count": 624,
+            "mean": 0.31645734179227686,
+            "p10": 0.15729999095201494,
+            "p25": 0.23652854561805725,
+            "p50": 0.32750001549720764,
+            "p75": 0.4140000343322754,
+            "p90": 0.4576818943023682
+          }
+        },
+        "dropped_distributions": {
+          "area_fraction": {
+            "count": 33,
+            "mean": 0.051877658972754245,
+            "p10": 0.006134206418840627,
+            "p25": 0.011540542702853429,
+            "p50": 0.01971998536467212,
+            "p75": 0.05002400057411194,
+            "p90": 0.1430155819039925
+          },
+          "sqrt_area_fraction": {
+            "count": 33,
+            "mean": 0.18983621802297934,
+            "p10": 0.07831815630222617,
+            "p25": 0.10742691796218222,
+            "p50": 0.1404278653425741,
+            "p75": 0.22366045822655362,
+            "p90": 0.37807408623541205
+          },
+          "box_boundary_margin": {
+            "count": 33,
+            "mean": 0.01957575903471672,
+            "p10": 0.0,
+            "p25": 0.001999899744987488,
+            "p50": 0.002000045031309128,
+            "p75": 0.035999998450279236,
+            "p90": 0.06120000556111336
+          },
+          "center_edge_distance": {
+            "count": 33,
+            "mean": 0.0946060557369933,
+            "p10": 0.03340000137686729,
+            "p25": 0.050999999046325684,
+            "p50": 0.08900000154972076,
+            "p75": 0.11499994993209839,
+            "p90": 0.14860000610351565
+          }
+        }
+      },
+      "object_rows": 3744,
+      "loader_actual": {
+        "dataset_length": 16551,
+        "dataset_rect": false,
+        "dataset_augment": false,
+        "loader_workers": 4,
+        "loader_pin_memory": true,
+        "sampler_classes": [
+          "torch.utils.data.sampler.SequentialSampler",
+          "torch.utils.data.sampler.BatchSampler"
+        ],
+        "batch_size": 64,
+        "shuffle": false,
+        "fraction": 1.0,
+        "multi_scale": 0.0,
+        "cache": false
+      },
+      "criterion_actual": {
+        "criterion_class": "ultralytics.utils.loss.E2ELoss",
+        "branches": {
+          "one2many": {
+            "loss_class": "ultralytics.utils.loss.v8DetectionLoss",
+            "assigner_class": "ultralytics.utils.tal.TaskAlignedAssigner",
+            "topk": 10,
+            "topk2": 10,
+            "stride": [
+              8.0,
+              16.0,
+              32.0
+            ],
+            "assignment_method": "get_assigned_targets_and_loss"
+          },
+          "one2one": {
+            "loss_class": "ultralytics.utils.loss.v8DetectionLoss",
+            "assigner_class": "ultralytics.utils.tal.TaskAlignedAssigner",
+            "topk": 7,
+            "topk2": 1,
+            "stride": [
+              8.0,
+              16.0,
+              32.0
+            ],
+            "assignment_method": "get_assigned_targets_and_loss"
+          }
+        },
+        "head_class": "ultralytics.nn.modules.head.Detect",
+        "head_runtime_end2end": false,
+        "dual_head_modules_present": true,
+        "one2one_head_present": true
+      },
+      "autocast_actual": {
+        "inference_mode": true,
+        "autocast_enabled": true,
+        "autocast_dtype": "torch.bfloat16",
+        "input_dtype": "torch.float32",
+        "o2m_boxes_dtype": "torch.bfloat16",
+        "o2m_scores_dtype": "torch.bfloat16",
+        "o2o_boxes_dtype": "torch.bfloat16",
+        "o2o_scores_dtype": "torch.bfloat16"
+      },
+      "integrity_before": {
+        "parameter_sha256": "11679234075f00c3662110ed83590b399759de80a9b4b4f1193f1835c574f4d0",
+        "parameter_tensors": 366,
+        "bn_buffer_sha256": "cbcc3a7a2942512efae3f5644412fd5b7d51c249035ad12e8abf9dc58a6921fe",
+        "bn_buffer_tensors": 342,
+        "bn_total": 114,
+        "bn_eval": 114,
+        "bn_all_eval": true,
+        "model_training": true,
+        "optimizer_created": false,
+        "grad_enabled_at_snapshot": true
+      },
+      "integrity_after": {
+        "parameter_sha256": "11679234075f00c3662110ed83590b399759de80a9b4b4f1193f1835c574f4d0",
+        "parameter_tensors": 366,
+        "bn_buffer_sha256": "cbcc3a7a2942512efae3f5644412fd5b7d51c249035ad12e8abf9dc58a6921fe",
+        "bn_buffer_tensors": 342,
+        "bn_total": 114,
+        "bn_eval": 114,
+        "bn_all_eval": true,
+        "model_training": true,
+        "optimizer_created": false,
+        "grad_enabled_at_snapshot": true
+      },
+      "runtime": {
+        "python": "3.11.16 (main, Sep  2 2026, 23:39:52) [GCC 15.3.0]",
+        "platform": "Linux-6.17.0-23-generic-x86_64-with-glibc2.39",
+        "torch": "2.6.0+cu118",
+        "ultralytics": "8.4.146",
+        "cuda_runtime": "11.8",
+        "cudnn": 90100,
+        "cuda_visible_devices": "4",
+        "logical_gpu_count": 1,
+        "gpu_name": "NVIDIA GeForce RTX 3090",
+        "autocast_device": "cuda",
+        "autocast_dtype": "torch.bfloat16",
+        "criterion_contract": {
+          "criterion_class": "ultralytics.utils.loss.E2ELoss",
+          "branches": {
+            "one2many": {
+              "loss_class": "ultralytics.utils.loss.v8DetectionLoss",
+              "assigner_class": "ultralytics.utils.tal.TaskAlignedAssigner",
+              "topk": 10,
+              "topk2": 10,
+              "stride": [
+                8.0,
+                16.0,
+                32.0
+              ],
+              "assignment_method": "get_assigned_targets_and_loss"
+            },
+            "one2one": {
+              "loss_class": "ultralytics.utils.loss.v8DetectionLoss",
+              "assigner_class": "ultralytics.utils.tal.TaskAlignedAssigner",
+              "topk": 7,
+              "topk2": 1,
+              "stride": [
+                8.0,
+                16.0,
+                32.0
+              ],
+              "assignment_method": "get_assigned_targets_and_loss"
+            }
+          },
+          "head_class": "ultralytics.nn.modules.head.Detect",
+          "head_runtime_end2end": false,
+          "dual_head_modules_present": true,
+          "one2one_head_present": true
+        },
+        "sources": {
+          "probe": {
+            "path": "/home/ubuntu/rz/yolo_study/yolo26_voc_research/scripts/probe_asac_assignment_stability.py",
+            "sha256": "be350ae3b7fcdf033916ac1aa797d5c3b9fb38103a94b6e911cac0fe0666ea05"
+          },
+          "loss": {
+            "path": "/home/ubuntu/rz/yolo_study/ultralytics_research/ultralytics/utils/loss.py",
+            "sha256": "6dae8e66c4b94a0c16b11a219e4831994c895cc036210648a6a23d9e282e5db9"
+          },
+          "tal": {
+            "path": "/home/ubuntu/rz/yolo_study/ultralytics_research/ultralytics/utils/tal.py",
+            "sha256": "9468fb73df7805a4d297302aa221e0d7a6e46e224d0a0768e5abf3f4d2cf2861"
+          },
+          "data_build": {
+            "path": "/home/ubuntu/rz/yolo_study/ultralytics_research/ultralytics/data/build.py",
+            "sha256": "1c3131adc60dc9763b9edcde853d3bc461ec908c2ed9d1965b2610bfd8c27847"
+          },
+          "detection_trainer": {
+            "path": "/home/ubuntu/rz/yolo_study/ultralytics_research/ultralytics/models/yolo/detect/train.py",
+            "sha256": "76d6b181259edc09b03f7cea1f9d59bd4eda2f7964146bbb2e76d4f7201dcf5f"
+          },
+          "detect_head": {
+            "path": "/home/ubuntu/rz/yolo_study/ultralytics_research/ultralytics/nn/modules/head.py",
+            "sha256": "1dc4a4a90401149edeb55cd679e7f33be2c36eae1317b6f67f13c7a8b18d60b8"
+          }
+        },
+        "source_bundle_sha256": "e978653fe83b8825188c1476d3eb2e7fb6c91186e0a2e423bf9978caed2e3231"
+      }
+    },
+    {
+      "checkpoint": "/home/ubuntu/rz/yolo_study/yolo26_voc_research/runs/b50_no_kd_e50_g4567_s42/weights/epoch20.pt",
+      "checkpoint_sha256": "ea4b17ae9f09c8774cf17970fc0071e95c1cc8abf48b7bdeac4315c79da4e9de",
+      "epoch": 21,
+      "images": 256,
+      "batches": 4,
+      "unique_image_paths": 256,
+      "panel_sha256": "5bc7260afc2919b071948b2e496f017cdc72d9f5d424bb62cd7f02705dea8266",
+      "panel_content_count": 256,
+      "panel_content_sha256": "8636cc2983ff65e77de6351629817fb43d75ebb36a440df44e4026c13747a0fa",
+      "geometry_sha256": "baeae282f7f3810370b5633eb8f0fc46f1461afd5d35bacb553213d2c95ddaec",
+      "geometry": {
+        "clean_gt_total": 657,
+        "per_strength": {
+          "q0.25": {
+            "count": 647,
+            "rate": 0.984779299847793
+          },
+          "q0.50": {
+            "count": 634,
+            "rate": 0.9649923896499238
+          },
+          "q0.75": {
+            "count": 624,
+            "rate": 0.9497716894977168
+          }
+        },
+        "intersection_count": 624,
+        "intersection_rate": 0.9497716894977168,
+        "retained_distributions": {
+          "area_fraction": {
+            "count": 624,
+            "mean": 0.15465076722121474,
+            "p10": 0.007620578755232666,
+            "p25": 0.02212500550597979,
+            "p50": 0.08039007448333835,
+            "p75": 0.23142132412007577,
+            "p90": 0.4298992282159316
+          },
+          "sqrt_area_fraction": {
+            "count": 624,
+            "mean": 0.3296244762975099,
+            "p10": 0.08729590469895347,
+            "p25": 0.14874474067264168,
+            "p50": 0.2835298937971955,
+            "p75": 0.48105917708419915,
+            "p90": 0.6556638660684104
+          },
+          "box_boundary_margin": {
+            "count": 624,
+            "mean": 0.13508220284114567,
+            "p10": 0.001999974250793457,
+            "p25": 0.0350625216960907,
+            "p50": 0.12700005248188972,
+            "p75": 0.2030312530696392,
+            "p90": 0.3000000102445483
+          },
+          "center_edge_distance": {
+            "count": 624,
+            "mean": 0.31645734179227686,
+            "p10": 0.15729999095201494,
+            "p25": 0.23652854561805725,
+            "p50": 0.32750001549720764,
+            "p75": 0.4140000343322754,
+            "p90": 0.4576818943023682
+          }
+        },
+        "dropped_distributions": {
+          "area_fraction": {
+            "count": 33,
+            "mean": 0.051877658972754245,
+            "p10": 0.006134206418840627,
+            "p25": 0.011540542702853429,
+            "p50": 0.01971998536467212,
+            "p75": 0.05002400057411194,
+            "p90": 0.1430155819039925
+          },
+          "sqrt_area_fraction": {
+            "count": 33,
+            "mean": 0.18983621802297934,
+            "p10": 0.07831815630222617,
+            "p25": 0.10742691796218222,
+            "p50": 0.1404278653425741,
+            "p75": 0.22366045822655362,
+            "p90": 0.37807408623541205
+          },
+          "box_boundary_margin": {
+            "count": 33,
+            "mean": 0.01957575903471672,
+            "p10": 0.0,
+            "p25": 0.001999899744987488,
+            "p50": 0.002000045031309128,
+            "p75": 0.035999998450279236,
+            "p90": 0.06120000556111336
+          },
+          "center_edge_distance": {
+            "count": 33,
+            "mean": 0.0946060557369933,
+            "p10": 0.03340000137686729,
+            "p25": 0.050999999046325684,
+            "p50": 0.08900000154972076,
+            "p75": 0.11499994993209839,
+            "p90": 0.14860000610351565
+          }
+        }
+      },
+      "object_rows": 3744,
+      "loader_actual": {
+        "dataset_length": 16551,
+        "dataset_rect": false,
+        "dataset_augment": false,
+        "loader_workers": 4,
+        "loader_pin_memory": true,
+        "sampler_classes": [
+          "torch.utils.data.sampler.SequentialSampler",
+          "torch.utils.data.sampler.BatchSampler"
+        ],
+        "batch_size": 64,
+        "shuffle": false,
+        "fraction": 1.0,
+        "multi_scale": 0.0,
+        "cache": false
+      },
+      "criterion_actual": {
+        "criterion_class": "ultralytics.utils.loss.E2ELoss",
+        "branches": {
+          "one2many": {
+            "loss_class": "ultralytics.utils.loss.v8DetectionLoss",
+            "assigner_class": "ultralytics.utils.tal.TaskAlignedAssigner",
+            "topk": 10,
+            "topk2": 10,
+            "stride": [
+              8.0,
+              16.0,
+              32.0
+            ],
+            "assignment_method": "get_assigned_targets_and_loss"
+          },
+          "one2one": {
+            "loss_class": "ultralytics.utils.loss.v8DetectionLoss",
+            "assigner_class": "ultralytics.utils.tal.TaskAlignedAssigner",
+            "topk": 7,
+            "topk2": 1,
+            "stride": [
+              8.0,
+              16.0,
+              32.0
+            ],
+            "assignment_method": "get_assigned_targets_and_loss"
+          }
+        },
+        "head_class": "ultralytics.nn.modules.head.Detect",
+        "head_runtime_end2end": false,
+        "dual_head_modules_present": true,
+        "one2one_head_present": true
+      },
+      "autocast_actual": {
+        "inference_mode": true,
+        "autocast_enabled": true,
+        "autocast_dtype": "torch.bfloat16",
+        "input_dtype": "torch.float32",
+        "o2m_boxes_dtype": "torch.bfloat16",
+        "o2m_scores_dtype": "torch.bfloat16",
+        "o2o_boxes_dtype": "torch.bfloat16",
+        "o2o_scores_dtype": "torch.bfloat16"
+      },
+      "integrity_before": {
+        "parameter_sha256": "e0f6cb06a7c998686c08893b7addc2e4dab093f0c2d9a00417b9d4361ef8d0dc",
+        "parameter_tensors": 366,
+        "bn_buffer_sha256": "156ed8cc36ac80ba45d1858581543f05a199138bd1249fd95bc09895101ee0f9",
+        "bn_buffer_tensors": 342,
+        "bn_total": 114,
+        "bn_eval": 114,
+        "bn_all_eval": true,
+        "model_training": true,
+        "optimizer_created": false,
+        "grad_enabled_at_snapshot": true
+      },
+      "integrity_after": {
+        "parameter_sha256": "e0f6cb06a7c998686c08893b7addc2e4dab093f0c2d9a00417b9d4361ef8d0dc",
+        "parameter_tensors": 366,
+        "bn_buffer_sha256": "156ed8cc36ac80ba45d1858581543f05a199138bd1249fd95bc09895101ee0f9",
+        "bn_buffer_tensors": 342,
+        "bn_total": 114,
+        "bn_eval": 114,
+        "bn_all_eval": true,
+        "model_training": true,
+        "optimizer_created": false,
+        "grad_enabled_at_snapshot": true
+      },
+      "runtime": {
+        "python": "3.11.16 (main, Sep  2 2026, 23:39:52) [GCC 15.3.0]",
+        "platform": "Linux-6.17.0-23-generic-x86_64-with-glibc2.39",
+        "torch": "2.6.0+cu118",
+        "ultralytics": "8.4.146",
+        "cuda_runtime": "11.8",
+        "cudnn": 90100,
+        "cuda_visible_devices": "4",
+        "logical_gpu_count": 1,
+        "gpu_name": "NVIDIA GeForce RTX 3090",
+        "autocast_device": "cuda",
+        "autocast_dtype": "torch.bfloat16",
+        "criterion_contract": {
+          "criterion_class": "ultralytics.utils.loss.E2ELoss",
+          "branches": {
+            "one2many": {
+              "loss_class": "ultralytics.utils.loss.v8DetectionLoss",
+              "assigner_class": "ultralytics.utils.tal.TaskAlignedAssigner",
+              "topk": 10,
+              "topk2": 10,
+              "stride": [
+                8.0,
+                16.0,
+                32.0
+              ],
+              "assignment_method": "get_assigned_targets_and_loss"
+            },
+            "one2one": {
+              "loss_class": "ultralytics.utils.loss.v8DetectionLoss",
+              "assigner_class": "ultralytics.utils.tal.TaskAlignedAssigner",
+              "topk": 7,
+              "topk2": 1,
+              "stride": [
+                8.0,
+                16.0,
+                32.0
+              ],
+              "assignment_method": "get_assigned_targets_and_loss"
+            }
+          },
+          "head_class": "ultralytics.nn.modules.head.Detect",
+          "head_runtime_end2end": false,
+          "dual_head_modules_present": true,
+          "one2one_head_present": true
+        },
+        "sources": {
+          "probe": {
+            "path": "/home/ubuntu/rz/yolo_study/yolo26_voc_research/scripts/probe_asac_assignment_stability.py",
+            "sha256": "be350ae3b7fcdf033916ac1aa797d5c3b9fb38103a94b6e911cac0fe0666ea05"
+          },
+          "loss": {
+            "path": "/home/ubuntu/rz/yolo_study/ultralytics_research/ultralytics/utils/loss.py",
+            "sha256": "6dae8e66c4b94a0c16b11a219e4831994c895cc036210648a6a23d9e282e5db9"
+          },
+          "tal": {
+            "path": "/home/ubuntu/rz/yolo_study/ultralytics_research/ultralytics/utils/tal.py",
+            "sha256": "9468fb73df7805a4d297302aa221e0d7a6e46e224d0a0768e5abf3f4d2cf2861"
+          },
+          "data_build": {
+            "path": "/home/ubuntu/rz/yolo_study/ultralytics_research/ultralytics/data/build.py",
+            "sha256": "1c3131adc60dc9763b9edcde853d3bc461ec908c2ed9d1965b2610bfd8c27847"
+          },
+          "detection_trainer": {
+            "path": "/home/ubuntu/rz/yolo_study/ultralytics_research/ultralytics/models/yolo/detect/train.py",
+            "sha256": "76d6b181259edc09b03f7cea1f9d59bd4eda2f7964146bbb2e76d4f7201dcf5f"
+          },
+          "detect_head": {
+            "path": "/home/ubuntu/rz/yolo_study/ultralytics_research/ultralytics/nn/modules/head.py",
+            "sha256": "1dc4a4a90401149edeb55cd679e7f33be2c36eae1317b6f67f13c7a8b18d60b8"
+          }
+        },
+        "source_bundle_sha256": "e978653fe83b8825188c1476d3eb2e7fb6c91186e0a2e423bf9978caed2e3231"
+      }
+    },
+    {
+      "checkpoint": "/home/ubuntu/rz/yolo_study/yolo26_voc_research/runs/b50_no_kd_e50_g4567_s42/weights/epoch30.pt",
+      "checkpoint_sha256": "cdbb6e3d72b587aba9754a3fd0450a64a50170ea1cdb13e318a046ddd16e6aa9",
+      "epoch": 31,
+      "images": 256,
+      "batches": 4,
+      "unique_image_paths": 256,
+      "panel_sha256": "5bc7260afc2919b071948b2e496f017cdc72d9f5d424bb62cd7f02705dea8266",
+      "panel_content_count": 256,
+      "panel_content_sha256": "8636cc2983ff65e77de6351629817fb43d75ebb36a440df44e4026c13747a0fa",
+      "geometry_sha256": "baeae282f7f3810370b5633eb8f0fc46f1461afd5d35bacb553213d2c95ddaec",
+      "geometry": {
+        "clean_gt_total": 657,
+        "per_strength": {
+          "q0.25": {
+            "count": 647,
+            "rate": 0.984779299847793
+          },
+          "q0.50": {
+            "count": 634,
+            "rate": 0.9649923896499238
+          },
+          "q0.75": {
+            "count": 624,
+            "rate": 0.9497716894977168
+          }
+        },
+        "intersection_count": 624,
+        "intersection_rate": 0.9497716894977168,
+        "retained_distributions": {
+          "area_fraction": {
+            "count": 624,
+            "mean": 0.15465076722121474,
+            "p10": 0.007620578755232666,
+            "p25": 0.02212500550597979,
+            "p50": 0.08039007448333835,
+            "p75": 0.23142132412007577,
+            "p90": 0.4298992282159316
+          },
+          "sqrt_area_fraction": {
+            "count": 624,
+            "mean": 0.3296244762975099,
+            "p10": 0.08729590469895347,
+            "p25": 0.14874474067264168,
+            "p50": 0.2835298937971955,
+            "p75": 0.48105917708419915,
+            "p90": 0.6556638660684104
+          },
+          "box_boundary_margin": {
+            "count": 624,
+            "mean": 0.13508220284114567,
+            "p10": 0.001999974250793457,
+            "p25": 0.0350625216960907,
+            "p50": 0.12700005248188972,
+            "p75": 0.2030312530696392,
+            "p90": 0.3000000102445483
+          },
+          "center_edge_distance": {
+            "count": 624,
+            "mean": 0.31645734179227686,
+            "p10": 0.15729999095201494,
+            "p25": 0.23652854561805725,
+            "p50": 0.32750001549720764,
+            "p75": 0.4140000343322754,
+            "p90": 0.4576818943023682
+          }
+        },
+        "dropped_distributions": {
+          "area_fraction": {
+            "count": 33,
+            "mean": 0.051877658972754245,
+            "p10": 0.006134206418840627,
+            "p25": 0.011540542702853429,
+            "p50": 0.01971998536467212,
+            "p75": 0.05002400057411194,
+            "p90": 0.1430155819039925
+          },
+          "sqrt_area_fraction": {
+            "count": 33,
+            "mean": 0.18983621802297934,
+            "p10": 0.07831815630222617,
+            "p25": 0.10742691796218222,
+            "p50": 0.1404278653425741,
+            "p75": 0.22366045822655362,
+            "p90": 0.37807408623541205
+          },
+          "box_boundary_margin": {
+            "count": 33,
+            "mean": 0.01957575903471672,
+            "p10": 0.0,
+            "p25": 0.001999899744987488,
+            "p50": 0.002000045031309128,
+            "p75": 0.035999998450279236,
+            "p90": 0.06120000556111336
+          },
+          "center_edge_distance": {
+            "count": 33,
+            "mean": 0.0946060557369933,
+            "p10": 0.03340000137686729,
+            "p25": 0.050999999046325684,
+            "p50": 0.08900000154972076,
+            "p75": 0.11499994993209839,
+            "p90": 0.14860000610351565
+          }
+        }
+      },
+      "object_rows": 3744,
+      "loader_actual": {
+        "dataset_length": 16551,
+        "dataset_rect": false,
+        "dataset_augment": false,
+        "loader_workers": 4,
+        "loader_pin_memory": true,
+        "sampler_classes": [
+          "torch.utils.data.sampler.SequentialSampler",
+          "torch.utils.data.sampler.BatchSampler"
+        ],
+        "batch_size": 64,
+        "shuffle": false,
+        "fraction": 1.0,
+        "multi_scale": 0.0,
+        "cache": false
+      },
+      "criterion_actual": {
+        "criterion_class": "ultralytics.utils.loss.E2ELoss",
+        "branches": {
+          "one2many": {
+            "loss_class": "ultralytics.utils.loss.v8DetectionLoss",
+            "assigner_class": "ultralytics.utils.tal.TaskAlignedAssigner",
+            "topk": 10,
+            "topk2": 10,
+            "stride": [
+              8.0,
+              16.0,
+              32.0
+            ],
+            "assignment_method": "get_assigned_targets_and_loss"
+          },
+          "one2one": {
+            "loss_class": "ultralytics.utils.loss.v8DetectionLoss",
+            "assigner_class": "ultralytics.utils.tal.TaskAlignedAssigner",
+            "topk": 7,
+            "topk2": 1,
+            "stride": [
+              8.0,
+              16.0,
+              32.0
+            ],
+            "assignment_method": "get_assigned_targets_and_loss"
+          }
+        },
+        "head_class": "ultralytics.nn.modules.head.Detect",
+        "head_runtime_end2end": false,
+        "dual_head_modules_present": true,
+        "one2one_head_present": true
+      },
+      "autocast_actual": {
+        "inference_mode": true,
+        "autocast_enabled": true,
+        "autocast_dtype": "torch.bfloat16",
+        "input_dtype": "torch.float32",
+        "o2m_boxes_dtype": "torch.bfloat16",
+        "o2m_scores_dtype": "torch.bfloat16",
+        "o2o_boxes_dtype": "torch.bfloat16",
+        "o2o_scores_dtype": "torch.bfloat16"
+      },
+      "integrity_before": {
+        "parameter_sha256": "a42693579c04d0e1bf54d49c164e254ac2dc76e8a3d41214adc39a813ec327e6",
+        "parameter_tensors": 366,
+        "bn_buffer_sha256": "19001ba91d1689a90b5977367b8acaf0cc0ae486ba4b5b5b9d1e25826c5a9524",
+        "bn_buffer_tensors": 342,
+        "bn_total": 114,
+        "bn_eval": 114,
+        "bn_all_eval": true,
+        "model_training": true,
+        "optimizer_created": false,
+        "grad_enabled_at_snapshot": true
+      },
+      "integrity_after": {
+        "parameter_sha256": "a42693579c04d0e1bf54d49c164e254ac2dc76e8a3d41214adc39a813ec327e6",
+        "parameter_tensors": 366,
+        "bn_buffer_sha256": "19001ba91d1689a90b5977367b8acaf0cc0ae486ba4b5b5b9d1e25826c5a9524",
+        "bn_buffer_tensors": 342,
+        "bn_total": 114,
+        "bn_eval": 114,
+        "bn_all_eval": true,
+        "model_training": true,
+        "optimizer_created": false,
+        "grad_enabled_at_snapshot": true
+      },
+      "runtime": {
+        "python": "3.11.16 (main, Sep  2 2026, 23:39:52) [GCC 15.3.0]",
+        "platform": "Linux-6.17.0-23-generic-x86_64-with-glibc2.39",
+        "torch": "2.6.0+cu118",
+        "ultralytics": "8.4.146",
+        "cuda_runtime": "11.8",
+        "cudnn": 90100,
+        "cuda_visible_devices": "4",
+        "logical_gpu_count": 1,
+        "gpu_name": "NVIDIA GeForce RTX 3090",
+        "autocast_device": "cuda",
+        "autocast_dtype": "torch.bfloat16",
+        "criterion_contract": {
+          "criterion_class": "ultralytics.utils.loss.E2ELoss",
+          "branches": {
+            "one2many": {
+              "loss_class": "ultralytics.utils.loss.v8DetectionLoss",
+              "assigner_class": "ultralytics.utils.tal.TaskAlignedAssigner",
+              "topk": 10,
+              "topk2": 10,
+              "stride": [
+                8.0,
+                16.0,
+                32.0
+              ],
+              "assignment_method": "get_assigned_targets_and_loss"
+            },
+            "one2one": {
+              "loss_class": "ultralytics.utils.loss.v8DetectionLoss",
+              "assigner_class": "ultralytics.utils.tal.TaskAlignedAssigner",
+              "topk": 7,
+              "topk2": 1,
+              "stride": [
+                8.0,
+                16.0,
+                32.0
+              ],
+              "assignment_method": "get_assigned_targets_and_loss"
+            }
+          },
+          "head_class": "ultralytics.nn.modules.head.Detect",
+          "head_runtime_end2end": false,
+          "dual_head_modules_present": true,
+          "one2one_head_present": true
+        },
+        "sources": {
+          "probe": {
+            "path": "/home/ubuntu/rz/yolo_study/yolo26_voc_research/scripts/probe_asac_assignment_stability.py",
+            "sha256": "be350ae3b7fcdf033916ac1aa797d5c3b9fb38103a94b6e911cac0fe0666ea05"
+          },
+          "loss": {
+            "path": "/home/ubuntu/rz/yolo_study/ultralytics_research/ultralytics/utils/loss.py",
+            "sha256": "6dae8e66c4b94a0c16b11a219e4831994c895cc036210648a6a23d9e282e5db9"
+          },
+          "tal": {
+            "path": "/home/ubuntu/rz/yolo_study/ultralytics_research/ultralytics/utils/tal.py",
+            "sha256": "9468fb73df7805a4d297302aa221e0d7a6e46e224d0a0768e5abf3f4d2cf2861"
+          },
+          "data_build": {
+            "path": "/home/ubuntu/rz/yolo_study/ultralytics_research/ultralytics/data/build.py",
+            "sha256": "1c3131adc60dc9763b9edcde853d3bc461ec908c2ed9d1965b2610bfd8c27847"
+          },
+          "detection_trainer": {
+            "path": "/home/ubuntu/rz/yolo_study/ultralytics_research/ultralytics/models/yolo/detect/train.py",
+            "sha256": "76d6b181259edc09b03f7cea1f9d59bd4eda2f7964146bbb2e76d4f7201dcf5f"
+          },
+          "detect_head": {
+            "path": "/home/ubuntu/rz/yolo_study/ultralytics_research/ultralytics/nn/modules/head.py",
+            "sha256": "1dc4a4a90401149edeb55cd679e7f33be2c36eae1317b6f67f13c7a8b18d60b8"
+          }
+        },
+        "source_bundle_sha256": "e978653fe83b8825188c1476d3eb2e7fb6c91186e0a2e423bf9978caed2e3231"
+      }
+    },
+    {
+      "checkpoint": "/home/ubuntu/rz/yolo_study/yolo26_voc_research/runs/b50_no_kd_e50_g4567_s42/weights/epoch40.pt",
+      "checkpoint_sha256": "a2f334e6c260790f5ba03702e26746f856dcde20cb31a36229be25f9d62b0765",
+      "epoch": 41,
+      "images": 256,
+      "batches": 4,
+      "unique_image_paths": 256,
+      "panel_sha256": "5bc7260afc2919b071948b2e496f017cdc72d9f5d424bb62cd7f02705dea8266",
+      "panel_content_count": 256,
+      "panel_content_sha256": "8636cc2983ff65e77de6351629817fb43d75ebb36a440df44e4026c13747a0fa",
+      "geometry_sha256": "baeae282f7f3810370b5633eb8f0fc46f1461afd5d35bacb553213d2c95ddaec",
+      "geometry": {
+        "clean_gt_total": 657,
+        "per_strength": {
+          "q0.25": {
+            "count": 647,
+            "rate": 0.984779299847793
+          },
+          "q0.50": {
+            "count": 634,
+            "rate": 0.9649923896499238
+          },
+          "q0.75": {
+            "count": 624,
+            "rate": 0.9497716894977168
+          }
+        },
+        "intersection_count": 624,
+        "intersection_rate": 0.9497716894977168,
+        "retained_distributions": {
+          "area_fraction": {
+            "count": 624,
+            "mean": 0.15465076722121474,
+            "p10": 0.007620578755232666,
+            "p25": 0.02212500550597979,
+            "p50": 0.08039007448333835,
+            "p75": 0.23142132412007577,
+            "p90": 0.4298992282159316
+          },
+          "sqrt_area_fraction": {
+            "count": 624,
+            "mean": 0.3296244762975099,
+            "p10": 0.08729590469895347,
+            "p25": 0.14874474067264168,
+            "p50": 0.2835298937971955,
+            "p75": 0.48105917708419915,
+            "p90": 0.6556638660684104
+          },
+          "box_boundary_margin": {
+            "count": 624,
+            "mean": 0.13508220284114567,
+            "p10": 0.001999974250793457,
+            "p25": 0.0350625216960907,
+            "p50": 0.12700005248188972,
+            "p75": 0.2030312530696392,
+            "p90": 0.3000000102445483
+          },
+          "center_edge_distance": {
+            "count": 624,
+            "mean": 0.31645734179227686,
+            "p10": 0.15729999095201494,
+            "p25": 0.23652854561805725,
+            "p50": 0.32750001549720764,
+            "p75": 0.4140000343322754,
+            "p90": 0.4576818943023682
+          }
+        },
+        "dropped_distributions": {
+          "area_fraction": {
+            "count": 33,
+            "mean": 0.051877658972754245,
+            "p10": 0.006134206418840627,
+            "p25": 0.011540542702853429,
+            "p50": 0.01971998536467212,
+            "p75": 0.05002400057411194,
+            "p90": 0.1430155819039925
+          },
+          "sqrt_area_fraction": {
+            "count": 33,
+            "mean": 0.18983621802297934,
+            "p10": 0.07831815630222617,
+            "p25": 0.10742691796218222,
+            "p50": 0.1404278653425741,
+            "p75": 0.22366045822655362,
+            "p90": 0.37807408623541205
+          },
+          "box_boundary_margin": {
+            "count": 33,
+            "mean": 0.01957575903471672,
+            "p10": 0.0,
+            "p25": 0.001999899744987488,
+            "p50": 0.002000045031309128,
+            "p75": 0.035999998450279236,
+            "p90": 0.06120000556111336
+          },
+          "center_edge_distance": {
+            "count": 33,
+            "mean": 0.0946060557369933,
+            "p10": 0.03340000137686729,
+            "p25": 0.050999999046325684,
+            "p50": 0.08900000154972076,
+            "p75": 0.11499994993209839,
+            "p90": 0.14860000610351565
+          }
+        }
+      },
+      "object_rows": 3744,
+      "loader_actual": {
+        "dataset_length": 16551,
+        "dataset_rect": false,
+        "dataset_augment": false,
+        "loader_workers": 4,
+        "loader_pin_memory": true,
+        "sampler_classes": [
+          "torch.utils.data.sampler.SequentialSampler",
+          "torch.utils.data.sampler.BatchSampler"
+        ],
+        "batch_size": 64,
+        "shuffle": false,
+        "fraction": 1.0,
+        "multi_scale": 0.0,
+        "cache": false
+      },
+      "criterion_actual": {
+        "criterion_class": "ultralytics.utils.loss.E2ELoss",
+        "branches": {
+          "one2many": {
+            "loss_class": "ultralytics.utils.loss.v8DetectionLoss",
+            "assigner_class": "ultralytics.utils.tal.TaskAlignedAssigner",
+            "topk": 10,
+            "topk2": 10,
+            "stride": [
+              8.0,
+              16.0,
+              32.0
+            ],
+            "assignment_method": "get_assigned_targets_and_loss"
+          },
+          "one2one": {
+            "loss_class": "ultralytics.utils.loss.v8DetectionLoss",
+            "assigner_class": "ultralytics.utils.tal.TaskAlignedAssigner",
+            "topk": 7,
+            "topk2": 1,
+            "stride": [
+              8.0,
+              16.0,
+              32.0
+            ],
+            "assignment_method": "get_assigned_targets_and_loss"
+          }
+        },
+        "head_class": "ultralytics.nn.modules.head.Detect",
+        "head_runtime_end2end": false,
+        "dual_head_modules_present": true,
+        "one2one_head_present": true
+      },
+      "autocast_actual": {
+        "inference_mode": true,
+        "autocast_enabled": true,
+        "autocast_dtype": "torch.bfloat16",
+        "input_dtype": "torch.float32",
+        "o2m_boxes_dtype": "torch.bfloat16",
+        "o2m_scores_dtype": "torch.bfloat16",
+        "o2o_boxes_dtype": "torch.bfloat16",
+        "o2o_scores_dtype": "torch.bfloat16"
+      },
+      "integrity_before": {
+        "parameter_sha256": "cbd33d6bfdec5850f335c48a494cbb338a5190eb0dcfda483ef267f50dc66705",
+        "parameter_tensors": 366,
+        "bn_buffer_sha256": "ea8afea763e19d635cd41c1142ce6839b8111251c5b23c43c91b1d0c3c555c8e",
+        "bn_buffer_tensors": 342,
+        "bn_total": 114,
+        "bn_eval": 114,
+        "bn_all_eval": true,
+        "model_training": true,
+        "optimizer_created": false,
+        "grad_enabled_at_snapshot": true
+      },
+      "integrity_after": {
+        "parameter_sha256": "cbd33d6bfdec5850f335c48a494cbb338a5190eb0dcfda483ef267f50dc66705",
+        "parameter_tensors": 366,
+        "bn_buffer_sha256": "ea8afea763e19d635cd41c1142ce6839b8111251c5b23c43c91b1d0c3c555c8e",
+        "bn_buffer_tensors": 342,
+        "bn_total": 114,
+        "bn_eval": 114,
+        "bn_all_eval": true,
+        "model_training": true,
+        "optimizer_created": false,
+        "grad_enabled_at_snapshot": true
+      },
+      "runtime": {
+        "python": "3.11.16 (main, Sep  2 2026, 23:39:52) [GCC 15.3.0]",
+        "platform": "Linux-6.17.0-23-generic-x86_64-with-glibc2.39",
+        "torch": "2.6.0+cu118",
+        "ultralytics": "8.4.146",
+        "cuda_runtime": "11.8",
+        "cudnn": 90100,
+        "cuda_visible_devices": "4",
+        "logical_gpu_count": 1,
+        "gpu_name": "NVIDIA GeForce RTX 3090",
+        "autocast_device": "cuda",
+        "autocast_dtype": "torch.bfloat16",
+        "criterion_contract": {
+          "criterion_class": "ultralytics.utils.loss.E2ELoss",
+          "branches": {
+            "one2many": {
+              "loss_class": "ultralytics.utils.loss.v8DetectionLoss",
+              "assigner_class": "ultralytics.utils.tal.TaskAlignedAssigner",
+              "topk": 10,
+              "topk2": 10,
+              "stride": [
+                8.0,
+                16.0,
+                32.0
+              ],
+              "assignment_method": "get_assigned_targets_and_loss"
+            },
+            "one2one": {
+              "loss_class": "ultralytics.utils.loss.v8DetectionLoss",
+              "assigner_class": "ultralytics.utils.tal.TaskAlignedAssigner",
+              "topk": 7,
+              "topk2": 1,
+              "stride": [
+                8.0,
+                16.0,
+                32.0
+              ],
+              "assignment_method": "get_assigned_targets_and_loss"
+            }
+          },
+          "head_class": "ultralytics.nn.modules.head.Detect",
+          "head_runtime_end2end": false,
+          "dual_head_modules_present": true,
+          "one2one_head_present": true
+        },
+        "sources": {
+          "probe": {
+            "path": "/home/ubuntu/rz/yolo_study/yolo26_voc_research/scripts/probe_asac_assignment_stability.py",
+            "sha256": "be350ae3b7fcdf033916ac1aa797d5c3b9fb38103a94b6e911cac0fe0666ea05"
+          },
+          "loss": {
+            "path": "/home/ubuntu/rz/yolo_study/ultralytics_research/ultralytics/utils/loss.py",
+            "sha256": "6dae8e66c4b94a0c16b11a219e4831994c895cc036210648a6a23d9e282e5db9"
+          },
+          "tal": {
+            "path": "/home/ubuntu/rz/yolo_study/ultralytics_research/ultralytics/utils/tal.py",
+            "sha256": "9468fb73df7805a4d297302aa221e0d7a6e46e224d0a0768e5abf3f4d2cf2861"
+          },
+          "data_build": {
+            "path": "/home/ubuntu/rz/yolo_study/ultralytics_research/ultralytics/data/build.py",
+            "sha256": "1c3131adc60dc9763b9edcde853d3bc461ec908c2ed9d1965b2610bfd8c27847"
+          },
+          "detection_trainer": {
+            "path": "/home/ubuntu/rz/yolo_study/ultralytics_research/ultralytics/models/yolo/detect/train.py",
+            "sha256": "76d6b181259edc09b03f7cea1f9d59bd4eda2f7964146bbb2e76d4f7201dcf5f"
+          },
+          "detect_head": {
+            "path": "/home/ubuntu/rz/yolo_study/ultralytics_research/ultralytics/nn/modules/head.py",
+            "sha256": "1dc4a4a90401149edeb55cd679e7f33be2c36eae1317b6f67f13c7a8b18d60b8"
+          }
+        },
+        "source_bundle_sha256": "e978653fe83b8825188c1476d3eb2e7fb6c91186e0a2e423bf9978caed2e3231"
+      }
+    },
+    {
+      "checkpoint": "/home/ubuntu/rz/yolo_study/yolo26_voc_research/runs/b50_no_kd_e50_g4567_s42/weights/last.pt",
+      "checkpoint_sha256": "49076ee6878d1478423bf714cdbe257fcd08e7dc67b5a9afa701b5e8e25e96fb",
+      "epoch": 50,
+      "images": 256,
+      "batches": 4,
+      "unique_image_paths": 256,
+      "panel_sha256": "5bc7260afc2919b071948b2e496f017cdc72d9f5d424bb62cd7f02705dea8266",
+      "panel_content_count": 256,
+      "panel_content_sha256": "8636cc2983ff65e77de6351629817fb43d75ebb36a440df44e4026c13747a0fa",
+      "geometry_sha256": "baeae282f7f3810370b5633eb8f0fc46f1461afd5d35bacb553213d2c95ddaec",
+      "geometry": {
+        "clean_gt_total": 657,
+        "per_strength": {
+          "q0.25": {
+            "count": 647,
+            "rate": 0.984779299847793
+          },
+          "q0.50": {
+            "count": 634,
+            "rate": 0.9649923896499238
+          },
+          "q0.75": {
+            "count": 624,
+            "rate": 0.9497716894977168
+          }
+        },
+        "intersection_count": 624,
+        "intersection_rate": 0.9497716894977168,
+        "retained_distributions": {
+          "area_fraction": {
+            "count": 624,
+            "mean": 0.15465076722121474,
+            "p10": 0.007620578755232666,
+            "p25": 0.02212500550597979,
+            "p50": 0.08039007448333835,
+            "p75": 0.23142132412007577,
+            "p90": 0.4298992282159316
+          },
+          "sqrt_area_fraction": {
+            "count": 624,
+            "mean": 0.3296244762975099,
+            "p10": 0.08729590469895347,
+            "p25": 0.14874474067264168,
+            "p50": 0.2835298937971955,
+            "p75": 0.48105917708419915,
+            "p90": 0.6556638660684104
+          },
+          "box_boundary_margin": {
+            "count": 624,
+            "mean": 0.13508220284114567,
+            "p10": 0.001999974250793457,
+            "p25": 0.0350625216960907,
+            "p50": 0.12700005248188972,
+            "p75": 0.2030312530696392,
+            "p90": 0.3000000102445483
+          },
+          "center_edge_distance": {
+            "count": 624,
+            "mean": 0.31645734179227686,
+            "p10": 0.15729999095201494,
+            "p25": 0.23652854561805725,
+            "p50": 0.32750001549720764,
+            "p75": 0.4140000343322754,
+            "p90": 0.4576818943023682
+          }
+        },
+        "dropped_distributions": {
+          "area_fraction": {
+            "count": 33,
+            "mean": 0.051877658972754245,
+            "p10": 0.006134206418840627,
+            "p25": 0.011540542702853429,
+            "p50": 0.01971998536467212,
+            "p75": 0.05002400057411194,
+            "p90": 0.1430155819039925
+          },
+          "sqrt_area_fraction": {
+            "count": 33,
+            "mean": 0.18983621802297934,
+            "p10": 0.07831815630222617,
+            "p25": 0.10742691796218222,
+            "p50": 0.1404278653425741,
+            "p75": 0.22366045822655362,
+            "p90": 0.37807408623541205
+          },
+          "box_boundary_margin": {
+            "count": 33,
+            "mean": 0.01957575903471672,
+            "p10": 0.0,
+            "p25": 0.001999899744987488,
+            "p50": 0.002000045031309128,
+            "p75": 0.035999998450279236,
+            "p90": 0.06120000556111336
+          },
+          "center_edge_distance": {
+            "count": 33,
+            "mean": 0.0946060557369933,
+            "p10": 0.03340000137686729,
+            "p25": 0.050999999046325684,
+            "p50": 0.08900000154972076,
+            "p75": 0.11499994993209839,
+            "p90": 0.14860000610351565
+          }
+        }
+      },
+      "object_rows": 3744,
+      "loader_actual": {
+        "dataset_length": 16551,
+        "dataset_rect": false,
+        "dataset_augment": false,
+        "loader_workers": 4,
+        "loader_pin_memory": true,
+        "sampler_classes": [
+          "torch.utils.data.sampler.SequentialSampler",
+          "torch.utils.data.sampler.BatchSampler"
+        ],
+        "batch_size": 64,
+        "shuffle": false,
+        "fraction": 1.0,
+        "multi_scale": 0.0,
+        "cache": false
+      },
+      "criterion_actual": {
+        "criterion_class": "ultralytics.utils.loss.E2ELoss",
+        "branches": {
+          "one2many": {
+            "loss_class": "ultralytics.utils.loss.v8DetectionLoss",
+            "assigner_class": "ultralytics.utils.tal.TaskAlignedAssigner",
+            "topk": 10,
+            "topk2": 10,
+            "stride": [
+              8.0,
+              16.0,
+              32.0
+            ],
+            "assignment_method": "get_assigned_targets_and_loss"
+          },
+          "one2one": {
+            "loss_class": "ultralytics.utils.loss.v8DetectionLoss",
+            "assigner_class": "ultralytics.utils.tal.TaskAlignedAssigner",
+            "topk": 7,
+            "topk2": 1,
+            "stride": [
+              8.0,
+              16.0,
+              32.0
+            ],
+            "assignment_method": "get_assigned_targets_and_loss"
+          }
+        },
+        "head_class": "ultralytics.nn.modules.head.Detect",
+        "head_runtime_end2end": false,
+        "dual_head_modules_present": true,
+        "one2one_head_present": true
+      },
+      "autocast_actual": {
+        "inference_mode": true,
+        "autocast_enabled": true,
+        "autocast_dtype": "torch.bfloat16",
+        "input_dtype": "torch.float32",
+        "o2m_boxes_dtype": "torch.bfloat16",
+        "o2m_scores_dtype": "torch.bfloat16",
+        "o2o_boxes_dtype": "torch.bfloat16",
+        "o2o_scores_dtype": "torch.bfloat16"
+      },
+      "integrity_before": {
+        "parameter_sha256": "0ff115e02f79abd7ab1f4b93c0e5cd127a40bd213d644ddceecd39f2ff655912",
+        "parameter_tensors": 366,
+        "bn_buffer_sha256": "9b2264fc31392a3091b93be7272cf14d340de8c355c6bb799de792da10c179fb",
+        "bn_buffer_tensors": 342,
+        "bn_total": 114,
+        "bn_eval": 114,
+        "bn_all_eval": true,
+        "model_training": true,
+        "optimizer_created": false,
+        "grad_enabled_at_snapshot": true
+      },
+      "integrity_after": {
+        "parameter_sha256": "0ff115e02f79abd7ab1f4b93c0e5cd127a40bd213d644ddceecd39f2ff655912",
+        "parameter_tensors": 366,
+        "bn_buffer_sha256": "9b2264fc31392a3091b93be7272cf14d340de8c355c6bb799de792da10c179fb",
+        "bn_buffer_tensors": 342,
+        "bn_total": 114,
+        "bn_eval": 114,
+        "bn_all_eval": true,
+        "model_training": true,
+        "optimizer_created": false,
+        "grad_enabled_at_snapshot": true
+      },
+      "runtime": {
+        "python": "3.11.16 (main, Sep  2 2026, 23:39:52) [GCC 15.3.0]",
+        "platform": "Linux-6.17.0-23-generic-x86_64-with-glibc2.39",
+        "torch": "2.6.0+cu118",
+        "ultralytics": "8.4.146",
+        "cuda_runtime": "11.8",
+        "cudnn": 90100,
+        "cuda_visible_devices": "4",
+        "logical_gpu_count": 1,
+        "gpu_name": "NVIDIA GeForce RTX 3090",
+        "autocast_device": "cuda",
+        "autocast_dtype": "torch.bfloat16",
+        "criterion_contract": {
+          "criterion_class": "ultralytics.utils.loss.E2ELoss",
+          "branches": {
+            "one2many": {
+              "loss_class": "ultralytics.utils.loss.v8DetectionLoss",
+              "assigner_class": "ultralytics.utils.tal.TaskAlignedAssigner",
+              "topk": 10,
+              "topk2": 10,
+              "stride": [
+                8.0,
+                16.0,
+                32.0
+              ],
+              "assignment_method": "get_assigned_targets_and_loss"
+            },
+            "one2one": {
+              "loss_class": "ultralytics.utils.loss.v8DetectionLoss",
+              "assigner_class": "ultralytics.utils.tal.TaskAlignedAssigner",
+              "topk": 7,
+              "topk2": 1,
+              "stride": [
+                8.0,
+                16.0,
+                32.0
+              ],
+              "assignment_method": "get_assigned_targets_and_loss"
+            }
+          },
+          "head_class": "ultralytics.nn.modules.head.Detect",
+          "head_runtime_end2end": false,
+          "dual_head_modules_present": true,
+          "one2one_head_present": true
+        },
+        "sources": {
+          "probe": {
+            "path": "/home/ubuntu/rz/yolo_study/yolo26_voc_research/scripts/probe_asac_assignment_stability.py",
+            "sha256": "be350ae3b7fcdf033916ac1aa797d5c3b9fb38103a94b6e911cac0fe0666ea05"
+          },
+          "loss": {
+            "path": "/home/ubuntu/rz/yolo_study/ultralytics_research/ultralytics/utils/loss.py",
+            "sha256": "6dae8e66c4b94a0c16b11a219e4831994c895cc036210648a6a23d9e282e5db9"
+          },
+          "tal": {
+            "path": "/home/ubuntu/rz/yolo_study/ultralytics_research/ultralytics/utils/tal.py",
+            "sha256": "9468fb73df7805a4d297302aa221e0d7a6e46e224d0a0768e5abf3f4d2cf2861"
+          },
+          "data_build": {
+            "path": "/home/ubuntu/rz/yolo_study/ultralytics_research/ultralytics/data/build.py",
+            "sha256": "1c3131adc60dc9763b9edcde853d3bc461ec908c2ed9d1965b2610bfd8c27847"
+          },
+          "detection_trainer": {
+            "path": "/home/ubuntu/rz/yolo_study/ultralytics_research/ultralytics/models/yolo/detect/train.py",
+            "sha256": "76d6b181259edc09b03f7cea1f9d59bd4eda2f7964146bbb2e76d4f7201dcf5f"
+          },
+          "detect_head": {
+            "path": "/home/ubuntu/rz/yolo_study/ultralytics_research/ultralytics/nn/modules/head.py",
+            "sha256": "1dc4a4a90401149edeb55cd679e7f33be2c36eae1317b6f67f13c7a8b18d60b8"
+          }
+        },
+        "source_bundle_sha256": "e978653fe83b8825188c1476d3eb2e7fb6c91186e0a2e423bf9978caed2e3231"
+      }
+    }
+  ],
+  "geometry": {
+    "clean_gt_total": 657,
+    "per_strength": {
+      "q0.25": {
+        "count": 647,
+        "rate": 0.984779299847793
+      },
+      "q0.50": {
+        "count": 634,
+        "rate": 0.9649923896499238
+      },
+      "q0.75": {
+        "count": 624,
+        "rate": 0.9497716894977168
+      }
+    },
+    "intersection_count": 624,
+    "intersection_rate": 0.9497716894977168,
+    "retained_distributions": {
+      "area_fraction": {
+        "count": 624,
+        "mean": 0.15465076722121474,
+        "p10": 0.007620578755232666,
+        "p25": 0.02212500550597979,
+        "p50": 0.08039007448333835,
+        "p75": 0.23142132412007577,
+        "p90": 0.4298992282159316
+      },
+      "sqrt_area_fraction": {
+        "count": 624,
+        "mean": 0.3296244762975099,
+        "p10": 0.08729590469895347,
+        "p25": 0.14874474067264168,
+        "p50": 0.2835298937971955,
+        "p75": 0.48105917708419915,
+        "p90": 0.6556638660684104
+      },
+      "box_boundary_margin": {
+        "count": 624,
+        "mean": 0.13508220284114567,
+        "p10": 0.001999974250793457,
+        "p25": 0.0350625216960907,
+        "p50": 0.12700005248188972,
+        "p75": 0.2030312530696392,
+        "p90": 0.3000000102445483
+      },
+      "center_edge_distance": {
+        "count": 624,
+        "mean": 0.31645734179227686,
+        "p10": 0.15729999095201494,
+        "p25": 0.23652854561805725,
+        "p50": 0.32750001549720764,
+        "p75": 0.4140000343322754,
+        "p90": 0.4576818943023682
+      }
+    },
+    "dropped_distributions": {
+      "area_fraction": {
+        "count": 33,
+        "mean": 0.051877658972754245,
+        "p10": 0.006134206418840627,
+        "p25": 0.011540542702853429,
+        "p50": 0.01971998536467212,
+        "p75": 0.05002400057411194,
+        "p90": 0.1430155819039925
+      },
+      "sqrt_area_fraction": {
+        "count": 33,
+        "mean": 0.18983621802297934,
+        "p10": 0.07831815630222617,
+        "p25": 0.10742691796218222,
+        "p50": 0.1404278653425741,
+        "p75": 0.22366045822655362,
+        "p90": 0.37807408623541205
+      },
+      "box_boundary_margin": {
+        "count": 33,
+        "mean": 0.01957575903471672,
+        "p10": 0.0,
+        "p25": 0.001999899744987488,
+        "p50": 0.002000045031309128,
+        "p75": 0.035999998450279236,
+        "p90": 0.06120000556111336
+      },
+      "center_edge_distance": {
+        "count": 33,
+        "mean": 0.0946060557369933,
+        "p10": 0.03340000137686729,
+        "p25": 0.050999999046325684,
+        "p50": 0.08900000154972076,
+        "p75": 0.11499994993209839,
+        "p90": 0.14860000610351565
+      }
+    }
+  },
+  "summaries": [
+    {
+      "epoch": 11,
+      "head": "O2M",
+      "strength": 0.25,
+      "object_pairs": 624,
+      "assigned_both": 624,
+      "assignment_coverage": 1.0,
+      "mean_stability": 0.9668368490747613,
+      "mean_stability_assigned": 0.9668368490747613,
+      "mean_js_assigned": 0.035787236490134766,
+      "mean_quality_agreement_assigned": 0.8291714528208904,
+      "mean_clean_quality_assigned": 0.459762086536592,
+      "mean_view_quality_assigned": 0.46215141537742543,
+      "mean_target_score_agreement_assigned": 0.957004639015882,
+      "spearman_stability_quality_assigned": 0.2544511668107174,
+      "dominant_level_flip_rate": 0.0673076923076923,
+      "mean_centroid_drift_gt_units": 0.05019005723140527
+    },
+    {
+      "epoch": 11,
+      "head": "O2M",
+      "strength": 0.5,
+      "object_pairs": 624,
+      "assigned_both": 624,
+      "assignment_coverage": 1.0,
+      "mean_stability": 0.9405057928300286,
+      "mean_stability_assigned": 0.9405057928300286,
+      "mean_js_assigned": 0.06852684467138515,
+      "mean_quality_agreement_assigned": 0.8132476193311806,
+      "mean_clean_quality_assigned": 0.459762086536592,
+      "mean_view_quality_assigned": 0.45637134956539227,
+      "mean_target_score_agreement_assigned": 0.952117285027581,
+      "spearman_stability_quality_assigned": 0.3025840264549207,
+      "dominant_level_flip_rate": 0.1201923076923077,
+      "mean_centroid_drift_gt_units": 0.059393387483248204
+    },
+    {
+      "epoch": 11,
+      "head": "O2M",
+      "strength": 0.75,
+      "object_pairs": 624,
+      "assigned_both": 623,
+      "assignment_coverage": 0.9983974358974359,
+      "mean_stability": 0.9140047255278552,
+      "mean_stability_assigned": 0.9154718278160219,
+      "mean_js_assigned": 0.10082813004835345,
+      "mean_quality_agreement_assigned": 0.7921276657521181,
+      "mean_clean_quality_assigned": 0.4598245625690606,
+      "mean_view_quality_assigned": 0.460704790485087,
+      "mean_target_score_agreement_assigned": 0.9462870314952295,
+      "spearman_stability_quality_assigned": 0.22199413363849496,
+      "dominant_level_flip_rate": 0.16211878009630817,
+      "mean_centroid_drift_gt_units": 0.06480124153188642
+    },
+    {
+      "epoch": 11,
+      "head": "O2O",
+      "strength": 0.25,
+      "object_pairs": 624,
+      "assigned_both": 624,
+      "assignment_coverage": 1.0,
+      "mean_stability": 0.9189862554627066,
+      "mean_stability_assigned": 0.9189862554627066,
+      "mean_js_assigned": 0.1089280951036925,
+      "mean_quality_agreement_assigned": 0.7183442419957949,
+      "mean_clean_quality_assigned": 0.3828322161056209,
+      "mean_view_quality_assigned": 0.3780667326112355,
+      "mean_target_score_agreement_assigned": 0.9341398589029072,
+      "spearman_stability_quality_assigned": 0.2958875109681724,
+      "dominant_level_flip_rate": 0.0673076923076923,
+      "mean_centroid_drift_gt_units": 0.10662281685607042
+    },
+    {
+      "epoch": 11,
+      "head": "O2O",
+      "strength": 0.5,
+      "object_pairs": 624,
+      "assigned_both": 624,
+      "assignment_coverage": 1.0,
+      "mean_stability": 0.8965352408563678,
+      "mean_stability_assigned": 0.8965352408563678,
+      "mean_js_assigned": 0.14296066860263393,
+      "mean_quality_agreement_assigned": 0.6872799643846411,
+      "mean_clean_quality_assigned": 0.3828322161056209,
+      "mean_view_quality_assigned": 0.3815943288024685,
+      "mean_target_score_agreement_assigned": 0.9265901878211833,
+      "spearman_stability_quality_assigned": 0.2955002322678488,
+      "dominant_level_flip_rate": 0.09775641025641026,
+      "mean_centroid_drift_gt_units": 0.11468779874186338
+    },
+    {
+      "epoch": 11,
+      "head": "O2O",
+      "strength": 0.75,
+      "object_pairs": 624,
+      "assigned_both": 624,
+      "assignment_coverage": 1.0,
+      "mean_stability": 0.8884283786036269,
+      "mean_stability_assigned": 0.8884283786036269,
+      "mean_js_assigned": 0.15543207584411423,
+      "mean_quality_agreement_assigned": 0.6796009503881777,
+      "mean_clean_quality_assigned": 0.3828322161056209,
+      "mean_view_quality_assigned": 0.37815273328361887,
+      "mean_target_score_agreement_assigned": 0.9208269596567785,
+      "spearman_stability_quality_assigned": 0.3138521137193953,
+      "dominant_level_flip_rate": 0.11057692307692307,
+      "mean_centroid_drift_gt_units": 0.1187006641524876
+    },
+    {
+      "epoch": 21,
+      "head": "O2M",
+      "strength": 0.25,
+      "object_pairs": 624,
+      "assigned_both": 623,
+      "assignment_coverage": 0.9983974358974359,
+      "mean_stability": 0.9668358949556127,
+      "mean_stability_assigned": 0.968387798478816,
+      "mean_js_assigned": 0.033941263620126394,
+      "mean_quality_agreement_assigned": 0.8665322369780526,
+      "mean_clean_quality_assigned": 0.5627557803707774,
+      "mean_view_quality_assigned": 0.5605394854688686,
+      "mean_target_score_agreement_assigned": 0.9601031161661149,
+      "spearman_stability_quality_assigned": 0.2926261389898082,
+      "dominant_level_flip_rate": 0.06902086677367576,
+      "mean_centroid_drift_gt_units": 0.05101730897578055
+    },
+    {
+      "epoch": 21,
+      "head": "O2M",
+      "strength": 0.5,
+      "object_pairs": 624,
+      "assigned_both": 623,
+      "assignment_coverage": 0.9983974358974359,
+      "mean_stability": 0.9466133773119955,
+      "mean_stability_assigned": 0.9481328209352892,
+      "mean_js_assigned": 0.05794609753091272,
+      "mean_quality_agreement_assigned": 0.8462741080529963,
+      "mean_clean_quality_assigned": 0.5627557803707774,
+      "mean_view_quality_assigned": 0.5602744395043372,
+      "mean_target_score_agreement_assigned": 0.9579428739603308,
+      "spearman_stability_quality_assigned": 0.3401319046573572,
+      "dominant_level_flip_rate": 0.09791332263242375,
+      "mean_centroid_drift_gt_units": 0.057445526612974564
+    },
+    {
+      "epoch": 21,
+      "head": "O2M",
+      "strength": 0.75,
+      "object_pairs": 624,
+      "assigned_both": 623,
+      "assignment_coverage": 0.9983974358974359,
+      "mean_stability": 0.9182738299997423,
+      "mean_stability_assigned": 0.9197477847830485,
+      "mean_js_assigned": 0.09583252925706084,
+      "mean_quality_agreement_assigned": 0.8269785009102736,
+      "mean_clean_quality_assigned": 0.5627557803707774,
+      "mean_view_quality_assigned": 0.5558922846725339,
+      "mean_target_score_agreement_assigned": 0.9510554112164487,
+      "spearman_stability_quality_assigned": 0.31627323028007537,
+      "dominant_level_flip_rate": 0.13001605136436598,
+      "mean_centroid_drift_gt_units": 0.06350089199277321
+    },
+    {
+      "epoch": 21,
+      "head": "O2O",
+      "strength": 0.25,
+      "object_pairs": 624,
+      "assigned_both": 624,
+      "assignment_coverage": 1.0,
+      "mean_stability": 0.9223403628302774,
+      "mean_stability_assigned": 0.9223403628302774,
+      "mean_js_assigned": 0.10538287348517432,
+      "mean_quality_agreement_assigned": 0.7612132666340357,
+      "mean_clean_quality_assigned": 0.49738435362460454,
+      "mean_view_quality_assigned": 0.4943963287668549,
+      "mean_target_score_agreement_assigned": 0.939855680955902,
+      "spearman_stability_quality_assigned": 0.3259476001243991,
+      "dominant_level_flip_rate": 0.06891025641025642,
+      "mean_centroid_drift_gt_units": 0.10270811520083349
+    },
+    {
+      "epoch": 21,
+      "head": "O2O",
+      "strength": 0.5,
+      "object_pairs": 624,
+      "assigned_both": 624,
+      "assignment_coverage": 1.0,
+      "mean_stability": 0.9067797068849174,
+      "mean_stability_assigned": 0.9067797068849174,
+      "mean_js_assigned": 0.12698774074672742,
+      "mean_quality_agreement_assigned": 0.7362040279373995,
+      "mean_clean_quality_assigned": 0.49738435362460454,
+      "mean_view_quality_assigned": 0.49654653141157884,
+      "mean_target_score_agreement_assigned": 0.9350876093785369,
+      "spearman_stability_quality_assigned": 0.3588730482374731,
+      "dominant_level_flip_rate": 0.08333333333333333,
+      "mean_centroid_drift_gt_units": 0.11431010333060942
+    },
+    {
+      "epoch": 21,
+      "head": "O2O",
+      "strength": 0.75,
+      "object_pairs": 624,
+      "assigned_both": 624,
+      "assignment_coverage": 1.0,
+      "mean_stability": 0.8864330011650758,
+      "mean_stability_assigned": 0.8864330011650758,
+      "mean_js_assigned": 0.15818400833989543,
+      "mean_quality_agreement_assigned": 0.7140093166808639,
+      "mean_clean_quality_assigned": 0.49738435362460454,
+      "mean_view_quality_assigned": 0.48524751948729644,
+      "mean_target_score_agreement_assigned": 0.9315720576019547,
+      "spearman_stability_quality_assigned": 0.33715167961778986,
+      "dominant_level_flip_rate": 0.11217948717948718,
+      "mean_centroid_drift_gt_units": 0.1212810018008295
+    },
+    {
+      "epoch": 31,
+      "head": "O2M",
+      "strength": 0.25,
+      "object_pairs": 624,
+      "assigned_both": 624,
+      "assignment_coverage": 1.0,
+      "mean_stability": 0.9705226191645789,
+      "mean_stability_assigned": 0.9705226191645789,
+      "mean_js_assigned": 0.03133604804178397,
+      "mean_quality_agreement_assigned": 0.8859396508844031,
+      "mean_clean_quality_assigned": 0.6313116015412678,
+      "mean_view_quality_assigned": 0.6341549808906469,
+      "mean_target_score_agreement_assigned": 0.9630012235286705,
+      "spearman_stability_quality_assigned": 0.3422447709593777,
+      "dominant_level_flip_rate": 0.05608974358974359,
+      "mean_centroid_drift_gt_units": 0.05113698249880551
+    },
+    {
+      "epoch": 31,
+      "head": "O2M",
+      "strength": 0.5,
+      "object_pairs": 624,
+      "assigned_both": 624,
+      "assignment_coverage": 1.0,
+      "mean_stability": 0.9507819880820404,
+      "mean_stability_assigned": 0.9507819880820404,
+      "mean_js_assigned": 0.054270911531649306,
+      "mean_quality_agreement_assigned": 0.875492042094369,
+      "mean_clean_quality_assigned": 0.6313116015412678,
+      "mean_view_quality_assigned": 0.6308821489510592,
+      "mean_target_score_agreement_assigned": 0.9604963667553833,
+      "spearman_stability_quality_assigned": 0.25186013088035564,
+      "dominant_level_flip_rate": 0.09134615384615384,
+      "mean_centroid_drift_gt_units": 0.05531756297698321
+    },
+    {
+      "epoch": 31,
+      "head": "O2M",
+      "strength": 0.75,
+      "object_pairs": 624,
+      "assigned_both": 624,
+      "assignment_coverage": 1.0,
+      "mean_stability": 0.9287328603585835,
+      "mean_stability_assigned": 0.9287328603585835,
+      "mean_js_assigned": 0.08167441580084317,
+      "mean_quality_agreement_assigned": 0.8566123562422348,
+      "mean_clean_quality_assigned": 0.6313116015412678,
+      "mean_view_quality_assigned": 0.6214717486604618,
+      "mean_target_score_agreement_assigned": 0.9587509450428939,
+      "spearman_stability_quality_assigned": 0.286520459315965,
+      "dominant_level_flip_rate": 0.1266025641025641,
+      "mean_centroid_drift_gt_units": 0.060034644427890575
+    },
+    {
+      "epoch": 31,
+      "head": "O2O",
+      "strength": 0.25,
+      "object_pairs": 624,
+      "assigned_both": 624,
+      "assignment_coverage": 1.0,
+      "mean_stability": 0.9327484848973043,
+      "mean_stability_assigned": 0.9327484848973043,
+      "mean_js_assigned": 0.08980530486033245,
+      "mean_quality_agreement_assigned": 0.8087064112178078,
+      "mean_clean_quality_assigned": 0.5753940238883399,
+      "mean_view_quality_assigned": 0.581975206839464,
+      "mean_target_score_agreement_assigned": 0.9478417071724207,
+      "spearman_stability_quality_assigned": 0.2800958690668142,
+      "dominant_level_flip_rate": 0.05608974358974359,
+      "mean_centroid_drift_gt_units": 0.09821518186016573
+    },
+    {
+      "epoch": 31,
+      "head": "O2O",
+      "strength": 0.5,
+      "object_pairs": 624,
+      "assigned_both": 624,
+      "assignment_coverage": 1.0,
+      "mean_stability": 0.915570699566892,
+      "mean_stability_assigned": 0.915570699566892,
+      "mean_js_assigned": 0.11434868954574269,
+      "mean_quality_agreement_assigned": 0.7862164311534326,
+      "mean_clean_quality_assigned": 0.5753940238883399,
+      "mean_view_quality_assigned": 0.5716422471685711,
+      "mean_target_score_agreement_assigned": 0.9409950145111171,
+      "spearman_stability_quality_assigned": 0.3204926022258556,
+      "dominant_level_flip_rate": 0.07532051282051282,
+      "mean_centroid_drift_gt_units": 0.10771648869039338
+    },
+    {
+      "epoch": 31,
+      "head": "O2O",
+      "strength": 0.75,
+      "object_pairs": 624,
+      "assigned_both": 624,
+      "assignment_coverage": 1.0,
+      "mean_stability": 0.89498054789355,
+      "mean_stability_assigned": 0.89498054789355,
+      "mean_js_assigned": 0.14592092186398348,
+      "mean_quality_agreement_assigned": 0.7642826155899406,
+      "mean_clean_quality_assigned": 0.5753940238883399,
+      "mean_view_quality_assigned": 0.5608531690860474,
+      "mean_target_score_agreement_assigned": 0.9354580160256358,
+      "spearman_stability_quality_assigned": 0.29472749588255287,
+      "dominant_level_flip_rate": 0.10416666666666667,
+      "mean_centroid_drift_gt_units": 0.11607020430966677
+    },
+    {
+      "epoch": 41,
+      "head": "O2M",
+      "strength": 0.25,
+      "object_pairs": 624,
+      "assigned_both": 623,
+      "assignment_coverage": 0.9983974358974359,
+      "mean_stability": 0.9714933013178169,
+      "mean_stability_assigned": 0.9730526806136721,
+      "mean_js_assigned": 0.028353621334899038,
+      "mean_quality_agreement_assigned": 0.892713156659696,
+      "mean_clean_quality_assigned": 0.6627742637331518,
+      "mean_view_quality_assigned": 0.6673831357329151,
+      "mean_target_score_agreement_assigned": 0.9654435878089966,
+      "spearman_stability_quality_assigned": 0.30808128429971704,
+      "dominant_level_flip_rate": 0.04012841091492777,
+      "mean_centroid_drift_gt_units": 0.051788793179789884
+    },
+    {
+      "epoch": 41,
+      "head": "O2M",
+      "strength": 0.5,
+      "object_pairs": 624,
+      "assigned_both": 623,
+      "assignment_coverage": 0.9983974358974359,
+      "mean_stability": 0.9536992299302539,
+      "mean_stability_assigned": 0.9552300473137695,
+      "mean_js_assigned": 0.04914873940202941,
+      "mean_quality_agreement_assigned": 0.8758204900557602,
+      "mean_clean_quality_assigned": 0.6627742637331518,
+      "mean_view_quality_assigned": 0.6583073716431282,
+      "mean_target_score_agreement_assigned": 0.9611302465142676,
+      "spearman_stability_quality_assigned": 0.2753413942176181,
+      "dominant_level_flip_rate": 0.0754414125200642,
+      "mean_centroid_drift_gt_units": 0.05734536032820113
+    },
+    {
+      "epoch": 41,
+      "head": "O2M",
+      "strength": 0.75,
+      "object_pairs": 624,
+      "assigned_both": 623,
+      "assignment_coverage": 0.9983974358974359,
+      "mean_stability": 0.9280983555417507,
+      "mean_stability_assigned": 0.9295880800289766,
+      "mean_js_assigned": 0.08123376594467423,
+      "mean_quality_agreement_assigned": 0.8624956509197308,
+      "mean_clean_quality_assigned": 0.6627742637331518,
+      "mean_view_quality_assigned": 0.6559448898553155,
+      "mean_target_score_agreement_assigned": 0.9577714240224704,
+      "spearman_stability_quality_assigned": 0.33093533891362814,
+      "dominant_level_flip_rate": 0.10914927768860354,
+      "mean_centroid_drift_gt_units": 0.06340192332462227
+    },
+    {
+      "epoch": 41,
+      "head": "O2O",
+      "strength": 0.25,
+      "object_pairs": 624,
+      "assigned_both": 624,
+      "assignment_coverage": 1.0,
+      "mean_stability": 0.9336818582764573,
+      "mean_stability_assigned": 0.9336818582764573,
+      "mean_js_assigned": 0.08790006175838345,
+      "mean_quality_agreement_assigned": 0.8192033328971962,
+      "mean_clean_quality_assigned": 0.6211653316922587,
+      "mean_view_quality_assigned": 0.6288237183113009,
+      "mean_target_score_agreement_assigned": 0.9510954159454468,
+      "spearman_stability_quality_assigned": 0.283311256361858,
+      "dominant_level_flip_rate": 0.052884615384615384,
+      "mean_centroid_drift_gt_units": 0.09680572497049687
+    },
+    {
+      "epoch": 41,
+      "head": "O2O",
+      "strength": 0.5,
+      "object_pairs": 624,
+      "assigned_both": 624,
+      "assignment_coverage": 1.0,
+      "mean_stability": 0.917162129680515,
+      "mean_stability_assigned": 0.917162129680515,
+      "mean_js_assigned": 0.11153289548511336,
+      "mean_quality_agreement_assigned": 0.8065802354215084,
+      "mean_clean_quality_assigned": 0.6211653316922587,
+      "mean_view_quality_assigned": 0.6215521878759132,
+      "mean_target_score_agreement_assigned": 0.9457708380570813,
+      "spearman_stability_quality_assigned": 0.3314099504109212,
+      "dominant_level_flip_rate": 0.07211538461538461,
+      "mean_centroid_drift_gt_units": 0.10794392407296236
+    },
+    {
+      "epoch": 41,
+      "head": "O2O",
+      "strength": 0.75,
+      "object_pairs": 624,
+      "assigned_both": 624,
+      "assignment_coverage": 1.0,
+      "mean_stability": 0.8963198036489786,
+      "mean_stability_assigned": 0.8963198036489786,
+      "mean_js_assigned": 0.14532982855247617,
+      "mean_quality_agreement_assigned": 0.7835415800198249,
+      "mean_clean_quality_assigned": 0.6211653316922587,
+      "mean_view_quality_assigned": 0.6122452784501291,
+      "mean_target_score_agreement_assigned": 0.9399656539697369,
+      "spearman_stability_quality_assigned": 0.2963547367359975,
+      "dominant_level_flip_rate": 0.10737179487179487,
+      "mean_centroid_drift_gt_units": 0.10858105190922664
+    },
+    {
+      "epoch": 50,
+      "head": "O2M",
+      "strength": 0.25,
+      "object_pairs": 624,
+      "assigned_both": 624,
+      "assignment_coverage": 1.0,
+      "mean_stability": 0.9742875209507185,
+      "mean_stability_assigned": 0.9742875209507185,
+      "mean_js_assigned": 0.027009980353017965,
+      "mean_quality_agreement_assigned": 0.9026723516030896,
+      "mean_clean_quality_assigned": 0.7017346305290584,
+      "mean_view_quality_assigned": 0.7041753961044984,
+      "mean_target_score_agreement_assigned": 0.966298701112789,
+      "spearman_stability_quality_assigned": 0.3021635263612792,
+      "dominant_level_flip_rate": 0.04006410256410257,
+      "mean_centroid_drift_gt_units": 0.04887216309595292
+    },
+    {
+      "epoch": 50,
+      "head": "O2M",
+      "strength": 0.5,
+      "object_pairs": 624,
+      "assigned_both": 624,
+      "assignment_coverage": 1.0,
+      "mean_stability": 0.9545479413122414,
+      "mean_stability_assigned": 0.9545479413122414,
+      "mean_js_assigned": 0.049635175955546375,
+      "mean_quality_agreement_assigned": 0.8874463548835865,
+      "mean_clean_quality_assigned": 0.7017346305290584,
+      "mean_view_quality_assigned": 0.6976066974778242,
+      "mean_target_score_agreement_assigned": 0.963652048855973,
+      "spearman_stability_quality_assigned": 0.26959199901222375,
+      "dominant_level_flip_rate": 0.07211538461538461,
+      "mean_centroid_drift_gt_units": 0.055213285187808
+    },
+    {
+      "epoch": 50,
+      "head": "O2M",
+      "strength": 0.75,
+      "object_pairs": 624,
+      "assigned_both": 624,
+      "assignment_coverage": 1.0,
+      "mean_stability": 0.9340185410344992,
+      "mean_stability_assigned": 0.9340185410344992,
+      "mean_js_assigned": 0.07525018389915808,
+      "mean_quality_agreement_assigned": 0.8789200263877007,
+      "mean_clean_quality_assigned": 0.7017346305290584,
+      "mean_view_quality_assigned": 0.6934631578187691,
+      "mean_target_score_agreement_assigned": 0.9615229333775247,
+      "spearman_stability_quality_assigned": 0.3114255093221385,
+      "dominant_level_flip_rate": 0.09935897435897435,
+      "mean_centroid_drift_gt_units": 0.060356015873696676
+    },
+    {
+      "epoch": 50,
+      "head": "O2O",
+      "strength": 0.25,
+      "object_pairs": 624,
+      "assigned_both": 624,
+      "assignment_coverage": 1.0,
+      "mean_stability": 0.9356940782994649,
+      "mean_stability_assigned": 0.9356940782994649,
+      "mean_js_assigned": 0.08483060719627436,
+      "mean_quality_agreement_assigned": 0.8352215520147427,
+      "mean_clean_quality_assigned": 0.6592369598828298,
+      "mean_view_quality_assigned": 0.663949562868369,
+      "mean_target_score_agreement_assigned": 0.9539501062635356,
+      "spearman_stability_quality_assigned": 0.33690617078886076,
+      "dominant_level_flip_rate": 0.05128205128205128,
+      "mean_centroid_drift_gt_units": 0.09764646771465693
+    },
+    {
+      "epoch": 50,
+      "head": "O2O",
+      "strength": 0.5,
+      "object_pairs": 624,
+      "assigned_both": 624,
+      "assignment_coverage": 1.0,
+      "mean_stability": 0.9192160195274237,
+      "mean_stability_assigned": 0.9192160195274237,
+      "mean_js_assigned": 0.10963238811048266,
+      "mean_quality_agreement_assigned": 0.80959203516724,
+      "mean_clean_quality_assigned": 0.6592369598828298,
+      "mean_view_quality_assigned": 0.6578923068957057,
+      "mean_target_score_agreement_assigned": 0.9480061497854885,
+      "spearman_stability_quality_assigned": 0.3748151017694228,
+      "dominant_level_flip_rate": 0.07211538461538461,
+      "mean_centroid_drift_gt_units": 0.1049617764549063
+    },
+    {
+      "epoch": 50,
+      "head": "O2O",
+      "strength": 0.75,
+      "object_pairs": 624,
+      "assigned_both": 624,
+      "assignment_coverage": 1.0,
+      "mean_stability": 0.894537984278224,
+      "mean_stability_assigned": 0.894537984278224,
+      "mean_js_assigned": 0.14700799714678198,
+      "mean_quality_agreement_assigned": 0.7956862344731755,
+      "mean_clean_quality_assigned": 0.6592369598828298,
+      "mean_view_quality_assigned": 0.6494359158159335,
+      "mean_target_score_agreement_assigned": 0.9421424977986186,
+      "spearman_stability_quality_assigned": 0.3947891441115735,
+      "dominant_level_flip_rate": 0.10576923076923077,
+      "mean_centroid_drift_gt_units": 0.11257174122341801
+    }
+  ],
+  "decision": {
+    "verdict": "GO",
+    "reason": "both native heads show intensity-sensitive and quality-relevant affine assignment stability",
+    "panel_sha256": "5bc7260afc2919b071948b2e496f017cdc72d9f5d424bb62cd7f02705dea8266",
+    "panel_content_sha256": "8636cc2983ff65e77de6351629817fb43d75ebb36a440df44e4026c13747a0fa",
+    "geometry_sha256": "baeae282f7f3810370b5633eb8f0fc46f1461afd5d35bacb553213d2c95ddaec",
+    "epochs": [
+      11,
+      21,
+      31,
+      41,
+      50
+    ],
+    "strengths": [
+      0.25,
+      0.5,
+      0.75
+    ],
+    "head_evidence": {
+      "O2M": {
+        "monotonic_epochs": [
+          11,
+          21,
+          31,
+          41,
+          50
+        ],
+        "monotonic_checkpoint_count": 5,
+        "mean_weak_strong_drop": 0.045369574600211494,
+        "per_checkpoint_weak_strong_drop": [
+          0.05283212354690614,
+          0.048562064955870454,
+          0.04178975880599545,
+          0.043394945776066174,
+          0.04026897991621925
+        ],
+        "correlated_epochs_at_strongest_view": [
+          11,
+          21,
+          31,
+          41,
+          50
+        ],
+        "correlated_checkpoint_count": 5
+      },
+      "O2O": {
+        "monotonic_epochs": [
+          11,
+          21,
+          31,
+          41,
+          50
+        ],
+        "monotonic_checkpoint_count": 5,
+        "mean_weak_strong_drop": 0.036550264835351086,
+        "per_checkpoint_weak_strong_drop": [
+          0.030557876859079736,
+          0.03590736166520159,
+          0.03776793700375436,
+          0.03736205462747877,
+          0.041156094021240985
+        ],
+        "correlated_epochs_at_strongest_view": [
+          11,
+          21,
+          31,
+          41,
+          50
+        ],
+        "correlated_checkpoint_count": 5
+      }
+    },
+    "sample_insufficiency": [],
+    "weakest_assignment_coverage": 0.9983974358974359,
+    "thresholds": {
+      "expected_epochs": [
+        11,
+        21,
+        31,
+        41,
+        50
+      ],
+      "strengths": [
+        0.25,
+        0.5,
+        0.75
+      ],
+      "min_object_pairs": 100,
+      "min_assignment_coverage": 0.5,
+      "monotonic_tolerance": 0.01,
+      "min_weak_strong_drop": 0.02,
+      "min_monotonic_checkpoints": 3,
+      "min_spearman": 0.2,
+      "min_correlated_checkpoints": 2,
+      "schema": "ASAC-P0-v2",
+      "preregistered": true,
+      "deviations": {},
+      "frozen": {
+        "batch": 64,
+        "imgsz": 640,
+        "workers": 4,
+        "max_batches": 4,
+        "panel_images": 256,
+        "seed": 42,
+        "strengths": [
+          0.25,
+          0.5,
+          0.75
+        ],
+        "max_scale_delta": 0.5,
+        "max_translate": 0.1,
+        "min_visibility": 0.7,
+        "min_box_pixels": 2.0,
+        "grid_bins": 13,
+        "grid_extent": 1.5,
+        "kernel_sigma": 0.25,
+        "expected_strides": [
+          8.0,
+          16.0,
+          32.0
+        ],
+        "expected_epochs": [
+          11,
+          21,
+          31,
+          41,
+          50
+        ],
+        "min_object_pairs": 100,
+        "min_assignment_coverage": 0.5,
+        "monotonic_tolerance": 0.01,
+        "min_weak_strong_drop": 0.02,
+        "min_monotonic_checkpoints": 3,
+        "min_spearman": 0.2,
+        "min_correlated_checkpoints": 2
+      }
+    },
+    "preregistered": true,
+    "protocol_deviations": {},
+    "warnings": [
+      "GO authorizes only a scale/translate ASAC prototype; Mosaic correspondence was not tested."
+    ]
+  }
+}

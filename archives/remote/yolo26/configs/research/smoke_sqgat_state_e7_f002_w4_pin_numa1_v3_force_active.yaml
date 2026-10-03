@@ -1,0 +1,36 @@
+id: SMOKE-SQGAT-STATE-Y26N-VOC-E7-F002-W4-PIN-NUMA1-V3-FORCE-ACTIVE
+hypothesis: "Engineering-only forced-activation smoke: zero quality threshold and margin create real DDP KD candidates so state synchronization and collaborative backward execute together. These thresholds are not used by the research run."
+train:
+  model: /home/ubuntu/rz/yolo_study/yolo26_voc_research/configs/models/yolo26n_baseline.yaml
+  data: /home/ubuntu/rz/yolo_study/yolo26_voc_research/configs/datasets/voc_server.yaml
+  epochs: 7
+  patience: 7
+  batch: 64
+  imgsz: 640
+  device: "4,5,6,7"
+  workers: 4
+  pretrained: false
+  cls_remap: true
+  optimizer: auto
+  seed: 314159
+  deterministic: true
+  amp: bf16
+  fraction: 0.02
+  val: false
+  nms: false
+  plots: false
+  save: false
+  project: /home/ubuntu/rz/yolo_study/yolo26_voc_research/runs
+  name: smoke_sqgat_state_e7_f002_g4567_s314159_w4_pin_numa1_v3_force_active
+  exist_ok: false
+  o2o_kd_gain: 0.3333333333
+  o2o_kd_temp: 1.0
+  o2o_kd_min_quality: 0.0
+  o2o_kd_margin: 0.0
+  o2o_kd_warmup: 3.0
+  o2o_kd_ramp: 1.0
+  o2o_kd_fade: 0.0
+  o2o_kd_gate: true
+  o2o_kd_supervision_gate: none
+  o2o_kd_reduction: active
+  o2o_kd_state: teacher_better

@@ -1,0 +1,848 @@
+{
+  "method": "/home/ubuntu/rz/progressive_blur_detection_research/runs/sbg_long_e125/sbg_joint_voc_train90_e125_s2027_g0123_numa0/weights/last.pt",
+  "baseline": "/home/ubuntu/rz/progressive_blur_detection_research/runs/sbg_long_e125/baseline_voc_train90_e125_s2027_g0123_numa0/weights/last.pt",
+  "images": 1655,
+  "instances": 3882,
+  "definition": "One-to-one greedy same-class IoU>=0.5 match at fixed conf>=0.25 after independent unmodified-image prediction; not AP or benchmark-standard recall",
+  "confidence": 0.25,
+  "gt_iou_threshold": 0.5,
+  "nms_iou": 0.7,
+  "imgsz": 640,
+  "half": false,
+  "counts": {
+    "all": {
+      "total": 3882,
+      "both": 2576,
+      "baseline_only": 147,
+      "method_only": 139,
+      "neither": 1020
+    },
+    "size:medium": {
+      "total": 927,
+      "both": 425,
+      "baseline_only": 48,
+      "method_only": 32,
+      "neither": 422
+    },
+    "class:19": {
+      "total": 103,
+      "both": 80,
+      "baseline_only": 4,
+      "method_only": 3,
+      "neither": 16
+    },
+    "size:large": {
+      "total": 2854,
+      "both": 2138,
+      "baseline_only": 95,
+      "method_only": 104,
+      "neither": 517
+    },
+    "class:14": {
+      "total": 1244,
+      "both": 926,
+      "baseline_only": 34,
+      "method_only": 41,
+      "neither": 243
+    },
+    "class:13": {
+      "total": 115,
+      "both": 81,
+      "baseline_only": 5,
+      "method_only": 5,
+      "neither": 24
+    },
+    "class:7": {
+      "total": 164,
+      "both": 126,
+      "baseline_only": 3,
+      "method_only": 3,
+      "neither": 32
+    },
+    "class:8": {
+      "total": 308,
+      "both": 134,
+      "baseline_only": 16,
+      "method_only": 17,
+      "neither": 141
+    },
+    "class:10": {
+      "total": 87,
+      "both": 47,
+      "baseline_only": 3,
+      "method_only": 5,
+      "neither": 32
+    },
+    "class:17": {
+      "total": 80,
+      "both": 52,
+      "baseline_only": 5,
+      "method_only": 1,
+      "neither": 22
+    },
+    "class:6": {
+      "total": 334,
+      "both": 243,
+      "baseline_only": 11,
+      "method_only": 11,
+      "neither": 69
+    },
+    "class:3": {
+      "total": 97,
+      "both": 47,
+      "baseline_only": 6,
+      "method_only": 5,
+      "neither": 39
+    },
+    "class:18": {
+      "total": 93,
+      "both": 72,
+      "baseline_only": 3,
+      "method_only": 3,
+      "neither": 15
+    },
+    "class:4": {
+      "total": 168,
+      "both": 69,
+      "baseline_only": 9,
+      "method_only": 8,
+      "neither": 82
+    },
+    "class:2": {
+      "total": 152,
+      "both": 86,
+      "baseline_only": 7,
+      "method_only": 6,
+      "neither": 53
+    },
+    "class:0": {
+      "total": 114,
+      "both": 90,
+      "baseline_only": 2,
+      "method_only": 2,
+      "neither": 20
+    },
+    "class:11": {
+      "total": 197,
+      "both": 144,
+      "baseline_only": 9,
+      "method_only": 5,
+      "neither": 39
+    },
+    "class:12": {
+      "total": 109,
+      "both": 73,
+      "baseline_only": 7,
+      "method_only": 3,
+      "neither": 26
+    },
+    "class:15": {
+      "total": 153,
+      "both": 56,
+      "baseline_only": 8,
+      "method_only": 8,
+      "neither": 81
+    },
+    "class:1": {
+      "total": 99,
+      "both": 72,
+      "baseline_only": 4,
+      "method_only": 3,
+      "neither": 20
+    },
+    "size:small": {
+      "total": 101,
+      "both": 13,
+      "baseline_only": 4,
+      "method_only": 3,
+      "neither": 81
+    },
+    "class:5": {
+      "total": 79,
+      "both": 63,
+      "baseline_only": 3,
+      "method_only": 0,
+      "neither": 13
+    },
+    "class:9": {
+      "total": 76,
+      "both": 46,
+      "baseline_only": 4,
+      "method_only": 4,
+      "neither": 22
+    },
+    "class:16": {
+      "total": 110,
+      "both": 69,
+      "baseline_only": 4,
+      "method_only": 6,
+      "neither": 31
+    }
+  },
+  "examples": {
+    "baseline_only": [
+      {
+        "image": "/home/ubuntu/rz/progressive_blur_detection_research/voc_view/dev/images/train2007/000349.jpg",
+        "class_id": 8,
+        "box_xyxy": [
+          165.99999999999997,
+          160.0,
+          325.0,
+          374.0
+        ],
+        "area_640": 55748.19840000001
+      },
+      {
+        "image": "/home/ubuntu/rz/progressive_blur_detection_research/voc_view/dev/images/train2007/000519.jpg",
+        "class_id": 3,
+        "box_xyxy": [
+          214.00000000000003,
+          113.0,
+          325.0,
+          246.99999999999997
+        ],
+        "area_640": 24369.5616
+      },
+      {
+        "image": "/home/ubuntu/rz/progressive_blur_detection_research/voc_view/dev/images/train2007/000519.jpg",
+        "class_id": 3,
+        "box_xyxy": [
+          379.0,
+          191.0,
+          499.0,
+          237.0
+        ],
+        "area_640": 9043.967999999999
+      },
+      {
+        "image": "/home/ubuntu/rz/progressive_blur_detection_research/voc_view/dev/images/train2007/001512.jpg",
+        "class_id": 2,
+        "box_xyxy": [
+          158.99999999999997,
+          129.0,
+          434.0,
+          231.0
+        ],
+        "area_640": 45957.12
+      },
+      {
+        "image": "/home/ubuntu/rz/progressive_blur_detection_research/voc_view/dev/images/train2007/001758.jpg",
+        "class_id": 14,
+        "box_xyxy": [
+          2.999999999999991,
+          106.99999999999999,
+          231.0,
+          499.0
+        ],
+        "area_640": 146433.63840000003
+      },
+      {
+        "image": "/home/ubuntu/rz/progressive_blur_detection_research/voc_view/dev/images/train2007/002539.jpg",
+        "class_id": 5,
+        "box_xyxy": [
+          0.0,
+          0.0,
+          499.0,
+          332.0
+        ],
+        "area_640": 271430.4512
+      },
+      {
+        "image": "/home/ubuntu/rz/progressive_blur_detection_research/voc_view/dev/images/train2007/003240.jpg",
+        "class_id": 6,
+        "box_xyxy": [
+          0.0,
+          411.00000000000006,
+          129.0,
+          499.0
+        ],
+        "area_640": 18599.1168
+      },
+      {
+        "image": "/home/ubuntu/rz/progressive_blur_detection_research/voc_view/dev/images/train2007/003240.jpg",
+        "class_id": 6,
+        "box_xyxy": [
+          3.0000000000000018,
+          0.0,
+          144.0,
+          30.0
+        ],
+        "area_640": 6930.431999999999
+      },
+      {
+        "image": "/home/ubuntu/rz/progressive_blur_detection_research/voc_view/dev/images/train2007/003609.jpg",
+        "class_id": 8,
+        "box_xyxy": [
+          5.000000000000002,
+          134.0,
+          184.99999999999997,
+          269.0
+        ],
+        "area_640": 76800.0
+      },
+      {
+        "image": "/home/ubuntu/rz/progressive_blur_detection_research/voc_view/dev/images/train2007/004694.jpg",
+        "class_id": 13,
+        "box_xyxy": [
+          93.99999999999997,
+          184.0,
+          200.99999999999997,
+          465.0
+        ],
+        "area_640": 49261.77280000001
+      },
+      {
+        "image": "/home/ubuntu/rz/progressive_blur_detection_research/voc_view/dev/images/train2007/004876.jpg",
+        "class_id": 2,
+        "box_xyxy": [
+          200.99999999999997,
+          147.99999999999997,
+          223.0,
+          202.0
+        ],
+        "area_640": 1946.4192000000003
+      },
+      {
+        "image": "/home/ubuntu/rz/progressive_blur_detection_research/voc_view/dev/images/train2007/005122.jpg",
+        "class_id": 14,
+        "box_xyxy": [
+          2.0000000000000013,
+          56.00000000000001,
+          53.0,
+          203.0
+        ],
+        "area_640": 12283.0848
+      },
+      {
+        "image": "/home/ubuntu/rz/progressive_blur_detection_research/voc_view/dev/images/train2007/006320.jpg",
+        "class_id": 14,
+        "box_xyxy": [
+          92.0,
+          140.0,
+          117.0,
+          212.0
+        ],
+        "area_640": 2949.12
+      },
+      {
+        "image": "/home/ubuntu/rz/progressive_blur_detection_research/voc_view/dev/images/train2007/006369.jpg",
+        "class_id": 14,
+        "box_xyxy": [
+          434.0,
+          101.0,
+          445.0,
+          130.0
+        ],
+        "area_640": 522.6496
+      },
+      {
+        "image": "/home/ubuntu/rz/progressive_blur_detection_research/voc_view/dev/images/train2007/006369.jpg",
+        "class_id": 14,
+        "box_xyxy": [
+          366.0,
+          98.99999999999999,
+          400.0,
+          136.0
+        ],
+        "area_640": 2061.1072
+      },
+      {
+        "image": "/home/ubuntu/rz/progressive_blur_detection_research/voc_view/dev/images/train2007/006602.jpg",
+        "class_id": 14,
+        "box_xyxy": [
+          21.000000000000004,
+          253.0,
+          84.0,
+          444.00000000000006
+        ],
+        "area_640": 19714.867199999997
+      },
+      {
+        "image": "/home/ubuntu/rz/progressive_blur_detection_research/voc_view/dev/images/train2007/006706.jpg",
+        "class_id": 6,
+        "box_xyxy": [
+          1.0000000000000147,
+          40.00000000000001,
+          197.0,
+          216.0
+        ],
+        "area_640": 56518.24639999999
+      },
+      {
+        "image": "/home/ubuntu/rz/progressive_blur_detection_research/voc_view/dev/images/train2007/006858.jpg",
+        "class_id": 12,
+        "box_xyxy": [
+          121.0,
+          127.0,
+          204.00000000000003,
+          294.0
+        ],
+        "area_640": 22709.862399999998
+      },
+      {
+        "image": "/home/ubuntu/rz/progressive_blur_detection_research/voc_view/dev/images/train2007/006874.jpg",
+        "class_id": 3,
+        "box_xyxy": [
+          363.0,
+          44.0,
+          400.0,
+          60.0
+        ],
+        "area_640": 969.9328
+      },
+      {
+        "image": "/home/ubuntu/rz/progressive_blur_detection_research/voc_view/dev/images/train2007/006874.jpg",
+        "class_id": 14,
+        "box_xyxy": [
+          201.0,
+          315.99999999999994,
+          251.0,
+          374.0
+        ],
+        "area_640": 4751.36
+      },
+      {
+        "image": "/home/ubuntu/rz/progressive_blur_detection_research/voc_view/dev/images/train2007/007130.jpg",
+        "class_id": 15,
+        "box_xyxy": [
+          354.00000000000006,
+          107.99999999999999,
+          474.00000000000006,
+          170.0
+        ],
+        "area_640": 12189.695999999998
+      },
+      {
+        "image": "/home/ubuntu/rz/progressive_blur_detection_research/voc_view/dev/images/train2007/007222.jpg",
+        "class_id": 18,
+        "box_xyxy": [
+          217.00000000000003,
+          97.0,
+          354.00000000000006,
+          224.99999999999997
+        ],
+        "area_640": 28730.982400000004
+      },
+      {
+        "image": "/home/ubuntu/rz/progressive_blur_detection_research/voc_view/dev/images/train2007/009242.jpg",
+        "class_id": 17,
+        "box_xyxy": [
+          75.00000000000001,
+          96.0,
+          484.00000000000006,
+          259.99999999999994
+        ],
+        "area_640": 109897.31840000002
+      },
+      {
+        "image": "/home/ubuntu/rz/progressive_blur_detection_research/voc_view/dev/images/train2007/009940.jpg",
+        "class_id": 2,
+        "box_xyxy": [
+          216.99999999999997,
+          113.0,
+          386.0,
+          374.0
+        ],
+        "area_640": 72268.1856
+      },
+      {
+        "image": "/home/ubuntu/rz/progressive_blur_detection_research/voc_view/dev/images/train2012/2008_000132.jpg",
+        "class_id": 5,
+        "box_xyxy": [
+          0.0,
+          253.99999999999997,
+          499.0,
+          374.0
+        ],
+        "area_640": 98107.39199999999
+      },
+      {
+        "image": "/home/ubuntu/rz/progressive_blur_detection_research/voc_view/dev/images/train2012/2008_000311.jpg",
+        "class_id": 14,
+        "box_xyxy": [
+          69.0,
+          140.0,
+          104.00000000000001,
+          172.0
+        ],
+        "area_640": 1835.0080000000003
+      },
+      {
+        "image": "/home/ubuntu/rz/progressive_blur_detection_research/voc_view/dev/images/train2012/2008_000694.jpg",
+        "class_id": 14,
+        "box_xyxy": [
+          238.00000000000003,
+          90.0,
+          307.00000000000006,
+          220.0
+        ],
+        "area_640": 14696.448
+      },
+      {
+        "image": "/home/ubuntu/rz/progressive_blur_detection_research/voc_view/dev/images/train2012/2008_000829.jpg",
+        "class_id": 11,
+        "box_xyxy": [
+          131.0,
+          212.99999999999997,
+          248.0,
+          374.0
+        ],
+        "area_640": 30862.540800000002
+      },
+      {
+        "image": "/home/ubuntu/rz/progressive_blur_detection_research/voc_view/dev/images/train2012/2008_000873.jpg",
+        "class_id": 14,
+        "box_xyxy": [
+          441.0,
+          134.0,
+          499.00000000000006,
+          226.99999999999997
+        ],
+        "area_640": 8837.5296
+      },
+      {
+        "image": "/home/ubuntu/rz/progressive_blur_detection_research/voc_view/dev/images/train2012/2008_001083.jpg",
+        "class_id": 14,
+        "box_xyxy": [
+          203.0,
+          106.0,
+          266.0,
+          167.0
+        ],
+        "area_640": 6296.3712000000005
+      }
+    ],
+    "method_only": [
+      {
+        "image": "/home/ubuntu/rz/progressive_blur_detection_research/voc_view/dev/images/train2007/000349.jpg",
+        "class_id": 8,
+        "box_xyxy": [
+          99.0,
+          90.00000000000001,
+          205.0,
+          297.0
+        ],
+        "area_640": 35949.7728
+      },
+      {
+        "image": "/home/ubuntu/rz/progressive_blur_detection_research/voc_view/dev/images/train2007/000550.jpg",
+        "class_id": 8,
+        "box_xyxy": [
+          379.0,
+          117.0,
+          442.00000000000006,
+          173.0
+        ],
+        "area_640": 5780.2752
+      },
+      {
+        "image": "/home/ubuntu/rz/progressive_blur_detection_research/voc_view/dev/images/train2007/000850.jpg",
+        "class_id": 2,
+        "box_xyxy": [
+          212.00000000000003,
+          69.99999999999999,
+          333.0,
+          208.0
+        ],
+        "area_640": 27358.0032
+      },
+      {
+        "image": "/home/ubuntu/rz/progressive_blur_detection_research/voc_view/dev/images/train2007/001011.jpg",
+        "class_id": 14,
+        "box_xyxy": [
+          238.0,
+          1.999999999999988,
+          499.0,
+          374.0
+        ],
+        "area_640": 159075.5328
+      },
+      {
+        "image": "/home/ubuntu/rz/progressive_blur_detection_research/voc_view/dev/images/train2007/001106.jpg",
+        "class_id": 8,
+        "box_xyxy": [
+          362.00000000000006,
+          148.00000000000003,
+          444.0,
+          257.0
+        ],
+        "area_640": 14644.019200000002
+      },
+      {
+        "image": "/home/ubuntu/rz/progressive_blur_detection_research/voc_view/dev/images/train2007/002518.jpg",
+        "class_id": 4,
+        "box_xyxy": [
+          146.00000000000003,
+          197.00000000000003,
+          180.0,
+          297.0
+        ],
+        "area_640": 5570.56
+      },
+      {
+        "image": "/home/ubuntu/rz/progressive_blur_detection_research/voc_view/dev/images/train2007/002653.jpg",
+        "class_id": 3,
+        "box_xyxy": [
+          1.0000000000000009,
+          10.999999999999996,
+          455.0,
+          374.0
+        ],
+        "area_640": 270011.59679999994
+      },
+      {
+        "image": "/home/ubuntu/rz/progressive_blur_detection_research/voc_view/dev/images/train2007/003330.jpg",
+        "class_id": 2,
+        "box_xyxy": [
+          267.0,
+          94.99999999999999,
+          374.0,
+          246.0
+        ],
+        "area_640": 26471.6288
+      },
+      {
+        "image": "/home/ubuntu/rz/progressive_blur_detection_research/voc_view/dev/images/train2007/003609.jpg",
+        "class_id": 8,
+        "box_xyxy": [
+          269.0,
+          103.00000000000001,
+          359.0,
+          212.0
+        ],
+        "area_640": 31004.44444444444
+      },
+      {
+        "image": "/home/ubuntu/rz/progressive_blur_detection_research/voc_view/dev/images/train2007/003939.jpg",
+        "class_id": 14,
+        "box_xyxy": [
+          274.0,
+          44.00000000000001,
+          366.0,
+          116.0
+        ],
+        "area_640": 10852.761600000002
+      },
+      {
+        "image": "/home/ubuntu/rz/progressive_blur_detection_research/voc_view/dev/images/train2007/004058.jpg",
+        "class_id": 14,
+        "box_xyxy": [
+          131.99999999999997,
+          164.0,
+          195.0,
+          343.0
+        ],
+        "area_640": 18476.2368
+      },
+      {
+        "image": "/home/ubuntu/rz/progressive_blur_detection_research/voc_view/dev/images/train2007/004571.jpg",
+        "class_id": 9,
+        "box_xyxy": [
+          222.99999999999997,
+          119.00000000000001,
+          386.0,
+          242.0
+        ],
+        "area_640": 32848.2816
+      },
+      {
+        "image": "/home/ubuntu/rz/progressive_blur_detection_research/voc_view/dev/images/train2007/004782.jpg",
+        "class_id": 1,
+        "box_xyxy": [
+          152.0,
+          161.00000000000003,
+          239.00000000000003,
+          265.00000000000006
+        ],
+        "area_640": 14824.243200000003
+      },
+      {
+        "image": "/home/ubuntu/rz/progressive_blur_detection_research/voc_view/dev/images/train2007/005094.jpg",
+        "class_id": 18,
+        "box_xyxy": [
+          0.0,
+          133.99999999999997,
+          280.0,
+          225.0
+        ],
+        "area_640": 41746.43200000001
+      },
+      {
+        "image": "/home/ubuntu/rz/progressive_blur_detection_research/voc_view/dev/images/train2007/005592.jpg",
+        "class_id": 6,
+        "box_xyxy": [
+          121.00000000000001,
+          133.99999999999997,
+          276.0,
+          206.0
+        ],
+        "area_640": 18284.544
+      },
+      {
+        "image": "/home/ubuntu/rz/progressive_blur_detection_research/voc_view/dev/images/train2007/006369.jpg",
+        "class_id": 6,
+        "box_xyxy": [
+          332.99999999999994,
+          93.99999999999999,
+          379.0,
+          120.0
+        ],
+        "area_640": 1959.5264000000002
+      },
+      {
+        "image": "/home/ubuntu/rz/progressive_blur_detection_research/voc_view/dev/images/train2007/006766.jpg",
+        "class_id": 6,
+        "box_xyxy": [
+          297.00000000000006,
+          337.99999999999994,
+          474.0,
+          374.0
+        ],
+        "area_640": 10439.884800000002
+      },
+      {
+        "image": "/home/ubuntu/rz/progressive_blur_detection_research/voc_view/dev/images/train2007/006784.jpg",
+        "class_id": 14,
+        "box_xyxy": [
+          290.0,
+          68.0,
+          328.0,
+          166.0
+        ],
+        "area_640": 6101.401599999999
+      },
+      {
+        "image": "/home/ubuntu/rz/progressive_blur_detection_research/voc_view/dev/images/train2007/006784.jpg",
+        "class_id": 14,
+        "box_xyxy": [
+          385.0,
+          32.00000000000001,
+          447.00000000000006,
+          133.0
+        ],
+        "area_640": 10259.660799999998
+      },
+      {
+        "image": "/home/ubuntu/rz/progressive_blur_detection_research/voc_view/dev/images/train2007/006874.jpg",
+        "class_id": 13,
+        "box_xyxy": [
+          241.0,
+          243.0,
+          371.0,
+          324.99999999999994
+        ],
+        "area_640": 17465.344
+      },
+      {
+        "image": "/home/ubuntu/rz/progressive_blur_detection_research/voc_view/dev/images/train2007/006874.jpg",
+        "class_id": 13,
+        "box_xyxy": [
+          110.00000000000001,
+          166.99999999999997,
+          168.0,
+          209.99999999999997
+        ],
+        "area_640": 4086.1695999999997
+      },
+      {
+        "image": "/home/ubuntu/rz/progressive_blur_detection_research/voc_view/dev/images/train2007/007029.jpg",
+        "class_id": 1,
+        "box_xyxy": [
+          371.0,
+          128.0,
+          499.0,
+          322.0
+        ],
+        "area_640": 40684.7488
+      },
+      {
+        "image": "/home/ubuntu/rz/progressive_blur_detection_research/voc_view/dev/images/train2007/007108.jpg",
+        "class_id": 14,
+        "box_xyxy": [
+          317.99999999999994,
+          131.0,
+          389.0,
+          234.00000000000003
+        ],
+        "area_640": 11981.619200000005
+      },
+      {
+        "image": "/home/ubuntu/rz/progressive_blur_detection_research/voc_view/dev/images/train2007/007578.jpg",
+        "class_id": 14,
+        "box_xyxy": [
+          184.0,
+          0.0,
+          282.0,
+          137.0
+        ],
+        "area_640": 21997.1584
+      },
+      {
+        "image": "/home/ubuntu/rz/progressive_blur_detection_research/voc_view/dev/images/train2007/007578.jpg",
+        "class_id": 14,
+        "box_xyxy": [
+          0.0,
+          0.0,
+          115.0,
+          328.0
+        ],
+        "area_640": 61800.448
+      },
+      {
+        "image": "/home/ubuntu/rz/progressive_blur_detection_research/voc_view/dev/images/train2007/007600.jpg",
+        "class_id": 15,
+        "box_xyxy": [
+          61.0,
+          43.00000000000001,
+          243.0,
+          301.0
+        ],
+        "area_640": 76932.7104
+      },
+      {
+        "image": "/home/ubuntu/rz/progressive_blur_detection_research/voc_view/dev/images/train2007/007600.jpg",
+        "class_id": 15,
+        "box_xyxy": [
+          223.00000000000003,
+          51.99999999999997,
+          442.0,
+          304.0
+        ],
+        "area_640": 90420.0192
+      },
+      {
+        "image": "/home/ubuntu/rz/progressive_blur_detection_research/voc_view/dev/images/train2007/008970.jpg",
+        "class_id": 19,
+        "box_xyxy": [
+          64.0,
+          76.00000000000001,
+          189.0,
+          203.00000000000003
+        ],
+        "area_640": 26009.600000000002
+      },
+      {
+        "image": "/home/ubuntu/rz/progressive_blur_detection_research/voc_view/dev/images/train2012/2008_000775.jpg",
+        "class_id": 14,
+        "box_xyxy": [
+          0.0,
+          117.0,
+          483.0,
+          354.99999999999994
+        ],
+        "area_640": 188340.6336
+      },
+      {
+        "image": "/home/ubuntu/rz/progressive_blur_detection_research/voc_view/dev/images/train2012/2008_000842.jpg",
+        "class_id": 14,
+        "box_xyxy": [
+          83.99999999999999,
+          405.0,
+          105.0,
+          497.0
+        ],
+        "area_640": 3165.3887999999997
+      }
+    ]
+  }
+}

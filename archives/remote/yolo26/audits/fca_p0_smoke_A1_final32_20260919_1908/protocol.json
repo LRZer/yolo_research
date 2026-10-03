@@ -1,0 +1,67 @@
+{
+  "approved_by_user": true,
+  "approved_request": "执行 FCA-P0：按预注册先做零训练全量审计",
+  "audit": "FCA-P0",
+  "augment": false,
+  "batch": 64,
+  "bootstrap_replicates": 10000,
+  "bootstrap_seed": 20260919,
+  "checkpoint_files": [
+    "epoch0.pt",
+    "epoch10.pt",
+    "epoch20.pt",
+    "epoch30.pt",
+    "epoch40.pt",
+    "last.pt"
+  ],
+  "checkpoint_sha256": {
+    "epoch0.pt": "dff866ec3fa3087731de178064e40350b3d9625bb3679d427e9e3a954a79c346",
+    "epoch10.pt": "fe96652a133d9f7f13bb586ed06eb517608227f30ea523bc0d717d77762cafbe",
+    "epoch20.pt": "17d1b6f0d4089e607899560446ea6102f89427c205906c83bb691d6c9b82acda",
+    "epoch30.pt": "cec52cee8bfe0aafb3e10fbb94022ac4e0c98897541b0e440d9557f5846d623a",
+    "epoch40.pt": "bfa1467eb89b38124d3a0f7ee98d4b79d7608ac4e513edb608ebe1e672e6965a",
+    "last.pt": "a0bab3ef6b42b5cf9b295fbbbe9a322ebd39bc5cf568883aecb9ba4ddf547748"
+  },
+  "data_split": "train only: VOC2007 trainval + VOC2012 trainval",
+  "expected_gt": 40058,
+  "expected_images": 16551,
+  "forbidden_split": "VOC2007 test",
+  "fraction": 1.0,
+  "go_rate": 0.0025,
+  "imgsz": 640,
+  "numa_node": 1,
+  "physical_gpu": 4,
+  "pinned_memory": true,
+  "preregistered": false,
+  "primary_precision": "BF16 autocast",
+  "protocol_amendment_A1": {
+    "frozen_before_full_scan": true,
+    "offgraph_policy": "raw S2/S3 preserved; off-graph edges never inserted into E_topk",
+    "stage_semantics": "S2 is raw native post-conflict rewiring, not assumed to be a subset of S1; added and removed edges are reported explicitly",
+    "trigger": "formal attempt stopped on batch 2 because native S2 can introduce edges outside S1",
+    "unchanged": "dataset, checkpoints, thresholds, E_topk matching graph, GO/NO-GO effect-size gates",
+    "verdict_guard": "any image whose native-covered GT identities cannot all be rematched in E_topk blocks GO and returns an inconclusive protocol verdict"
+  },
+  "protocol_deviations": {},
+  "quality_thresholds": [
+    0.0,
+    0.25,
+    0.5,
+    0.75,
+    0.9
+  ],
+  "rect": false,
+  "schema_version": 2,
+  "sensitivity_precision": "FP32 last.pt",
+  "shuffle": false,
+  "source_sha256": {
+    "ultralytics/data/build.py": "1c3131adc60dc9763b9edcde853d3bc461ec908c2ed9d1965b2610bfd8c27847",
+    "ultralytics/nn/modules/head.py": "1dc4a4a90401149edeb55cd679e7f33be2c36eae1317b6f67f13c7a8b18d60b8",
+    "ultralytics/utils/loss.py": "6dae8e66c4b94a0c16b11a219e4831994c895cc036210648a6a23d9e282e5db9",
+    "ultralytics/utils/tal.py": "9468fb73df7805a4d297302aa221e0d7a6e46e224d0a0768e5abf3f4d2cf2861"
+  },
+  "status": "SMOKE",
+  "subgroup_gap_attribution": "native-covered GT identities are first rematched inside E_topk, then that surrogate seed is augmented; newly covered GTs are additive gap units only when identity rematching is feasible",
+  "workers": 4,
+  "zero_quality_gap_definition": "max(0, unrestricted_gap - nonzero-GT-only gap)"
+}

@@ -1,0 +1,34 @@
+{
+  "status": "manager_started",
+  "manager_pid": 3079071,
+  "management": "/home/ubuntu/rz/foveated_classification_research/_management/cub_splitstats_ddp23_s2005",
+  "run_dir": "/home/ubuntu/rz/foveated_classification_research/runs/resnet50_G6_splitstats_global_crop_native500_s2005_e125_ddp23",
+  "preflight": {
+    "checked_at_utc": "2026-10-02T07:24:17.274562+00:00",
+    "boot_id": "b825af41-86a3-4fe6-821b-c1ecb4b5fb9e",
+    "gpus": [
+      {
+        "index": 2,
+        "uuid": "GPU-66f2712d-a00e-2fdb-e6da-be24056fa1d4",
+        "free_mib": 12373,
+        "utilization": 90
+      },
+      {
+        "index": 3,
+        "uuid": "GPU-a47e8163-6e6f-6686-c5ee-c98142f6cb27",
+        "free_mib": 12371,
+        "utilization": 100
+      }
+    ],
+    "numa_node": 0,
+    "ue_counts": {
+      "/sys/devices/system/edac/mc/mc0/ue_count": 0,
+      "/sys/devices/system/edac/mc/mc1/ue_count": 0
+    },
+    "memory_budget_mb": 59251.97265625,
+    "psi": "some avg10=0.00 avg60=0.00 avg300=0.00 total=3048709\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=3041630\n",
+    "historical_socket1_bert_replay": true,
+    "hardware_repaired_not_claimed": true,
+    "shared_gpus_user_authorized": true
+  }
+}

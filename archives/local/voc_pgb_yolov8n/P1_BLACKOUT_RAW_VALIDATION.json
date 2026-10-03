@@ -1,0 +1,63 @@
+{
+  "status": "raw_development_images_no_oracle_mask",
+  "generated": "2026-09-23T02:39:20.612623+08:00",
+  "data": "/home/ubuntu/rz/progressive_blur_detection_research/data_splits/voc_strict_seed2027.yaml",
+  "split": "val",
+  "model_input": "unaltered 640-pixel letterboxed images",
+  "checkpoints": [
+    {
+      "checkpoint": "/home/ubuntu/rz/progressive_blur_detection_research/runs/voc_p1/oracle_blackout_scratch_e20_b64_s2027/weights/best.pt",
+      "checkpoint_sha256": "d575727cb321f9aacc5345b18b0538e97afe8dfc7bd31064b19bd4aa80df597f",
+      "checkpoint_epoch": null,
+      "precision": 0.12021139231217728,
+      "recall": 0.10554040598869181,
+      "mAP50": 0.044078980948284024,
+      "mAP50_95": 0.014178854691355158
+    },
+    {
+      "checkpoint": "/home/ubuntu/rz/progressive_blur_detection_research/runs/voc_p1/oracle_blackout_scratch_e20_b64_s2027/weights/last.pt",
+      "checkpoint_sha256": "87f614010a5f803c4b66aed5f9c1f76a42a1516a883f6a0b66f5fd25e2776929",
+      "checkpoint_epoch": null,
+      "precision": 0.11463056802779799,
+      "recall": 0.08541970843949125,
+      "mAP50": 0.04221642063399973,
+      "mAP50_95": 0.013939057662744734
+    },
+    {
+      "checkpoint": "/home/ubuntu/rz/progressive_blur_detection_research/runs/voc_p1/oracle_blackout_scratch_e20_b64_s2027/weights/epoch0.pt",
+      "checkpoint_sha256": "b5d23110b0296c977f207290d24b9cdac0e1522fb1c8e067da22fe7d6a025adb",
+      "checkpoint_epoch": 1,
+      "precision": 0.001286653947798613,
+      "recall": 0.0888532610266318,
+      "mAP50": 0.0006457866479629164,
+      "mAP50_95": 0.0001449500005510006
+    },
+    {
+      "checkpoint": "/home/ubuntu/rz/progressive_blur_detection_research/runs/voc_p1/oracle_blackout_scratch_e20_b64_s2027/weights/epoch5.pt",
+      "checkpoint_sha256": "be34471e2c39d4663f1fec8581ac2b5a9ae456ad9c2d7b314b7a0a8405b86b67",
+      "checkpoint_epoch": 6,
+      "precision": 0.07982377312019938,
+      "recall": 0.10672649034723589,
+      "mAP50": 0.030803562753184653,
+      "mAP50_95": 0.009009854802527752
+    },
+    {
+      "checkpoint": "/home/ubuntu/rz/progressive_blur_detection_research/runs/voc_p1/oracle_blackout_scratch_e20_b64_s2027/weights/epoch10.pt",
+      "checkpoint_sha256": "5bd72402b680d491d29dac69c4d67ec5423e7f090f8641caf6f9d6266e357833",
+      "checkpoint_epoch": 11,
+      "precision": 0.08957419087540282,
+      "recall": 0.10953080976859628,
+      "mAP50": 0.04308246867284601,
+      "mAP50_95": 0.013697206543674526
+    },
+    {
+      "checkpoint": "/home/ubuntu/rz/progressive_blur_detection_research/runs/voc_p1/oracle_blackout_scratch_e20_b64_s2027/weights/epoch15.pt",
+      "checkpoint_sha256": "4776277aa0dfe4e876812eeb7c515c5d344d8db63ec962d5137d178d2fcc9d3c",
+      "checkpoint_epoch": 16,
+      "precision": 0.08654170254427228,
+      "recall": 0.10190113734381923,
+      "mAP50": 0.039930835047416284,
+      "mAP50_95": 0.013344587527078637
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+[
+  {
+    "reference": "/home/ubuntu/rz/yolo_study/yolo26_voc_research/runs/b50_no_kd_e50_g4567_s0_w4_pin_numa1/weights/last.pt",
+    "candidate": "/home/ubuntu/rz/yolo_study/yolo26_voc_research/runs/b50_no_kd_e50_g4567_s0_reboot_r1_w4_pin_numa1/weights/last.pt",
+    "scopes": {
+      "shared_and_o2m": {
+        "tensors": 588,
+        "elements": 2403960,
+        "different_tensors": 0,
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "changed_keys": [],
+        "relative_l2": 0.0
+      },
+      "o2o_box": {
+        "tensors": 42,
+        "elements": 72018,
+        "different_tensors": 0,
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "changed_keys": [],
+        "relative_l2": 0.0
+      },
+      "o2o_cls": {
+        "tensors": 78,
+        "elements": 54728,
+        "different_tensors": 0,
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "changed_keys": [],
+        "relative_l2": 0.0
+      }
+    }
+  }
+]

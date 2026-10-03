@@ -1,0 +1,13 @@
+{
+  "status": "FAIL",
+  "started_at": "2026-09-19T19:58:45.159071+08:00",
+  "failed_at": "2026-09-19T19:58:47.761834+08:00",
+  "error": "RuntimeError('model head is not the native end-to-end O2M/O2O YOLO26 path')",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/ubuntu/rz/yolo_study/yolo26_voc_research/scripts/run_asac_v5_smoke.py\", line 97, in main\n    contract = p.validate_criterion_contract(trainer, smoke_args.expected_strides)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/ubuntu/rz/yolo_study/yolo26_voc_research/scripts/probe_asac_assignment_stability.py\", line 1352, in validate_criterion_contract\n    raise RuntimeError(\"model head is not the native end-to-end O2M/O2O YOLO26 path\")\nRuntimeError: model head is not the native end-to-end O2M/O2O YOLO26 path\n",
+  "kernel_health": {
+    "since": "2026-09-19T19:58:45.159071+08:00",
+    "checked_at": "2026-09-19T19:58:47.766663+08:00",
+    "qualifying_event_count": 0,
+    "events": []
+  }
+}

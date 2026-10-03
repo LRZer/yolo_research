@@ -1,0 +1,80 @@
+{
+  "status": "raw_development_images_no_oracle_mask",
+  "generated": "2026-09-23T05:40:35.683134+08:00",
+  "data": "/home/ubuntu/rz/progressive_blur_detection_research/data_splits/visdrone_official/view_dataset.yaml",
+  "split": "val",
+  "imgsz": 640,
+  "max_det": 1000,
+  "selection": "existing best.pt; no new checkpoint selection",
+  "runs": [
+    {
+      "run": "/home/ubuntu/rz/progressive_blur_detection_research/runs/visdrone_official/yolov8n_p2_scratch_official_640_s2027_e125",
+      "checkpoint": "/home/ubuntu/rz/progressive_blur_detection_research/runs/visdrone_official/yolov8n_p2_scratch_official_640_s2027_e125/weights/best.pt",
+      "checkpoint_sha256": "5646adcf36820606e2b016ca4e8fab56705d5ce3c0810c778c7a9246d7e3184f",
+      "mAP50": 0.3500769893977774,
+      "mAP50_95": 0.19852606935973058,
+      "classes": [
+        {
+          "id": 0,
+          "name": "pedestrian",
+          "AP50": 0.4099325462829183,
+          "AP50_95": 0.17783564094734242
+        },
+        {
+          "id": 1,
+          "name": "people",
+          "AP50": 0.3329849272225959,
+          "AP50_95": 0.12394407874146322
+        },
+        {
+          "id": 2,
+          "name": "bicycle",
+          "AP50": 0.09381933900587744,
+          "AP50_95": 0.03635038282256201
+        },
+        {
+          "id": 3,
+          "name": "car",
+          "AP50": 0.7878302354686855,
+          "AP50_95": 0.5318939001990186
+        },
+        {
+          "id": 4,
+          "name": "van",
+          "AP50": 0.392791516051691,
+          "AP50_95": 0.26991420022208984
+        },
+        {
+          "id": 5,
+          "name": "truck",
+          "AP50": 0.2715501277420974,
+          "AP50_95": 0.1722027954811333
+        },
+        {
+          "id": 6,
+          "name": "tricycle",
+          "AP50": 0.22042196866915623,
+          "AP50_95": 0.11853673934327133
+        },
+        {
+          "id": 7,
+          "name": "awning-tricycle",
+          "AP50": 0.10966799967305617,
+          "AP50_95": 0.0671703623099695
+        },
+        {
+          "id": 8,
+          "name": "bus",
+          "AP50": 0.46886841352508335,
+          "AP50_95": 0.31371910961940885
+        },
+        {
+          "id": 9,
+          "name": "motor",
+          "AP50": 0.41290282033661385,
+          "AP50_95": 0.17369348391104655
+        }
+      ]
+    }
+  ]
+}

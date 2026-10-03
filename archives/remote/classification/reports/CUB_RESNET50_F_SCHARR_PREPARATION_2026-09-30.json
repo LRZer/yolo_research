@@ -1,0 +1,87 @@
+{
+  "status": "F_cpu_verified_preview_exact",
+  "group": "F_scharr",
+  "train_images": 5994,
+  "test_images": 5794,
+  "classes": 200,
+  "config_sha256": "1a13855d67b72a9697dcb1ed383ff1de44f35f8a94669bf25bdc89c4abc606c6",
+  "stats_sha256": "e1caf32dd617b8d91720d117ff8527c75a5dbc1b82c71fbb1eabaecd88a7b309",
+  "baseline_engine_sha256": "6aa91ec82be7cee3dc985e2e5824ed8a5470cd7e7f2dc7cfd5e6a1f702a9f8a2",
+  "trainer_sha256": "77a22a69bf15980a7fd07548ac8700e24b696091013152c6a18f119f755a87f9",
+  "preview_manifest_sha256": "332ec5c66e1146b2891ff0cda2c6fed17286e0a963eeb326e347ef1c2f5963b7",
+  "shared_config_differences": {
+    "group": [
+      "A_original",
+      "F_scharr"
+    ],
+    "run_dir": [
+      "/home/ubuntu/rz/foveated_classification_research/runs/resnet50_A_native500_s2005_e200",
+      "/home/ubuntu/rz/foveated_classification_research/runs/resnet50_F_scharr_native500_s2005_e200"
+    ],
+    "device_physical": [
+      0,
+      6
+    ]
+  },
+  "versions": {
+    "python": "3.11.16",
+    "torch": "2.6.0+cu118",
+    "torchvision": "0.21.0+cu118",
+    "numpy": "2.4.6",
+    "opencv": "5.0.0",
+    "pillow": "12.3.0"
+  },
+  "samples": [
+    {
+      "image_id": 10140,
+      "preview_pixels_equal": true,
+      "deterministic_train_augmentation": true,
+      "label": 172
+    },
+    {
+      "image_id": 2568,
+      "preview_pixels_equal": true,
+      "deterministic_train_augmentation": true,
+      "label": 44
+    },
+    {
+      "image_id": 6223,
+      "preview_pixels_equal": true,
+      "deterministic_train_augmentation": true,
+      "label": 106
+    },
+    {
+      "image_id": 4786,
+      "preview_pixels_equal": true,
+      "deterministic_train_augmentation": true,
+      "label": 81
+    },
+    {
+      "image_id": 9234,
+      "preview_pixels_equal": true,
+      "deterministic_train_augmentation": true,
+      "label": 157
+    },
+    {
+      "image_id": 1767,
+      "preview_pixels_equal": true,
+      "deterministic_train_augmentation": true,
+      "label": 31
+    },
+    {
+      "image_id": 1592,
+      "preview_pixels_equal": true,
+      "deterministic_train_augmentation": true,
+      "label": 28
+    },
+    {
+      "image_id": 3617,
+      "preview_pixels_equal": true,
+      "deterministic_train_augmentation": true,
+      "label": 62
+    }
+  ],
+  "uniform_input_zero_response": true,
+  "training_started": false,
+  "gpu_smoke_completed": false
+}

@@ -1,0 +1,22 @@
+id: asac_a2_ddp_smoke
+hypothesis: Engineering-only smoke; no performance interpretation.
+base_args: /home/ubuntu/rz/yolo_study/yolo26_voc_research/runs/b50_no_kd_e50_g4567_s42/args.yaml
+train_overrides:
+  epochs: 2
+  patience: 2
+  batch: 64
+  fraction: 0.02
+  save: false
+  save_period: -1
+  val: false
+  plots: false
+  project: /home/ubuntu/rz/yolo_study/yolo26_voc_research/smoke
+  name: asac_a2_ddp_2e_g4567_s42_w4_pin_numa1
+  exist_ok: false
+asac:
+  schema: ASAC-Phase1-v2
+  variant: A2
+  schedule: {}
+  schedule_manifest: null
+  formal: false
+  run_note: engineering smoke only; never compare AP

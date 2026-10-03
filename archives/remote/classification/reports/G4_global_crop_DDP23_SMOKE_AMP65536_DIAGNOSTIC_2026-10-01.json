@@ -1,0 +1,48 @@
+{
+  "status": "verified_ddp_smoke",
+  "group": "G4_global_crop",
+  "config_sha256": "6542331c3240b3d00486b3372deaf93332cf97b216a593bb73dae6f67d2bacac",
+  "source_sha256": {
+    "trainer": "68a1fdf8224ca7b4c1ce8f517e95672684111091b772127a5605da57e58ca364",
+    "historical_engine": "6aa91ec82be7cee3dc985e2e5824ed8a5470cd7e7f2dc7cfd5e6a1f702a9f8a2",
+    "stats": "e1caf32dd617b8d91720d117ff8527c75a5dbc1b82c71fbb1eabaecd88a7b309",
+    "bbox": "c19d9f096c15564793408e5ba054b8d715a6805819d98f037c977f369ef4abd3"
+  },
+  "row": {
+    "epoch": 1,
+    "lr": 0.005,
+    "train_loss": 4.594562440759995,
+    "train_top1": 6.470588235294118,
+    "train_top5": 21.764705882352942,
+    "test_loss": 3.388329232440275,
+    "test_top1": 0.0,
+    "test_top5": 100.0,
+    "train_seconds": 5.773102024992113,
+    "test_seconds": 0.6690231370012043,
+    "epoch_seconds": 6.442125161993317,
+    "gpu_max_memory_gib": 3.8293991088867188,
+    "train_images": 170,
+    "test_images": 34,
+    "optimizer_steps": 2,
+    "update_groups": 3,
+    "amp_skipped_steps": 1
+  },
+  "rank_reports": [
+    {
+      "rank": 0,
+      "pid": 1842494,
+      "peak_allocated_gib": 3.8293991088867188,
+      "peak_reserved_gib": 5.396484375,
+      "device": "cuda:0"
+    },
+    {
+      "rank": 1,
+      "pid": 1842495,
+      "peak_allocated_gib": 3.8293991088867188,
+      "peak_reserved_gib": 5.396484375,
+      "device": "cuda:1"
+    }
+  ],
+  "fusion_identical_across_ranks": true,
+  "parameter_count": 24327432
+}

@@ -1,0 +1,805 @@
+[
+  {
+    "batches": 259,
+    "bitwise_control": {
+      "O2M": {
+        "fg_mask": true,
+        "num_gt": true,
+        "pred_bboxes": true,
+        "target_bboxes": true,
+        "target_gt_idx": true,
+        "target_labels": true,
+        "target_scores": true
+      },
+      "O2O": {
+        "fg_mask": true,
+        "num_gt": true,
+        "pred_bboxes": true,
+        "target_bboxes": true,
+        "target_gt_idx": true,
+        "target_labels": true,
+        "target_scores": true
+      }
+    },
+    "checkpoint": "epoch0.pt",
+    "checkpoint_epoch": 1,
+    "criterion": {
+      "branches": {
+        "one2many": {
+          "assigner_class": "ultralytics.utils.tal.TaskAlignedAssigner",
+          "assignment_method": "get_assigned_targets_and_loss",
+          "loss_class": "ultralytics.utils.loss.v8DetectionLoss",
+          "stride": [
+            8.0,
+            16.0,
+            32.0
+          ],
+          "topk": 10,
+          "topk2": 10
+        },
+        "one2one": {
+          "assigner_class": "ultralytics.utils.tal.TaskAlignedAssigner",
+          "assignment_method": "get_assigned_targets_and_loss",
+          "loss_class": "ultralytics.utils.loss.v8DetectionLoss",
+          "stride": [
+            8.0,
+            16.0,
+            32.0
+          ],
+          "topk": 7,
+          "topk2": 1
+        }
+      },
+      "criterion_class": "ultralytics.utils.loss.E2ELoss",
+      "head_class": "ultralytics.nn.modules.head.Detect",
+      "head_end2end": true,
+      "one2one_head_present": true
+    },
+    "dtype_evidence": {
+      "O2M": {
+        "boxes": "torch.bfloat16",
+        "features": [
+          "torch.bfloat16",
+          "torch.bfloat16",
+          "torch.bfloat16"
+        ],
+        "scores": "torch.bfloat16"
+      },
+      "O2O": {
+        "boxes": "torch.bfloat16",
+        "features": [
+          "torch.bfloat16",
+          "torch.bfloat16",
+          "torch.bfloat16"
+        ],
+        "scores": "torch.bfloat16"
+      }
+    },
+    "elapsed_seconds": 63.040521933999116,
+    "geometry_sha256": "05806c56188ad7e29e589d68be80362a1e8ef4553dac344f9441215cfc9f206e",
+    "gt": 40058,
+    "head_state_rehydration": {
+      "reconstructed_after": true,
+      "reconstructed_before": false,
+      "serialized_end2end": true,
+      "tensor_state_changed": false
+    },
+    "images": 16551,
+    "inference_mode_enforced": true,
+    "integrity_after": {
+      "bn_all_eval": true,
+      "bn_eval": 114,
+      "bn_total": 114,
+      "buffer_sha256": "0ec1c479d8c67df0b78b34d91319863fc6d9bcf568b7165e9007225a25373eeb",
+      "buffer_tensor_count": 342,
+      "grad_enabled": true,
+      "model_training": true,
+      "optimizer_created": false,
+      "parameter_sha256": "3b3ddf2c99231cf916f065cd94c9171d36a2250b3ba804503113c1a3dc463d3a",
+      "parameter_tensor_count": 366,
+      "parameters_with_grad": 0
+    },
+    "integrity_before": {
+      "bn_all_eval": true,
+      "bn_eval": 114,
+      "bn_total": 114,
+      "buffer_sha256": "0ec1c479d8c67df0b78b34d91319863fc6d9bcf568b7165e9007225a25373eeb",
+      "buffer_tensor_count": 342,
+      "grad_enabled": true,
+      "model_training": true,
+      "optimizer_created": false,
+      "parameter_sha256": "3b3ddf2c99231cf916f065cd94c9171d36a2250b3ba804503113c1a3dc463d3a",
+      "parameter_tensor_count": 366,
+      "parameters_with_grad": 0
+    },
+    "loader": {
+      "batch_size": 64,
+      "cache": false,
+      "dataset_augment": false,
+      "dataset_length": 16551,
+      "dataset_rect": false,
+      "fraction": 1.0,
+      "loader_pin_memory": true,
+      "loader_workers": 4,
+      "multi_scale": 0.0,
+      "sampler_classes": [
+        "torch.utils.data.sampler.SequentialSampler",
+        "torch.utils.data.sampler.BatchSampler"
+      ],
+      "shuffle": false
+    },
+    "precision": "BF16"
+  },
+  {
+    "batches": 259,
+    "bitwise_control": null,
+    "checkpoint": "epoch10.pt",
+    "checkpoint_epoch": 11,
+    "criterion": {
+      "branches": {
+        "one2many": {
+          "assigner_class": "ultralytics.utils.tal.TaskAlignedAssigner",
+          "assignment_method": "get_assigned_targets_and_loss",
+          "loss_class": "ultralytics.utils.loss.v8DetectionLoss",
+          "stride": [
+            8.0,
+            16.0,
+            32.0
+          ],
+          "topk": 10,
+          "topk2": 10
+        },
+        "one2one": {
+          "assigner_class": "ultralytics.utils.tal.TaskAlignedAssigner",
+          "assignment_method": "get_assigned_targets_and_loss",
+          "loss_class": "ultralytics.utils.loss.v8DetectionLoss",
+          "stride": [
+            8.0,
+            16.0,
+            32.0
+          ],
+          "topk": 7,
+          "topk2": 1
+        }
+      },
+      "criterion_class": "ultralytics.utils.loss.E2ELoss",
+      "head_class": "ultralytics.nn.modules.head.Detect",
+      "head_end2end": true,
+      "one2one_head_present": true
+    },
+    "dtype_evidence": {
+      "O2M": {
+        "boxes": "torch.bfloat16",
+        "features": [
+          "torch.bfloat16",
+          "torch.bfloat16",
+          "torch.bfloat16"
+        ],
+        "scores": "torch.bfloat16"
+      },
+      "O2O": {
+        "boxes": "torch.bfloat16",
+        "features": [
+          "torch.bfloat16",
+          "torch.bfloat16",
+          "torch.bfloat16"
+        ],
+        "scores": "torch.bfloat16"
+      }
+    },
+    "elapsed_seconds": 62.39764001599906,
+    "geometry_sha256": "05806c56188ad7e29e589d68be80362a1e8ef4553dac344f9441215cfc9f206e",
+    "gt": 40058,
+    "head_state_rehydration": {
+      "reconstructed_after": true,
+      "reconstructed_before": false,
+      "serialized_end2end": true,
+      "tensor_state_changed": false
+    },
+    "images": 16551,
+    "inference_mode_enforced": true,
+    "integrity_after": {
+      "bn_all_eval": true,
+      "bn_eval": 114,
+      "bn_total": 114,
+      "buffer_sha256": "377ad6dfd44129d2e662b2738613e7a4a5879f3a803e45a740634c222664386e",
+      "buffer_tensor_count": 342,
+      "grad_enabled": true,
+      "model_training": true,
+      "optimizer_created": false,
+      "parameter_sha256": "1dea65d4ef62510a4c9a3d4ce661c9ad9ee4f60c50295a3eaf32796063617826",
+      "parameter_tensor_count": 366,
+      "parameters_with_grad": 0
+    },
+    "integrity_before": {
+      "bn_all_eval": true,
+      "bn_eval": 114,
+      "bn_total": 114,
+      "buffer_sha256": "377ad6dfd44129d2e662b2738613e7a4a5879f3a803e45a740634c222664386e",
+      "buffer_tensor_count": 342,
+      "grad_enabled": true,
+      "model_training": true,
+      "optimizer_created": false,
+      "parameter_sha256": "1dea65d4ef62510a4c9a3d4ce661c9ad9ee4f60c50295a3eaf32796063617826",
+      "parameter_tensor_count": 366,
+      "parameters_with_grad": 0
+    },
+    "loader": {
+      "batch_size": 64,
+      "cache": false,
+      "dataset_augment": false,
+      "dataset_length": 16551,
+      "dataset_rect": false,
+      "fraction": 1.0,
+      "loader_pin_memory": true,
+      "loader_workers": 4,
+      "multi_scale": 0.0,
+      "sampler_classes": [
+        "torch.utils.data.sampler.SequentialSampler",
+        "torch.utils.data.sampler.BatchSampler"
+      ],
+      "shuffle": false
+    },
+    "precision": "BF16"
+  },
+  {
+    "batches": 259,
+    "bitwise_control": null,
+    "checkpoint": "epoch20.pt",
+    "checkpoint_epoch": 21,
+    "criterion": {
+      "branches": {
+        "one2many": {
+          "assigner_class": "ultralytics.utils.tal.TaskAlignedAssigner",
+          "assignment_method": "get_assigned_targets_and_loss",
+          "loss_class": "ultralytics.utils.loss.v8DetectionLoss",
+          "stride": [
+            8.0,
+            16.0,
+            32.0
+          ],
+          "topk": 10,
+          "topk2": 10
+        },
+        "one2one": {
+          "assigner_class": "ultralytics.utils.tal.TaskAlignedAssigner",
+          "assignment_method": "get_assigned_targets_and_loss",
+          "loss_class": "ultralytics.utils.loss.v8DetectionLoss",
+          "stride": [
+            8.0,
+            16.0,
+            32.0
+          ],
+          "topk": 7,
+          "topk2": 1
+        }
+      },
+      "criterion_class": "ultralytics.utils.loss.E2ELoss",
+      "head_class": "ultralytics.nn.modules.head.Detect",
+      "head_end2end": true,
+      "one2one_head_present": true
+    },
+    "dtype_evidence": {
+      "O2M": {
+        "boxes": "torch.bfloat16",
+        "features": [
+          "torch.bfloat16",
+          "torch.bfloat16",
+          "torch.bfloat16"
+        ],
+        "scores": "torch.bfloat16"
+      },
+      "O2O": {
+        "boxes": "torch.bfloat16",
+        "features": [
+          "torch.bfloat16",
+          "torch.bfloat16",
+          "torch.bfloat16"
+        ],
+        "scores": "torch.bfloat16"
+      }
+    },
+    "elapsed_seconds": 62.60108460799893,
+    "geometry_sha256": "05806c56188ad7e29e589d68be80362a1e8ef4553dac344f9441215cfc9f206e",
+    "gt": 40058,
+    "head_state_rehydration": {
+      "reconstructed_after": true,
+      "reconstructed_before": false,
+      "serialized_end2end": true,
+      "tensor_state_changed": false
+    },
+    "images": 16551,
+    "inference_mode_enforced": true,
+    "integrity_after": {
+      "bn_all_eval": true,
+      "bn_eval": 114,
+      "bn_total": 114,
+      "buffer_sha256": "65aef8fa83622e1ccdc6a9ce8ee2bf98261dbe0e7f32d78abda78c7d1c1e9278",
+      "buffer_tensor_count": 342,
+      "grad_enabled": true,
+      "model_training": true,
+      "optimizer_created": false,
+      "parameter_sha256": "9375e351698350a092d508b81ba7e23e74d17f02ffa64bd1808415bf42c4023b",
+      "parameter_tensor_count": 366,
+      "parameters_with_grad": 0
+    },
+    "integrity_before": {
+      "bn_all_eval": true,
+      "bn_eval": 114,
+      "bn_total": 114,
+      "buffer_sha256": "65aef8fa83622e1ccdc6a9ce8ee2bf98261dbe0e7f32d78abda78c7d1c1e9278",
+      "buffer_tensor_count": 342,
+      "grad_enabled": true,
+      "model_training": true,
+      "optimizer_created": false,
+      "parameter_sha256": "9375e351698350a092d508b81ba7e23e74d17f02ffa64bd1808415bf42c4023b",
+      "parameter_tensor_count": 366,
+      "parameters_with_grad": 0
+    },
+    "loader": {
+      "batch_size": 64,
+      "cache": false,
+      "dataset_augment": false,
+      "dataset_length": 16551,
+      "dataset_rect": false,
+      "fraction": 1.0,
+      "loader_pin_memory": true,
+      "loader_workers": 4,
+      "multi_scale": 0.0,
+      "sampler_classes": [
+        "torch.utils.data.sampler.SequentialSampler",
+        "torch.utils.data.sampler.BatchSampler"
+      ],
+      "shuffle": false
+    },
+    "precision": "BF16"
+  },
+  {
+    "batches": 259,
+    "bitwise_control": null,
+    "checkpoint": "epoch30.pt",
+    "checkpoint_epoch": 31,
+    "criterion": {
+      "branches": {
+        "one2many": {
+          "assigner_class": "ultralytics.utils.tal.TaskAlignedAssigner",
+          "assignment_method": "get_assigned_targets_and_loss",
+          "loss_class": "ultralytics.utils.loss.v8DetectionLoss",
+          "stride": [
+            8.0,
+            16.0,
+            32.0
+          ],
+          "topk": 10,
+          "topk2": 10
+        },
+        "one2one": {
+          "assigner_class": "ultralytics.utils.tal.TaskAlignedAssigner",
+          "assignment_method": "get_assigned_targets_and_loss",
+          "loss_class": "ultralytics.utils.loss.v8DetectionLoss",
+          "stride": [
+            8.0,
+            16.0,
+            32.0
+          ],
+          "topk": 7,
+          "topk2": 1
+        }
+      },
+      "criterion_class": "ultralytics.utils.loss.E2ELoss",
+      "head_class": "ultralytics.nn.modules.head.Detect",
+      "head_end2end": true,
+      "one2one_head_present": true
+    },
+    "dtype_evidence": {
+      "O2M": {
+        "boxes": "torch.bfloat16",
+        "features": [
+          "torch.bfloat16",
+          "torch.bfloat16",
+          "torch.bfloat16"
+        ],
+        "scores": "torch.bfloat16"
+      },
+      "O2O": {
+        "boxes": "torch.bfloat16",
+        "features": [
+          "torch.bfloat16",
+          "torch.bfloat16",
+          "torch.bfloat16"
+        ],
+        "scores": "torch.bfloat16"
+      }
+    },
+    "elapsed_seconds": 62.55331873900286,
+    "geometry_sha256": "05806c56188ad7e29e589d68be80362a1e8ef4553dac344f9441215cfc9f206e",
+    "gt": 40058,
+    "head_state_rehydration": {
+      "reconstructed_after": true,
+      "reconstructed_before": false,
+      "serialized_end2end": true,
+      "tensor_state_changed": false
+    },
+    "images": 16551,
+    "inference_mode_enforced": true,
+    "integrity_after": {
+      "bn_all_eval": true,
+      "bn_eval": 114,
+      "bn_total": 114,
+      "buffer_sha256": "4515d5bbeb68338346e3d709b045b13a389fdcef939e057f641c934aa8d0bc47",
+      "buffer_tensor_count": 342,
+      "grad_enabled": true,
+      "model_training": true,
+      "optimizer_created": false,
+      "parameter_sha256": "b0b60107ce3042739d7ca708f9ed67c194bc5904fb7c0a9df7cbca9bf295f732",
+      "parameter_tensor_count": 366,
+      "parameters_with_grad": 0
+    },
+    "integrity_before": {
+      "bn_all_eval": true,
+      "bn_eval": 114,
+      "bn_total": 114,
+      "buffer_sha256": "4515d5bbeb68338346e3d709b045b13a389fdcef939e057f641c934aa8d0bc47",
+      "buffer_tensor_count": 342,
+      "grad_enabled": true,
+      "model_training": true,
+      "optimizer_created": false,
+      "parameter_sha256": "b0b60107ce3042739d7ca708f9ed67c194bc5904fb7c0a9df7cbca9bf295f732",
+      "parameter_tensor_count": 366,
+      "parameters_with_grad": 0
+    },
+    "loader": {
+      "batch_size": 64,
+      "cache": false,
+      "dataset_augment": false,
+      "dataset_length": 16551,
+      "dataset_rect": false,
+      "fraction": 1.0,
+      "loader_pin_memory": true,
+      "loader_workers": 4,
+      "multi_scale": 0.0,
+      "sampler_classes": [
+        "torch.utils.data.sampler.SequentialSampler",
+        "torch.utils.data.sampler.BatchSampler"
+      ],
+      "shuffle": false
+    },
+    "precision": "BF16"
+  },
+  {
+    "batches": 259,
+    "bitwise_control": null,
+    "checkpoint": "epoch40.pt",
+    "checkpoint_epoch": 41,
+    "criterion": {
+      "branches": {
+        "one2many": {
+          "assigner_class": "ultralytics.utils.tal.TaskAlignedAssigner",
+          "assignment_method": "get_assigned_targets_and_loss",
+          "loss_class": "ultralytics.utils.loss.v8DetectionLoss",
+          "stride": [
+            8.0,
+            16.0,
+            32.0
+          ],
+          "topk": 10,
+          "topk2": 10
+        },
+        "one2one": {
+          "assigner_class": "ultralytics.utils.tal.TaskAlignedAssigner",
+          "assignment_method": "get_assigned_targets_and_loss",
+          "loss_class": "ultralytics.utils.loss.v8DetectionLoss",
+          "stride": [
+            8.0,
+            16.0,
+            32.0
+          ],
+          "topk": 7,
+          "topk2": 1
+        }
+      },
+      "criterion_class": "ultralytics.utils.loss.E2ELoss",
+      "head_class": "ultralytics.nn.modules.head.Detect",
+      "head_end2end": true,
+      "one2one_head_present": true
+    },
+    "dtype_evidence": {
+      "O2M": {
+        "boxes": "torch.bfloat16",
+        "features": [
+          "torch.bfloat16",
+          "torch.bfloat16",
+          "torch.bfloat16"
+        ],
+        "scores": "torch.bfloat16"
+      },
+      "O2O": {
+        "boxes": "torch.bfloat16",
+        "features": [
+          "torch.bfloat16",
+          "torch.bfloat16",
+          "torch.bfloat16"
+        ],
+        "scores": "torch.bfloat16"
+      }
+    },
+    "elapsed_seconds": 62.755312930999935,
+    "geometry_sha256": "05806c56188ad7e29e589d68be80362a1e8ef4553dac344f9441215cfc9f206e",
+    "gt": 40058,
+    "head_state_rehydration": {
+      "reconstructed_after": true,
+      "reconstructed_before": false,
+      "serialized_end2end": true,
+      "tensor_state_changed": false
+    },
+    "images": 16551,
+    "inference_mode_enforced": true,
+    "integrity_after": {
+      "bn_all_eval": true,
+      "bn_eval": 114,
+      "bn_total": 114,
+      "buffer_sha256": "78515f0f505472a27593525580c825bf4bec91124e16c93fa0247f0996ac3ee8",
+      "buffer_tensor_count": 342,
+      "grad_enabled": true,
+      "model_training": true,
+      "optimizer_created": false,
+      "parameter_sha256": "950758aae7874a5c7cc571f272805fc03add01fb662cfaa9819e3daf4d7b6976",
+      "parameter_tensor_count": 366,
+      "parameters_with_grad": 0
+    },
+    "integrity_before": {
+      "bn_all_eval": true,
+      "bn_eval": 114,
+      "bn_total": 114,
+      "buffer_sha256": "78515f0f505472a27593525580c825bf4bec91124e16c93fa0247f0996ac3ee8",
+      "buffer_tensor_count": 342,
+      "grad_enabled": true,
+      "model_training": true,
+      "optimizer_created": false,
+      "parameter_sha256": "950758aae7874a5c7cc571f272805fc03add01fb662cfaa9819e3daf4d7b6976",
+      "parameter_tensor_count": 366,
+      "parameters_with_grad": 0
+    },
+    "loader": {
+      "batch_size": 64,
+      "cache": false,
+      "dataset_augment": false,
+      "dataset_length": 16551,
+      "dataset_rect": false,
+      "fraction": 1.0,
+      "loader_pin_memory": true,
+      "loader_workers": 4,
+      "multi_scale": 0.0,
+      "sampler_classes": [
+        "torch.utils.data.sampler.SequentialSampler",
+        "torch.utils.data.sampler.BatchSampler"
+      ],
+      "shuffle": false
+    },
+    "precision": "BF16"
+  },
+  {
+    "batches": 259,
+    "bitwise_control": null,
+    "checkpoint": "last.pt",
+    "checkpoint_epoch": 50,
+    "criterion": {
+      "branches": {
+        "one2many": {
+          "assigner_class": "ultralytics.utils.tal.TaskAlignedAssigner",
+          "assignment_method": "get_assigned_targets_and_loss",
+          "loss_class": "ultralytics.utils.loss.v8DetectionLoss",
+          "stride": [
+            8.0,
+            16.0,
+            32.0
+          ],
+          "topk": 10,
+          "topk2": 10
+        },
+        "one2one": {
+          "assigner_class": "ultralytics.utils.tal.TaskAlignedAssigner",
+          "assignment_method": "get_assigned_targets_and_loss",
+          "loss_class": "ultralytics.utils.loss.v8DetectionLoss",
+          "stride": [
+            8.0,
+            16.0,
+            32.0
+          ],
+          "topk": 7,
+          "topk2": 1
+        }
+      },
+      "criterion_class": "ultralytics.utils.loss.E2ELoss",
+      "head_class": "ultralytics.nn.modules.head.Detect",
+      "head_end2end": true,
+      "one2one_head_present": true
+    },
+    "dtype_evidence": {
+      "O2M": {
+        "boxes": "torch.bfloat16",
+        "features": [
+          "torch.bfloat16",
+          "torch.bfloat16",
+          "torch.bfloat16"
+        ],
+        "scores": "torch.bfloat16"
+      },
+      "O2O": {
+        "boxes": "torch.bfloat16",
+        "features": [
+          "torch.bfloat16",
+          "torch.bfloat16",
+          "torch.bfloat16"
+        ],
+        "scores": "torch.bfloat16"
+      }
+    },
+    "elapsed_seconds": 63.10921721200066,
+    "geometry_sha256": "05806c56188ad7e29e589d68be80362a1e8ef4553dac344f9441215cfc9f206e",
+    "gt": 40058,
+    "head_state_rehydration": {
+      "reconstructed_after": true,
+      "reconstructed_before": false,
+      "serialized_end2end": true,
+      "tensor_state_changed": false
+    },
+    "images": 16551,
+    "inference_mode_enforced": true,
+    "integrity_after": {
+      "bn_all_eval": true,
+      "bn_eval": 114,
+      "bn_total": 114,
+      "buffer_sha256": "9b4085a18432afd4338a7c0b50176d23419c7b89ca5cdc40aa3dbe8cb311de37",
+      "buffer_tensor_count": 342,
+      "grad_enabled": true,
+      "model_training": true,
+      "optimizer_created": false,
+      "parameter_sha256": "3798a52870ddd12470b4eb7146baf32b2cf2f7e3faf6f25e2936f8d5be11c184",
+      "parameter_tensor_count": 366,
+      "parameters_with_grad": 0
+    },
+    "integrity_before": {
+      "bn_all_eval": true,
+      "bn_eval": 114,
+      "bn_total": 114,
+      "buffer_sha256": "9b4085a18432afd4338a7c0b50176d23419c7b89ca5cdc40aa3dbe8cb311de37",
+      "buffer_tensor_count": 342,
+      "grad_enabled": true,
+      "model_training": true,
+      "optimizer_created": false,
+      "parameter_sha256": "3798a52870ddd12470b4eb7146baf32b2cf2f7e3faf6f25e2936f8d5be11c184",
+      "parameter_tensor_count": 366,
+      "parameters_with_grad": 0
+    },
+    "loader": {
+      "batch_size": 64,
+      "cache": false,
+      "dataset_augment": false,
+      "dataset_length": 16551,
+      "dataset_rect": false,
+      "fraction": 1.0,
+      "loader_pin_memory": true,
+      "loader_workers": 4,
+      "multi_scale": 0.0,
+      "sampler_classes": [
+        "torch.utils.data.sampler.SequentialSampler",
+        "torch.utils.data.sampler.BatchSampler"
+      ],
+      "shuffle": false
+    },
+    "precision": "BF16"
+  },
+  {
+    "batches": 259,
+    "bitwise_control": null,
+    "checkpoint": "last.pt",
+    "checkpoint_epoch": 50,
+    "criterion": {
+      "branches": {
+        "one2many": {
+          "assigner_class": "ultralytics.utils.tal.TaskAlignedAssigner",
+          "assignment_method": "get_assigned_targets_and_loss",
+          "loss_class": "ultralytics.utils.loss.v8DetectionLoss",
+          "stride": [
+            8.0,
+            16.0,
+            32.0
+          ],
+          "topk": 10,
+          "topk2": 10
+        },
+        "one2one": {
+          "assigner_class": "ultralytics.utils.tal.TaskAlignedAssigner",
+          "assignment_method": "get_assigned_targets_and_loss",
+          "loss_class": "ultralytics.utils.loss.v8DetectionLoss",
+          "stride": [
+            8.0,
+            16.0,
+            32.0
+          ],
+          "topk": 7,
+          "topk2": 1
+        }
+      },
+      "criterion_class": "ultralytics.utils.loss.E2ELoss",
+      "head_class": "ultralytics.nn.modules.head.Detect",
+      "head_end2end": true,
+      "one2one_head_present": true
+    },
+    "dtype_evidence": {
+      "O2M": {
+        "boxes": "torch.float32",
+        "features": [
+          "torch.float32",
+          "torch.float32",
+          "torch.float32"
+        ],
+        "scores": "torch.float32"
+      },
+      "O2O": {
+        "boxes": "torch.float32",
+        "features": [
+          "torch.float32",
+          "torch.float32",
+          "torch.float32"
+        ],
+        "scores": "torch.float32"
+      }
+    },
+    "elapsed_seconds": 68.01297511200028,
+    "geometry_sha256": "05806c56188ad7e29e589d68be80362a1e8ef4553dac344f9441215cfc9f206e",
+    "gt": 40058,
+    "head_state_rehydration": {
+      "reconstructed_after": true,
+      "reconstructed_before": false,
+      "serialized_end2end": true,
+      "tensor_state_changed": false
+    },
+    "images": 16551,
+    "inference_mode_enforced": true,
+    "integrity_after": {
+      "bn_all_eval": true,
+      "bn_eval": 114,
+      "bn_total": 114,
+      "buffer_sha256": "9b4085a18432afd4338a7c0b50176d23419c7b89ca5cdc40aa3dbe8cb311de37",
+      "buffer_tensor_count": 342,
+      "grad_enabled": true,
+      "model_training": true,
+      "optimizer_created": false,
+      "parameter_sha256": "3798a52870ddd12470b4eb7146baf32b2cf2f7e3faf6f25e2936f8d5be11c184",
+      "parameter_tensor_count": 366,
+      "parameters_with_grad": 0
+    },
+    "integrity_before": {
+      "bn_all_eval": true,
+      "bn_eval": 114,
+      "bn_total": 114,
+      "buffer_sha256": "9b4085a18432afd4338a7c0b50176d23419c7b89ca5cdc40aa3dbe8cb311de37",
+      "buffer_tensor_count": 342,
+      "grad_enabled": true,
+      "model_training": true,
+      "optimizer_created": false,
+      "parameter_sha256": "3798a52870ddd12470b4eb7146baf32b2cf2f7e3faf6f25e2936f8d5be11c184",
+      "parameter_tensor_count": 366,
+      "parameters_with_grad": 0
+    },
+    "loader": {
+      "batch_size": 64,
+      "cache": false,
+      "dataset_augment": false,
+      "dataset_length": 16551,
+      "dataset_rect": false,
+      "fraction": 1.0,
+      "loader_pin_memory": true,
+      "loader_workers": 4,
+      "multi_scale": 0.0,
+      "sampler_classes": [
+        "torch.utils.data.sampler.SequentialSampler",
+        "torch.utils.data.sampler.BatchSampler"
+      ],
+      "shuffle": false
+    },
+    "precision": "FP32"
+  }
+]

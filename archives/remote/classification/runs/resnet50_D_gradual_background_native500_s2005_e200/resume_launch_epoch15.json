@@ -1,0 +1,27 @@
+{
+  "status": "launched_resume",
+  "pid": 40937,
+  "resume_from_epoch": 15,
+  "checkpoint_sha256": "2dac6eb6155f389a73f9a884ddf3cedac8b30b51df2ac51bfeefb99bd7540497",
+  "config_sha256": "3240c52c2971bd1748af2c031f90ea8e3b1b3851fa87bab15b82a2bf79fd1873",
+  "boot_id": "eacf4add-8b2b-4283-a1dc-abfb4abd2e2b",
+  "gpu0_before": [
+    0,
+    4,
+    0
+  ],
+  "numa0_free_mb_before": 112182,
+  "mc0_ue_count_before": 0,
+  "launched_utc": "2026-09-25T04:08:16.223247+00:00",
+  "command": [
+    "numactl",
+    "--cpunodebind=0",
+    "--membind=0",
+    "/home/ubuntu/miniconda3/envs/LZCyolo/bin/python",
+    "-u",
+    "/home/ubuntu/rz/foveated_classification_research/src/train_cub_resnet50_oracle.py",
+    "--config",
+    "/home/ubuntu/rz/foveated_classification_research/configs/cub_resnet50_D_gradual_background_native500_s2005_e200_gpu0.json",
+    "--train"
+  ]
+}

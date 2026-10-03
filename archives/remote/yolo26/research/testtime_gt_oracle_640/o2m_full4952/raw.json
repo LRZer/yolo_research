@@ -1,0 +1,170 @@
+{
+  "status": "completed",
+  "generated": "2026-09-23T20:46:24.335699+08:00",
+  "condition": "raw",
+  "box_source": "ground_truth",
+  "val_limit": null,
+  "sigma_input_pixels": 0.0,
+  "first_pass_uses_predictions_only": false,
+  "ground_truth_used_for_image_processing": false,
+  "weights": "/home/ubuntu/rz/yolo_study/yolo26_voc_research/runs/voc_yolo26n_baseline_4x3090_b64_e150_g4567_s42/weights/last.pt",
+  "weights_sha256": "df69f740b204377d010374c31d111f0ed943338a979c5bae188d2fdf4be5cd10",
+  "data": "/home/ubuntu/rz/yolo_study/yolo26_voc_research/configs/datasets/voc_server.yaml",
+  "data_sha256": "5650b70651a70021b0a58fdb228db71cdc3324972352ef406cd1bd977d321d40",
+  "validation": {
+    "imgsz": 640,
+    "batch": 16,
+    "workers": 4,
+    "conf": 0.001,
+    "iou": 0.7,
+    "max_det": 300,
+    "half": false,
+    "rect": true,
+    "nms_mode": "true"
+  },
+  "blur": {
+    "first_pass_conf": 0.05,
+    "first_pass_iou": 0.7,
+    "margin_fraction": 0.0,
+    "minimum_margin": 0,
+    "feather_sigma": 8.0,
+    "audit": {
+      "images": 0,
+      "mask_boxes": 0,
+      "images_without_mask_boxes": 0,
+      "sum_protected_fraction": 0.0,
+      "sum_mean_abs_pixel_change_255": 0.0
+    }
+  },
+  "mAP50": 0.793386076021261,
+  "mAP50_95": 0.587093391610207,
+  "classes": [
+    {
+      "id": 0,
+      "name": "aeroplane",
+      "AP50": 0.8679625341711845,
+      "AP50_95": 0.6559650782298484
+    },
+    {
+      "id": 1,
+      "name": "bicycle",
+      "AP50": 0.8888009801670068,
+      "AP50_95": 0.673146003721375
+    },
+    {
+      "id": 2,
+      "name": "bird",
+      "AP50": 0.732931111084334,
+      "AP50_95": 0.5051571937343204
+    },
+    {
+      "id": 3,
+      "name": "boat",
+      "AP50": 0.6868203204902664,
+      "AP50_95": 0.44713934638420333
+    },
+    {
+      "id": 4,
+      "name": "bottle",
+      "AP50": 0.6360522661012915,
+      "AP50_95": 0.41379928583304715
+    },
+    {
+      "id": 5,
+      "name": "bus",
+      "AP50": 0.8457085219156746,
+      "AP50_95": 0.7334441142434215
+    },
+    {
+      "id": 6,
+      "name": "car",
+      "AP50": 0.8990683403904611,
+      "AP50_95": 0.7129154661428799
+    },
+    {
+      "id": 7,
+      "name": "cat",
+      "AP50": 0.8637525914713848,
+      "AP50_95": 0.67240125615937
+    },
+    {
+      "id": 8,
+      "name": "chair",
+      "AP50": 0.601458257644301,
+      "AP50_95": 0.4016304234852348
+    },
+    {
+      "id": 9,
+      "name": "cow",
+      "AP50": 0.8240202584725941,
+      "AP50_95": 0.599847079123125
+    },
+    {
+      "id": 10,
+      "name": "diningtable",
+      "AP50": 0.764906067513334,
+      "AP50_95": 0.580900732874696
+    },
+    {
+      "id": 11,
+      "name": "dog",
+      "AP50": 0.8219031289577852,
+      "AP50_95": 0.6401444224214223
+    },
+    {
+      "id": 12,
+      "name": "horse",
+      "AP50": 0.8948195689861024,
+      "AP50_95": 0.6843153247078184
+    },
+    {
+      "id": 13,
+      "name": "motorbike",
+      "AP50": 0.8689913339325721,
+      "AP50_95": 0.6384551384373991
+    },
+    {
+      "id": 14,
+      "name": "person",
+      "AP50": 0.874444426345372,
+      "AP50_95": 0.5996663479684863
+    },
+    {
+      "id": 15,
+      "name": "pottedplant",
+      "AP50": 0.5590768224540371,
+      "AP50_95": 0.3014920953832555
+    },
+    {
+      "id": 16,
+      "name": "sheep",
+      "AP50": 0.7909514962973916,
+      "AP50_95": 0.5901530695816473
+    },
+    {
+      "id": 17,
+      "name": "sofa",
+      "AP50": 0.7801375994214936,
+      "AP50_95": 0.6283498149551899
+    },
+    {
+      "id": 18,
+      "name": "train",
+      "AP50": 0.8828859407637307,
+      "AP50_95": 0.6659042414592438
+    },
+    {
+      "id": 19,
+      "name": "tvmonitor",
+      "AP50": 0.783029953844904,
+      "AP50_95": 0.5970413973581559
+    }
+  ],
+  "elapsed_wall_seconds": 12.966543804000139,
+  "validator_speed_ms_per_image": {
+    "preprocess": 0.3198775668417411,
+    "inference": 0.875387842891083,
+    "loss": 0.00027939680893340074,
+    "postprocess": 0.31340567003129693
+  }
+}

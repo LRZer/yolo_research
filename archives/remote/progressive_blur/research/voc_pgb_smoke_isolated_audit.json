@@ -1,0 +1,18 @@
+{
+  "status": "verified_complete",
+  "rows": 1,
+  "loss_columns": [
+    "train/box_loss",
+    "train/cls_loss",
+    "train/dfl_loss",
+    "train/map_loss",
+    "val/box_loss",
+    "val/cls_loss",
+    "val/dfl_loss",
+    "val/map_loss"
+  ],
+  "model_class": "PGBDetectionModel",
+  "frontend": true,
+  "shared_cache_labels": 16551,
+  "shared_cache_hash": "04bb051208ae52fc8fce7344b29265b8a28ae49df96cf42a54f223c0c36abf65"
+}

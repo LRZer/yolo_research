@@ -1,0 +1,24 @@
+{
+  "updated": "2026-09-23T01:32:01.979434+08:00",
+  "tasks": [
+    {
+      "kind": "baseline",
+      "config": "/home/ubuntu/rz/progressive_blur_detection_research/configs/voc_a0_baseline_p1_e20.json",
+      "run_dir": "/home/ubuntu/rz/progressive_blur_detection_research/runs/voc_p1/a0_yolov8n_scratch_e20_b64_s2027",
+      "expected_epochs": 20,
+      "completed_epochs": 20,
+      "status": "complete",
+      "reason": null
+    },
+    {
+      "kind": "pgb",
+      "config": "/home/ubuntu/rz/progressive_blur_detection_research/configs/voc_d_pgb_p1_e20.json",
+      "run_dir": "/home/ubuntu/rz/progressive_blur_detection_research/runs/voc_p1/d_pgb_scratch_e20_b64_s2027",
+      "expected_epochs": 20,
+      "completed_epochs": 20,
+      "status": "complete",
+      "reason": null
+    }
+  ],
+  "status": "verified_complete"
+}

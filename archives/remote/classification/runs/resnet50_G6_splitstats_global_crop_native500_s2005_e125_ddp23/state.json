@@ -1,0 +1,33 @@
+{
+  "status": "stopped_by_user",
+  "completed_epoch": 50,
+  "target_epochs": 125,
+  "lr_horizon": 200,
+  "config_sha256": "e7b3cb0190b73e3bb9bfcb0d005be197bd1564a30341997b04504899acf6b063",
+  "rank0_pid": 3079108,
+  "row": {
+    "epoch": 50,
+    "lr": 0.02185764179839791,
+    "train_loss": 0.3210170228751473,
+    "train_top1": 91.50817484150818,
+    "train_top5": 99.44944944944945,
+    "test_loss": 3.0514725172377206,
+    "test_top1": 43.182602692440454,
+    "test_top5": 73.02381774249223,
+    "train_seconds": 62.08494513502228,
+    "test_seconds": 18.990715513005853,
+    "epoch_seconds": 81.07566064802813,
+    "gpu_max_memory_gib": 3.8454413414001465,
+    "train_images": 5994,
+    "test_images": 5794,
+    "optimizer_steps": 94,
+    "update_groups": 94,
+    "amp_skipped_steps": 0
+  },
+  "best_top1": 43.803935105281326,
+  "best_epoch": 46,
+  "updated_at_cst": "2026-10-02T18:22:45.694200+08:00",
+  "stopped_at_cst": "2026-10-02T18:20:47.056200+08:00",
+  "stop_record": "/home/ubuntu/rz/foveated_classification_research/_management/cub_splitstats_ddp23_s2005/user_stop.json",
+  "automatic_resume_disabled": true
+}

@@ -1,0 +1,28 @@
+{
+  "bootstrap": {
+    "ci95_lower": 8.703728890392525e-05,
+    "ci95_upper": 0.0001755620179206015,
+    "cluster": "image; all six checkpoint observations retained together",
+    "gap": 31,
+    "images": 16551,
+    "rate": 0.00012897964617970608,
+    "replicates": 10000,
+    "seed": 20260919,
+    "valid_gt": 240348
+  },
+  "elapsed_seconds": 458.5411605834961,
+  "finished_unix": 1789816738.062267,
+  "geometry_sha256": "05806c56188ad7e29e589d68be80362a1e8ef4553dac344f9441215cfc9f206e",
+  "kernel_health": {
+    "checked_at": "2026-09-19T19:18:58.062006+08:00",
+    "event_count": 0,
+    "events": [],
+    "fault_pattern": "Uncorrected hardware memory error|Sending SIGBUS|Memory failure|EDAC.*(?:error|corrected|uncorrected)",
+    "journal_returncode": 0,
+    "since": "2026-09-19T19:11:19.521109+08:00",
+    "valid": true
+  },
+  "started_unix": 1789816279.5211067,
+  "status": "COMPLETE",
+  "verdict": "NO-GO_ON_CLEAN_VOC"
+}

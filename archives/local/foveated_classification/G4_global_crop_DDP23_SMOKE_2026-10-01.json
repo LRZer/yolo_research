@@ -1,0 +1,82 @@
+{
+  "status": "verified_ddp_smoke",
+  "group": "G4_global_crop",
+  "config_sha256": "f3581f75fe29751a7a27667c11c08745cd91e7bf0284caa29d126b201a820ba7",
+  "source_sha256": {
+    "trainer": "55a65aa4717c531c852ad68f8f1523be10c8324aa138874c1211c64fabf6c464",
+    "historical_engine": "6aa91ec82be7cee3dc985e2e5824ed8a5470cd7e7f2dc7cfd5e6a1f702a9f8a2",
+    "stats": "e1caf32dd617b8d91720d117ff8527c75a5dbc1b82c71fbb1eabaecd88a7b309",
+    "bbox": "c19d9f096c15564793408e5ba054b8d715a6805819d98f037c977f369ef4abd3"
+  },
+  "row": {
+    "epoch": 1,
+    "lr": 0.005,
+    "train_loss": 5.463328742980957,
+    "train_top1": 0.0,
+    "train_top5": 1.7647058823529411,
+    "test_loss": 5.308516979217529,
+    "test_top1": 0.0,
+    "test_top5": 2.9411764705882355,
+    "train_seconds": 5.642834647995187,
+    "test_seconds": 0.6444866529927822,
+    "epoch_seconds": 6.287321300987969,
+    "gpu_max_memory_gib": 3.8278121948242188,
+    "train_images": 170,
+    "test_images": 34,
+    "optimizer_steps": 3,
+    "update_groups": 3,
+    "amp_skipped_steps": 0
+  },
+  "rank_reports": [
+    {
+      "rank": 0,
+      "pid": 1845597,
+      "peak_allocated_gib": 3.8278121948242188,
+      "peak_reserved_gib": 5.396484375,
+      "device": "cuda:0",
+      "physical_gpu": 2,
+      "device_uuid": "66f2712d-a00e-2fdb-e6da-be24056fa1d4",
+      "numa_policy": "policy: bind\npreferred node: 0\nphyscpubind: 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 160 161 162 163 164 165 166 167 168 169 170 171 172 173 174 175 176 177 178 179 180 181 182 183 184 185 186 187 188 189 190 191 192 193 194 195 196 197 198 199 200 201 202 203 204 205 206 207 208 209 210 211 212 213 214 215 216 217 218 219 220 221 222 223 224 225 226 227 228 229 230 231 232 233 234 235 236 237 238 239 \ncpubind: 0 \nnodebind: 0 \nmembind: 0 \npreferred: 0 \n"
+    },
+    {
+      "rank": 1,
+      "pid": 1845598,
+      "peak_allocated_gib": 3.8278121948242188,
+      "peak_reserved_gib": 5.396484375,
+      "device": "cuda:1",
+      "physical_gpu": 3,
+      "device_uuid": "a47e8163-6e6f-6686-c5ee-c98142f6cb27",
+      "numa_policy": "policy: bind\npreferred node: 0\nphyscpubind: 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 160 161 162 163 164 165 166 167 168 169 170 171 172 173 174 175 176 177 178 179 180 181 182 183 184 185 186 187 188 189 190 191 192 193 194 195 196 197 198 199 200 201 202 203 204 205 206 207 208 209 210 211 212 213 214 215 216 217 218 219 220 221 222 223 224 225 226 227 228 229 230 231 232 233 234 235 236 237 238 239 \ncpubind: 0 \nnodebind: 0 \nmembind: 0 \npreferred: 0 \n"
+    }
+  ],
+  "fusion_identical_across_ranks": true,
+  "parameter_count": 24327432,
+  "preflight": {
+    "checked_at_utc": "2026-10-01T10:38:26.228429+00:00",
+    "boot_id": "b825af41-86a3-4fe6-821b-c1ecb4b5fb9e",
+    "gpus": [
+      {
+        "index": 2,
+        "uuid": "GPU-66f2712d-a00e-2fdb-e6da-be24056fa1d4",
+        "free_mib": 14472,
+        "utilization": 71
+      },
+      {
+        "index": 3,
+        "uuid": "GPU-a47e8163-6e6f-6686-c5ee-c98142f6cb27",
+        "free_mib": 14472,
+        "utilization": 75
+      }
+    ],
+    "numa_node": 0,
+    "ue_counts": {
+      "/sys/devices/system/edac/mc/mc0/ue_count": 0,
+      "/sys/devices/system/edac/mc/mc1/ue_count": 0
+    },
+    "memory_budget_mb": 30825.03515625,
+    "psi": "some avg10=0.00 avg60=0.00 avg300=0.00 total=1599941\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=1596423\n",
+    "historical_socket1_bert_replay": true,
+    "hardware_repaired_not_claimed": true,
+    "shared_gpus_user_authorized": true
+  }
+}

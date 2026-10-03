@@ -1,0 +1,2 @@
+epoch,lr,train_loss,train_top1,train_top5,test_loss,test_top1,test_top5,train_seconds,test_seconds,epoch_seconds,gpu_max_memory_gib,train_images,test_images,optimizer_steps,update_groups,amp_skipped_steps
+1,0.005,5.600752657081113,0.9175842509175842,3.9706373039706375,5.4492134884138705,1.4325163962720056,6.213324128408699,160.1720242559968,23.261927323997952,183.43395157999475,3.8278121948242188,5994,5794,94,94,0

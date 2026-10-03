@@ -1,0 +1,133 @@
+[
+  {
+    "batches": 32,
+    "bitwise_control": {
+      "O2M": {
+        "fg_mask": true,
+        "num_gt": true,
+        "pred_bboxes": true,
+        "target_bboxes": true,
+        "target_gt_idx": true,
+        "target_labels": true,
+        "target_scores": true
+      },
+      "O2O": {
+        "fg_mask": true,
+        "num_gt": true,
+        "pred_bboxes": true,
+        "target_bboxes": true,
+        "target_gt_idx": true,
+        "target_labels": true,
+        "target_scores": true
+      }
+    },
+    "checkpoint": "epoch0.pt",
+    "checkpoint_epoch": 1,
+    "criterion": {
+      "branches": {
+        "one2many": {
+          "assigner_class": "ultralytics.utils.tal.TaskAlignedAssigner",
+          "assignment_method": "get_assigned_targets_and_loss",
+          "loss_class": "ultralytics.utils.loss.v8DetectionLoss",
+          "stride": [
+            8.0,
+            16.0,
+            32.0
+          ],
+          "topk": 10,
+          "topk2": 10
+        },
+        "one2one": {
+          "assigner_class": "ultralytics.utils.tal.TaskAlignedAssigner",
+          "assignment_method": "get_assigned_targets_and_loss",
+          "loss_class": "ultralytics.utils.loss.v8DetectionLoss",
+          "stride": [
+            8.0,
+            16.0,
+            32.0
+          ],
+          "topk": 7,
+          "topk2": 1
+        }
+      },
+      "criterion_class": "ultralytics.utils.loss.E2ELoss",
+      "head_class": "ultralytics.nn.modules.head.Detect",
+      "head_end2end": true,
+      "one2one_head_present": true
+    },
+    "dtype_evidence": {
+      "O2M": {
+        "boxes": "torch.bfloat16",
+        "features": [
+          "torch.bfloat16",
+          "torch.bfloat16",
+          "torch.bfloat16"
+        ],
+        "scores": "torch.bfloat16"
+      },
+      "O2O": {
+        "boxes": "torch.bfloat16",
+        "features": [
+          "torch.bfloat16",
+          "torch.bfloat16",
+          "torch.bfloat16"
+        ],
+        "scores": "torch.bfloat16"
+      }
+    },
+    "elapsed_seconds": 9.031573117001244,
+    "geometry_sha256": "e40dbb20efb0dcf549e9d229c4121472d1b1eb4ad2ddaeb19b08a5cfe9c47483",
+    "gt": 5161,
+    "head_state_rehydration": {
+      "reconstructed_after": true,
+      "reconstructed_before": false,
+      "serialized_end2end": true,
+      "tensor_state_changed": false
+    },
+    "images": 2048,
+    "inference_mode_enforced": true,
+    "integrity_after": {
+      "bn_all_eval": true,
+      "bn_eval": 114,
+      "bn_total": 114,
+      "buffer_sha256": "0ec1c479d8c67df0b78b34d91319863fc6d9bcf568b7165e9007225a25373eeb",
+      "buffer_tensor_count": 342,
+      "grad_enabled": true,
+      "model_training": true,
+      "optimizer_created": false,
+      "parameter_sha256": "3b3ddf2c99231cf916f065cd94c9171d36a2250b3ba804503113c1a3dc463d3a",
+      "parameter_tensor_count": 366,
+      "parameters_with_grad": 0
+    },
+    "integrity_before": {
+      "bn_all_eval": true,
+      "bn_eval": 114,
+      "bn_total": 114,
+      "buffer_sha256": "0ec1c479d8c67df0b78b34d91319863fc6d9bcf568b7165e9007225a25373eeb",
+      "buffer_tensor_count": 342,
+      "grad_enabled": true,
+      "model_training": true,
+      "optimizer_created": false,
+      "parameter_sha256": "3b3ddf2c99231cf916f065cd94c9171d36a2250b3ba804503113c1a3dc463d3a",
+      "parameter_tensor_count": 366,
+      "parameters_with_grad": 0
+    },
+    "loader": {
+      "batch_size": 64,
+      "cache": false,
+      "dataset_augment": false,
+      "dataset_length": 16551,
+      "dataset_rect": false,
+      "fraction": 1.0,
+      "loader_pin_memory": true,
+      "loader_workers": 4,
+      "multi_scale": 0.0,
+      "sampler_classes": [
+        "torch.utils.data.sampler.SequentialSampler",
+        "torch.utils.data.sampler.BatchSampler"
+      ],
+      "shuffle": false
+    },
+    "precision": "BF16"
+  }
+]

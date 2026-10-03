@@ -1,0 +1,20 @@
+{
+  "hashes": {
+    "/home/ubuntu/rz/foveated_classification_research/configs/cub_resnet50_G6_splitstats_global_crop_s2005_e125_ddp23.json": "e7b3cb0190b73e3bb9bfcb0d005be197bd1564a30341997b04504899acf6b063",
+    "/home/ubuntu/rz/foveated_classification_research/configs/cub_resnet50_G4_global_crop_s2005_e125_ddp23.json": "f3581f75fe29751a7a27667c11c08745cd91e7bf0284caa29d126b201a820ba7",
+    "/home/ubuntu/rz/foveated_classification_research/src/train_cub_splitstats_ddp.py": "eed9a33d7f8f3e4b76cfc8f66e20b020677f656d055fa146881db59166a0615f",
+    "/home/ubuntu/rz/foveated_classification_research/src/run_cub_splitstats.py": "63c2b9c4723e1718634c84c74e4da345c867945c0882ba83f83660481858bea3",
+    "/home/ubuntu/rz/foveated_classification_research/src/train_cub_global_local_ddp.py": "55a65aa4717c531c852ad68f8f1523be10c8324aa138874c1211c64fabf6c464",
+    "/home/ubuntu/rz/foveated_classification_research/src/train_cub_resnet50_a.py": "6aa91ec82be7cee3dc985e2e5824ed8a5470cd7e7f2dc7cfd5e6a1f702a9f8a2",
+    "/home/ubuntu/rz/foveated_classification_research/src/run_cub_global_local_pair.py": "b10b9bcdf0ca4f5a1aba07b4d4b5547645aaae0c1fb22687d828378e9e90542a"
+  },
+  "created_at_utc": "2026-10-02T07:24:17.700227+00:00",
+  "devices_physical": [
+    2,
+    3
+  ],
+  "numa_node": 0,
+  "actual_epochs": 125,
+  "lr_horizon": 200,
+  "sole_intervention": "per-view BN statistics; shared affine and identical initialization"
+}

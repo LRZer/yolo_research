@@ -1,0 +1,8 @@
+{
+  "error": "FCA-P0 must be memory-bound to NUMA node 1, got {'Cpus_allowed_list': '80-159,240-319', 'Mems_allowed_list': '0-1'}",
+  "error_type": "RuntimeError",
+  "failed_unix": 1789813371.7792938,
+  "started_unix": 1789813369.3258302,
+  "status": "FAILED",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/ubuntu/rz/yolo_study/ultralytics_research/scripts/probe_final_coverage_audit.py\", line 1545, in main\n    **execution_affinity_and_gpu(),\n      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/ubuntu/rz/yolo_study/ultralytics_research/scripts/probe_final_coverage_audit.py\", line 183, in execution_affinity_and_gpu\n    raise RuntimeError(f\"FCA-P0 must be memory-bound to NUMA node 1, got {status}\")\nRuntimeError: FCA-P0 must be memory-bound to NUMA node 1, got {'Cpus_allowed_list': '80-159,240-319', 'Mems_allowed_list': '0-1'}\n"
+}

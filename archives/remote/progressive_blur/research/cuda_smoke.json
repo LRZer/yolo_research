@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "scope": "CUDA/AMP forward-backward, finite gradients, 640 inference shape",
+  "torch": "2.6.0+cu118",
+  "cuda_runtime": "11.8",
+  "visible_gpu_count": 1,
+  "visible_gpu_name": "NVIDIA GeForce RTX 3090",
+  "trainable_frontend_parameters": 38513,
+  "smoke_step_seconds": 0.5170511480000641,
+  "peak_allocated_mib": 28.2919921875,
+  "loss": 0.18482990562915802
+}

@@ -1,0 +1,110 @@
+{
+  "status": "completed",
+  "generated": "2026-09-23T20:37:14.420841+08:00",
+  "condition": "raw",
+  "box_source": "ground_truth",
+  "val_limit": 8,
+  "sigma_input_pixels": 0.0,
+  "first_pass_uses_predictions_only": false,
+  "ground_truth_used_for_image_processing": false,
+  "weights": "/home/ubuntu/rz/yolo_study/yolo26_voc_research/runs/voc_yolo26n_baseline_4x3090_b64_e150_g4567_s42/weights/last.pt",
+  "weights_sha256": "df69f740b204377d010374c31d111f0ed943338a979c5bae188d2fdf4be5cd10",
+  "data": "/home/ubuntu/rz/yolo_study/yolo26_voc_research/configs/datasets/voc_server.yaml",
+  "data_sha256": "5650b70651a70021b0a58fdb228db71cdc3324972352ef406cd1bd977d321d40",
+  "validation": {
+    "imgsz": 640,
+    "batch": 8,
+    "workers": 4,
+    "conf": 0.001,
+    "iou": 0.7,
+    "max_det": 300,
+    "half": false,
+    "rect": true,
+    "nms_mode": "false"
+  },
+  "blur": {
+    "first_pass_conf": 0.05,
+    "first_pass_iou": 0.7,
+    "margin_fraction": 0.0,
+    "minimum_margin": 0,
+    "feather_sigma": 8.0,
+    "audit": {
+      "images": 0,
+      "mask_boxes": 0,
+      "images_without_mask_boxes": 0,
+      "sum_protected_fraction": 0.0,
+      "sum_mean_abs_pixel_change_255": 0.0
+    }
+  },
+  "mAP50": 0.696375,
+  "mAP50_95": 0.47792221780774957,
+  "classes": [
+    {
+      "id": 6,
+      "name": "car",
+      "AP50": 0.995,
+      "AP50_95": 0.7426900118203309
+    },
+    {
+      "id": 7,
+      "name": "cat",
+      "AP50": 0.995,
+      "AP50_95": 0.43116666666666664
+    },
+    {
+      "id": 8,
+      "name": "chair",
+      "AP50": 0.745,
+      "AP50_95": 0.5721700450450451
+    },
+    {
+      "id": 10,
+      "name": "diningtable",
+      "AP50": 0.995,
+      "AP50_95": 0.6169
+    },
+    {
+      "id": 11,
+      "name": "dog",
+      "AP50": 0.24875,
+      "AP50_95": 0.15829545454545454
+    },
+    {
+      "id": 12,
+      "name": "horse",
+      "AP50": 0.995,
+      "AP50_95": 0.6965
+    },
+    {
+      "id": 14,
+      "name": "person",
+      "AP50": 0.995,
+      "AP50_95": 0.666
+    },
+    {
+      "id": 15,
+      "name": "pottedplant",
+      "AP50": 0.0,
+      "AP50_95": 0.0
+    },
+    {
+      "id": 17,
+      "name": "sofa",
+      "AP50": 0.0,
+      "AP50_95": 0.0
+    },
+    {
+      "id": 18,
+      "name": "train",
+      "AP50": 0.995,
+      "AP50_95": 0.8955
+    }
+  ],
+  "elapsed_wall_seconds": 9.758713836000425,
+  "validator_speed_ms_per_image": {
+    "preprocess": 0.16635862505154364,
+    "inference": 5.917777250033396,
+    "loss": 0.000697250015946338,
+    "postprocess": 0.06184375001794251
+  }
+}

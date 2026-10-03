@@ -1,0 +1,32 @@
+{
+  "source_data": "E:\\datasets\\CUB-200-2011\\extracted\\CUB_200_2011",
+  "official_train_images": 5994,
+  "official_test_images": 5794,
+  "official_train_valid_pixels": 1075311364,
+  "mean_rgb_0_255": [
+    123.97825919377152,
+    127.62077768109592,
+    110.50836412438397
+  ],
+  "std_rgb_0_255": [
+    59.18593226115822,
+    58.064251232333454,
+    67.95960079050015
+  ],
+  "mean_rgb_0_1": [
+    0.4861892517402805,
+    0.500473637965082,
+    0.4333661338211136
+  ],
+  "std_rgb_0_1": [
+    0.23210169514179696,
+    0.2277029460091508,
+    0.26650823839411825
+  ],
+  "metadata_sha256": {
+    "images.txt": "e1cfc5ed1f4bd1b838040784b6f75c44f7a25d9b31707a3adab49ec694618c1f",
+    "train_test_split.txt": "8bbbfcc09b4d3c9c6e3e40c9874bd863eb6658f4f456e472df1b33d3403d2600",
+    "image_class_labels.txt": "e9df8c96d897994a245746fe2c98914b9b31f5342bddc6e8b06bdfbf45e49b02"
+  },
+  "unique_training_dimensions": 839
+}

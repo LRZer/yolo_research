@@ -1,0 +1,8 @@
+{
+  "updated": "2026-09-23T04:16:46.369539+08:00",
+  "status": "verified_complete",
+  "reason": null,
+  "completed_epochs": 125,
+  "expected_epochs": 125,
+  "run_dir": "/home/ubuntu/rz/progressive_blur_detection_research/runs/visdrone_official/yolov8n_scratch_official_640_s2027_e125"
+}

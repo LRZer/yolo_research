@@ -1,0 +1,116 @@
+{
+  "reference": "outputs\\voc_pgb_yolov8n\\VISDRONE_STANDARD_960_CPU_QUALITY.json",
+  "candidate": "outputs\\voc_pgb_yolov8n\\VISDRONE_P2_640_CPU_QUALITY.json",
+  "method": "equal-count GT-crowding quartiles, 137 images each, conf floor 0.001",
+  "groups": [
+    {
+      "quartile": 1,
+      "images": 137,
+      "min_gt_per_image": 1,
+      "max_gt_per_image": 39,
+      "ground_truth": 2885,
+      "reference": {
+        "predictions_conf_ge_0.001": 48053,
+        "tp_iou50": 2280,
+        "tp_iou75": 1504,
+        "fp_iou50": 45773,
+        "recall_iou50": 0.7902946273830156,
+        "recall_iou75": 0.521317157712305,
+        "images_at_max_det_1000": 2
+      },
+      "candidate": {
+        "predictions_conf_ge_0.001": 73092,
+        "tp_iou50": 2303,
+        "tp_iou75": 1501,
+        "fp_iou50": 70789,
+        "recall_iou50": 0.798266897746967,
+        "recall_iou75": 0.5202772963604853,
+        "images_at_max_det_1000": 14
+      },
+      "candidate_minus_reference_tp_iou50": 23,
+      "candidate_minus_reference_fp_iou50": 25016
+    },
+    {
+      "quartile": 2,
+      "images": 137,
+      "min_gt_per_image": 40,
+      "max_gt_per_image": 65,
+      "ground_truth": 7231,
+      "reference": {
+        "predictions_conf_ge_0.001": 92077,
+        "tp_iou50": 5465,
+        "tp_iou75": 3425,
+        "fp_iou50": 86612,
+        "recall_iou50": 0.7557737519015351,
+        "recall_iou75": 0.4736550961139538,
+        "images_at_max_det_1000": 10
+      },
+      "candidate": {
+        "predictions_conf_ge_0.001": 122475,
+        "tp_iou50": 5548,
+        "tp_iou75": 3368,
+        "fp_iou50": 116927,
+        "recall_iou50": 0.7672521089752454,
+        "recall_iou75": 0.46577236896694785,
+        "images_at_max_det_1000": 66
+      },
+      "candidate_minus_reference_tp_iou50": 83,
+      "candidate_minus_reference_fp_iou50": 30315
+    },
+    {
+      "quartile": 3,
+      "images": 137,
+      "min_gt_per_image": 65,
+      "max_gt_per_image": 93,
+      "ground_truth": 10807,
+      "reference": {
+        "predictions_conf_ge_0.001": 112183,
+        "tp_iou50": 8100,
+        "tp_iou75": 4881,
+        "fp_iou50": 104083,
+        "recall_iou50": 0.7495142037568243,
+        "recall_iou75": 0.4516517072267974,
+        "images_at_max_det_1000": 29
+      },
+      "candidate": {
+        "predictions_conf_ge_0.001": 135349,
+        "tp_iou50": 8168,
+        "tp_iou75": 4834,
+        "fp_iou50": 127181,
+        "recall_iou50": 0.7558064217636717,
+        "recall_iou75": 0.4473026741926529,
+        "images_at_max_det_1000": 124
+      },
+      "candidate_minus_reference_tp_iou50": 68,
+      "candidate_minus_reference_fp_iou50": 23098
+    },
+    {
+      "quartile": 4,
+      "images": 137,
+      "min_gt_per_image": 93,
+      "max_gt_per_image": 317,
+      "ground_truth": 17836,
+      "reference": {
+        "predictions_conf_ge_0.001": 128469,
+        "tp_iou50": 12504,
+        "tp_iou75": 6864,
+        "fp_iou50": 115965,
+        "recall_iou50": 0.7010540479928234,
+        "recall_iou75": 0.3848396501457726,
+        "images_at_max_det_1000": 82
+      },
+      "candidate": {
+        "predictions_conf_ge_0.001": 136748,
+        "tp_iou50": 12380,
+        "tp_iou75": 6617,
+        "fp_iou50": 124368,
+        "recall_iou50": 0.6941018165507962,
+        "recall_iou75": 0.37099125364431484,
+        "images_at_max_det_1000": 133
+      },
+      "candidate_minus_reference_tp_iou50": -124,
+      "candidate_minus_reference_fp_iou50": 8403
+    }
+  ],
+  "caveat": "Converted labels omit ignored regions; greedy per-image TP/FP is not official AP. P2/640 versus standard960 differs in architecture and resolution, so these group differences are descriptive, not causal."
+}

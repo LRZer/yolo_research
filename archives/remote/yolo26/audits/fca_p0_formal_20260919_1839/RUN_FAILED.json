@@ -1,0 +1,8 @@
+{
+  "error": "[Errno 2] No such file or directory: '/home/ubuntu/rz/yolo_study/yolo26_voc_research/voc_server.yaml'",
+  "error_type": "FileNotFoundError",
+  "failed_unix": 1789814367.154662,
+  "started_unix": 1789814365.4156036,
+  "status": "FAILED",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/ubuntu/rz/yolo_study/ultralytics_research/scripts/probe_final_coverage_audit.py\", line 1726, in main\n    source_provenance = validate_source_and_git(source_root, data_yaml)\n                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/ubuntu/rz/yolo_study/ultralytics_research/scripts/probe_final_coverage_audit.py\", line 361, in validate_source_and_git\n    data_hash = sha256_file(data_yaml)\n                ^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/ubuntu/rz/yolo_study/ultralytics_research/scripts/probe_final_coverage_audit.py\", line 169, in sha256_file\n    with Path(path).open(\"rb\") as handle:\n         ^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/ubuntu/rz/yolo_study/.conda/yolo26/lib/python3.11/pathlib.py\", line 1044, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: '/home/ubuntu/rz/yolo_study/yolo26_voc_research/voc_server.yaml'\n"
+}

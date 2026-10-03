@@ -1,0 +1,9 @@
+{
+  "checked_at": "2026-09-19T19:18:58.062006+08:00",
+  "event_count": 0,
+  "events": [],
+  "fault_pattern": "Uncorrected hardware memory error|Sending SIGBUS|Memory failure|EDAC.*(?:error|corrected|uncorrected)",
+  "journal_returncode": 0,
+  "since": "2026-09-19T19:11:19.521109+08:00",
+  "valid": true
+}

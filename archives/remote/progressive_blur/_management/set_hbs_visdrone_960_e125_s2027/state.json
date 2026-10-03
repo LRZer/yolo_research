@@ -1,0 +1,9 @@
+{
+  "utc": "2026-09-23T23:29:00.574914+00:00",
+  "status": "verified_complete",
+  "manager_pid": 169059,
+  "jobs": [
+    "hbs",
+    "identity"
+  ]
+}

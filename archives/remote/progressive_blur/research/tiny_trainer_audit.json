@@ -1,0 +1,34 @@
+{
+  "status": "verified_complete",
+  "epochs": 2,
+  "results_columns": [
+    "epoch",
+    "time",
+    "train/box_loss",
+    "train/cls_loss",
+    "train/dfl_loss",
+    "train/map_loss",
+    "metrics/precision(B)",
+    "metrics/recall(B)",
+    "metrics/mAP50(B)",
+    "metrics/mAP50-95(B)",
+    "val/box_loss",
+    "val/cls_loss",
+    "val/dfl_loss",
+    "val/map_loss",
+    "lr/pg0",
+    "lr/pg1",
+    "lr/pg2"
+  ],
+  "last_readable": true,
+  "best_readable": true,
+  "model_class": "PGBDetectionModel",
+  "checkpoint_contains_frontend": true,
+  "restored_pgb_eval_mix": 0.5,
+  "prediction_shape": [
+    1,
+    6,
+    336
+  ],
+  "checkpoint_version": "8.4.146"
+}

@@ -1,0 +1,8 @@
+{
+  "updated": "2026-09-23T06:35:39.799290+08:00",
+  "status": "verified_complete",
+  "reason": null,
+  "completed_epochs": 1,
+  "expected_epochs": 1,
+  "run_dir": "/home/ubuntu/rz/progressive_blur_detection_research/runs/visdrone_official/yolov8n_oracle_blur_p50_official_960_smoke4_s2027"
+}

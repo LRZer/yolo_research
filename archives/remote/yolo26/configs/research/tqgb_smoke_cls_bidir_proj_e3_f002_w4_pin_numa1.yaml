@@ -1,0 +1,32 @@
+id: TQGB-SMOKE-CLS-BIDIR-PROJ-E3-F002-W4-PIN-NUMA1
+hypothesis: "Engineering-only forced-coverage smoke for four-rank BF16 forward/backward routing and projection."
+train:
+  model: /home/ubuntu/rz/yolo_study/yolo26_voc_research/configs/models/yolo26n_baseline.yaml
+  data: /home/ubuntu/rz/yolo_study/yolo26_voc_research/configs/datasets/voc_server.yaml
+  epochs: 3
+  patience: 3
+  batch: 64
+  imgsz: 640
+  device: "4,5,6,7"
+  workers: 4
+  pretrained: false
+  cls_remap: true
+  optimizer: auto
+  seed: 314159
+  deterministic: true
+  amp: bf16
+  fraction: 0.02
+  val: false
+  nms: false
+  plots: false
+  save: false
+  project: /home/ubuntu/rz/yolo_study/yolo26_voc_research/runs/_smoke
+  name: tqgb_smoke_cls_bidir_proj_e3_f002_w4_pin_numa1
+  exist_ok: false
+  o2o_kd_gain: 0.0
+  tqgb_cls_m2o_gain: 0.08
+  tqgb_cls_o2m_gain: 0.015
+  tqgb_min_score: 0.0
+  tqgb_cls_margin: 0.0001
+  tqgb_direction: bidirectional
+  tqgb_projection: true

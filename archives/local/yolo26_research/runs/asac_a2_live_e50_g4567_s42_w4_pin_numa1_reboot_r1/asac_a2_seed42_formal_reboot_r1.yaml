@@ -1,0 +1,15 @@
+id: asac_a2_seed42_phase1a_reboot_r1
+hypothesis: Fixed-probe assignment stability can control next-epoch affine strength better than official fixed augmentation.
+base_args: /home/ubuntu/rz/yolo_study/yolo26_voc_research/runs/b50_no_kd_e50_g4567_s42/args.yaml
+train_overrides:
+  project: /home/ubuntu/rz/yolo_study/yolo26_voc_research/runs
+  name: asac_a2_live_e50_g4567_s42_w4_pin_numa1_reboot_r1
+  exist_ok: false
+asac:
+  schema: ASAC-Phase1-v2
+  variant: A2
+  golden_artifact: /home/ubuntu/rz/yolo_study/asac_research/smoke/panel_golden_epoch50_v3.json
+  schedule: {}
+  schedule_manifest: null
+  formal: true
+  run_note: faulty-host exploratory; reboot-r1 from scratch after pre-epoch host reboot; fixed q_probe=0.5; fixed 624-GT population

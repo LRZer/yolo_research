@@ -1,0 +1,106 @@
+{
+  "status": "completed",
+  "generated": "2026-09-23T20:25:09.483635+08:00",
+  "condition": "medium",
+  "box_source": "ground_truth",
+  "val_limit": 8,
+  "sigma_input_pixels": 8.0,
+  "first_pass_uses_predictions_only": false,
+  "ground_truth_used_for_image_processing": true,
+  "weights": "/home/ubuntu/rz/progressive_blur_detection_research/runs/visdrone_official/yolov8n_scratch_official_960_s2027_e125/weights/best.pt",
+  "weights_sha256": "450ee16afc93b45e4c8a9c0090b28ae2d49da7b8861524359d52d37a147d54e6",
+  "data": "/home/ubuntu/rz/progressive_blur_detection_research/data_splits/visdrone_official/view_dataset.yaml",
+  "data_sha256": "715bfbfc0116fd90a2dc489f1cce1f6042311810aeb309def37a8caa2e84e334",
+  "validation": {
+    "imgsz": 960,
+    "batch": 8,
+    "workers": 4,
+    "conf": 0.001,
+    "iou": 0.7,
+    "max_det": 1000,
+    "half": false,
+    "rect": true
+  },
+  "blur": {
+    "first_pass_conf": 0.05,
+    "first_pass_iou": 0.7,
+    "margin_fraction": 0.0,
+    "minimum_margin": 0,
+    "feather_sigma": 8.0,
+    "audit": {
+      "images": 8,
+      "mask_boxes": 760,
+      "images_without_mask_boxes": 0,
+      "sum_protected_fraction": 0.6805327981710434,
+      "sum_mean_abs_pixel_change_255": 108.09444808959961,
+      "mean_mask_boxes_per_image": 95.0,
+      "mean_protected_fraction": 0.08506659977138042,
+      "mean_abs_pixel_change_255": 13.511806011199951
+    }
+  },
+  "mAP50": 0.43052059543544763,
+  "mAP50_95": 0.2585510601751961,
+  "classes": [
+    {
+      "id": 0,
+      "name": "pedestrian",
+      "AP50": 0.3043529183539322,
+      "AP50_95": 0.14453857962053956
+    },
+    {
+      "id": 1,
+      "name": "people",
+      "AP50": 0.4824631171994202,
+      "AP50_95": 0.1741457747554786
+    },
+    {
+      "id": 2,
+      "name": "bicycle",
+      "AP50": 0.23303486985196656,
+      "AP50_95": 0.13165570020176592
+    },
+    {
+      "id": 3,
+      "name": "car",
+      "AP50": 0.8619976039239341,
+      "AP50_95": 0.6730561589975035
+    },
+    {
+      "id": 4,
+      "name": "van",
+      "AP50": 0.33105064873485923,
+      "AP50_95": 0.2103973120452763
+    },
+    {
+      "id": 5,
+      "name": "truck",
+      "AP50": 0.23578856542617044,
+      "AP50_95": 0.18303543917567025
+    },
+    {
+      "id": 6,
+      "name": "tricycle",
+      "AP50": 0.46120311222030413,
+      "AP50_95": 0.30279868704802854
+    },
+    {
+      "id": 7,
+      "name": "awning-tricycle",
+      "AP50": 0.2632449149807047,
+      "AP50_95": 0.15678897669831532
+    },
+    {
+      "id": 9,
+      "name": "motor",
+      "AP50": 0.701549608227737,
+      "AP50_95": 0.3505429130341866
+    }
+  ],
+  "elapsed_wall_seconds": 0.5123516569992717,
+  "validator_speed_ms_per_image": {
+    "preprocess": 47.238482500006285,
+    "inference": 1.3373773750799955,
+    "loss": 0.0005045000079917372,
+    "postprocess": 0.8740281250538828
+  }
+}

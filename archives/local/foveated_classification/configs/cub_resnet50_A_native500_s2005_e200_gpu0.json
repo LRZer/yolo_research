@@ -1,0 +1,22 @@
+{
+  "group": "A_original",
+  "architecture": "torchvision_resnet50_scratch",
+  "data_root": "/home/ubuntu/rz/foveated_classification_research/data/CUB-200-2011/extracted/CUB_200_2011",
+  "stats_json": "/home/ubuntu/rz/foveated_classification_research/configs/CUB_OFFICIAL_TRAIN_RGB_STATS_2026-09-25.json",
+  "run_dir": "/home/ubuntu/rz/foveated_classification_research/runs/resnet50_A_native500_s2005_e200",
+  "epochs": 200,
+  "seed": 2005,
+  "canvas": 500,
+  "effective_batch": 64,
+  "microbatch": 16,
+  "accumulation": 4,
+  "eval_batch": 32,
+  "workers": 4,
+  "device_physical": 0,
+  "numa_node": 0,
+  "base_lr": 0.025,
+  "min_lr": 0.00001,
+  "warmup_epochs": 5,
+  "momentum": 0.9,
+  "weight_decay": 0.0005
+}

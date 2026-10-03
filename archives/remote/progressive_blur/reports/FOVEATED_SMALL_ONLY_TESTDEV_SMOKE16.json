@@ -1,0 +1,242 @@
+{
+  "checkpoint": "/home/ubuntu/rz/progressive_blur_detection_research/runs/visdrone_official/yolov8n_scratch_official_960_s2027_e125/weights/last.pt",
+  "checkpoint_sha256": "e352a00f73fe7926b87e3ae7a5f3b595265a3d95ee24d3e0a10ed2aab4491cc7",
+  "manifest": "/home/ubuntu/rz/progressive_blur_detection_research/data_splits/visdrone_official/test.txt",
+  "manifest_sha256": "f3810409e95fd497a794d32571e4f12ea9d136d84a1eeb0a3c1b905a0b4ce455",
+  "images": 16,
+  "conditions": {
+    "full": {
+      "precision": 0.5375325250313452,
+      "recall": 0.37692290215391755,
+      "map50": 0.32362561995397143,
+      "map50_95": 0.14982196542481718,
+      "predictions": 12544,
+      "gt_boxes": 482,
+      "per_class": [
+        {
+          "id": 0,
+          "name": "pedestrian",
+          "ap50": 0.47799109663628303,
+          "ap50_95": 0.1899881352288335
+        },
+        {
+          "id": 1,
+          "name": "people",
+          "ap50": 0.2090072843822844,
+          "ap50_95": 0.055139353079870335
+        },
+        {
+          "id": 2,
+          "name": "bicycle",
+          "ap50": 0.03109375,
+          "ap50_95": 0.009328125
+        },
+        {
+          "id": 3,
+          "name": "car",
+          "ap50": 0.8333549172784183,
+          "ap50_95": 0.504036252312382
+        },
+        {
+          "id": 4,
+          "name": "van",
+          "ap50": 0.21155613442222843,
+          "ap50_95": 0.08991176585625331
+        },
+        {
+          "id": 5,
+          "name": "truck",
+          "ap50": 0.6307514351034753,
+          "ap50_95": 0.31746863392013125
+        },
+        {
+          "id": 6,
+          "name": "tricycle",
+          "ap50": 0.19656249999999997,
+          "ap50_95": 0.08417613636363636
+        },
+        {
+          "id": 7,
+          "name": "awning-tricycle",
+          "ap50": 0.0,
+          "ap50_95": 0.0
+        },
+        {
+          "id": 9,
+          "name": "motor",
+          "ap50": 0.32231346176305364,
+          "ap50_95": 0.0983492870622478
+        }
+      ]
+    },
+    "full_adaptive4": {
+      "precision": 0.49207911326178544,
+      "recall": 0.3956582010986156,
+      "map50": 0.38177182049793174,
+      "map50_95": 0.1785874678325778,
+      "predictions": 15647,
+      "gt_boxes": 482,
+      "per_class": [
+        {
+          "id": 0,
+          "name": "pedestrian",
+          "ap50": 0.5950700808625337,
+          "ap50_95": 0.21029407569978487
+        },
+        {
+          "id": 1,
+          "name": "people",
+          "ap50": 0.41186215415019767,
+          "ap50_95": 0.11159328787276798
+        },
+        {
+          "id": 2,
+          "name": "bicycle",
+          "ap50": 0.09045454545454545,
+          "ap50_95": 0.03618181818181818
+        },
+        {
+          "id": 3,
+          "name": "car",
+          "ap50": 0.8731428936191318,
+          "ap50_95": 0.5275178432303653
+        },
+        {
+          "id": 4,
+          "name": "van",
+          "ap50": 0.21725549787295406,
+          "ap50_95": 0.1160229337249176
+        },
+        {
+          "id": 5,
+          "name": "truck",
+          "ap50": 0.5733678038801735,
+          "ap50_95": 0.2949549989616982
+        },
+        {
+          "id": 6,
+          "name": "tricycle",
+          "ap50": 0.37475498420307224,
+          "ap50_95": 0.21200212466016327
+        },
+        {
+          "id": 7,
+          "name": "awning-tricycle",
+          "ap50": 0.0,
+          "ap50_95": 0.0
+        },
+        {
+          "id": 9,
+          "name": "motor",
+          "ap50": 0.30003842443877704,
+          "ap50_95": 0.09872012816168471
+        }
+      ]
+    },
+    "full_adaptive4_small_only": {
+      "precision": 0.503080904374024,
+      "recall": 0.39365619909661365,
+      "map50": 0.3887767980254193,
+      "map50_95": 0.1821383258438167,
+      "predictions": 15600,
+      "gt_boxes": 482,
+      "per_class": [
+        {
+          "id": 0,
+          "name": "pedestrian",
+          "ap50": 0.5950700808625337,
+          "ap50_95": 0.2102938564709831
+        },
+        {
+          "id": 1,
+          "name": "people",
+          "ap50": 0.4118725737769856,
+          "ap50_95": 0.11159517761417179
+        },
+        {
+          "id": 2,
+          "name": "bicycle",
+          "ap50": 0.09045454545454545,
+          "ap50_95": 0.03618181818181818
+        },
+        {
+          "id": 3,
+          "name": "car",
+          "ap50": 0.880528394566293,
+          "ap50_95": 0.5308744282732071
+        },
+        {
+          "id": 4,
+          "name": "van",
+          "ap50": 0.220998273121829,
+          "ap50_95": 0.11788022883203245
+        },
+        {
+          "id": 5,
+          "name": "truck",
+          "ap50": 0.6253035062315038,
+          "ap50_95": 0.3217032678161099
+        },
+        {
+          "id": 6,
+          "name": "tricycle",
+          "ap50": 0.37472538377630565,
+          "ap50_95": 0.21199620457480997
+        },
+        {
+          "id": 7,
+          "name": "awning-tricycle",
+          "ap50": 0.0,
+          "ap50_95": 0.0
+        },
+        {
+          "id": 9,
+          "name": "motor",
+          "ap50": 0.30003842443877704,
+          "ap50_95": 0.09871995083121758
+        }
+      ]
+    }
+  },
+  "candidate_counts": {
+    "crop_candidates_before": 25933,
+    "crop_candidates_kept": 24323,
+    "class_0_before": 7436,
+    "class_1_before": 4068,
+    "class_2_before": 1722,
+    "class_3_before": 3945,
+    "class_4_before": 1224,
+    "class_5_before": 2599,
+    "class_6_before": 1095,
+    "class_7_before": 822,
+    "class_8_before": 755,
+    "class_9_before": 2267,
+    "class_0_kept": 7429,
+    "class_1_kept": 4054,
+    "class_2_kept": 1718,
+    "class_3_kept": 3690,
+    "class_4_kept": 1060,
+    "class_5_kept": 1821,
+    "class_6_kept": 1058,
+    "class_7_kept": 782,
+    "class_8_kept": 448,
+    "class_9_kept": 2263
+  },
+  "wall_seconds_including_load": 5.909406229000069,
+  "protocol": {
+    "imgsz": 960,
+    "conf": 0.001,
+    "iou": 0.7,
+    "max_det": 1000,
+    "crop_grid": "4x4",
+    "crop_halo_fraction_each_side": 0.1,
+    "selected_cells": 4,
+    "fusion_nms_classwise_iou": 0.7,
+    "candidate_nms_multi_label": true,
+    "small_crop_candidate_max_side_at_full960": 64.0,
+    "full_candidates_unfiltered": true,
+    "gt_used_in_selection_or_filter": false,
+    "evaluator": "internal Ultralytics ap_per_class on converted labels; not official VisDrone"
+  },
+  "caveat": "test-dev was historically inspected by earlier projects; this is not a blind result. All crop conditions invoke five 960 model inputs per image."
+}

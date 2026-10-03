@@ -1,0 +1,610 @@
+{
+  "files": [
+    {
+      "dataset": "HIT-UAV",
+      "local": "E:\\datasets\\HIT-UAV\\archives\\HIT-UAV-Infrared-Thermal-Dataset-v1.2.1.zip",
+      "remote": "HIT-UAV/archives/HIT-UAV-Infrared-Thermal-Dataset-v1.2.1.zip",
+      "bytes": 814751578,
+      "sha256": "5fed15d2ff895afb16c0ca328ea19353f416d7543e6f39ba54e44ca26c538555",
+      "extract": true,
+      "validation_note": "verified_usable_original_format; "
+    },
+    {
+      "dataset": "HIT-UAV",
+      "local": "E:\\datasets\\HIT-UAV\\VALIDATION.json",
+      "remote": "HIT-UAV/VALIDATION.json",
+      "bytes": 4308,
+      "sha256": "640c8785c5b96b2aabda51843fff86c49cada0a2577eb92d43d74e121af0236b",
+      "extract": false,
+      "validation_note": "verified_usable_original_format; "
+    },
+    {
+      "dataset": "HIT-UAV",
+      "local": "E:\\datasets\\HIT-UAV\\VALIDATION.md",
+      "remote": "HIT-UAV/VALIDATION.md",
+      "bytes": 4509,
+      "sha256": "47d35d8e2ac768ad9df37c57a5f6d822af8346122af6fec87c205c0d0491099b",
+      "extract": false,
+      "validation_note": "verified_usable_original_format; "
+    },
+    {
+      "dataset": "DUO",
+      "local": "E:\\datasets\\DUO\\archives\\DUO.zip",
+      "remote": "DUO/archives/DUO.zip",
+      "bytes": 2940459407,
+      "sha256": "5de58f03a09c152607a99722f453100a0de7c37fb1a6bc3b767a2e4293ee1992",
+      "extract": true,
+      "validation_note": "verified_usable_original_format; "
+    },
+    {
+      "dataset": "DUO",
+      "local": "E:\\datasets\\DUO\\VALIDATION.json",
+      "remote": "DUO/VALIDATION.json",
+      "bytes": 1201,
+      "sha256": "89ee3ad83f7f89a8e6a076960693615ada4a0c18d93e8eb72ef9f6c9fd307850",
+      "extract": false,
+      "validation_note": "verified_usable_original_format; "
+    },
+    {
+      "dataset": "DUO",
+      "local": "E:\\datasets\\DUO\\VALIDATION.md",
+      "remote": "DUO/VALIDATION.md",
+      "bytes": 1398,
+      "sha256": "14deb70b33cc1df247cc76475637d30204501e04a1d4d6a81cefd1c0d105e68e",
+      "extract": false,
+      "validation_note": "verified_usable_original_format; "
+    },
+    {
+      "dataset": "AP-10K",
+      "local": "E:\\datasets\\AP-10K\\archives\\ap-10k.zip",
+      "remote": "AP-10K/archives/ap-10k.zip",
+      "bytes": 3403294327,
+      "sha256": "420980abb135d6f66bcc8e29f289a46081214016192ae197ad24bc1525c8e62c",
+      "extract": true,
+      "validation_note": "verified_usable_original_format; "
+    },
+    {
+      "dataset": "AP-10K",
+      "local": "E:\\datasets\\AP-10K\\VALIDATION.json",
+      "remote": "AP-10K/VALIDATION.json",
+      "bytes": 4163,
+      "sha256": "52206568c77450d21ba7660eb4a1f9278fb4d5bbc92bd03617456ce6baee159d",
+      "extract": false,
+      "validation_note": "verified_usable_original_format; "
+    },
+    {
+      "dataset": "AP-10K",
+      "local": "E:\\datasets\\AP-10K\\VALIDATION.md",
+      "remote": "AP-10K/VALIDATION.md",
+      "bytes": 4363,
+      "sha256": "3e494228bb51746216c1218a3b21064715da758e16f07d65c90218b4146c4aec",
+      "extract": false,
+      "validation_note": "verified_usable_original_format; "
+    },
+    {
+      "dataset": "SeaClear",
+      "local": "E:\\datasets\\SeaClear\\archives\\Seaclear Marine Debris Dataset.rar",
+      "remote": "SeaClear/archives/Seaclear Marine Debris Dataset.rar",
+      "bytes": 1711829309,
+      "sha256": "2a053f748d6bdc5df8d776e87b72832f2908316f0f419f6a8d562df6df086c13",
+      "extract": true,
+      "validation_note": "verified_usable_original_format; "
+    },
+    {
+      "dataset": "SeaClear",
+      "local": "E:\\datasets\\SeaClear\\VALIDATION.json",
+      "remote": "SeaClear/VALIDATION.json",
+      "bytes": 798,
+      "sha256": "21c7aad165db0f266fe339abf8a47da5df3cb5ecefb7d2911afcdd99fa50c24f",
+      "extract": false,
+      "validation_note": "verified_usable_original_format; "
+    },
+    {
+      "dataset": "SeaClear",
+      "local": "E:\\datasets\\SeaClear\\VALIDATION.md",
+      "remote": "SeaClear/VALIDATION.md",
+      "bytes": 1000,
+      "sha256": "c3d17115d5eee55c3750837ea946cfeb21141bb7d4868c9a2f53caa5430b0ef8",
+      "extract": false,
+      "validation_note": "verified_usable_original_format; "
+    },
+    {
+      "dataset": "ExDark",
+      "local": "E:\\datasets\\ExDark\\archives\\bicycle.tar.gz",
+      "remote": "ExDark/archives/bicycle.tar.gz",
+      "bytes": 123330805,
+      "sha256": "07ee437623679a43aca9c1e3de0adf4f28d8f7cb54f73126646d98bd9fc3bd52",
+      "extract": true,
+      "validation_note": "verified_usable_original_format; "
+    },
+    {
+      "dataset": "ExDark",
+      "local": "E:\\datasets\\ExDark\\archives\\boat.tar.gz",
+      "remote": "ExDark/archives/boat.tar.gz",
+      "bytes": 96052108,
+      "sha256": "684a2cef543523750bacb511d7de3384b1c0de4a0a13a7888831ec8dd4e7cce1",
+      "extract": true,
+      "validation_note": "verified_usable_original_format; "
+    },
+    {
+      "dataset": "ExDark",
+      "local": "E:\\datasets\\ExDark\\archives\\bottle.tar.gz",
+      "remote": "ExDark/archives/bottle.tar.gz",
+      "bytes": 94202482,
+      "sha256": "b21b87f3f409040f81cfc561d04448f88760bc66381e39ac9ce5fbf302d75809",
+      "extract": true,
+      "validation_note": "verified_usable_original_format; "
+    },
+    {
+      "dataset": "ExDark",
+      "local": "E:\\datasets\\ExDark\\archives\\bus.tar.gz",
+      "remote": "ExDark/archives/bus.tar.gz",
+      "bytes": 121726365,
+      "sha256": "064c12fe382d26062c4370eaa6af322e7adcf40ae2d0584047f63fbaf3851df5",
+      "extract": true,
+      "validation_note": "verified_usable_original_format; "
+    },
+    {
+      "dataset": "ExDark",
+      "local": "E:\\datasets\\ExDark\\archives\\car.tar.gz",
+      "remote": "ExDark/archives/car.tar.gz",
+      "bytes": 167424863,
+      "sha256": "8f1554f3724468179e4f12d2116aaa2a5fce257f1bb3968d5049bf10430d92e5",
+      "extract": true,
+      "validation_note": "verified_usable_original_format; "
+    },
+    {
+      "dataset": "ExDark",
+      "local": "E:\\datasets\\ExDark\\archives\\cat.tar.gz",
+      "remote": "ExDark/archives/cat.tar.gz",
+      "bytes": 105269515,
+      "sha256": "77cab14b8e353f07af311722e27012d730e90622f0c32980448d1ef22b625d97",
+      "extract": true,
+      "validation_note": "verified_usable_original_format; "
+    },
+    {
+      "dataset": "ExDark",
+      "local": "E:\\datasets\\ExDark\\archives\\chair.tar.gz",
+      "remote": "ExDark/archives/chair.tar.gz",
+      "bytes": 97582102,
+      "sha256": "eba8759b50f22afb649a40c2eaaddf81fe9cdee90c4e7b9cba319ed0285dfc34",
+      "extract": true,
+      "validation_note": "verified_usable_original_format; "
+    },
+    {
+      "dataset": "ExDark",
+      "local": "E:\\datasets\\ExDark\\archives\\collage.png",
+      "remote": "ExDark/archives/collage.png",
+      "bytes": 23208610,
+      "sha256": "fb1a9d2e211b515d755c184d67d5a97cf6d3dd9e242056bb218894e7c933470e",
+      "extract": false,
+      "validation_note": "verified_usable_original_format; "
+    },
+    {
+      "dataset": "ExDark",
+      "local": "E:\\datasets\\ExDark\\archives\\cup.tar.gz",
+      "remote": "ExDark/archives/cup.tar.gz",
+      "bytes": 75115382,
+      "sha256": "3bb6775a61fdb0bd21029cc10b5d8c77a3e28454a52c20262aca917e4b2abb3b",
+      "extract": true,
+      "validation_note": "verified_usable_original_format; "
+    },
+    {
+      "dataset": "ExDark",
+      "local": "E:\\datasets\\ExDark\\archives\\dog.tar.gz",
+      "remote": "ExDark/archives/dog.tar.gz",
+      "bytes": 118614054,
+      "sha256": "3c42dc5a7d62fc58e91dbf1ec9cb10d2fad9972ee74c8137b067cae523aad0d0",
+      "extract": true,
+      "validation_note": "verified_usable_original_format; "
+    },
+    {
+      "dataset": "ExDark",
+      "local": "E:\\datasets\\ExDark\\archives\\groundtruth.tar.gz",
+      "remote": "ExDark/archives/groundtruth.tar.gz",
+      "bytes": 4222610,
+      "sha256": "c94a739f56246c4c136eb214059039f5ed80580516c80af327c9023f0ef32099",
+      "extract": true,
+      "validation_note": "verified_usable_original_format; "
+    },
+    {
+      "dataset": "ExDark",
+      "local": "E:\\datasets\\ExDark\\archives\\motorbike.tar.gz",
+      "remote": "ExDark/archives/motorbike.tar.gz",
+      "bytes": 177428605,
+      "sha256": "e1bcfaec7a18f7cccf8926a87942c920fab080e98c7722d0a75caef1286a61b0",
+      "extract": true,
+      "validation_note": "verified_usable_original_format; "
+    },
+    {
+      "dataset": "ExDark",
+      "local": "E:\\datasets\\ExDark\\archives\\people.tar.gz",
+      "remote": "ExDark/archives/people.tar.gz",
+      "bytes": 185175263,
+      "sha256": "0d7eba0f4fb69744617647bf645b2712859fdc5e6c397f393cc266e208244a55",
+      "extract": true,
+      "validation_note": "verified_usable_original_format; "
+    },
+    {
+      "dataset": "ExDark",
+      "local": "E:\\datasets\\ExDark\\archives\\protocol\\imageclasslist.txt",
+      "remote": "ExDark/archives/protocol/imageclasslist.txt",
+      "bytes": 179222,
+      "sha256": "57eb0a9a7f567f6edbff14d6bb7b65106c55edcde51c02515d4a43f83945a1ad",
+      "extract": false,
+      "validation_note": "verified_usable_original_format; "
+    },
+    {
+      "dataset": "ExDark",
+      "local": "E:\\datasets\\ExDark\\archives\\protocol\\README.md",
+      "remote": "ExDark/archives/protocol/README.md",
+      "bytes": 1746,
+      "sha256": "2054451707b08a012bb1d47f20502a5cc865eea1ec0a752e78d3579e4cae3a9c",
+      "extract": false,
+      "validation_note": "verified_usable_original_format; "
+    },
+    {
+      "dataset": "ExDark",
+      "local": "E:\\datasets\\ExDark\\archives\\table.tar.gz",
+      "remote": "ExDark/archives/table.tar.gz",
+      "bytes": 128676689,
+      "sha256": "56ce3987542dfa49b3f910c40dd77161adac9434032880604cd134c9be99e551",
+      "extract": true,
+      "validation_note": "verified_usable_original_format; "
+    },
+    {
+      "dataset": "ExDark",
+      "local": "E:\\datasets\\ExDark\\READING_NOTES.md",
+      "remote": "ExDark/READING_NOTES.md",
+      "bytes": 1089,
+      "sha256": "f257375629969091b294c9677515db0d6315195256cbd7066c7a74d78b73c8ac",
+      "extract": false,
+      "validation_note": "verified_usable_original_format; "
+    },
+    {
+      "dataset": "ExDark",
+      "local": "E:\\datasets\\ExDark\\VALIDATION.json",
+      "remote": "ExDark/VALIDATION.json",
+      "bytes": 1053,
+      "sha256": "ff981982a49bcabf1308582add69e4724caa09e6fb80e0a7015f14136158388b",
+      "extract": false,
+      "validation_note": "verified_usable_original_format; "
+    },
+    {
+      "dataset": "ExDark",
+      "local": "E:\\datasets\\ExDark\\VALIDATION.md",
+      "remote": "ExDark/VALIDATION.md",
+      "bytes": 1253,
+      "sha256": "85029627f59cb6bb455ba1e736843ca4d53a43379e829e743d041ff8757fb77f",
+      "extract": false,
+      "validation_note": "verified_usable_original_format; "
+    },
+    {
+      "dataset": "ORCA",
+      "local": "E:\\datasets\\ORCA\\archives\\.gitattributes",
+      "remote": "ORCA/archives/.gitattributes",
+      "bytes": 2738,
+      "sha256": "af51c0671aeccaaa0507dbefbb6cd5182a1b1cda3104e4d8413b87cedae93253",
+      "extract": false,
+      "validation_note": "needs_review; ORCA canonical data.json does not reference 1 image(s): ['pygoscelis_adeliae_Pygoscelis adeliae36.jpg']; ORCA caption label values undocumented in publisher README: ['-1']; interpretation requires review"
+    },
+    {
+      "dataset": "ORCA",
+      "local": "E:\\datasets\\ORCA\\archives\\data.json",
+      "remote": "ORCA/archives/data.json",
+      "bytes": 25434506,
+      "sha256": "1241c193bd310a27e9753db4e8b40a986287d7ee73e99e5edbf5d904fe064b5b",
+      "extract": false,
+      "validation_note": "needs_review; ORCA canonical data.json does not reference 1 image(s): ['pygoscelis_adeliae_Pygoscelis adeliae36.jpg']; ORCA caption label values undocumented in publisher README: ['-1']; interpretation requires review"
+    },
+    {
+      "dataset": "ORCA",
+      "local": "E:\\datasets\\ORCA\\archives\\images.zip",
+      "remote": "ORCA/archives/images.zip",
+      "bytes": 987885669,
+      "sha256": "3b19aa41dbfd3eb98d8b58e7abea873551297710d6a9f6b423c9f923adf35cbd",
+      "extract": true,
+      "validation_note": "needs_review; ORCA canonical data.json does not reference 1 image(s): ['pygoscelis_adeliae_Pygoscelis adeliae36.jpg']; ORCA caption label values undocumented in publisher README: ['-1']; interpretation requires review"
+    },
+    {
+      "dataset": "ORCA",
+      "local": "E:\\datasets\\ORCA\\archives\\README.md",
+      "remote": "ORCA/archives/README.md",
+      "bytes": 4336,
+      "sha256": "9fd2d995a457dd499c22cd815b51accd8287c4c0775131f0308583b1edcdbf60",
+      "extract": false,
+      "validation_note": "needs_review; ORCA canonical data.json does not reference 1 image(s): ['pygoscelis_adeliae_Pygoscelis adeliae36.jpg']; ORCA caption label values undocumented in publisher README: ['-1']; interpretation requires review"
+    },
+    {
+      "dataset": "ORCA",
+      "local": "E:\\datasets\\ORCA\\archives\\split_annotations\\class_level_train.json",
+      "remote": "ORCA/archives/split_annotations/class_level_train.json",
+      "bytes": 16362929,
+      "sha256": "4846514531ec205450e767691e5f3e2cd08a9db36ec97ab71acb6365d8e0c7fe",
+      "extract": false,
+      "validation_note": "needs_review; ORCA canonical data.json does not reference 1 image(s): ['pygoscelis_adeliae_Pygoscelis adeliae36.jpg']; ORCA caption label values undocumented in publisher README: ['-1']; interpretation requires review"
+    },
+    {
+      "dataset": "ORCA",
+      "local": "E:\\datasets\\ORCA\\archives\\split_annotations\\class_level_val.json",
+      "remote": "ORCA/archives/split_annotations/class_level_val.json",
+      "bytes": 8683705,
+      "sha256": "8457a4b0eb2f858adeddb3e8226999d724a8adbadcbc95fe965c6bcd23f6662e",
+      "extract": false,
+      "validation_note": "needs_review; ORCA canonical data.json does not reference 1 image(s): ['pygoscelis_adeliae_Pygoscelis adeliae36.jpg']; ORCA caption label values undocumented in publisher README: ['-1']; interpretation requires review"
+    },
+    {
+      "dataset": "ORCA",
+      "local": "E:\\datasets\\ORCA\\archives\\split_annotations\\class_level_val_seen.json",
+      "remote": "ORCA/archives/split_annotations/class_level_val_seen.json",
+      "bytes": 5172330,
+      "sha256": "7ef7bc699deabca025469a2258075d6d99d66f9c45f1dd7572bc0178b26db353",
+      "extract": false,
+      "validation_note": "needs_review; ORCA canonical data.json does not reference 1 image(s): ['pygoscelis_adeliae_Pygoscelis adeliae36.jpg']; ORCA caption label values undocumented in publisher README: ['-1']; interpretation requires review"
+    },
+    {
+      "dataset": "ORCA",
+      "local": "E:\\datasets\\ORCA\\archives\\split_annotations\\class_level_val_unseen.json",
+      "remote": "ORCA/archives/split_annotations/class_level_val_unseen.json",
+      "bytes": 3579437,
+      "sha256": "ec44de5f152ad49e0ab449e6494e9874cd4c75446d504d405b161d80dc6f59ee",
+      "extract": false,
+      "validation_note": "needs_review; ORCA canonical data.json does not reference 1 image(s): ['pygoscelis_adeliae_Pygoscelis adeliae36.jpg']; ORCA caption label values undocumented in publisher README: ['-1']; interpretation requires review"
+    },
+    {
+      "dataset": "ORCA",
+      "local": "E:\\datasets\\ORCA\\archives\\split_annotations\\inter_class_train.json",
+      "remote": "ORCA/archives/split_annotations/inter_class_train.json",
+      "bytes": 14012305,
+      "sha256": "b2282856e9fa5f73d73371f88ed54847e3f741b35211ad2d7893fe48522af452",
+      "extract": false,
+      "validation_note": "needs_review; ORCA canonical data.json does not reference 1 image(s): ['pygoscelis_adeliae_Pygoscelis adeliae36.jpg']; ORCA caption label values undocumented in publisher README: ['-1']; interpretation requires review"
+    },
+    {
+      "dataset": "ORCA",
+      "local": "E:\\datasets\\ORCA\\archives\\split_annotations\\inter_class_val_seen.json",
+      "remote": "ORCA/archives/split_annotations/inter_class_val_seen.json",
+      "bytes": 6117582,
+      "sha256": "c4a9ab9d8aaf945857a0334f9b52bc2aa37dbe6b833f8fbf2c1124dd4f2dfee8",
+      "extract": false,
+      "validation_note": "needs_review; ORCA canonical data.json does not reference 1 image(s): ['pygoscelis_adeliae_Pygoscelis adeliae36.jpg']; ORCA caption label values undocumented in publisher README: ['-1']; interpretation requires review"
+    },
+    {
+      "dataset": "ORCA",
+      "local": "E:\\datasets\\ORCA\\archives\\split_annotations\\inter_class_val_unseen.json",
+      "remote": "ORCA/archives/split_annotations/inter_class_val_unseen.json",
+      "bytes": 5119902,
+      "sha256": "ae15b6f186755fea549b45936166c9dce6ca4d32a2267587d410de6916405766",
+      "extract": false,
+      "validation_note": "needs_review; ORCA canonical data.json does not reference 1 image(s): ['pygoscelis_adeliae_Pygoscelis adeliae36.jpg']; ORCA caption label values undocumented in publisher README: ['-1']; interpretation requires review"
+    },
+    {
+      "dataset": "ORCA",
+      "local": "E:\\datasets\\ORCA\\archives\\split_annotations\\intra_class_train.json",
+      "remote": "ORCA/archives/split_annotations/intra_class_train.json",
+      "bytes": 16660808,
+      "sha256": "b47bcdaded01f46712bbe535c20d2e41543cb1f41f896cfd4222659a1d86b7a5",
+      "extract": false,
+      "validation_note": "needs_review; ORCA canonical data.json does not reference 1 image(s): ['pygoscelis_adeliae_Pygoscelis adeliae36.jpg']; ORCA caption label values undocumented in publisher README: ['-1']; interpretation requires review"
+    },
+    {
+      "dataset": "ORCA",
+      "local": "E:\\datasets\\ORCA\\archives\\split_annotations\\intra_class_val_seen.json",
+      "remote": "ORCA/archives/split_annotations/intra_class_val_seen.json",
+      "bytes": 5484592,
+      "sha256": "fe3278af32bc5e640a2cd3e68725da3df5418d40c903a35b9412c08900e03633",
+      "extract": false,
+      "validation_note": "needs_review; ORCA canonical data.json does not reference 1 image(s): ['pygoscelis_adeliae_Pygoscelis adeliae36.jpg']; ORCA caption label values undocumented in publisher README: ['-1']; interpretation requires review"
+    },
+    {
+      "dataset": "ORCA",
+      "local": "E:\\datasets\\ORCA\\archives\\split_annotations\\intra_class_val_unseen.json",
+      "remote": "ORCA/archives/split_annotations/intra_class_val_unseen.json",
+      "bytes": 3521711,
+      "sha256": "168bffe5d68a86c6d1d549d8442d1ffbb4b1af5abaf740b891287ebf4d7da1e7",
+      "extract": false,
+      "validation_note": "needs_review; ORCA canonical data.json does not reference 1 image(s): ['pygoscelis_adeliae_Pygoscelis adeliae36.jpg']; ORCA caption label values undocumented in publisher README: ['-1']; interpretation requires review"
+    },
+    {
+      "dataset": "ORCA",
+      "local": "E:\\datasets\\ORCA\\REVIEW.md",
+      "remote": "ORCA/REVIEW.md",
+      "bytes": 2558,
+      "sha256": "6d882418b02ff482d524441f0fbd4553a8783e3e85741b3d36702eb5845eff7f",
+      "extract": false,
+      "validation_note": "needs_review; ORCA canonical data.json does not reference 1 image(s): ['pygoscelis_adeliae_Pygoscelis adeliae36.jpg']; ORCA caption label values undocumented in publisher README: ['-1']; interpretation requires review"
+    },
+    {
+      "dataset": "ORCA",
+      "local": "E:\\datasets\\ORCA\\VALIDATION.json",
+      "remote": "ORCA/VALIDATION.json",
+      "bytes": 5861,
+      "sha256": "00057f11c6ccc4b43a202efb6cdc7374ca901688b5f8daa6a58461f296d90e09",
+      "extract": false,
+      "validation_note": "needs_review; ORCA canonical data.json does not reference 1 image(s): ['pygoscelis_adeliae_Pygoscelis adeliae36.jpg']; ORCA caption label values undocumented in publisher README: ['-1']; interpretation requires review"
+    },
+    {
+      "dataset": "ORCA",
+      "local": "E:\\datasets\\ORCA\\VALIDATION.md",
+      "remote": "ORCA/VALIDATION.md",
+      "bytes": 6040,
+      "sha256": "d141367d62f74aa4dd045c49b7120552f2039c0d65923e3facc66c158e78fd5e",
+      "extract": false,
+      "validation_note": "needs_review; ORCA canonical data.json does not reference 1 image(s): ['pygoscelis_adeliae_Pygoscelis adeliae36.jpg']; ORCA caption label values undocumented in publisher README: ['-1']; interpretation requires review"
+    },
+    {
+      "dataset": "HRSID",
+      "local": "E:\\BaiduNetdiskDownload\\HRSID_JPG.rar",
+      "remote": "HRSID/archives/HRSID_JPG.rar",
+      "bytes": 608910165,
+      "sha256": "743be02ed6df0a303fecd15db237ad84ba6fbf1b09b5111f171196e92ec2444d",
+      "extract": true,
+      "validation_note": "verified_usable_original_format; "
+    },
+    {
+      "dataset": "HRSID",
+      "local": "E:\\datasets\\HRSID\\MANUAL_VALIDATION.json",
+      "remote": "HRSID/MANUAL_VALIDATION.json",
+      "bytes": 1197,
+      "sha256": "ccd3800f29df4480abcccf880e9c5409fa189ad6d83d677d68284cccb141175a",
+      "extract": false
+    },
+    {
+      "dataset": "HRSID",
+      "local": "E:\\datasets\\HRSID\\MANUAL_VALIDATION.md",
+      "remote": "HRSID/MANUAL_VALIDATION.md",
+      "bytes": 1292,
+      "sha256": "ed0f18870525769d7e62a8ed22029cc7685a8295486ab32dfc9a64252537bb05",
+      "extract": false
+    },
+    {
+      "dataset": "VisDrone2019-DET",
+      "local": "E:\\datasets\\VisDrone2019-DET\\VisDrone2019-DET-train.zip",
+      "remote": "VisDrone2019-DET/archives/VisDrone2019-DET-train.zip",
+      "bytes": 1549875511,
+      "sha256": "c3176397ef9c859600e632d91f7f4881ee75cffd0cad768e3dca1388ed3586d3",
+      "extract": true,
+      "validation_note": "file_integrity_passed_annotation_review_required; train: 3 original zero/negative-extent rows, 2 marked ignored/other. Original rows retained; training reader must follow ignore protocol, not silently treat as positive boxes."
+    },
+    {
+      "dataset": "VisDrone2019-DET",
+      "local": "E:\\datasets\\VisDrone2019-DET\\VisDrone2019-DET-val.zip",
+      "remote": "VisDrone2019-DET/archives/VisDrone2019-DET-val.zip",
+      "bytes": 81625797,
+      "sha256": "1be1eff61edb856c45d7a41cd057ad09f7a35304459a3e1071209e46039c4ca0",
+      "extract": true,
+      "validation_note": "file_integrity_passed_annotation_review_required; train: 3 original zero/negative-extent rows, 2 marked ignored/other. Original rows retained; training reader must follow ignore protocol, not silently treat as positive boxes."
+    },
+    {
+      "dataset": "VisDrone2019-DET",
+      "local": "E:\\datasets\\VisDrone2019-DET\\VisDrone2019-DET-test-dev.zip",
+      "remote": "VisDrone2019-DET/archives/VisDrone2019-DET-test-dev.zip",
+      "bytes": 311045829,
+      "sha256": "78b0c5078a14ee43d0b803a354e76016d7260d1704cfd1c2dc821858d839e261",
+      "extract": true,
+      "validation_note": "file_integrity_passed_annotation_review_required; train: 3 original zero/negative-extent rows, 2 marked ignored/other. Original rows retained; training reader must follow ignore protocol, not silently treat as positive boxes."
+    },
+    {
+      "dataset": "VisDrone2019-DET",
+      "local": "E:\\datasets\\VisDrone2019-DET\\MANUAL_VALIDATION.json",
+      "remote": "VisDrone2019-DET/MANUAL_VALIDATION.json",
+      "bytes": 3511,
+      "sha256": "9650e905ae3c99ab4c764ad9f31869e372b80abf9ba70d796681bb6b3415f2a4",
+      "extract": false
+    },
+    {
+      "dataset": "VisDrone2019-DET",
+      "local": "E:\\datasets\\VisDrone2019-DET\\MANUAL_VALIDATION.md",
+      "remote": "VisDrone2019-DET/MANUAL_VALIDATION.md",
+      "bytes": 3617,
+      "sha256": "b6f057003eddbf8e2d74ca1bce1853cd198a358f8ee6c07031c282632418ef31",
+      "extract": false
+    },
+    {
+      "dataset": "LLVIP",
+      "local": "E:\\datasets\\LLVIP\\LLVIP\\LLVIP.zip",
+      "remote": "LLVIP/archives/LLVIP.zip",
+      "bytes": 4008227348,
+      "sha256": "75c308c2c44de441fe854cfb9aa24259dcaac5a83b4f79c668e548f95f37af42",
+      "extract": true,
+      "validation_note": "file_integrity_passed_annotation_review_required; 5 original XML boxes have nonpositive continuous-coordinate extent; coordinate convention/reader policy requires review before training. File integrity is separate from annotation usability."
+    },
+    {
+      "dataset": "LLVIP",
+      "local": "E:\\datasets\\LLVIP\\MANUAL_VALIDATION.json",
+      "remote": "LLVIP/MANUAL_VALIDATION.json",
+      "bytes": 2273,
+      "sha256": "4055f186d22508efc8834a879cf5b8a1b58c673379562928cbe0ee6662932b96",
+      "extract": false
+    },
+    {
+      "dataset": "LLVIP",
+      "local": "E:\\datasets\\LLVIP\\MANUAL_VALIDATION.md",
+      "remote": "LLVIP/MANUAL_VALIDATION.md",
+      "bytes": 2368,
+      "sha256": "a0d5714afa9d9712c4152b6195ec059d0b554d4ade9cda82cf0ffa62ba22a303",
+      "extract": false
+    },
+    {
+      "dataset": "LLVIP",
+      "local": "E:\\datasets\\LLVIP\\archives\\protocol\\download_dataset.md",
+      "remote": "LLVIP/archives/protocol/download_dataset.md",
+      "bytes": 611,
+      "sha256": "cd53229b2eb98564270b2a7adba2969032a35fd317ec9f018a93e9ee22dfc442",
+      "extract": false
+    },
+    {
+      "dataset": "LLVIP",
+      "local": "E:\\datasets\\LLVIP\\archives\\protocol\\README.md",
+      "remote": "LLVIP/archives/protocol/README.md",
+      "bytes": 13920,
+      "sha256": "76251285aa74c008d79914b5d6cd0f1029d7ebac0f56b0bbeec1da82aa7603dd",
+      "extract": false
+    },
+    {
+      "dataset": "HRSID",
+      "local": "E:\\datasets\\HRSID\\SUPPLEMENTAL_SPLIT_CONSISTENCY.json",
+      "remote": "HRSID/SUPPLEMENTAL_SPLIT_CONSISTENCY.json",
+      "bytes": 60678,
+      "sha256": "cc0c5ed1199901a23f8abb72ac11bf03c28eb560e97f14fcf7be59cae9eb030c",
+      "extract": false
+    },
+    {
+      "dataset": "HRSID",
+      "local": "E:\\datasets\\HRSID\\SUPPLEMENTAL_SPLIT_CONSISTENCY.md",
+      "remote": "HRSID/SUPPLEMENTAL_SPLIT_CONSISTENCY.md",
+      "bytes": 1788,
+      "sha256": "3eaee3d23186ecb5391ec86b689e9588df9fb8be2d352d88f560b026418055e8",
+      "extract": false
+    },
+    {
+      "dataset": "ZeroWaste-f",
+      "local": "E:\\datasets\\ZeroWaste-f\\archives\\zerowaste-f-final.zip",
+      "remote": "ZeroWaste-f/archives/zerowaste-f-final.zip",
+      "bytes": 7518242799,
+      "sha256": "9ce00fe12e0e4163d94f83e167e7d358211702d58fd6b82b9b9021615a80f117",
+      "extract": true,
+      "validation_note": "verified_with_usage_notes; train: 100 original boxes outside bounds; val: 21 original boxes outside bounds; test: 17 original boxes outside bounds; Three cross-split filename collisions were checked by encoded-file and decoded-RGB hashes; readers must use split-qualified paths. This check does not establish independence of nearby video frames.",
+      "zip_password": "UP#1VuX409z4"
+    },
+    {
+      "dataset": "ZeroWaste-f",
+      "local": "E:\\datasets\\ZeroWaste-f\\MANUAL_VALIDATION.json",
+      "remote": "ZeroWaste-f/MANUAL_VALIDATION.json",
+      "bytes": 7532,
+      "sha256": "1e29b97dd6932ef861bb5f7e9cba86f31a7666c6473649d8244d27ccfd38d9f6",
+      "extract": false
+    },
+    {
+      "dataset": "ZeroWaste-f",
+      "local": "E:\\datasets\\ZeroWaste-f\\MANUAL_VALIDATION.md",
+      "remote": "ZeroWaste-f/MANUAL_VALIDATION.md",
+      "bytes": 7665,
+      "sha256": "064d8d14d891be2d44c6ed4ef9d4580e812559fc519a471aed0a50c45851c3e1",
+      "extract": false
+    },
+    {
+      "dataset": "ZeroWaste-f",
+      "local": "E:\\datasets\\ZeroWaste-f\\EXTRACTION_VALIDATION.json",
+      "remote": "ZeroWaste-f/EXTRACTION_VALIDATION.json",
+      "bytes": 1051,
+      "sha256": "537f90e04b82b28fadfb5d3ad88b2a9b7ccfe5d1f8f4d4e6cf77a970d91b0126",
+      "extract": false
+    },
+    {
+      "dataset": "ZeroWaste-f",
+      "local": "E:\\datasets\\ZeroWaste-f\\source_metadata.json",
+      "remote": "ZeroWaste-f/source_metadata.json",
+      "bytes": 9543,
+      "sha256": "5ce14d744224a00cb8a2a384d9ed5677f60c5059771af63df02f3962f4a660a7",
+      "extract": false
+    }
+  ],
+  "created": 1789921960.6013687,
+  "updated": 1789923255.079172,
+  "destination": "gpu8-team:/home/ubuntu/rz/object_detection_dataset_test",
+  "pending": [],
+  "not_downloaded": [
+    "JODD"
+  ]
+}

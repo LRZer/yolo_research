@@ -1,0 +1,10 @@
+{
+  "status": "sigterm_sent_after_completed_target",
+  "group": "C_context_removed",
+  "target_epoch": 125,
+  "pid": 1114050,
+  "config_sha256": "707d8bc236e4d4125c9e56765990f256a90df46ee3954de58fb857a89bf15946",
+  "observed_csv_rows": 125,
+  "utc": "2026-09-25T02:43:48.788147+00:00",
+  "note": "Checkpoint must pass a separate CPU audit."
+}

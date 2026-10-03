@@ -1,0 +1,2 @@
+verdict,bootstrap_lower_ge_0_25pct,four_checkpoint_effect,four_checkpoint_quality_retention,late_checkpoint_pass,zero_quality_share_lt_25pct,last_bf16_fp32_same_side,geometry_identical,native_coverage_rematch_feasible
+NO-GO_ON_CLEAN_VOC,False,False,False,False,True,True,True,True

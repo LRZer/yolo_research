@@ -1,0 +1,8 @@
+source_json,checkpoint,checkpoint_epoch,gap_r000,gap_r025,gap_r050,gap_r075,gap_r090,gap_rate,native_coverage,native_coverage_rematch_infeasible_images,native_final_offgraph_edges,precision,r050_retention,s2_added_edges,s2_added_outside_s0_edges,valid_gt,zero_quality_gap_share,zero_quality_gap_units
+archives/remote/yolo26/audits/fca_p0_formal_A1_20260919_1912/decision.json,epoch0.pt,1,28,27,26,23,16,0.0006989864696190524,40030,0,0,BF16,0.9285714285714286,73,0,40058,0.0,0
+archives/remote/yolo26/audits/fca_p0_formal_A1_20260919_1912/decision.json,epoch10.pt,11,1,1,1,1,0,2.4963802486394726e-05,40057,0,0,BF16,1.0,11,0,40058,0.0,0
+archives/remote/yolo26/audits/fca_p0_formal_A1_20260919_1912/decision.json,epoch20.pt,21,0,0,0,0,0,0.0,40058,0,0,BF16,,17,0,40058,0.0,0
+archives/remote/yolo26/audits/fca_p0_formal_A1_20260919_1912/decision.json,epoch30.pt,31,0,0,0,0,0,0.0,40058,0,0,BF16,,15,0,40058,0.0,0
+archives/remote/yolo26/audits/fca_p0_formal_A1_20260919_1912/decision.json,epoch40.pt,41,0,0,0,0,0,0.0,40058,0,0,BF16,,17,0,40058,0.0,0
+archives/remote/yolo26/audits/fca_p0_formal_A1_20260919_1912/decision.json,last.pt,50,2,2,2,2,2,4.992760497278945e-05,40056,0,0,BF16,1.0,19,0,40058,0.0,0
+archives/remote/yolo26/audits/fca_p0_formal_A1_20260919_1912/decision.json,last.pt,50,2,2,2,2,2,4.992760497278945e-05,40056,0,0,FP32,1.0,18,0,40058,0.0,0

@@ -1,0 +1,16 @@
+{
+  "status": "verified_revised_e125",
+  "group": "F_scharr",
+  "epochs": 125,
+  "original_config_epochs": 200,
+  "learning_rate_schedule_total_epochs": 200,
+  "last_test_top1_percent": 17.74249223334484,
+  "last_test_top5_percent": 41.491197790818084,
+  "mean_epoch_seconds": 104.07267221862372,
+  "final_epoch_seconds": 106.55190216600022,
+  "config_sha256": "1a13855d67b72a9697dcb1ed383ff1de44f35f8a94669bf25bdc89c4abc606c6",
+  "stats_sha256": "e1caf32dd617b8d91720d117ff8527c75a5dbc1b82c71fbb1eabaecd88a7b309",
+  "results_sha256": "dfdfe307a35fc32d8a7eecbc13352f97ab1120a0b902e75d867e58a4aa4f6ab9",
+  "last_checkpoint_sha256": "2744f42310f66fbfd592b5c659de186b0f39d04b339e9b3248971bd438be1ecd",
+  "audited_utc": "2026-10-01T09:21:53.352842+00:00"
+}

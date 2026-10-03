@@ -1,0 +1,31 @@
+{
+  "group": "G4_global_crop",
+  "global_view": "full",
+  "architecture": "shared_resnet50_syncbn_concat4096",
+  "data_root": "/home/ubuntu/rz/foveated_classification_research/data/CUB-200-2011/extracted/CUB_200_2011",
+  "stats_json": "/home/ubuntu/rz/foveated_classification_research/configs/CUB_OFFICIAL_TRAIN_RGB_STATS_2026-09-25.json",
+  "run_dir": "/home/ubuntu/rz/foveated_classification_research/runs/resnet50_G4_global_crop_native500_s2005_e125_ddp23",
+  "epochs": 200,
+  "target_epochs": 125,
+  "seed": 2005,
+  "canvas": 500,
+  "effective_batch": 64,
+  "microbatch_per_rank": 8,
+  "accumulation": 4,
+  "eval_batch_per_rank": 16,
+  "workers": 4,
+  "workers_per_rank": 2,
+  "world_size": 2,
+  "devices_physical": [
+    2,
+    3
+  ],
+  "numa_node": 0,
+  "crop_margin": 0,
+  "base_lr": 0.025,
+  "min_lr": 1e-05,
+  "warmup_epochs": 5,
+  "momentum": 0.9,
+  "weight_decay": 0.0005,
+  "amp_initial_scale": 1024
+}

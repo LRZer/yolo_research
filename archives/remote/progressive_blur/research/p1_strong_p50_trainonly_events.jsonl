@@ -1,0 +1,2 @@
+{"time": "2026-09-23T03:39:13.880244+08:00", "event": "started", "mode": "new", "command": ["/home/ubuntu/rz/yolo_study/.conda/yolo26/bin/python", "-u", "/home/ubuntu/rz/progressive_blur_detection_research/tools/run_experiment.py", "oracle_train_only", "/home/ubuntu/rz/progressive_blur_detection_research/configs/voc_oracle_strong_p50_trainonly_p1_e20.json"]}
+{"time": "2026-09-23T03:47:26.893048+08:00", "event": "verified_complete", "epochs": 20}

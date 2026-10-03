@@ -1,0 +1,107 @@
+{
+  "metric": "gt_oracle_fixed_grid_center_coverage_not_AP_not_deployable",
+  "source": "/home/ubuntu/rz/progressive_blur_detection_research/data_splits/visdrone_official/view/labels/val",
+  "caveat": "Uses GT to choose top-k cells, ignores box extents, tile overlap, boundary context and ignored annotations",
+  "grids": {
+    "2": {
+      "grid": "2x2",
+      "images": 548,
+      "images_with_gt": 548,
+      "targets": 38759,
+      "occupied_cells_per_image_hist": {
+        "0": 0,
+        "1": 7,
+        "2": 28,
+        "3": 77,
+        "4": 436
+      },
+      "top_k_oracle_cells": {
+        "1": {
+          "image_area_fraction_if_nonoverlap": 0.25,
+          "micro_gt_center_coverage": 0.5041925746278284,
+          "mean_image_gt_center_coverage": 0.5188757565792248
+        },
+        "2": {
+          "image_area_fraction_if_nonoverlap": 0.5,
+          "micro_gt_center_coverage": 0.7900616630976032,
+          "mean_image_gt_center_coverage": 0.8015072524445546
+        },
+        "3": {
+          "image_area_fraction_if_nonoverlap": 0.75,
+          "micro_gt_center_coverage": 0.9313707783998555,
+          "mean_image_gt_center_coverage": 0.9363734350237105
+        },
+        "4": {
+          "image_area_fraction_if_nonoverlap": 1.0,
+          "micro_gt_center_coverage": 1.0,
+          "mean_image_gt_center_coverage": 1.0
+        }
+      }
+    },
+    "3": {
+      "grid": "3x3",
+      "images": 548,
+      "images_with_gt": 548,
+      "targets": 38759,
+      "occupied_cells_per_image_hist": {
+        "0": 0,
+        "1": 5,
+        "2": 14,
+        "3": 17,
+        "4": 37,
+        "5": 53,
+        "6": 101,
+        "7": 119,
+        "8": 126,
+        "9": 76
+      },
+      "top_k_oracle_cells": {
+        "1": {
+          "image_area_fraction_if_nonoverlap": 0.1111111111111111,
+          "micro_gt_center_coverage": 0.42464975876570604,
+          "mean_image_gt_center_coverage": 0.44116879291740635
+        },
+        "2": {
+          "image_area_fraction_if_nonoverlap": 0.2222222222222222,
+          "micro_gt_center_coverage": 0.6398771898139787,
+          "mean_image_gt_center_coverage": 0.6607318946147813
+        },
+        "3": {
+          "image_area_fraction_if_nonoverlap": 0.3333333333333333,
+          "micro_gt_center_coverage": 0.7762068164813334,
+          "mean_image_gt_center_coverage": 0.794815889519415
+        },
+        "4": {
+          "image_area_fraction_if_nonoverlap": 0.4444444444444444,
+          "micro_gt_center_coverage": 0.8680048504863387,
+          "mean_image_gt_center_coverage": 0.881018831487002
+        },
+        "5": {
+          "image_area_fraction_if_nonoverlap": 0.5555555555555556,
+          "micro_gt_center_coverage": 0.9281457209938337,
+          "mean_image_gt_center_coverage": 0.9361238950492787
+        },
+        "6": {
+          "image_area_fraction_if_nonoverlap": 0.6666666666666666,
+          "micro_gt_center_coverage": 0.9657111896591759,
+          "mean_image_gt_center_coverage": 0.9704829704718883
+        },
+        "7": {
+          "image_area_fraction_if_nonoverlap": 0.7777777777777778,
+          "micro_gt_center_coverage": 0.9873577749683944,
+          "mean_image_gt_center_coverage": 0.9892940819294378
+        },
+        "8": {
+          "image_area_fraction_if_nonoverlap": 0.8888888888888888,
+          "micro_gt_center_coverage": 0.9972393508604454,
+          "mean_image_gt_center_coverage": 0.9977913352242738
+        },
+        "9": {
+          "image_area_fraction_if_nonoverlap": 1.0,
+          "micro_gt_center_coverage": 1.0,
+          "mean_image_gt_center_coverage": 1.0
+        }
+      }
+    }
+  }
+}

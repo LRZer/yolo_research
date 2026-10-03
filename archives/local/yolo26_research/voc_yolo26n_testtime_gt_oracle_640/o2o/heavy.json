@@ -1,0 +1,173 @@
+{
+  "status": "completed",
+  "generated": "2026-09-23T20:44:39.127861+08:00",
+  "condition": "heavy",
+  "box_source": "ground_truth",
+  "val_limit": null,
+  "sigma_input_pixels": 16.0,
+  "first_pass_uses_predictions_only": false,
+  "ground_truth_used_for_image_processing": true,
+  "weights": "/home/ubuntu/rz/yolo_study/yolo26_voc_research/runs/voc_yolo26n_baseline_4x3090_b64_e150_g4567_s42/weights/last.pt",
+  "weights_sha256": "df69f740b204377d010374c31d111f0ed943338a979c5bae188d2fdf4be5cd10",
+  "data": "/home/ubuntu/rz/yolo_study/yolo26_voc_research/configs/datasets/voc_server.yaml",
+  "data_sha256": "5650b70651a70021b0a58fdb228db71cdc3324972352ef406cd1bd977d321d40",
+  "validation": {
+    "imgsz": 640,
+    "batch": 16,
+    "workers": 4,
+    "conf": 0.001,
+    "iou": 0.7,
+    "max_det": 300,
+    "half": false,
+    "rect": true,
+    "nms_mode": "false"
+  },
+  "blur": {
+    "first_pass_conf": 0.05,
+    "first_pass_iou": 0.7,
+    "margin_fraction": 0.0,
+    "minimum_margin": 0,
+    "feather_sigma": 8.0,
+    "audit": {
+      "images": 4952,
+      "mask_boxes": 12032,
+      "images_without_mask_boxes": 0,
+      "sum_protected_fraction": 1934.556132188416,
+      "sum_mean_abs_pixel_change_255": 57461.928707420826,
+      "mean_mask_boxes_per_image": 2.4297253634894993,
+      "mean_protected_fraction": 0.390661577582475,
+      "mean_abs_pixel_change_255": 11.603782049156063
+    }
+  },
+  "mAP50": 0.8128680621798328,
+  "mAP50_95": 0.6285252845191649,
+  "classes": [
+    {
+      "id": 0,
+      "name": "aeroplane",
+      "AP50": 0.8677672393295033,
+      "AP50_95": 0.6690182604994426
+    },
+    {
+      "id": 1,
+      "name": "bicycle",
+      "AP50": 0.8835609657615452,
+      "AP50_95": 0.6919076697614707
+    },
+    {
+      "id": 2,
+      "name": "bird",
+      "AP50": 0.7637796973605004,
+      "AP50_95": 0.5663078808223434
+    },
+    {
+      "id": 3,
+      "name": "boat",
+      "AP50": 0.7470217807848276,
+      "AP50_95": 0.5073708713154363
+    },
+    {
+      "id": 4,
+      "name": "bottle",
+      "AP50": 0.685350889893249,
+      "AP50_95": 0.4710642373780386
+    },
+    {
+      "id": 5,
+      "name": "bus",
+      "AP50": 0.8705915329851401,
+      "AP50_95": 0.7758551674924365
+    },
+    {
+      "id": 6,
+      "name": "car",
+      "AP50": 0.9106846715988451,
+      "AP50_95": 0.7351675169371139
+    },
+    {
+      "id": 7,
+      "name": "cat",
+      "AP50": 0.8446209714113542,
+      "AP50_95": 0.7220816559996606
+    },
+    {
+      "id": 8,
+      "name": "chair",
+      "AP50": 0.6657731551511608,
+      "AP50_95": 0.46518026614412433
+    },
+    {
+      "id": 9,
+      "name": "cow",
+      "AP50": 0.8031567017501676,
+      "AP50_95": 0.6151415379153657
+    },
+    {
+      "id": 10,
+      "name": "diningtable",
+      "AP50": 0.796156441163958,
+      "AP50_95": 0.6234340038659403
+    },
+    {
+      "id": 11,
+      "name": "dog",
+      "AP50": 0.8150923766003797,
+      "AP50_95": 0.6785677851733152
+    },
+    {
+      "id": 12,
+      "name": "horse",
+      "AP50": 0.8773140973263187,
+      "AP50_95": 0.7300480858279716
+    },
+    {
+      "id": 13,
+      "name": "motorbike",
+      "AP50": 0.8842541677308396,
+      "AP50_95": 0.6564731155956398
+    },
+    {
+      "id": 14,
+      "name": "person",
+      "AP50": 0.8743326588567877,
+      "AP50_95": 0.6275962105074926
+    },
+    {
+      "id": 15,
+      "name": "pottedplant",
+      "AP50": 0.676864408372643,
+      "AP50_95": 0.386917112611139
+    },
+    {
+      "id": 16,
+      "name": "sheep",
+      "AP50": 0.7608861839517367,
+      "AP50_95": 0.5871285044007161
+    },
+    {
+      "id": 17,
+      "name": "sofa",
+      "AP50": 0.8133972636920916,
+      "AP50_95": 0.6931441397402522
+    },
+    {
+      "id": 18,
+      "name": "train",
+      "AP50": 0.8981477088475455,
+      "AP50_95": 0.7241284242060881
+    },
+    {
+      "id": 19,
+      "name": "tvmonitor",
+      "AP50": 0.8186083310280591,
+      "AP50_95": 0.6439732441893106
+    }
+  ],
+  "elapsed_wall_seconds": 159.01156578500013,
+  "validator_speed_ms_per_image": {
+    "preprocess": 30.556143918415206,
+    "inference": 0.7484165603809434,
+    "loss": 0.00025780937163093334,
+    "postprocess": 0.053277961024878175
+  }
+}

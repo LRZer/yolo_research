@@ -1,0 +1,132 @@
+{
+  "status": "PASS",
+  "started_at": "2026-09-19T20:11:01.053484+08:00",
+  "finished_at": "2026-09-19T20:11:05.433702+08:00",
+  "probe_sha256": "be350ae3b7fcdf033916ac1aa797d5c3b9fb38103a94b6e911cac0fe0666ea05",
+  "provenance_revision": 5,
+  "pre_nvml": {
+    "physical_device": 4,
+    "name": "NVIDIA GeForce RTX 3090",
+    "gpu_util_pct": 0,
+    "memory_used_mib": 452.75,
+    "compute_pids": []
+  },
+  "post_nvml": {
+    "physical_device": 4,
+    "name": "NVIDIA GeForce RTX 3090",
+    "gpu_util_pct": 11,
+    "memory_used_mib": 2936.9375,
+    "compute_pids": [
+      29261
+    ]
+  },
+  "criterion": {
+    "criterion_class": "ultralytics.utils.loss.E2ELoss",
+    "branches": {
+      "one2many": {
+        "loss_class": "ultralytics.utils.loss.v8DetectionLoss",
+        "assigner_class": "ultralytics.utils.tal.TaskAlignedAssigner",
+        "topk": 10,
+        "topk2": 10,
+        "stride": [
+          8.0,
+          16.0,
+          32.0
+        ],
+        "assignment_method": "get_assigned_targets_and_loss"
+      },
+      "one2one": {
+        "loss_class": "ultralytics.utils.loss.v8DetectionLoss",
+        "assigner_class": "ultralytics.utils.tal.TaskAlignedAssigner",
+        "topk": 7,
+        "topk2": 1,
+        "stride": [
+          8.0,
+          16.0,
+          32.0
+        ],
+        "assignment_method": "get_assigned_targets_and_loss"
+      }
+    },
+    "head_class": "ultralytics.nn.modules.head.Detect",
+    "head_runtime_end2end": false,
+    "dual_head_modules_present": true,
+    "one2one_head_present": true
+  },
+  "loader": {
+    "dataset_length": 16551,
+    "dataset_rect": false,
+    "dataset_augment": false,
+    "loader_workers": 4,
+    "loader_pin_memory": true,
+    "sampler_classes": [
+      "torch.utils.data.sampler.SequentialSampler",
+      "torch.utils.data.sampler.BatchSampler"
+    ],
+    "batch_size": 64,
+    "shuffle": false,
+    "fraction": 1.0,
+    "multi_scale": 0.0,
+    "cache": false
+  },
+  "clean_dtype": {
+    "inference_mode": true,
+    "autocast_enabled": true,
+    "autocast_dtype": "torch.bfloat16",
+    "input_dtype": "torch.float32",
+    "o2m_boxes_dtype": "torch.bfloat16",
+    "o2m_scores_dtype": "torch.bfloat16",
+    "o2o_boxes_dtype": "torch.bfloat16",
+    "o2o_scores_dtype": "torch.bfloat16"
+  },
+  "view_dtype": {
+    "inference_mode": true,
+    "autocast_enabled": true,
+    "autocast_dtype": "torch.bfloat16",
+    "input_dtype": "torch.float32",
+    "o2m_boxes_dtype": "torch.bfloat16",
+    "o2m_scores_dtype": "torch.bfloat16",
+    "o2o_boxes_dtype": "torch.bfloat16",
+    "o2o_scores_dtype": "torch.bfloat16"
+  },
+  "object_counts": {
+    "clean": {
+      "O2M": 149,
+      "O2O": 149
+    },
+    "view_q0.25": {
+      "O2M": 148,
+      "O2O": 148
+    }
+  },
+  "integrity_before": {
+    "parameter_sha256": "11679234075f00c3662110ed83590b399759de80a9b4b4f1193f1835c574f4d0",
+    "parameter_tensors": 366,
+    "bn_buffer_sha256": "cbcc3a7a2942512efae3f5644412fd5b7d51c249035ad12e8abf9dc58a6921fe",
+    "bn_buffer_tensors": 342,
+    "bn_total": 114,
+    "bn_eval": 114,
+    "bn_all_eval": true,
+    "model_training": true,
+    "optimizer_created": false,
+    "grad_enabled_at_snapshot": true
+  },
+  "integrity_after": {
+    "parameter_sha256": "11679234075f00c3662110ed83590b399759de80a9b4b4f1193f1835c574f4d0",
+    "parameter_tensors": 366,
+    "bn_buffer_sha256": "cbcc3a7a2942512efae3f5644412fd5b7d51c249035ad12e8abf9dc58a6921fe",
+    "bn_buffer_tensors": 342,
+    "bn_total": 114,
+    "bn_eval": 114,
+    "bn_all_eval": true,
+    "model_training": true,
+    "optimizer_created": false,
+    "grad_enabled_at_snapshot": true
+  },
+  "kernel_health": {
+    "since": "2026-09-19T20:11:01.053484+08:00",
+    "checked_at": "2026-09-19T20:11:05.433664+08:00",
+    "qualifying_event_count": 0,
+    "events": []
+  }
+}

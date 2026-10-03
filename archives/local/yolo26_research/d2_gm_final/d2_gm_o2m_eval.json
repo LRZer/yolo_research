@@ -1,0 +1,15 @@
+{
+  "checkpoint": "/home/ubuntu/rz/yolo_study/yolo26_voc_research/runs/d2_gm_quality_gated_kd_g033_e50_g4567_s42_w4_pin_numa1/weights/last.pt",
+  "checkpoint_sha256": "ddb06feb8a0d638dfc1aba674cb0d80d26b63950ea8d2cda8065ee596ebfcb81",
+  "data": "/home/ubuntu/rz/yolo_study/yolo26_voc_research/configs/datasets/voc_server.yaml",
+  "split": "test",
+  "path": "O2M+NMS",
+  "physical_device": 4,
+  "batch": 64,
+  "imgsz": 640,
+  "workers": 4,
+  "precision": 0.7670158888208489,
+  "recall": 0.6619503387947898,
+  "map50": 0.7424785547814509,
+  "map50_95": 0.5287794795528872
+}

@@ -1,0 +1,19 @@
+# SARC causal control R2: re-parameterized branches without assignment calibration.
+experiment: R2
+module: SARCStagingBlock
+levels: [P3, P4, P5]
+channels: [64, 128, 256]
+strides: [8, 16, 32]
+main_kernel: 7
+branch_kernels: [3, 3, 3]
+branch_dilations: [1, 2, 3]
+branch_weighting: softmax_static_parameters
+gamma_init: 0.01
+calibration_gain: 0.0
+deploy: one_dw7_silu_gamma_residual
+fixed_protocol:
+  epochs: 50
+  seed: 42
+  random_init: true
+  final_epoch_only: true
+

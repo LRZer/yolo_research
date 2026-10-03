@@ -1,0 +1,4998 @@
+{
+  "status": "cpu_only_exact_target_audit",
+  "source_view": "/home/ubuntu/rz/progressive_blur_detection_research/data_splits/visdrone_official/view",
+  "split": "val",
+  "image_count": 548,
+  "nonempty_images": 548,
+  "empty_images": 0,
+  "usable_boxes_after_clipping": 38759,
+  "imgsz": 960,
+  "target_margin": 0.1,
+  "target_transition": 0.5,
+  "target_min_radius": 8.0,
+  "planned_sigma_levels": [
+    0,
+    2,
+    4,
+    8,
+    16
+  ],
+  "planned_final_mix": 0.5,
+  "planned_train_probability": 0.5,
+  "valid_pixels": 284083200,
+  "protected_pixel_fraction": 0.13263685427367758,
+  "fraction_strength_ge": {
+    "0.1": 0.786784734190547,
+    "0.5": 0.6739242130474452,
+    "0.9": 0.5492018781821664,
+    "0.99": 0.4579678523756421
+  },
+  "image_mean_strength": {
+    "mean": 0.6701218674781929,
+    "median": 0.6722031235694885,
+    "p10": 0.46956145763397217,
+    "p90": 0.8635372519493103
+  },
+  "strength_histogram_20_bins": [
+    53793055,
+    6777820,
+    5291366,
+    4577799,
+    4141393,
+    3852650,
+    3670952,
+    3551806,
+    3489923,
+    3485889,
+    3491857,
+    3567099,
+    3695282,
+    3904564,
+    4179747,
+    4639981,
+    5332736,
+    6620254,
+    9459066,
+    146559961
+  ],
+  "image_dimensions": {
+    "1360x765": 408,
+    "960x540": 121,
+    "1920x1080": 19
+  },
+  "caveat": "Val-box geometry after square LetterBox only. Training mosaic/perspective/scale transforms change geometry; no images were blurred and no detector AP or actual convolution time was measured.",
+  "per_image": [
+    {
+      "stem": "val_0_0000001_02999_d_0000005",
+      "boxes": 127,
+      "original_width": 1920,
+      "original_height": 1080,
+      "mean_strength": 0.8105835318565369,
+      "fraction_ge_0_5": 0.8110589981079102,
+      "protected_fraction": 0.08380208333333333
+    },
+    {
+      "stem": "val_100_0000166_00558_d_0000118",
+      "boxes": 71,
+      "original_width": 1920,
+      "original_height": 1080,
+      "mean_strength": 0.6355331540107727,
+      "fraction_ge_0_5": 0.6397125720977783,
+      "protected_fraction": 0.20917438271604938
+    },
+    {
+      "stem": "val_101_0000193_00000_d_0000103",
+      "boxes": 63,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.7538452744483948,
+      "fraction_ge_0_5": 0.7583835124969482,
+      "protected_fraction": 0.0870775462962963
+    },
+    {
+      "stem": "val_102_0000193_01497_d_0000111",
+      "boxes": 87,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.6378371119499207,
+      "fraction_ge_0_5": 0.6460629105567932,
+      "protected_fraction": 0.1497974537037037
+    },
+    {
+      "stem": "val_103_0000193_01705_d_0000112",
+      "boxes": 134,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.6012284159660339,
+      "fraction_ge_0_5": 0.6061034202575684,
+      "protected_fraction": 0.14970871913580247
+    },
+    {
+      "stem": "val_104_0000193_01876_d_0000113",
+      "boxes": 107,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.6635141968727112,
+      "fraction_ge_0_5": 0.6649903655052185,
+      "protected_fraction": 0.12866319444444443
+    },
+    {
+      "stem": "val_105_0000193_02029_d_0000114",
+      "boxes": 93,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.7159296274185181,
+      "fraction_ge_0_5": 0.7218884825706482,
+      "protected_fraction": 0.10341435185185185
+    },
+    {
+      "stem": "val_106_0000193_02212_d_0000115",
+      "boxes": 78,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.7421579957008362,
+      "fraction_ge_0_5": 0.7514525651931763,
+      "protected_fraction": 0.08579089506172839
+    },
+    {
+      "stem": "val_107_0000193_02416_d_0000116",
+      "boxes": 50,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.8810229301452637,
+      "fraction_ge_0_5": 0.8816242218017578,
+      "protected_fraction": 0.04086226851851852
+    },
+    {
+      "stem": "val_108_0000193_02606_d_0000117",
+      "boxes": 49,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.9288256168365479,
+      "fraction_ge_0_5": 0.9305980205535889,
+      "protected_fraction": 0.027098765432098767
+    },
+    {
+      "stem": "val_109_0000193_02725_d_0000118",
+      "boxes": 39,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.9145018458366394,
+      "fraction_ge_0_5": 0.9179514050483704,
+      "protected_fraction": 0.026292438271604938
+    },
+    {
+      "stem": "val_10_0000021_00500_d_0000002",
+      "boxes": 17,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.8592951893806458,
+      "fraction_ge_0_5": 0.8687731623649597,
+      "protected_fraction": 0.040030864197530866
+    },
+    {
+      "stem": "val_110_0000194_00000_d_0000119",
+      "boxes": 54,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.8377705216407776,
+      "fraction_ge_0_5": 0.8422241806983948,
+      "protected_fraction": 0.054899691358024694
+    },
+    {
+      "stem": "val_111_0000194_00200_d_0000120",
+      "boxes": 76,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.7804917693138123,
+      "fraction_ge_0_5": 0.7882716059684753,
+      "protected_fraction": 0.07388117283950617
+    },
+    {
+      "stem": "val_112_0000194_00399_d_0000121",
+      "boxes": 143,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.6977885365486145,
+      "fraction_ge_0_5": 0.7072994112968445,
+      "protected_fraction": 0.10498649691358025
+    },
+    {
+      "stem": "val_113_0000194_00625_d_0000122",
+      "boxes": 83,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.701682448387146,
+      "fraction_ge_0_5": 0.7126466035842896,
+      "protected_fraction": 0.10048225308641975
+    },
+    {
+      "stem": "val_114_0000194_00800_d_0000123",
+      "boxes": 54,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.7734782695770264,
+      "fraction_ge_0_5": 0.7811863422393799,
+      "protected_fraction": 0.07875964506172839
+    },
+    {
+      "stem": "val_115_0000194_00998_d_0000124",
+      "boxes": 42,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.815250039100647,
+      "fraction_ge_0_5": 0.8222993612289429,
+      "protected_fraction": 0.06251543209876544
+    },
+    {
+      "stem": "val_116_0000194_01192_d_0000125",
+      "boxes": 23,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.8195013403892517,
+      "fraction_ge_0_5": 0.8281018733978271,
+      "protected_fraction": 0.057937885802469134
+    },
+    {
+      "stem": "val_117_0000196_04512_d_0000144",
+      "boxes": 69,
+      "original_width": 1920,
+      "original_height": 1080,
+      "mean_strength": 0.928644061088562,
+      "fraction_ge_0_5": 0.930152416229248,
+      "protected_fraction": 0.02266010802469136
+    },
+    {
+      "stem": "val_118_0000199_01269_d_0000166",
+      "boxes": 16,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.6139307022094727,
+      "fraction_ge_0_5": 0.6254783868789673,
+      "protected_fraction": 0.1730246913580247
+    },
+    {
+      "stem": "val_119_0000213_02500_d_0000240",
+      "boxes": 94,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.8464900851249695,
+      "fraction_ge_0_5": 0.8529552221298218,
+      "protected_fraction": 0.05662615740740741
+    },
+    {
+      "stem": "val_11_0000021_00800_d_0000003",
+      "boxes": 7,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.9700841307640076,
+      "fraction_ge_0_5": 0.9723861813545227,
+      "protected_fraction": 0.008719135802469136
+    },
+    {
+      "stem": "val_120_0000213_02965_d_0000241",
+      "boxes": 94,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.592235267162323,
+      "fraction_ge_0_5": 0.5903452634811401,
+      "protected_fraction": 0.18237847222222223
+    },
+    {
+      "stem": "val_121_0000213_03478_d_0000242",
+      "boxes": 115,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.5360855460166931,
+      "fraction_ge_0_5": 0.5404648780822754,
+      "protected_fraction": 0.2262326388888889
+    },
+    {
+      "stem": "val_122_0000213_03920_d_0000243",
+      "boxes": 164,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.4075666666030884,
+      "fraction_ge_0_5": 0.40905091166496277,
+      "protected_fraction": 0.3219386574074074
+    },
+    {
+      "stem": "val_123_0000213_04405_d_0000244",
+      "boxes": 106,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.4341486096382141,
+      "fraction_ge_0_5": 0.43189430236816406,
+      "protected_fraction": 0.27390046296296294
+    },
+    {
+      "stem": "val_124_0000213_04998_d_0000245",
+      "boxes": 137,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.4106995463371277,
+      "fraction_ge_0_5": 0.412550151348114,
+      "protected_fraction": 0.2890509259259259
+    },
+    {
+      "stem": "val_125_0000213_05340_d_0000246",
+      "boxes": 138,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.44246092438697815,
+      "fraction_ge_0_5": 0.44495949149131775,
+      "protected_fraction": 0.2696508487654321
+    },
+    {
+      "stem": "val_126_0000213_05745_d_0000247",
+      "boxes": 101,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.4610130190849304,
+      "fraction_ge_0_5": 0.46480709314346313,
+      "protected_fraction": 0.25462191358024694
+    },
+    {
+      "stem": "val_127_0000215_00000_d_0000256",
+      "boxes": 157,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.644142746925354,
+      "fraction_ge_0_5": 0.6520929932594299,
+      "protected_fraction": 0.13879822530864197
+    },
+    {
+      "stem": "val_128_0000215_00447_d_0000257",
+      "boxes": 53,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.7040362358093262,
+      "fraction_ge_0_5": 0.708960235118866,
+      "protected_fraction": 0.12587770061728396
+    },
+    {
+      "stem": "val_129_0000215_00909_d_0000258",
+      "boxes": 93,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.5626222491264343,
+      "fraction_ge_0_5": 0.5675675272941589,
+      "protected_fraction": 0.18883487654320988
+    },
+    {
+      "stem": "val_12_0000022_00000_d_0000004",
+      "boxes": 41,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.8792510032653809,
+      "fraction_ge_0_5": 0.8847106695175171,
+      "protected_fraction": 0.04057677469135802
+    },
+    {
+      "stem": "val_130_0000215_01395_d_0000259",
+      "boxes": 56,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.5628059506416321,
+      "fraction_ge_0_5": 0.5615663528442383,
+      "protected_fraction": 0.18580632716049383
+    },
+    {
+      "stem": "val_131_0000215_01869_d_0000260",
+      "boxes": 78,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.6118071675300598,
+      "fraction_ge_0_5": 0.6206114888191223,
+      "protected_fraction": 0.1589139660493827
+    },
+    {
+      "stem": "val_132_0000215_02319_d_0000261",
+      "boxes": 107,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.5465433597564697,
+      "fraction_ge_0_5": 0.5498012900352478,
+      "protected_fraction": 0.18364197530864199
+    },
+    {
+      "stem": "val_133_0000215_02667_d_0000262",
+      "boxes": 83,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.6758302450180054,
+      "fraction_ge_0_5": 0.6861130595207214,
+      "protected_fraction": 0.15005787037037038
+    },
+    {
+      "stem": "val_134_0000215_02932_d_0000263",
+      "boxes": 48,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.6278486847877502,
+      "fraction_ge_0_5": 0.6353028416633606,
+      "protected_fraction": 0.16497106481481483
+    },
+    {
+      "stem": "val_135_0000215_03226_d_0000264",
+      "boxes": 23,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.7699767351150513,
+      "fraction_ge_0_5": 0.7836554646492004,
+      "protected_fraction": 0.06968557098765432
+    },
+    {
+      "stem": "val_136_0000216_00520_d_0000001",
+      "boxes": 109,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.7235691547393799,
+      "fraction_ge_0_5": 0.7321218848228455,
+      "protected_fraction": 0.08718171296296297
+    },
+    {
+      "stem": "val_137_0000220_01242_d_0000004",
+      "boxes": 37,
+      "original_width": 1920,
+      "original_height": 1080,
+      "mean_strength": 0.8474592566490173,
+      "fraction_ge_0_5": 0.8530266284942627,
+      "protected_fraction": 0.050011574074074076
+    },
+    {
+      "stem": "val_138_0000223_01802_d_0000005",
+      "boxes": 64,
+      "original_width": 1920,
+      "original_height": 1080,
+      "mean_strength": 0.8401509523391724,
+      "fraction_ge_0_5": 0.8430439829826355,
+      "protected_fraction": 0.053973765432098766
+    },
+    {
+      "stem": "val_139_0000237_00001_d_0000001",
+      "boxes": 15,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.8946401476860046,
+      "fraction_ge_0_5": 0.8994811177253723,
+      "protected_fraction": 0.030557484567901236
+    },
+    {
+      "stem": "val_13_0000022_00500_d_0000005",
+      "boxes": 32,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.8543745279312134,
+      "fraction_ge_0_5": 0.8589158654212952,
+      "protected_fraction": 0.06043595679012346
+    },
+    {
+      "stem": "val_140_0000242_00001_d_0000001",
+      "boxes": 42,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.6217185854911804,
+      "fraction_ge_0_5": 0.6273688077926636,
+      "protected_fraction": 0.15219135802469136
+    },
+    {
+      "stem": "val_141_0000242_00500_d_0000002",
+      "boxes": 53,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.7625739574432373,
+      "fraction_ge_0_5": 0.7676099538803101,
+      "protected_fraction": 0.09097800925925927
+    },
+    {
+      "stem": "val_142_0000242_00627_d_0000003",
+      "boxes": 45,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.7394202351570129,
+      "fraction_ge_0_5": 0.7474903464317322,
+      "protected_fraction": 0.08426890432098766
+    },
+    {
+      "stem": "val_143_0000242_00843_d_0000004",
+      "boxes": 2,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.5160253047943115,
+      "fraction_ge_0_5": 0.5192496180534363,
+      "protected_fraction": 0.2352932098765432
+    },
+    {
+      "stem": "val_144_0000242_00963_d_0000005",
+      "boxes": 13,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.6953833103179932,
+      "fraction_ge_0_5": 0.6975926160812378,
+      "protected_fraction": 0.1390547839506173
+    },
+    {
+      "stem": "val_145_0000242_01139_d_0000006",
+      "boxes": 72,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.8086815476417542,
+      "fraction_ge_0_5": 0.8109645247459412,
+      "protected_fraction": 0.06874807098765433
+    },
+    {
+      "stem": "val_146_0000242_01475_d_0000007",
+      "boxes": 65,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.4587028920650482,
+      "fraction_ge_0_5": 0.44305747747421265,
+      "protected_fraction": 0.22313657407407408
+    },
+    {
+      "stem": "val_147_0000242_01912_d_0000008",
+      "boxes": 50,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.9080029129981995,
+      "fraction_ge_0_5": 0.9114544987678528,
+      "protected_fraction": 0.02362847222222222
+    },
+    {
+      "stem": "val_148_0000242_02400_d_0000009",
+      "boxes": 34,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.827333390712738,
+      "fraction_ge_0_5": 0.8364448547363281,
+      "protected_fraction": 0.05289351851851852
+    },
+    {
+      "stem": "val_149_0000242_02762_d_0000010",
+      "boxes": 33,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.7636055946350098,
+      "fraction_ge_0_5": 0.7744926810264587,
+      "protected_fraction": 0.07519097222222222
+    },
+    {
+      "stem": "val_14_0000022_01036_d_0000006",
+      "boxes": 16,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.8889744281768799,
+      "fraction_ge_0_5": 0.8954359292984009,
+      "protected_fraction": 0.03603973765432099
+    },
+    {
+      "stem": "val_150_0000242_03199_d_0000011",
+      "boxes": 9,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.9287406802177429,
+      "fraction_ge_0_5": 0.9352604150772095,
+      "protected_fraction": 0.019913194444444445
+    },
+    {
+      "stem": "val_151_0000242_03668_d_0000012",
+      "boxes": 41,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.5315966606140137,
+      "fraction_ge_0_5": 0.5417823791503906,
+      "protected_fraction": 0.16354938271604938
+    },
+    {
+      "stem": "val_152_0000242_04116_d_0000013",
+      "boxes": 8,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.9342440366744995,
+      "fraction_ge_0_5": 0.9407041072845459,
+      "protected_fraction": 0.017905092592592594
+    },
+    {
+      "stem": "val_153_0000242_04600_d_0000014",
+      "boxes": 29,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.7680820822715759,
+      "fraction_ge_0_5": 0.7708178758621216,
+      "protected_fraction": 0.09173611111111112
+    },
+    {
+      "stem": "val_154_0000242_05059_d_0000015",
+      "boxes": 37,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.9163392186164856,
+      "fraction_ge_0_5": 0.9215027093887329,
+      "protected_fraction": 0.022542438271604938
+    },
+    {
+      "stem": "val_155_0000242_05570_d_0000016",
+      "boxes": 32,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.8661789298057556,
+      "fraction_ge_0_5": 0.8742554187774658,
+      "protected_fraction": 0.037397762345679014
+    },
+    {
+      "stem": "val_156_0000242_06010_d_0000017",
+      "boxes": 41,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.9287973642349243,
+      "fraction_ge_0_5": 0.9336361885070801,
+      "protected_fraction": 0.017336033950617284
+    },
+    {
+      "stem": "val_157_0000242_06452_d_0000018",
+      "boxes": 12,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.9326199889183044,
+      "fraction_ge_0_5": 0.9357253313064575,
+      "protected_fraction": 0.02114969135802469
+    },
+    {
+      "stem": "val_158_0000244_00001_d_0000001",
+      "boxes": 46,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.8176825046539307,
+      "fraction_ge_0_5": 0.8238040208816528,
+      "protected_fraction": 0.05798996913580247
+    },
+    {
+      "stem": "val_159_0000244_00500_d_0000002",
+      "boxes": 32,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.8953596353530884,
+      "fraction_ge_0_5": 0.8997646570205688,
+      "protected_fraction": 0.038628472222222224
+    },
+    {
+      "stem": "val_15_0000022_01251_d_0000007",
+      "boxes": 12,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.8439761400222778,
+      "fraction_ge_0_5": 0.8538020849227905,
+      "protected_fraction": 0.05716242283950617
+    },
+    {
+      "stem": "val_160_0000244_01000_d_0000003",
+      "boxes": 122,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.7540820837020874,
+      "fraction_ge_0_5": 0.7584317326545715,
+      "protected_fraction": 0.08199074074074074
+    },
+    {
+      "stem": "val_161_0000244_01500_d_0000004",
+      "boxes": 96,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.8203436136245728,
+      "fraction_ge_0_5": 0.8210358619689941,
+      "protected_fraction": 0.08130787037037036
+    },
+    {
+      "stem": "val_162_0000244_02000_d_0000005",
+      "boxes": 129,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.7353835105895996,
+      "fraction_ge_0_5": 0.7330420613288879,
+      "protected_fraction": 0.11023533950617284
+    },
+    {
+      "stem": "val_163_0000244_02500_d_0000006",
+      "boxes": 113,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.7711910605430603,
+      "fraction_ge_0_5": 0.7704494595527649,
+      "protected_fraction": 0.09760223765432098
+    },
+    {
+      "stem": "val_164_0000244_03000_d_0000007",
+      "boxes": 44,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.8860682249069214,
+      "fraction_ge_0_5": 0.8864737749099731,
+      "protected_fraction": 0.039378858024691356
+    },
+    {
+      "stem": "val_165_0000244_03500_d_0000008",
+      "boxes": 146,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.6816790103912354,
+      "fraction_ge_0_5": 0.6812828183174133,
+      "protected_fraction": 0.15513310185185186
+    },
+    {
+      "stem": "val_166_0000244_04000_d_0000009",
+      "boxes": 56,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.5457808375358582,
+      "fraction_ge_0_5": 0.5464506149291992,
+      "protected_fraction": 0.18906057098765433
+    },
+    {
+      "stem": "val_167_0000244_04400_d_0000010",
+      "boxes": 101,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.5863104462623596,
+      "fraction_ge_0_5": 0.5853086709976196,
+      "protected_fraction": 0.21487461419753087
+    },
+    {
+      "stem": "val_168_0000244_04900_d_0000011",
+      "boxes": 106,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.5212626457214355,
+      "fraction_ge_0_5": 0.5114737749099731,
+      "protected_fraction": 0.26698688271604937
+    },
+    {
+      "stem": "val_169_0000244_05400_d_0000012",
+      "boxes": 90,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.7593969702720642,
+      "fraction_ge_0_5": 0.7582677602767944,
+      "protected_fraction": 0.09870756172839507
+    },
+    {
+      "stem": "val_16_0000023_00000_d_0000008",
+      "boxes": 40,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.8748358488082886,
+      "fraction_ge_0_5": 0.8807889819145203,
+      "protected_fraction": 0.04139853395061728
+    },
+    {
+      "stem": "val_170_0000244_05900_d_0000013",
+      "boxes": 66,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.8882527947425842,
+      "fraction_ge_0_5": 0.8883236646652222,
+      "protected_fraction": 0.03856674382716049
+    },
+    {
+      "stem": "val_171_0000244_06388_d_0000014",
+      "boxes": 46,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.9226073026657104,
+      "fraction_ge_0_5": 0.9223630428314209,
+      "protected_fraction": 0.024176311728395062
+    },
+    {
+      "stem": "val_172_0000249_00001_d_0000001",
+      "boxes": 80,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.7955240607261658,
+      "fraction_ge_0_5": 0.7997569441795349,
+      "protected_fraction": 0.07815007716049382
+    },
+    {
+      "stem": "val_173_0000249_00235_d_0000002",
+      "boxes": 85,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.7160993218421936,
+      "fraction_ge_0_5": 0.7184471487998962,
+      "protected_fraction": 0.11438850308641975
+    },
+    {
+      "stem": "val_174_0000249_00603_d_0000003",
+      "boxes": 48,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.8789290189743042,
+      "fraction_ge_0_5": 0.8804687261581421,
+      "protected_fraction": 0.04165895061728395
+    },
+    {
+      "stem": "val_175_0000249_01100_d_0000004",
+      "boxes": 27,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.8750815987586975,
+      "fraction_ge_0_5": 0.8779726028442383,
+      "protected_fraction": 0.03819444444444445
+    },
+    {
+      "stem": "val_176_0000249_01514_d_0000005",
+      "boxes": 51,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.7443546652793884,
+      "fraction_ge_0_5": 0.74803626537323,
+      "protected_fraction": 0.10202353395061728
+    },
+    {
+      "stem": "val_177_0000249_01635_d_0000006",
+      "boxes": 80,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.808168351650238,
+      "fraction_ge_0_5": 0.8084741234779358,
+      "protected_fraction": 0.06430941358024692
+    },
+    {
+      "stem": "val_178_0000249_02073_d_0000007",
+      "boxes": 67,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.8464660048484802,
+      "fraction_ge_0_5": 0.8454861044883728,
+      "protected_fraction": 0.05982638888888889
+    },
+    {
+      "stem": "val_179_0000249_02468_d_0000008",
+      "boxes": 18,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.8811104893684387,
+      "fraction_ge_0_5": 0.8818345069885254,
+      "protected_fraction": 0.0448533950617284
+    },
+    {
+      "stem": "val_17_0000023_00300_d_0000009",
+      "boxes": 30,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.8353942632675171,
+      "fraction_ge_0_5": 0.8447800874710083,
+      "protected_fraction": 0.05423804012345679
+    },
+    {
+      "stem": "val_180_0000249_02900_d_0000009",
+      "boxes": 101,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.7274700999259949,
+      "fraction_ge_0_5": 0.7270544171333313,
+      "protected_fraction": 0.11403935185185185
+    },
+    {
+      "stem": "val_181_0000249_03400_d_0000010",
+      "boxes": 92,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.692034125328064,
+      "fraction_ge_0_5": 0.6886728405952454,
+      "protected_fraction": 0.13479166666666667
+    },
+    {
+      "stem": "val_182_0000249_03900_d_0000011",
+      "boxes": 85,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.7233399152755737,
+      "fraction_ge_0_5": 0.7259143590927124,
+      "protected_fraction": 0.1021045524691358
+    },
+    {
+      "stem": "val_183_0000253_00001_d_0000001",
+      "boxes": 106,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.7562480568885803,
+      "fraction_ge_0_5": 0.763152003288269,
+      "protected_fraction": 0.07508487654320987
+    },
+    {
+      "stem": "val_184_0000256_00715_d_0000019",
+      "boxes": 90,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.7076520919799805,
+      "fraction_ge_0_5": 0.7113618850708008,
+      "protected_fraction": 0.13542824074074075
+    },
+    {
+      "stem": "val_185_0000256_02173_d_0000030",
+      "boxes": 47,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.7540932297706604,
+      "fraction_ge_0_5": 0.7593691945075989,
+      "protected_fraction": 0.09411265432098766
+    },
+    {
+      "stem": "val_186_0000263_02401_d_0000179",
+      "boxes": 17,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.6496959328651428,
+      "fraction_ge_0_5": 0.6572627425193787,
+      "protected_fraction": 0.12323688271604938
+    },
+    {
+      "stem": "val_187_0000269_00001_d_0000348",
+      "boxes": 128,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.7551047205924988,
+      "fraction_ge_0_5": 0.7583564519882202,
+      "protected_fraction": 0.09967399691358024
+    },
+    {
+      "stem": "val_188_0000269_00201_d_0000349",
+      "boxes": 47,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.753276526927948,
+      "fraction_ge_0_5": 0.7592939734458923,
+      "protected_fraction": 0.10732445987654321
+    },
+    {
+      "stem": "val_189_0000269_00601_d_0000351",
+      "boxes": 93,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.7118456363677979,
+      "fraction_ge_0_5": 0.7188078761100769,
+      "protected_fraction": 0.10185956790123457
+    },
+    {
+      "stem": "val_18_0000023_00868_d_0000010",
+      "boxes": 20,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.7774648070335388,
+      "fraction_ge_0_5": 0.7797357439994812,
+      "protected_fraction": 0.08170717592592593
+    },
+    {
+      "stem": "val_190_0000271_00001_d_0000374",
+      "boxes": 58,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.6207310557365417,
+      "fraction_ge_0_5": 0.6205401420593262,
+      "protected_fraction": 0.13645640432098766
+    },
+    {
+      "stem": "val_191_0000271_00201_d_0000375",
+      "boxes": 75,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.6127039790153503,
+      "fraction_ge_0_5": 0.6255323886871338,
+      "protected_fraction": 0.13435763888888888
+    },
+    {
+      "stem": "val_192_0000271_00401_d_0000376",
+      "boxes": 25,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.8057255148887634,
+      "fraction_ge_0_5": 0.8146083950996399,
+      "protected_fraction": 0.06242091049382716
+    },
+    {
+      "stem": "val_193_0000271_00601_d_0000377",
+      "boxes": 79,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.6420050859451294,
+      "fraction_ge_0_5": 0.654064416885376,
+      "protected_fraction": 0.11719135802469136
+    },
+    {
+      "stem": "val_194_0000271_00801_d_0000378",
+      "boxes": 63,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.758274495601654,
+      "fraction_ge_0_5": 0.7686014771461487,
+      "protected_fraction": 0.07475887345679012
+    },
+    {
+      "stem": "val_195_0000271_01201_d_0000379",
+      "boxes": 59,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.6580429077148438,
+      "fraction_ge_0_5": 0.6697434186935425,
+      "protected_fraction": 0.12299382716049383
+    },
+    {
+      "stem": "val_196_0000271_01401_d_0000380",
+      "boxes": 55,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.5886624455451965,
+      "fraction_ge_0_5": 0.5903105735778809,
+      "protected_fraction": 0.14013117283950619
+    },
+    {
+      "stem": "val_197_0000271_01601_d_0000381",
+      "boxes": 48,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.7587006092071533,
+      "fraction_ge_0_5": 0.7694984674453735,
+      "protected_fraction": 0.07950231481481482
+    },
+    {
+      "stem": "val_198_0000271_02401_d_0000385",
+      "boxes": 84,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.6889363527297974,
+      "fraction_ge_0_5": 0.6952179670333862,
+      "protected_fraction": 0.10945601851851852
+    },
+    {
+      "stem": "val_199_0000271_02601_d_0000386",
+      "boxes": 79,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.5546474456787109,
+      "fraction_ge_0_5": 0.5610281825065613,
+      "protected_fraction": 0.1916820987654321
+    },
+    {
+      "stem": "val_19_0000023_01233_d_0000011",
+      "boxes": 14,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.77414870262146,
+      "fraction_ge_0_5": 0.7840625047683716,
+      "protected_fraction": 0.08392361111111112
+    },
+    {
+      "stem": "val_1_0000001_03499_d_0000006",
+      "boxes": 77,
+      "original_width": 1920,
+      "original_height": 1080,
+      "mean_strength": 0.7498350143432617,
+      "fraction_ge_0_5": 0.7538908123970032,
+      "protected_fraction": 0.09302854938271606
+    },
+    {
+      "stem": "val_200_0000271_03001_d_0000387",
+      "boxes": 56,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.8010033369064331,
+      "fraction_ge_0_5": 0.8079649209976196,
+      "protected_fraction": 0.07351466049382716
+    },
+    {
+      "stem": "val_201_0000271_03801_d_0000391",
+      "boxes": 57,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.7492077946662903,
+      "fraction_ge_0_5": 0.7548630237579346,
+      "protected_fraction": 0.08916859567901235
+    },
+    {
+      "stem": "val_202_0000271_04401_d_0000394",
+      "boxes": 86,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.5862948298454285,
+      "fraction_ge_0_5": 0.5870485901832581,
+      "protected_fraction": 0.15839506172839507
+    },
+    {
+      "stem": "val_203_0000271_04801_d_0000396",
+      "boxes": 50,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.7658799886703491,
+      "fraction_ge_0_5": 0.773128867149353,
+      "protected_fraction": 0.07349151234567901
+    },
+    {
+      "stem": "val_204_0000271_05001_d_0000397",
+      "boxes": 90,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.6944919228553772,
+      "fraction_ge_0_5": 0.6987770199775696,
+      "protected_fraction": 0.09634645061728395
+    },
+    {
+      "stem": "val_205_0000271_05201_d_0000398",
+      "boxes": 70,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.591055154800415,
+      "fraction_ge_0_5": 0.5921469926834106,
+      "protected_fraction": 0.1446412037037037
+    },
+    {
+      "stem": "val_206_0000271_05401_d_0000399",
+      "boxes": 71,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.5766729712486267,
+      "fraction_ge_0_5": 0.5813136696815491,
+      "protected_fraction": 0.13870563271604938
+    },
+    {
+      "stem": "val_207_0000271_05601_d_0000400",
+      "boxes": 86,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.6034719944000244,
+      "fraction_ge_0_5": 0.6081153750419617,
+      "protected_fraction": 0.14016782407407408
+    },
+    {
+      "stem": "val_208_0000271_05801_d_0000401",
+      "boxes": 104,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.49234122037887573,
+      "fraction_ge_0_5": 0.4923958480358124,
+      "protected_fraction": 0.23373842592592592
+    },
+    {
+      "stem": "val_209_0000271_06001_d_0000402",
+      "boxes": 158,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.4006325900554657,
+      "fraction_ge_0_5": 0.3856481611728668,
+      "protected_fraction": 0.28661844135802467
+    },
+    {
+      "stem": "val_20_0000024_00000_d_0000012",
+      "boxes": 21,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.9036043286323547,
+      "fraction_ge_0_5": 0.9099517464637756,
+      "protected_fraction": 0.03384452160493827
+    },
+    {
+      "stem": "val_210_0000271_06201_d_0000403",
+      "boxes": 142,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.44377344846725464,
+      "fraction_ge_0_5": 0.43811920285224915,
+      "protected_fraction": 0.2696450617283951
+    },
+    {
+      "stem": "val_211_0000271_06401_d_0000404",
+      "boxes": 128,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.43293753266334534,
+      "fraction_ge_0_5": 0.4228510856628418,
+      "protected_fraction": 0.2543306327160494
+    },
+    {
+      "stem": "val_212_0000271_06601_d_0000405",
+      "boxes": 105,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.4312475919723511,
+      "fraction_ge_0_5": 0.4297473132610321,
+      "protected_fraction": 0.2732426697530864
+    },
+    {
+      "stem": "val_213_0000271_06801_d_0000406",
+      "boxes": 95,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.3749571144580841,
+      "fraction_ge_0_5": 0.3624074161052704,
+      "protected_fraction": 0.3107484567901235
+    },
+    {
+      "stem": "val_214_0000271_07001_d_0000407",
+      "boxes": 58,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.614636242389679,
+      "fraction_ge_0_5": 0.6189101338386536,
+      "protected_fraction": 0.1647067901234568
+    },
+    {
+      "stem": "val_215_0000271_07201_d_0000408",
+      "boxes": 25,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.8860325217247009,
+      "fraction_ge_0_5": 0.8952777981758118,
+      "protected_fraction": 0.029266975308641974
+    },
+    {
+      "stem": "val_216_0000271_07401_d_0000409",
+      "boxes": 42,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.6283566355705261,
+      "fraction_ge_0_5": 0.6393557190895081,
+      "protected_fraction": 0.14016396604938272
+    },
+    {
+      "stem": "val_217_0000273_05601_d_0000466",
+      "boxes": 32,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.7107524275779724,
+      "fraction_ge_0_5": 0.7160821557044983,
+      "protected_fraction": 0.11278163580246914
+    },
+    {
+      "stem": "val_218_0000276_00001_d_0000507",
+      "boxes": 55,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.6800063848495483,
+      "fraction_ge_0_5": 0.6959741711616516,
+      "protected_fraction": 0.10849344135802469
+    },
+    {
+      "stem": "val_219_0000276_00401_d_0000509",
+      "boxes": 62,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.777878999710083,
+      "fraction_ge_0_5": 0.7922878265380859,
+      "protected_fraction": 0.07099729938271605
+    },
+    {
+      "stem": "val_21_0000024_00500_d_0000013",
+      "boxes": 10,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.8623970746994019,
+      "fraction_ge_0_5": 0.8721874952316284,
+      "protected_fraction": 0.04029128086419753
+    },
+    {
+      "stem": "val_220_0000276_00601_d_0000510",
+      "boxes": 37,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.7589032649993896,
+      "fraction_ge_0_5": 0.7756693959236145,
+      "protected_fraction": 0.07332175925925925
+    },
+    {
+      "stem": "val_221_0000276_01001_d_0000512",
+      "boxes": 42,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.8603853583335876,
+      "fraction_ge_0_5": 0.8665103912353516,
+      "protected_fraction": 0.04799575617283951
+    },
+    {
+      "stem": "val_222_0000276_01201_d_0000513",
+      "boxes": 29,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.8045188784599304,
+      "fraction_ge_0_5": 0.8153568506240845,
+      "protected_fraction": 0.05665316358024691
+    },
+    {
+      "stem": "val_223_0000276_01401_d_0000514",
+      "boxes": 25,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.7521108984947205,
+      "fraction_ge_0_5": 0.7629629373550415,
+      "protected_fraction": 0.08323688271604938
+    },
+    {
+      "stem": "val_224_0000276_01801_d_0000516",
+      "boxes": 21,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.8684515357017517,
+      "fraction_ge_0_5": 0.8768865466117859,
+      "protected_fraction": 0.03459104938271605
+    },
+    {
+      "stem": "val_225_0000276_02001_d_0000517",
+      "boxes": 15,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.971184253692627,
+      "fraction_ge_0_5": 0.9729514122009277,
+      "protected_fraction": 0.008285108024691358
+    },
+    {
+      "stem": "val_226_0000276_02201_d_0000518",
+      "boxes": 41,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.7923263907432556,
+      "fraction_ge_0_5": 0.7985493540763855,
+      "protected_fraction": 0.07512152777777778
+    },
+    {
+      "stem": "val_227_0000276_02401_d_0000519",
+      "boxes": 48,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.7527620196342468,
+      "fraction_ge_0_5": 0.7640683054924011,
+      "protected_fraction": 0.07357253086419753
+    },
+    {
+      "stem": "val_228_0000276_02601_d_0000520",
+      "boxes": 32,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.8792620897293091,
+      "fraction_ge_0_5": 0.8849575519561768,
+      "protected_fraction": 0.03353587962962963
+    },
+    {
+      "stem": "val_229_0000276_02801_d_0000521",
+      "boxes": 37,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.7643728256225586,
+      "fraction_ge_0_5": 0.7742399573326111,
+      "protected_fraction": 0.08686149691358025
+    },
+    {
+      "stem": "val_22_0000024_01000_d_0000014",
+      "boxes": 12,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.9687471389770508,
+      "fraction_ge_0_5": 0.9713754057884216,
+      "protected_fraction": 0.009290123456790124
+    },
+    {
+      "stem": "val_230_0000276_03001_d_0000522",
+      "boxes": 38,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.8592658042907715,
+      "fraction_ge_0_5": 0.866757333278656,
+      "protected_fraction": 0.03966820987654321
+    },
+    {
+      "stem": "val_231_0000276_03201_d_0000523",
+      "boxes": 60,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.8556926846504211,
+      "fraction_ge_0_5": 0.8626543283462524,
+      "protected_fraction": 0.03882716049382716
+    },
+    {
+      "stem": "val_232_0000276_03401_d_0000524",
+      "boxes": 61,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.8288871049880981,
+      "fraction_ge_0_5": 0.8333661556243896,
+      "protected_fraction": 0.05006558641975309
+    },
+    {
+      "stem": "val_233_0000276_03601_d_0000525",
+      "boxes": 46,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.8460623025894165,
+      "fraction_ge_0_5": 0.8515335917472839,
+      "protected_fraction": 0.0506983024691358
+    },
+    {
+      "stem": "val_234_0000276_03801_d_0000526",
+      "boxes": 64,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.7250560522079468,
+      "fraction_ge_0_5": 0.7257542610168457,
+      "protected_fraction": 0.10359567901234568
+    },
+    {
+      "stem": "val_235_0000276_04001_d_0000527",
+      "boxes": 54,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.8060868382453918,
+      "fraction_ge_0_5": 0.8165991306304932,
+      "protected_fraction": 0.06928819444444445
+    },
+    {
+      "stem": "val_236_0000276_04201_d_0000528",
+      "boxes": 59,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.561683177947998,
+      "fraction_ge_0_5": 0.5698938965797424,
+      "protected_fraction": 0.24482445987654322
+    },
+    {
+      "stem": "val_237_0000276_04401_d_0000529",
+      "boxes": 40,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.46956145763397217,
+      "fraction_ge_0_5": 0.4750578701496124,
+      "protected_fraction": 0.3446084104938272
+    },
+    {
+      "stem": "val_238_0000276_04601_d_0000530",
+      "boxes": 10,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.9207437038421631,
+      "fraction_ge_0_5": 0.9256770610809326,
+      "protected_fraction": 0.026431327160493828
+    },
+    {
+      "stem": "val_239_0000276_04801_d_0000531",
+      "boxes": 10,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.7960877418518066,
+      "fraction_ge_0_5": 0.8127160668373108,
+      "protected_fraction": 0.06350887345679013
+    },
+    {
+      "stem": "val_23_0000024_01543_d_0000015",
+      "boxes": 8,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.8983621597290039,
+      "fraction_ge_0_5": 0.9040528535842896,
+      "protected_fraction": 0.029506172839506174
+    },
+    {
+      "stem": "val_240_0000276_05001_d_0000532",
+      "boxes": 7,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.9647598266601562,
+      "fraction_ge_0_5": 0.9677990078926086,
+      "protected_fraction": 0.009477237654320987
+    },
+    {
+      "stem": "val_241_0000276_05201_d_0000533",
+      "boxes": 6,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.8984341025352478,
+      "fraction_ge_0_5": 0.9044753313064575,
+      "protected_fraction": 0.03226273148148148
+    },
+    {
+      "stem": "val_242_0000276_05601_d_0000535",
+      "boxes": 10,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.986031174659729,
+      "fraction_ge_0_5": 0.987320601940155,
+      "protected_fraction": 0.002827932098765432
+    },
+    {
+      "stem": "val_243_0000276_05801_d_0000536",
+      "boxes": 7,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.9861706495285034,
+      "fraction_ge_0_5": 0.9876041412353516,
+      "protected_fraction": 0.0033699845679012346
+    },
+    {
+      "stem": "val_244_0000276_06001_d_0000537",
+      "boxes": 14,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.95561283826828,
+      "fraction_ge_0_5": 0.9587827920913696,
+      "protected_fraction": 0.013215663580246914
+    },
+    {
+      "stem": "val_245_0000277_00001_d_0000539",
+      "boxes": 85,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.7616992592811584,
+      "fraction_ge_0_5": 0.7644926905632019,
+      "protected_fraction": 0.08797067901234568
+    },
+    {
+      "stem": "val_246_0000277_00201_d_0000540",
+      "boxes": 83,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.6829083561897278,
+      "fraction_ge_0_5": 0.6795775294303894,
+      "protected_fraction": 0.13313078703703704
+    },
+    {
+      "stem": "val_247_0000277_00401_d_0000541",
+      "boxes": 117,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.7126226425170898,
+      "fraction_ge_0_5": 0.7161419987678528,
+      "protected_fraction": 0.10087577160493827
+    },
+    {
+      "stem": "val_248_0000277_01401_d_0000546",
+      "boxes": 78,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.6862882375717163,
+      "fraction_ge_0_5": 0.6895119547843933,
+      "protected_fraction": 0.12868827160493826
+    },
+    {
+      "stem": "val_249_0000277_01601_d_0000547",
+      "boxes": 78,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.645631730556488,
+      "fraction_ge_0_5": 0.6560146808624268,
+      "protected_fraction": 0.14152006172839507
+    },
+    {
+      "stem": "val_24_0000026_00000_d_0000024",
+      "boxes": 8,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.5257056951522827,
+      "fraction_ge_0_5": 0.5439949631690979,
+      "protected_fraction": 0.16795331790123458
+    },
+    {
+      "stem": "val_250_0000277_01801_d_0000548",
+      "boxes": 101,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.6171167492866516,
+      "fraction_ge_0_5": 0.6227237582206726,
+      "protected_fraction": 0.16940972222222223
+    },
+    {
+      "stem": "val_251_0000277_02001_d_0000549",
+      "boxes": 83,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.26086127758026123,
+      "fraction_ge_0_5": 0.24595871567726135,
+      "protected_fraction": 0.3883564814814815
+    },
+    {
+      "stem": "val_252_0000277_02201_d_0000550",
+      "boxes": 68,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.4487328827381134,
+      "fraction_ge_0_5": 0.4311072528362274,
+      "protected_fraction": 0.23527777777777778
+    },
+    {
+      "stem": "val_253_0000277_02401_d_0000551",
+      "boxes": 90,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.553698718547821,
+      "fraction_ge_0_5": 0.5596932768821716,
+      "protected_fraction": 0.15751157407407407
+    },
+    {
+      "stem": "val_254_0000277_02601_d_0000552",
+      "boxes": 121,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.7019017338752747,
+      "fraction_ge_0_5": 0.7053221464157104,
+      "protected_fraction": 0.13233796296296296
+    },
+    {
+      "stem": "val_255_0000277_03201_d_0000554",
+      "boxes": 85,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.7675952911376953,
+      "fraction_ge_0_5": 0.7736303806304932,
+      "protected_fraction": 0.09059413580246914
+    },
+    {
+      "stem": "val_256_0000277_03401_d_0000555",
+      "boxes": 103,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.7008821368217468,
+      "fraction_ge_0_5": 0.7077720165252686,
+      "protected_fraction": 0.12272376543209877
+    },
+    {
+      "stem": "val_257_0000277_03601_d_0000556",
+      "boxes": 59,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.6055299043655396,
+      "fraction_ge_0_5": 0.6091628074645996,
+      "protected_fraction": 0.15078703703703702
+    },
+    {
+      "stem": "val_258_0000277_04001_d_0000558",
+      "boxes": 74,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.5269550681114197,
+      "fraction_ge_0_5": 0.5289448499679565,
+      "protected_fraction": 0.1963233024691358
+    },
+    {
+      "stem": "val_259_0000277_04201_d_0000559",
+      "boxes": 67,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.6556198000907898,
+      "fraction_ge_0_5": 0.6644598841667175,
+      "protected_fraction": 0.16961805555555556
+    },
+    {
+      "stem": "val_25_0000026_00500_d_0000025",
+      "boxes": 15,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.4398229420185089,
+      "fraction_ge_0_5": 0.45173802971839905,
+      "protected_fraction": 0.21673032407407408
+    },
+    {
+      "stem": "val_260_0000277_04401_d_0000560",
+      "boxes": 70,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.5623379349708557,
+      "fraction_ge_0_5": 0.5628626346588135,
+      "protected_fraction": 0.1686593364197531
+    },
+    {
+      "stem": "val_261_0000277_04601_d_0000561",
+      "boxes": 95,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.5444955825805664,
+      "fraction_ge_0_5": 0.5478259921073914,
+      "protected_fraction": 0.1777835648148148
+    },
+    {
+      "stem": "val_262_0000277_05001_d_0000562",
+      "boxes": 97,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.587688148021698,
+      "fraction_ge_0_5": 0.5914139747619629,
+      "protected_fraction": 0.15020254629629629
+    },
+    {
+      "stem": "val_263_0000280_00001_d_0000612",
+      "boxes": 87,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.5545111298561096,
+      "fraction_ge_0_5": 0.5622801184654236,
+      "protected_fraction": 0.1652025462962963
+    },
+    {
+      "stem": "val_264_0000280_00201_d_0000613",
+      "boxes": 47,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.6550217866897583,
+      "fraction_ge_0_5": 0.6619135737419128,
+      "protected_fraction": 0.13052854938271605
+    },
+    {
+      "stem": "val_265_0000280_00401_d_0000614",
+      "boxes": 59,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.6159868240356445,
+      "fraction_ge_0_5": 0.6317708492279053,
+      "protected_fraction": 0.15070601851851853
+    },
+    {
+      "stem": "val_266_0000280_00601_d_0000615",
+      "boxes": 74,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.7235069274902344,
+      "fraction_ge_0_5": 0.726361870765686,
+      "protected_fraction": 0.10185185185185185
+    },
+    {
+      "stem": "val_267_0000280_00801_d_0000616",
+      "boxes": 70,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.7700569033622742,
+      "fraction_ge_0_5": 0.7752951383590698,
+      "protected_fraction": 0.08188464506172839
+    },
+    {
+      "stem": "val_268_0000280_01001_d_0000617",
+      "boxes": 125,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.6108011603355408,
+      "fraction_ge_0_5": 0.609274685382843,
+      "protected_fraction": 0.16202546296296297
+    },
+    {
+      "stem": "val_269_0000280_01201_d_0000618",
+      "boxes": 134,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.5314611792564392,
+      "fraction_ge_0_5": 0.537033200263977,
+      "protected_fraction": 0.19472993827160495
+    },
+    {
+      "stem": "val_26_0000026_01000_d_0000026",
+      "boxes": 25,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.2805226445198059,
+      "fraction_ge_0_5": 0.2722472846508026,
+      "protected_fraction": 0.36768518518518517
+    },
+    {
+      "stem": "val_270_0000280_01401_d_0000619",
+      "boxes": 110,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.46905332803726196,
+      "fraction_ge_0_5": 0.4693576395511627,
+      "protected_fraction": 0.25084297839506176
+    },
+    {
+      "stem": "val_271_0000280_01601_d_0000620",
+      "boxes": 103,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.5458033680915833,
+      "fraction_ge_0_5": 0.5478375554084778,
+      "protected_fraction": 0.19005208333333334
+    },
+    {
+      "stem": "val_272_0000280_01801_d_0000621",
+      "boxes": 90,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.6918870806694031,
+      "fraction_ge_0_5": 0.6940258741378784,
+      "protected_fraction": 0.12243634259259259
+    },
+    {
+      "stem": "val_273_0000280_02001_d_0000622",
+      "boxes": 66,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.6686318516731262,
+      "fraction_ge_0_5": 0.6713985204696655,
+      "protected_fraction": 0.12803047839506174
+    },
+    {
+      "stem": "val_274_0000280_02201_d_0000623",
+      "boxes": 80,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.6273795366287231,
+      "fraction_ge_0_5": 0.6218576431274414,
+      "protected_fraction": 0.15310185185185185
+    },
+    {
+      "stem": "val_275_0000280_02401_d_0000624",
+      "boxes": 92,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.6281928420066833,
+      "fraction_ge_0_5": 0.6286227107048035,
+      "protected_fraction": 0.15094907407407407
+    },
+    {
+      "stem": "val_276_0000280_02601_d_0000625",
+      "boxes": 73,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.6409666538238525,
+      "fraction_ge_0_5": 0.6418788433074951,
+      "protected_fraction": 0.1372704475308642
+    },
+    {
+      "stem": "val_277_0000280_02801_d_0000626",
+      "boxes": 55,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.601138710975647,
+      "fraction_ge_0_5": 0.5967534780502319,
+      "protected_fraction": 0.1738599537037037
+    },
+    {
+      "stem": "val_278_0000280_03001_d_0000627",
+      "boxes": 88,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.6564168334007263,
+      "fraction_ge_0_5": 0.6558603644371033,
+      "protected_fraction": 0.13322530864197532
+    },
+    {
+      "stem": "val_279_0000280_03201_d_0000628",
+      "boxes": 82,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.6178402304649353,
+      "fraction_ge_0_5": 0.6195852756500244,
+      "protected_fraction": 0.15270061728395062
+    },
+    {
+      "stem": "val_27_0000026_01500_d_0000027",
+      "boxes": 10,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.44668442010879517,
+      "fraction_ge_0_5": 0.45444637537002563,
+      "protected_fraction": 0.21960069444444444
+    },
+    {
+      "stem": "val_280_0000280_03401_d_0000629",
+      "boxes": 83,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.6933520436286926,
+      "fraction_ge_0_5": 0.7011805772781372,
+      "protected_fraction": 0.12646604938271605
+    },
+    {
+      "stem": "val_281_0000283_00401_d_0000676",
+      "boxes": 6,
+      "original_width": 1920,
+      "original_height": 1080,
+      "mean_strength": 0.9012449383735657,
+      "fraction_ge_0_5": 0.9073804020881653,
+      "protected_fraction": 0.0316454475308642
+    },
+    {
+      "stem": "val_282_0000283_00601_d_0000677",
+      "boxes": 9,
+      "original_width": 1920,
+      "original_height": 1080,
+      "mean_strength": 0.9788661003112793,
+      "fraction_ge_0_5": 0.9804745316505432,
+      "protected_fraction": 0.004756944444444445
+    },
+    {
+      "stem": "val_283_0000283_00801_d_0000678",
+      "boxes": 8,
+      "original_width": 1920,
+      "original_height": 1080,
+      "mean_strength": 0.9860339164733887,
+      "fraction_ge_0_5": 0.987199068069458,
+      "protected_fraction": 0.002525077160493827
+    },
+    {
+      "stem": "val_284_0000283_01001_d_0000679",
+      "boxes": 4,
+      "original_width": 1920,
+      "original_height": 1080,
+      "mean_strength": 0.9511986970901489,
+      "fraction_ge_0_5": 0.9558159708976746,
+      "protected_fraction": 0.012058256172839506
+    },
+    {
+      "stem": "val_285_0000287_00001_d_0000759",
+      "boxes": 52,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.7598804235458374,
+      "fraction_ge_0_5": 0.7667110562324524,
+      "protected_fraction": 0.0896045524691358
+    },
+    {
+      "stem": "val_286_0000287_00201_d_0000760",
+      "boxes": 51,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.6450613737106323,
+      "fraction_ge_0_5": 0.6517341732978821,
+      "protected_fraction": 0.12765625
+    },
+    {
+      "stem": "val_287_0000287_00401_d_0000761",
+      "boxes": 44,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.6580494046211243,
+      "fraction_ge_0_5": 0.6666994690895081,
+      "protected_fraction": 0.11903935185185185
+    },
+    {
+      "stem": "val_288_0000287_00601_d_0000762",
+      "boxes": 93,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.6306849718093872,
+      "fraction_ge_0_5": 0.6322993636131287,
+      "protected_fraction": 0.13842206790123457
+    },
+    {
+      "stem": "val_289_0000287_00801_d_0000763",
+      "boxes": 58,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.5446105599403381,
+      "fraction_ge_0_5": 0.5559895634651184,
+      "protected_fraction": 0.18539737654320987
+    },
+    {
+      "stem": "val_28_0000026_02000_d_0000028",
+      "boxes": 9,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.5560744404792786,
+      "fraction_ge_0_5": 0.5532523393630981,
+      "protected_fraction": 0.15861882716049383
+    },
+    {
+      "stem": "val_290_0000287_01001_d_0000764",
+      "boxes": 71,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.6394768953323364,
+      "fraction_ge_0_5": 0.6382253170013428,
+      "protected_fraction": 0.14559413580246913
+    },
+    {
+      "stem": "val_291_0000287_01201_d_0000765",
+      "boxes": 68,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.6574404835700989,
+      "fraction_ge_0_5": 0.6652700901031494,
+      "protected_fraction": 0.12659336419753087
+    },
+    {
+      "stem": "val_292_0000287_01401_d_0000766",
+      "boxes": 68,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.7680349946022034,
+      "fraction_ge_0_5": 0.7729147672653198,
+      "protected_fraction": 0.09843557098765432
+    },
+    {
+      "stem": "val_293_0000287_01601_d_0000767",
+      "boxes": 74,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.811796247959137,
+      "fraction_ge_0_5": 0.8171913623809814,
+      "protected_fraction": 0.06968171296296297
+    },
+    {
+      "stem": "val_294_0000287_01801_d_0000768",
+      "boxes": 56,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.8019455075263977,
+      "fraction_ge_0_5": 0.8089274764060974,
+      "protected_fraction": 0.07109760802469135
+    },
+    {
+      "stem": "val_295_0000287_02001_d_0000769",
+      "boxes": 44,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.7881150245666504,
+      "fraction_ge_0_5": 0.7896547317504883,
+      "protected_fraction": 0.09093364197530865
+    },
+    {
+      "stem": "val_296_0000287_02201_d_0000770",
+      "boxes": 27,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.8379810452461243,
+      "fraction_ge_0_5": 0.8441261649131775,
+      "protected_fraction": 0.052231867283950614
+    },
+    {
+      "stem": "val_297_0000287_02401_d_0000771",
+      "boxes": 18,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.752640962600708,
+      "fraction_ge_0_5": 0.7603896856307983,
+      "protected_fraction": 0.09935956790123457
+    },
+    {
+      "stem": "val_298_0000287_02601_d_0000772",
+      "boxes": 44,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.7737005352973938,
+      "fraction_ge_0_5": 0.779616117477417,
+      "protected_fraction": 0.08191743827160494
+    },
+    {
+      "stem": "val_299_0000287_02801_d_0000773",
+      "boxes": 60,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.5982949137687683,
+      "fraction_ge_0_5": 0.6068074703216553,
+      "protected_fraction": 0.15462770061728395
+    },
+    {
+      "stem": "val_29_0000026_02500_d_0000029",
+      "boxes": 17,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.6815606355667114,
+      "fraction_ge_0_5": 0.6931172609329224,
+      "protected_fraction": 0.10198109567901234
+    },
+    {
+      "stem": "val_2_0000001_03999_d_0000007",
+      "boxes": 48,
+      "original_width": 1920,
+      "original_height": 1080,
+      "mean_strength": 0.8598666191101074,
+      "fraction_ge_0_5": 0.8658545613288879,
+      "protected_fraction": 0.04557098765432099
+    },
+    {
+      "stem": "val_300_0000287_03001_d_0000774",
+      "boxes": 18,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.7345128655433655,
+      "fraction_ge_0_5": 0.7419540882110596,
+      "protected_fraction": 0.10603587962962963
+    },
+    {
+      "stem": "val_301_0000287_03401_d_0000776",
+      "boxes": 56,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.6551788449287415,
+      "fraction_ge_0_5": 0.6640991568565369,
+      "protected_fraction": 0.12913001543209876
+    },
+    {
+      "stem": "val_302_0000287_04601_d_0000780",
+      "boxes": 88,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.6266830563545227,
+      "fraction_ge_0_5": 0.6313522458076477,
+      "protected_fraction": 0.14909529320987655
+    },
+    {
+      "stem": "val_303_0000287_04801_d_0000781",
+      "boxes": 53,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.7175174951553345,
+      "fraction_ge_0_5": 0.726319432258606,
+      "protected_fraction": 0.11771412037037036
+    },
+    {
+      "stem": "val_304_0000287_05001_d_0000782",
+      "boxes": 62,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.6578375697135925,
+      "fraction_ge_0_5": 0.667330265045166,
+      "protected_fraction": 0.11565007716049383
+    },
+    {
+      "stem": "val_305_0000289_00001_d_0000811",
+      "boxes": 41,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.7121903896331787,
+      "fraction_ge_0_5": 0.7129842042922974,
+      "protected_fraction": 0.10630979938271605
+    },
+    {
+      "stem": "val_306_0000289_00201_d_0000812",
+      "boxes": 43,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.6621130108833313,
+      "fraction_ge_0_5": 0.66581791639328,
+      "protected_fraction": 0.13322723765432098
+    },
+    {
+      "stem": "val_307_0000289_00401_d_0000813",
+      "boxes": 53,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.5642877221107483,
+      "fraction_ge_0_5": 0.5629726052284241,
+      "protected_fraction": 0.2158912037037037
+    },
+    {
+      "stem": "val_308_0000289_00601_d_0000814",
+      "boxes": 43,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.6010920405387878,
+      "fraction_ge_0_5": 0.6020659804344177,
+      "protected_fraction": 0.14540895061728396
+    },
+    {
+      "stem": "val_309_0000289_00801_d_0000815",
+      "boxes": 39,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.6373525857925415,
+      "fraction_ge_0_5": 0.6344386339187622,
+      "protected_fraction": 0.1284567901234568
+    },
+    {
+      "stem": "val_30_0000026_03000_d_0000030",
+      "boxes": 13,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.5691364407539368,
+      "fraction_ge_0_5": 0.5712692737579346,
+      "protected_fraction": 0.18434413580246914
+    },
+    {
+      "stem": "val_310_0000289_01001_d_0000816",
+      "boxes": 33,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.6469014286994934,
+      "fraction_ge_0_5": 0.650910496711731,
+      "protected_fraction": 0.13287037037037036
+    },
+    {
+      "stem": "val_311_0000289_01201_d_0000817",
+      "boxes": 43,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.6560520529747009,
+      "fraction_ge_0_5": 0.6643171310424805,
+      "protected_fraction": 0.12937885802469135
+    },
+    {
+      "stem": "val_312_0000289_01401_d_0000818",
+      "boxes": 39,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.59707111120224,
+      "fraction_ge_0_5": 0.592976450920105,
+      "protected_fraction": 0.17808063271604938
+    },
+    {
+      "stem": "val_313_0000289_01601_d_0000819",
+      "boxes": 44,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.6363661289215088,
+      "fraction_ge_0_5": 0.638595700263977,
+      "protected_fraction": 0.14639467592592592
+    },
+    {
+      "stem": "val_314_0000289_02001_d_0000821",
+      "boxes": 43,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.6555156707763672,
+      "fraction_ge_0_5": 0.6577025651931763,
+      "protected_fraction": 0.15335841049382717
+    },
+    {
+      "stem": "val_315_0000289_02201_d_0000822",
+      "boxes": 29,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.29737144708633423,
+      "fraction_ge_0_5": 0.2770196795463562,
+      "protected_fraction": 0.299170524691358
+    },
+    {
+      "stem": "val_316_0000289_02401_d_0000823",
+      "boxes": 49,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.7151946425437927,
+      "fraction_ge_0_5": 0.7191280722618103,
+      "protected_fraction": 0.10055362654320987
+    },
+    {
+      "stem": "val_317_0000289_02601_d_0000824",
+      "boxes": 58,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.738347053527832,
+      "fraction_ge_0_5": 0.7411400675773621,
+      "protected_fraction": 0.09666859567901234
+    },
+    {
+      "stem": "val_318_0000289_03001_d_0000826",
+      "boxes": 61,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.6681843400001526,
+      "fraction_ge_0_5": 0.6672067642211914,
+      "protected_fraction": 0.13798032407407407
+    },
+    {
+      "stem": "val_319_0000289_03201_d_0000827",
+      "boxes": 80,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.5985684990882874,
+      "fraction_ge_0_5": 0.5951639413833618,
+      "protected_fraction": 0.1727488425925926
+    },
+    {
+      "stem": "val_31_0000026_03500_d_0000031",
+      "boxes": 23,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.34035295248031616,
+      "fraction_ge_0_5": 0.32695409655570984,
+      "protected_fraction": 0.3134664351851852
+    },
+    {
+      "stem": "val_320_0000289_03401_d_0000828",
+      "boxes": 54,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.6153756976127625,
+      "fraction_ge_0_5": 0.6180034875869751,
+      "protected_fraction": 0.15042631172839507
+    },
+    {
+      "stem": "val_321_0000289_03601_d_0000829",
+      "boxes": 77,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.6194206476211548,
+      "fraction_ge_0_5": 0.6272280216217041,
+      "protected_fraction": 0.12515432098765433
+    },
+    {
+      "stem": "val_322_0000289_03801_d_0000830",
+      "boxes": 100,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.6290448307991028,
+      "fraction_ge_0_5": 0.6334105134010315,
+      "protected_fraction": 0.13455439814814815
+    },
+    {
+      "stem": "val_323_0000289_04001_d_0000831",
+      "boxes": 80,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.5373772382736206,
+      "fraction_ge_0_5": 0.5365489721298218,
+      "protected_fraction": 0.18123649691358024
+    },
+    {
+      "stem": "val_324_0000289_04201_d_0000832",
+      "boxes": 88,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.7115963101387024,
+      "fraction_ge_0_5": 0.7163290977478027,
+      "protected_fraction": 0.1068557098765432
+    },
+    {
+      "stem": "val_325_0000289_04401_d_0000833",
+      "boxes": 100,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.497153103351593,
+      "fraction_ge_0_5": 0.49667245149612427,
+      "protected_fraction": 0.1950289351851852
+    },
+    {
+      "stem": "val_326_0000289_04601_d_0000834",
+      "boxes": 93,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.5343899726867676,
+      "fraction_ge_0_5": 0.5385956764221191,
+      "protected_fraction": 0.18250578703703704
+    },
+    {
+      "stem": "val_327_0000289_04801_d_0000835",
+      "boxes": 71,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.6570839285850525,
+      "fraction_ge_0_5": 0.6637596487998962,
+      "protected_fraction": 0.12802083333333333
+    },
+    {
+      "stem": "val_328_0000289_05001_d_0000836",
+      "boxes": 65,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.5894112586975098,
+      "fraction_ge_0_5": 0.59765625,
+      "protected_fraction": 0.17093364197530864
+    },
+    {
+      "stem": "val_329_0000289_05201_d_0000837",
+      "boxes": 79,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.487596333026886,
+      "fraction_ge_0_5": 0.48841434717178345,
+      "protected_fraction": 0.2126832561728395
+    },
+    {
+      "stem": "val_32_0000026_04000_d_0000032",
+      "boxes": 14,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.41814088821411133,
+      "fraction_ge_0_5": 0.40747684240341187,
+      "protected_fraction": 0.24009259259259258
+    },
+    {
+      "stem": "val_330_0000289_05401_d_0000838",
+      "boxes": 81,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.5428125262260437,
+      "fraction_ge_0_5": 0.5442110300064087,
+      "protected_fraction": 0.2012673611111111
+    },
+    {
+      "stem": "val_331_0000289_05601_d_0000839",
+      "boxes": 107,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.5156428813934326,
+      "fraction_ge_0_5": 0.5161246061325073,
+      "protected_fraction": 0.1981423611111111
+    },
+    {
+      "stem": "val_332_0000289_05801_d_0000840",
+      "boxes": 78,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.5721016526222229,
+      "fraction_ge_0_5": 0.5741647481918335,
+      "protected_fraction": 0.17261766975308643
+    },
+    {
+      "stem": "val_333_0000289_06001_d_0000841",
+      "boxes": 80,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.5834069848060608,
+      "fraction_ge_0_5": 0.5926350355148315,
+      "protected_fraction": 0.16224729938271604
+    },
+    {
+      "stem": "val_334_0000289_06201_d_0000842",
+      "boxes": 79,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.5197661519050598,
+      "fraction_ge_0_5": 0.5153202414512634,
+      "protected_fraction": 0.19778356481481482
+    },
+    {
+      "stem": "val_335_0000289_06401_d_0000843",
+      "boxes": 79,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.5672228932380676,
+      "fraction_ge_0_5": 0.5663831233978271,
+      "protected_fraction": 0.17694637345679012
+    },
+    {
+      "stem": "val_336_0000289_06601_d_0000844",
+      "boxes": 88,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.4862382411956787,
+      "fraction_ge_0_5": 0.48256173729896545,
+      "protected_fraction": 0.2160011574074074
+    },
+    {
+      "stem": "val_337_0000289_06801_d_0000845",
+      "boxes": 98,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.7055337429046631,
+      "fraction_ge_0_5": 0.7054243683815002,
+      "protected_fraction": 0.11936149691358025
+    },
+    {
+      "stem": "val_338_0000289_07001_d_0000846",
+      "boxes": 74,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.6149145364761353,
+      "fraction_ge_0_5": 0.6148032546043396,
+      "protected_fraction": 0.14498842592592592
+    },
+    {
+      "stem": "val_339_0000289_07201_d_0000847",
+      "boxes": 40,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.6387904286384583,
+      "fraction_ge_0_5": 0.6360262632369995,
+      "protected_fraction": 0.13709876543209876
+    },
+    {
+      "stem": "val_33_0000026_04500_d_0000033",
+      "boxes": 47,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.713473379611969,
+      "fraction_ge_0_5": 0.7224864959716797,
+      "protected_fraction": 0.11307291666666666
+    },
+    {
+      "stem": "val_340_0000290_04001_d_0000867",
+      "boxes": 79,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.6358447074890137,
+      "fraction_ge_0_5": 0.636597216129303,
+      "protected_fraction": 0.13570408950617283
+    },
+    {
+      "stem": "val_341_0000291_00001_d_0000868",
+      "boxes": 178,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.81324702501297,
+      "fraction_ge_0_5": 0.8138599395751953,
+      "protected_fraction": 0.08752121913580246
+    },
+    {
+      "stem": "val_342_0000291_00201_d_0000869",
+      "boxes": 113,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.8240326046943665,
+      "fraction_ge_0_5": 0.8240856528282166,
+      "protected_fraction": 0.08884066358024692
+    },
+    {
+      "stem": "val_343_0000291_00401_d_0000870",
+      "boxes": 166,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.674232542514801,
+      "fraction_ge_0_5": 0.6774903535842896,
+      "protected_fraction": 0.13243248456790124
+    },
+    {
+      "stem": "val_344_0000291_00601_d_0000871",
+      "boxes": 120,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.43757811188697815,
+      "fraction_ge_0_5": 0.43295717239379883,
+      "protected_fraction": 0.26686149691358024
+    },
+    {
+      "stem": "val_345_0000291_01001_d_0000873",
+      "boxes": 159,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.48940595984458923,
+      "fraction_ge_0_5": 0.4903935194015503,
+      "protected_fraction": 0.20168402777777777
+    },
+    {
+      "stem": "val_346_0000291_01201_d_0000874",
+      "boxes": 212,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.5540391206741333,
+      "fraction_ge_0_5": 0.5522453784942627,
+      "protected_fraction": 0.24265046296296297
+    },
+    {
+      "stem": "val_347_0000291_01401_d_0000875",
+      "boxes": 154,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.609056830406189,
+      "fraction_ge_0_5": 0.6173244714736938,
+      "protected_fraction": 0.17320408950617283
+    },
+    {
+      "stem": "val_348_0000291_01601_d_0000876",
+      "boxes": 87,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.32900673151016235,
+      "fraction_ge_0_5": 0.31263309717178345,
+      "protected_fraction": 0.2939139660493827
+    },
+    {
+      "stem": "val_349_0000291_01801_d_0000877",
+      "boxes": 113,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.3465312123298645,
+      "fraction_ge_0_5": 0.33277004957199097,
+      "protected_fraction": 0.33621141975308644
+    },
+    {
+      "stem": "val_34_0000026_04978_d_0000034",
+      "boxes": 45,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.6449300646781921,
+      "fraction_ge_0_5": 0.6496045589447021,
+      "protected_fraction": 0.13409143518518518
+    },
+    {
+      "stem": "val_350_0000291_02001_d_0000878",
+      "boxes": 172,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.3406730890274048,
+      "fraction_ge_0_5": 0.33020448684692383,
+      "protected_fraction": 0.3390991512345679
+    },
+    {
+      "stem": "val_351_0000291_02201_d_0000879",
+      "boxes": 149,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.3875168561935425,
+      "fraction_ge_0_5": 0.37817129492759705,
+      "protected_fraction": 0.2815258487654321
+    },
+    {
+      "stem": "val_352_0000291_02601_d_0000881",
+      "boxes": 178,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.47699078917503357,
+      "fraction_ge_0_5": 0.4757581055164337,
+      "protected_fraction": 0.24851658950617284
+    },
+    {
+      "stem": "val_353_0000291_03201_d_0000884",
+      "boxes": 229,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.5766580700874329,
+      "fraction_ge_0_5": 0.5790355205535889,
+      "protected_fraction": 0.21445601851851853
+    },
+    {
+      "stem": "val_354_0000291_03401_d_0000885",
+      "boxes": 187,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.24155369400978088,
+      "fraction_ge_0_5": 0.2311670482158661,
+      "protected_fraction": 0.40241319444444446
+    },
+    {
+      "stem": "val_355_0000291_03601_d_0000886",
+      "boxes": 112,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.3732397258281708,
+      "fraction_ge_0_5": 0.3724440634250641,
+      "protected_fraction": 0.28083140432098763
+    },
+    {
+      "stem": "val_356_0000291_03801_d_0000887",
+      "boxes": 191,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.5875288248062134,
+      "fraction_ge_0_5": 0.5852912664413452,
+      "protected_fraction": 0.22185956790123457
+    },
+    {
+      "stem": "val_357_0000291_04001_d_0000888",
+      "boxes": 108,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.5258513689041138,
+      "fraction_ge_0_5": 0.5327122211456299,
+      "protected_fraction": 0.2258063271604938
+    },
+    {
+      "stem": "val_358_0000291_04201_d_0000889",
+      "boxes": 111,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.5135859251022339,
+      "fraction_ge_0_5": 0.5103703737258911,
+      "protected_fraction": 0.2332426697530864
+    },
+    {
+      "stem": "val_359_0000291_04401_d_0000890",
+      "boxes": 126,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.4760994017124176,
+      "fraction_ge_0_5": 0.47241511940956116,
+      "protected_fraction": 0.24772376543209876
+    },
+    {
+      "stem": "val_35_0000055_00000_d_0000109",
+      "boxes": 101,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.4569350779056549,
+      "fraction_ge_0_5": 0.4517052471637726,
+      "protected_fraction": 0.24216435185185184
+    },
+    {
+      "stem": "val_360_0000291_05001_d_0000892",
+      "boxes": 135,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.49027857184410095,
+      "fraction_ge_0_5": 0.4899575710296631,
+      "protected_fraction": 0.24023341049382715
+    },
+    {
+      "stem": "val_361_0000291_05201_d_0000893",
+      "boxes": 207,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.5093126893043518,
+      "fraction_ge_0_5": 0.5054282546043396,
+      "protected_fraction": 0.24393132716049382
+    },
+    {
+      "stem": "val_362_0000293_03601_d_0000940",
+      "boxes": 117,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.6922926306724548,
+      "fraction_ge_0_5": 0.6972723603248596,
+      "protected_fraction": 0.11044174382716049
+    },
+    {
+      "stem": "val_363_0000295_00000_d_0000021",
+      "boxes": 130,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.7318941950798035,
+      "fraction_ge_0_5": 0.7340393662452698,
+      "protected_fraction": 0.1020582561728395
+    },
+    {
+      "stem": "val_364_0000295_00200_d_0000022",
+      "boxes": 78,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.684374988079071,
+      "fraction_ge_0_5": 0.6857060194015503,
+      "protected_fraction": 0.14390432098765432
+    },
+    {
+      "stem": "val_365_0000295_00600_d_0000024",
+      "boxes": 186,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.7361892461776733,
+      "fraction_ge_0_5": 0.7356250286102295,
+      "protected_fraction": 0.1215625
+    },
+    {
+      "stem": "val_366_0000295_00800_d_0000025",
+      "boxes": 147,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.629962146282196,
+      "fraction_ge_0_5": 0.6292688846588135,
+      "protected_fraction": 0.17325617283950617
+    },
+    {
+      "stem": "val_367_0000295_01000_d_0000026",
+      "boxes": 251,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.6061109304428101,
+      "fraction_ge_0_5": 0.607519268989563,
+      "protected_fraction": 0.1646508487654321
+    },
+    {
+      "stem": "val_368_0000295_01200_d_0000027",
+      "boxes": 200,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.7026533484458923,
+      "fraction_ge_0_5": 0.701699435710907,
+      "protected_fraction": 0.10991898148148148
+    },
+    {
+      "stem": "val_369_0000295_01400_d_0000028",
+      "boxes": 189,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.6985428333282471,
+      "fraction_ge_0_5": 0.6987326145172119,
+      "protected_fraction": 0.12285686728395062
+    },
+    {
+      "stem": "val_36_0000055_00714_d_0000110",
+      "boxes": 85,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.46989092230796814,
+      "fraction_ge_0_5": 0.471795916557312,
+      "protected_fraction": 0.2260204475308642
+    },
+    {
+      "stem": "val_370_0000295_01600_d_0000029",
+      "boxes": 138,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.7206629514694214,
+      "fraction_ge_0_5": 0.7245505452156067,
+      "protected_fraction": 0.14065007716049382
+    },
+    {
+      "stem": "val_371_0000295_01800_d_0000030",
+      "boxes": 306,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.622613787651062,
+      "fraction_ge_0_5": 0.6217554211616516,
+      "protected_fraction": 0.1850462962962963
+    },
+    {
+      "stem": "val_372_0000295_02000_d_0000031",
+      "boxes": 311,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.6068273186683655,
+      "fraction_ge_0_5": 0.603705644607544,
+      "protected_fraction": 0.20962770061728395
+    },
+    {
+      "stem": "val_373_0000295_02200_d_0000032",
+      "boxes": 193,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.5835192799568176,
+      "fraction_ge_0_5": 0.5790663361549377,
+      "protected_fraction": 0.2264525462962963
+    },
+    {
+      "stem": "val_374_0000295_02400_d_0000033",
+      "boxes": 317,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.578665554523468,
+      "fraction_ge_0_5": 0.5759471654891968,
+      "protected_fraction": 0.21891782407407406
+    },
+    {
+      "stem": "val_375_0000295_02900_d_0000034",
+      "boxes": 212,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.474739670753479,
+      "fraction_ge_0_5": 0.4670563340187073,
+      "protected_fraction": 0.2532716049382716
+    },
+    {
+      "stem": "val_376_0000296_00601_d_0000038",
+      "boxes": 91,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.4435011148452759,
+      "fraction_ge_0_5": 0.443043977022171,
+      "protected_fraction": 0.3099112654320988
+    },
+    {
+      "stem": "val_377_0000296_01001_d_0000040",
+      "boxes": 181,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.4115999937057495,
+      "fraction_ge_0_5": 0.4093402922153473,
+      "protected_fraction": 0.3258545524691358
+    },
+    {
+      "stem": "val_378_0000300_03201_d_0000154",
+      "boxes": 66,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.6283815503120422,
+      "fraction_ge_0_5": 0.6354725956916809,
+      "protected_fraction": 0.13587770061728396
+    },
+    {
+      "stem": "val_379_0000301_00001_d_0000156",
+      "boxes": 96,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.3982071578502655,
+      "fraction_ge_0_5": 0.3850790858268738,
+      "protected_fraction": 0.27697337962962965
+    },
+    {
+      "stem": "val_37_0000069_00001_d_0000001",
+      "boxes": 34,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.6084997057914734,
+      "fraction_ge_0_5": 0.6236670613288879,
+      "protected_fraction": 0.13325617283950617
+    },
+    {
+      "stem": "val_380_0000301_00201_d_0000157",
+      "boxes": 90,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.3905956745147705,
+      "fraction_ge_0_5": 0.3792380392551422,
+      "protected_fraction": 0.26492862654320987
+    },
+    {
+      "stem": "val_381_0000301_01001_d_0000161",
+      "boxes": 64,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.6341894268989563,
+      "fraction_ge_0_5": 0.6466801762580872,
+      "protected_fraction": 0.12284722222222222
+    },
+    {
+      "stem": "val_382_0000301_01201_d_0000162",
+      "boxes": 61,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.4881725013256073,
+      "fraction_ge_0_5": 0.49394288659095764,
+      "protected_fraction": 0.22297260802469135
+    },
+    {
+      "stem": "val_383_0000303_03401_d_0000200",
+      "boxes": 82,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.7489200234413147,
+      "fraction_ge_0_5": 0.7584953904151917,
+      "protected_fraction": 0.08262538580246914
+    },
+    {
+      "stem": "val_384_0000308_04401_d_0000327",
+      "boxes": 98,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.44438284635543823,
+      "fraction_ge_0_5": 0.43431326746940613,
+      "protected_fraction": 0.21579282407407407
+    },
+    {
+      "stem": "val_385_0000312_00001_d_0000414",
+      "boxes": 112,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.44883695244789124,
+      "fraction_ge_0_5": 0.44750192761421204,
+      "protected_fraction": 0.24203703703703705
+    },
+    {
+      "stem": "val_386_0000312_00201_d_0000415",
+      "boxes": 108,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.29309526085853577,
+      "fraction_ge_0_5": 0.27541473507881165,
+      "protected_fraction": 0.34010609567901234
+    },
+    {
+      "stem": "val_387_0000312_00601_d_0000417",
+      "boxes": 59,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.5911790132522583,
+      "fraction_ge_0_5": 0.5880845189094543,
+      "protected_fraction": 0.18656057098765433
+    },
+    {
+      "stem": "val_388_0000312_01001_d_0000419",
+      "boxes": 80,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.3930499255657196,
+      "fraction_ge_0_5": 0.3860146701335907,
+      "protected_fraction": 0.27997492283950615
+    },
+    {
+      "stem": "val_389_0000312_01201_d_0000420",
+      "boxes": 82,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.42281246185302734,
+      "fraction_ge_0_5": 0.4180092513561249,
+      "protected_fraction": 0.2508005401234568
+    },
+    {
+      "stem": "val_38_0000069_00483_d_0000002",
+      "boxes": 27,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.723740816116333,
+      "fraction_ge_0_5": 0.7282928228378296,
+      "protected_fraction": 0.10301118827160494
+    },
+    {
+      "stem": "val_390_0000312_02201_d_0000425",
+      "boxes": 78,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.5493163466453552,
+      "fraction_ge_0_5": 0.5445061922073364,
+      "protected_fraction": 0.17232253086419752
+    },
+    {
+      "stem": "val_391_0000312_02401_d_0000426",
+      "boxes": 80,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.4045647382736206,
+      "fraction_ge_0_5": 0.39715278148651123,
+      "protected_fraction": 0.25505787037037037
+    },
+    {
+      "stem": "val_392_0000312_04201_d_0000435",
+      "boxes": 80,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.4556175172328949,
+      "fraction_ge_0_5": 0.4505574703216553,
+      "protected_fraction": 0.20592592592592593
+    },
+    {
+      "stem": "val_393_0000313_06401_d_0000468",
+      "boxes": 91,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.8791809678077698,
+      "fraction_ge_0_5": 0.8827642798423767,
+      "protected_fraction": 0.03806327160493827
+    },
+    {
+      "stem": "val_394_0000313_06601_d_0000469",
+      "boxes": 165,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.8204195499420166,
+      "fraction_ge_0_5": 0.8230960369110107,
+      "protected_fraction": 0.058373842592592595
+    },
+    {
+      "stem": "val_395_0000313_07001_d_0000471",
+      "boxes": 5,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.9871267080307007,
+      "fraction_ge_0_5": 0.9879398345947266,
+      "protected_fraction": 0.0045543981481481486
+    },
+    {
+      "stem": "val_396_0000315_01601_d_0000509",
+      "boxes": 98,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.7622995376586914,
+      "fraction_ge_0_5": 0.7711747884750366,
+      "protected_fraction": 0.07786458333333333
+    },
+    {
+      "stem": "val_397_0000316_00001_d_0000519",
+      "boxes": 69,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.8621503710746765,
+      "fraction_ge_0_5": 0.8671604990959167,
+      "protected_fraction": 0.047650462962962964
+    },
+    {
+      "stem": "val_398_0000316_00201_d_0000520",
+      "boxes": 54,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.8254876732826233,
+      "fraction_ge_0_5": 0.830597996711731,
+      "protected_fraction": 0.06609953703703704
+    },
+    {
+      "stem": "val_399_0000316_00401_d_0000521",
+      "boxes": 23,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.7756153345108032,
+      "fraction_ge_0_5": 0.7789409756660461,
+      "protected_fraction": 0.07610532407407407
+    },
+    {
+      "stem": "val_39_0000069_00713_d_0000003",
+      "boxes": 49,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.5306522250175476,
+      "fraction_ge_0_5": 0.5402507781982422,
+      "protected_fraction": 0.1702295524691358
+    },
+    {
+      "stem": "val_3_0000001_04527_d_0000008",
+      "boxes": 115,
+      "original_width": 1920,
+      "original_height": 1080,
+      "mean_strength": 0.8188765048980713,
+      "fraction_ge_0_5": 0.8249498605728149,
+      "protected_fraction": 0.06250578703703703
+    },
+    {
+      "stem": "val_400_0000316_00601_d_0000522",
+      "boxes": 35,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.8573065996170044,
+      "fraction_ge_0_5": 0.8692187666893005,
+      "protected_fraction": 0.03824845679012346
+    },
+    {
+      "stem": "val_401_0000316_00801_d_0000523",
+      "boxes": 27,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.8791107535362244,
+      "fraction_ge_0_5": 0.8894270658493042,
+      "protected_fraction": 0.031766975308641976
+    },
+    {
+      "stem": "val_402_0000316_01001_d_0000524",
+      "boxes": 18,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.9171837568283081,
+      "fraction_ge_0_5": 0.9233834743499756,
+      "protected_fraction": 0.022746913580246914
+    },
+    {
+      "stem": "val_403_0000316_01201_d_0000525",
+      "boxes": 43,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.7073590755462646,
+      "fraction_ge_0_5": 0.7095621228218079,
+      "protected_fraction": 0.10075231481481481
+    },
+    {
+      "stem": "val_404_0000316_01401_d_0000526",
+      "boxes": 34,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.6180805563926697,
+      "fraction_ge_0_5": 0.6249903440475464,
+      "protected_fraction": 0.1250655864197531
+    },
+    {
+      "stem": "val_405_0000316_01601_d_0000527",
+      "boxes": 29,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.7182745933532715,
+      "fraction_ge_0_5": 0.7266358137130737,
+      "protected_fraction": 0.08689429012345679
+    },
+    {
+      "stem": "val_406_0000316_01801_d_0000528",
+      "boxes": 11,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.8244127631187439,
+      "fraction_ge_0_5": 0.8282754421234131,
+      "protected_fraction": 0.06289351851851852
+    },
+    {
+      "stem": "val_407_0000316_02001_d_0000529",
+      "boxes": 9,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.8981011509895325,
+      "fraction_ge_0_5": 0.9074922800064087,
+      "protected_fraction": 0.027783564814814816
+    },
+    {
+      "stem": "val_408_0000316_02201_d_0000530",
+      "boxes": 7,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.9213996529579163,
+      "fraction_ge_0_5": 0.9272202849388123,
+      "protected_fraction": 0.024795524691358026
+    },
+    {
+      "stem": "val_409_0000323_02601_d_0000645",
+      "boxes": 91,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.5731332898139954,
+      "fraction_ge_0_5": 0.5888599753379822,
+      "protected_fraction": 0.14092013888888888
+    },
+    {
+      "stem": "val_40_0000069_01109_d_0000004",
+      "boxes": 31,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.8300657272338867,
+      "fraction_ge_0_5": 0.8400250673294067,
+      "protected_fraction": 0.058736496913580245
+    },
+    {
+      "stem": "val_410_0000327_00001_d_0000711",
+      "boxes": 70,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.6869615316390991,
+      "fraction_ge_0_5": 0.690846860408783,
+      "protected_fraction": 0.11701774691358025
+    },
+    {
+      "stem": "val_411_0000327_00201_d_0000712",
+      "boxes": 60,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.6720802783966064,
+      "fraction_ge_0_5": 0.6764236092567444,
+      "protected_fraction": 0.12360532407407407
+    },
+    {
+      "stem": "val_412_0000327_00401_d_0000713",
+      "boxes": 64,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.7257645726203918,
+      "fraction_ge_0_5": 0.735679030418396,
+      "protected_fraction": 0.08508294753086419
+    },
+    {
+      "stem": "val_413_0000327_00601_d_0000714",
+      "boxes": 84,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.6663406491279602,
+      "fraction_ge_0_5": 0.6756635904312134,
+      "protected_fraction": 0.11570794753086419
+    },
+    {
+      "stem": "val_414_0000327_00801_d_0000715",
+      "boxes": 84,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.5685777068138123,
+      "fraction_ge_0_5": 0.5767669677734375,
+      "protected_fraction": 0.16625192901234567
+    },
+    {
+      "stem": "val_415_0000327_01001_d_0000716",
+      "boxes": 83,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.6890658736228943,
+      "fraction_ge_0_5": 0.6986689567565918,
+      "protected_fraction": 0.11527777777777778
+    },
+    {
+      "stem": "val_416_0000327_01201_d_0000717",
+      "boxes": 69,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.5199155807495117,
+      "fraction_ge_0_5": 0.513043999671936,
+      "protected_fraction": 0.20852816358024692
+    },
+    {
+      "stem": "val_417_0000327_01401_d_0000718",
+      "boxes": 93,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.5776207447052002,
+      "fraction_ge_0_5": 0.5702102780342102,
+      "protected_fraction": 0.15779128086419753
+    },
+    {
+      "stem": "val_418_0000327_01801_d_0000720",
+      "boxes": 62,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.7669063806533813,
+      "fraction_ge_0_5": 0.7663213610649109,
+      "protected_fraction": 0.07674189814814815
+    },
+    {
+      "stem": "val_419_0000327_02601_d_0000724",
+      "boxes": 57,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.8042883276939392,
+      "fraction_ge_0_5": 0.8075829744338989,
+      "protected_fraction": 0.06712384259259259
+    },
+    {
+      "stem": "val_41_0000069_01878_d_0000005",
+      "boxes": 36,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.582310140132904,
+      "fraction_ge_0_5": 0.5881519913673401,
+      "protected_fraction": 0.14610918209876544
+    },
+    {
+      "stem": "val_420_0000327_02801_d_0000725",
+      "boxes": 73,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.6562397480010986,
+      "fraction_ge_0_5": 0.664492666721344,
+      "protected_fraction": 0.12033371913580247
+    },
+    {
+      "stem": "val_421_0000327_03001_d_0000726",
+      "boxes": 75,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.7257957458496094,
+      "fraction_ge_0_5": 0.7312769889831543,
+      "protected_fraction": 0.09775848765432099
+    },
+    {
+      "stem": "val_422_0000327_03201_d_0000727",
+      "boxes": 110,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.7804697155952454,
+      "fraction_ge_0_5": 0.7837249040603638,
+      "protected_fraction": 0.08537808641975309
+    },
+    {
+      "stem": "val_423_0000327_03401_d_0000728",
+      "boxes": 75,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.6909641623497009,
+      "fraction_ge_0_5": 0.6974729895591736,
+      "protected_fraction": 0.11402006172839506
+    },
+    {
+      "stem": "val_424_0000327_03601_d_0000729",
+      "boxes": 60,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.7092990279197693,
+      "fraction_ge_0_5": 0.7145678997039795,
+      "protected_fraction": 0.09744984567901234
+    },
+    {
+      "stem": "val_425_0000327_03801_d_0000730",
+      "boxes": 103,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.6610231399536133,
+      "fraction_ge_0_5": 0.6651003360748291,
+      "protected_fraction": 0.11732831790123457
+    },
+    {
+      "stem": "val_426_0000327_04001_d_0000731",
+      "boxes": 136,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.675351083278656,
+      "fraction_ge_0_5": 0.6762229800224304,
+      "protected_fraction": 0.11489390432098766
+    },
+    {
+      "stem": "val_427_0000327_04201_d_0000732",
+      "boxes": 110,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.7035542130470276,
+      "fraction_ge_0_5": 0.7085108160972595,
+      "protected_fraction": 0.10836612654320987
+    },
+    {
+      "stem": "val_428_0000330_00001_d_0000800",
+      "boxes": 80,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.6703840494155884,
+      "fraction_ge_0_5": 0.6759741306304932,
+      "protected_fraction": 0.13008873456790124
+    },
+    {
+      "stem": "val_429_0000330_00201_d_0000801",
+      "boxes": 130,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.5679113864898682,
+      "fraction_ge_0_5": 0.5720524787902832,
+      "protected_fraction": 0.16722800925925926
+    },
+    {
+      "stem": "val_42_0000069_02163_d_0000006",
+      "boxes": 49,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.5736618638038635,
+      "fraction_ge_0_5": 0.5849749445915222,
+      "protected_fraction": 0.15466435185185184
+    },
+    {
+      "stem": "val_430_0000330_00401_d_0000802",
+      "boxes": 112,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.5650976300239563,
+      "fraction_ge_0_5": 0.5725077390670776,
+      "protected_fraction": 0.14779899691358026
+    },
+    {
+      "stem": "val_431_0000330_00601_d_0000803",
+      "boxes": 94,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.6578547954559326,
+      "fraction_ge_0_5": 0.661016583442688,
+      "protected_fraction": 0.13495756172839507
+    },
+    {
+      "stem": "val_432_0000330_00801_d_0000804",
+      "boxes": 93,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.567301332950592,
+      "fraction_ge_0_5": 0.5690972208976746,
+      "protected_fraction": 0.1601388888888889
+    },
+    {
+      "stem": "val_433_0000330_01001_d_0000805",
+      "boxes": 93,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.5876233577728271,
+      "fraction_ge_0_5": 0.5947222113609314,
+      "protected_fraction": 0.1568383487654321
+    },
+    {
+      "stem": "val_434_0000330_01201_d_0000806",
+      "boxes": 110,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.5352010130882263,
+      "fraction_ge_0_5": 0.5371488928794861,
+      "protected_fraction": 0.16680169753086418
+    },
+    {
+      "stem": "val_435_0000330_01401_d_0000807",
+      "boxes": 161,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.5088816285133362,
+      "fraction_ge_0_5": 0.4984336495399475,
+      "protected_fraction": 0.21665316358024692
+    },
+    {
+      "stem": "val_436_0000330_01601_d_0000808",
+      "boxes": 99,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.6688459515571594,
+      "fraction_ge_0_5": 0.6720871925354004,
+      "protected_fraction": 0.12140625
+    },
+    {
+      "stem": "val_437_0000330_01801_d_0000809",
+      "boxes": 64,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.6253898739814758,
+      "fraction_ge_0_5": 0.6343499422073364,
+      "protected_fraction": 0.12795331790123457
+    },
+    {
+      "stem": "val_438_0000330_02001_d_0000810",
+      "boxes": 57,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.6521883606910706,
+      "fraction_ge_0_5": 0.6618846654891968,
+      "protected_fraction": 0.11368248456790124
+    },
+    {
+      "stem": "val_439_0000330_02201_d_0000811",
+      "boxes": 44,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.6247413158416748,
+      "fraction_ge_0_5": 0.634332537651062,
+      "protected_fraction": 0.11780864197530865
+    },
+    {
+      "stem": "val_43_0000069_02480_d_0000007",
+      "boxes": 64,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.6689890027046204,
+      "fraction_ge_0_5": 0.6796296238899231,
+      "protected_fraction": 0.12043788580246914
+    },
+    {
+      "stem": "val_440_0000330_02801_d_0000814",
+      "boxes": 45,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.6880307197570801,
+      "fraction_ge_0_5": 0.696072518825531,
+      "protected_fraction": 0.11030092592592593
+    },
+    {
+      "stem": "val_441_0000330_03001_d_0000815",
+      "boxes": 45,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.6728217601776123,
+      "fraction_ge_0_5": 0.6778047680854797,
+      "protected_fraction": 0.1110474537037037
+    },
+    {
+      "stem": "val_442_0000330_03201_d_0000816",
+      "boxes": 69,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.3968394100666046,
+      "fraction_ge_0_5": 0.39406830072402954,
+      "protected_fraction": 0.25046875
+    },
+    {
+      "stem": "val_443_0000330_04001_d_0000820",
+      "boxes": 38,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.5754895806312561,
+      "fraction_ge_0_5": 0.5750289559364319,
+      "protected_fraction": 0.17164737654320988
+    },
+    {
+      "stem": "val_444_0000330_04201_d_0000821",
+      "boxes": 162,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.47686800360679626,
+      "fraction_ge_0_5": 0.4815123379230499,
+      "protected_fraction": 0.22968557098765433
+    },
+    {
+      "stem": "val_445_0000330_04401_d_0000822",
+      "boxes": 38,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.7483952045440674,
+      "fraction_ge_0_5": 0.7635860443115234,
+      "protected_fraction": 0.07272376543209877
+    },
+    {
+      "stem": "val_446_0000330_04601_d_0000823",
+      "boxes": 62,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.7129439115524292,
+      "fraction_ge_0_5": 0.727121889591217,
+      "protected_fraction": 0.09287615740740741
+    },
+    {
+      "stem": "val_447_0000333_00001_d_0000001",
+      "boxes": 68,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.6976655125617981,
+      "fraction_ge_0_5": 0.708543598651886,
+      "protected_fraction": 0.0975270061728395
+    },
+    {
+      "stem": "val_448_0000333_01765_d_0000010",
+      "boxes": 120,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.717490553855896,
+      "fraction_ge_0_5": 0.724311351776123,
+      "protected_fraction": 0.08974537037037036
+    },
+    {
+      "stem": "val_449_0000333_01961_d_0000011",
+      "boxes": 65,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.7322596907615662,
+      "fraction_ge_0_5": 0.7388387322425842,
+      "protected_fraction": 0.08433449074074074
+    },
+    {
+      "stem": "val_44_0000072_02834_d_0000003",
+      "boxes": 73,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.5869595408439636,
+      "fraction_ge_0_5": 0.5893865823745728,
+      "protected_fraction": 0.15926118827160493
+    },
+    {
+      "stem": "val_450_0000333_02157_d_0000012",
+      "boxes": 67,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.7355573773384094,
+      "fraction_ge_0_5": 0.7405401468276978,
+      "protected_fraction": 0.08186728395061728
+    },
+    {
+      "stem": "val_451_0000333_02353_d_0000013",
+      "boxes": 70,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.7934551239013672,
+      "fraction_ge_0_5": 0.7990103960037231,
+      "protected_fraction": 0.06390817901234568
+    },
+    {
+      "stem": "val_452_0000333_02549_d_0000014",
+      "boxes": 91,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.7611052989959717,
+      "fraction_ge_0_5": 0.7680690288543701,
+      "protected_fraction": 0.07179976851851852
+    },
+    {
+      "stem": "val_453_0000333_02745_d_0000015",
+      "boxes": 52,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.8476202487945557,
+      "fraction_ge_0_5": 0.8573012948036194,
+      "protected_fraction": 0.04277391975308642
+    },
+    {
+      "stem": "val_454_0000333_02941_d_0000016",
+      "boxes": 44,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.8253604769706726,
+      "fraction_ge_0_5": 0.8346797823905945,
+      "protected_fraction": 0.04806327160493827
+    },
+    {
+      "stem": "val_455_0000333_03137_d_0000017",
+      "boxes": 39,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.8635372519493103,
+      "fraction_ge_0_5": 0.8737847208976746,
+      "protected_fraction": 0.03362847222222222
+    },
+    {
+      "stem": "val_456_0000333_03333_d_0000018",
+      "boxes": 62,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.7521734237670898,
+      "fraction_ge_0_5": 0.7662924528121948,
+      "protected_fraction": 0.07235725308641976
+    },
+    {
+      "stem": "val_457_0000333_03529_d_0000019",
+      "boxes": 95,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.6913372278213501,
+      "fraction_ge_0_5": 0.7008198499679565,
+      "protected_fraction": 0.09470100308641975
+    },
+    {
+      "stem": "val_458_0000333_03725_d_0000020",
+      "boxes": 83,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.7149783372879028,
+      "fraction_ge_0_5": 0.7215991616249084,
+      "protected_fraction": 0.08771026234567901
+    },
+    {
+      "stem": "val_459_0000335_00001_d_0000043",
+      "boxes": 41,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.5460566282272339,
+      "fraction_ge_0_5": 0.5482696890830994,
+      "protected_fraction": 0.19043788580246915
+    },
+    {
+      "stem": "val_45_0000076_02142_d_0000009",
+      "boxes": 11,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.6862263679504395,
+      "fraction_ge_0_5": 0.7003260254859924,
+      "protected_fraction": 0.10288001543209876
+    },
+    {
+      "stem": "val_460_0000335_00197_d_0000044",
+      "boxes": 37,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.6292642951011658,
+      "fraction_ge_0_5": 0.6326697468757629,
+      "protected_fraction": 0.13678819444444446
+    },
+    {
+      "stem": "val_461_0000335_00393_d_0000045",
+      "boxes": 34,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.5068292021751404,
+      "fraction_ge_0_5": 0.5065509080886841,
+      "protected_fraction": 0.1677025462962963
+    },
+    {
+      "stem": "val_462_0000335_00589_d_0000046",
+      "boxes": 21,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.7503913044929504,
+      "fraction_ge_0_5": 0.7627546191215515,
+      "protected_fraction": 0.07431520061728394
+    },
+    {
+      "stem": "val_463_0000335_00785_d_0000047",
+      "boxes": 34,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.7794302105903625,
+      "fraction_ge_0_5": 0.7888503074645996,
+      "protected_fraction": 0.06288966049382716
+    },
+    {
+      "stem": "val_464_0000335_00981_d_0000048",
+      "boxes": 78,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.8750434517860413,
+      "fraction_ge_0_5": 0.8814699053764343,
+      "protected_fraction": 0.03324652777777778
+    },
+    {
+      "stem": "val_465_0000335_01765_d_0000052",
+      "boxes": 61,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.728896975517273,
+      "fraction_ge_0_5": 0.744990348815918,
+      "protected_fraction": 0.0779320987654321
+    },
+    {
+      "stem": "val_466_0000335_01961_d_0000053",
+      "boxes": 69,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.6972925066947937,
+      "fraction_ge_0_5": 0.7092862725257874,
+      "protected_fraction": 0.09006558641975308
+    },
+    {
+      "stem": "val_467_0000335_02353_d_0000055",
+      "boxes": 82,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.7425785064697266,
+      "fraction_ge_0_5": 0.7518537640571594,
+      "protected_fraction": 0.0893557098765432
+    },
+    {
+      "stem": "val_468_0000335_02549_d_0000056",
+      "boxes": 87,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.7539040446281433,
+      "fraction_ge_0_5": 0.7609394192695618,
+      "protected_fraction": 0.07552662037037038
+    },
+    {
+      "stem": "val_469_0000335_02745_d_0000057",
+      "boxes": 99,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.7082980275154114,
+      "fraction_ge_0_5": 0.7122434377670288,
+      "protected_fraction": 0.1005613425925926
+    },
+    {
+      "stem": "val_46_0000081_00000_d_0000001",
+      "boxes": 86,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.7445459365844727,
+      "fraction_ge_0_5": 0.753354549407959,
+      "protected_fraction": 0.09874614197530865
+    },
+    {
+      "stem": "val_470_0000335_03137_d_0000059",
+      "boxes": 103,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.6768454909324646,
+      "fraction_ge_0_5": 0.67966628074646,
+      "protected_fraction": 0.10766203703703704
+    },
+    {
+      "stem": "val_471_0000335_03333_d_0000060",
+      "boxes": 40,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.36315298080444336,
+      "fraction_ge_0_5": 0.35722607374191284,
+      "protected_fraction": 0.22802662037037036
+    },
+    {
+      "stem": "val_472_0000335_03725_d_0000062",
+      "boxes": 27,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.5086261630058289,
+      "fraction_ge_0_5": 0.5006809234619141,
+      "protected_fraction": 0.18829475308641974
+    },
+    {
+      "stem": "val_473_0000335_03921_d_0000063",
+      "boxes": 44,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.45522454380989075,
+      "fraction_ge_0_5": 0.4570409059524536,
+      "protected_fraction": 0.21438271604938272
+    },
+    {
+      "stem": "val_474_0000335_04117_d_0000064",
+      "boxes": 28,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.5580722093582153,
+      "fraction_ge_0_5": 0.5655208230018616,
+      "protected_fraction": 0.17935378086419754
+    },
+    {
+      "stem": "val_475_0000335_04313_d_0000065",
+      "boxes": 38,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.6507379412651062,
+      "fraction_ge_0_5": 0.6635513305664062,
+      "protected_fraction": 0.1173804012345679
+    },
+    {
+      "stem": "val_476_0000335_05097_d_0000069",
+      "boxes": 20,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.6435039043426514,
+      "fraction_ge_0_5": 0.6526099443435669,
+      "protected_fraction": 0.12088348765432098
+    },
+    {
+      "stem": "val_477_0000335_05685_d_0000072",
+      "boxes": 15,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.48362573981285095,
+      "fraction_ge_0_5": 0.48901426792144775,
+      "protected_fraction": 0.17484760802469135
+    },
+    {
+      "stem": "val_478_0000335_06469_d_0000076",
+      "boxes": 8,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.8357905149459839,
+      "fraction_ge_0_5": 0.8463484048843384,
+      "protected_fraction": 0.0500366512345679
+    },
+    {
+      "stem": "val_479_0000335_06665_d_0000077",
+      "boxes": 21,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.5825596451759338,
+      "fraction_ge_0_5": 0.5892283916473389,
+      "protected_fraction": 0.16064621913580246
+    },
+    {
+      "stem": "val_47_0000086_00000_d_0000001",
+      "boxes": 37,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.7041350603103638,
+      "fraction_ge_0_5": 0.7095736861228943,
+      "protected_fraction": 0.10588927469135802
+    },
+    {
+      "stem": "val_480_0000335_06861_d_0000078",
+      "boxes": 24,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.573318362236023,
+      "fraction_ge_0_5": 0.5850289463996887,
+      "protected_fraction": 0.14325038580246913
+    },
+    {
+      "stem": "val_481_0000342_00393_d_0000244",
+      "boxes": 133,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.6369132399559021,
+      "fraction_ge_0_5": 0.6412904858589172,
+      "protected_fraction": 0.1373707561728395
+    },
+    {
+      "stem": "val_482_0000345_07057_d_0000345",
+      "boxes": 108,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.7198600769042969,
+      "fraction_ge_0_5": 0.7279359698295593,
+      "protected_fraction": 0.09432098765432098
+    },
+    {
+      "stem": "val_483_0000346_00001_d_0000346",
+      "boxes": 82,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.3291659653186798,
+      "fraction_ge_0_5": 0.3301485478878021,
+      "protected_fraction": 0.3073032407407407
+    },
+    {
+      "stem": "val_484_0000346_01961_d_0000356",
+      "boxes": 71,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.614016592502594,
+      "fraction_ge_0_5": 0.6209008693695068,
+      "protected_fraction": 0.1319868827160494
+    },
+    {
+      "stem": "val_485_0000346_02549_d_0000359",
+      "boxes": 59,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.3995324373245239,
+      "fraction_ge_0_5": 0.39657020568847656,
+      "protected_fraction": 0.2576832561728395
+    },
+    {
+      "stem": "val_486_0000346_03921_d_0000366",
+      "boxes": 50,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.6043362617492676,
+      "fraction_ge_0_5": 0.6071508526802063,
+      "protected_fraction": 0.1625829475308642
+    },
+    {
+      "stem": "val_487_0000346_07057_d_0000382",
+      "boxes": 87,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.7121471166610718,
+      "fraction_ge_0_5": 0.7211844325065613,
+      "protected_fraction": 0.10304398148148149
+    },
+    {
+      "stem": "val_488_0000348_00589_d_0000409",
+      "boxes": 34,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.8485201597213745,
+      "fraction_ge_0_5": 0.8546450734138489,
+      "protected_fraction": 0.05445023148148148
+    },
+    {
+      "stem": "val_489_0000348_03333_d_0000423",
+      "boxes": 15,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.9160229563713074,
+      "fraction_ge_0_5": 0.9192149043083191,
+      "protected_fraction": 0.02656635802469136
+    },
+    {
+      "stem": "val_48_0000086_00592_d_0000002",
+      "boxes": 65,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.6591870188713074,
+      "fraction_ge_0_5": 0.6636959910392761,
+      "protected_fraction": 0.13222029320987655
+    },
+    {
+      "stem": "val_490_0000356_00589_d_0000632",
+      "boxes": 121,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.5449884533882141,
+      "fraction_ge_0_5": 0.5479224324226379,
+      "protected_fraction": 0.18249228395061728
+    },
+    {
+      "stem": "val_491_0000356_01177_d_0000635",
+      "boxes": 88,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.6185376644134521,
+      "fraction_ge_0_5": 0.6267284154891968,
+      "protected_fraction": 0.1731327160493827
+    },
+    {
+      "stem": "val_492_0000356_01569_d_0000637",
+      "boxes": 100,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.5315531492233276,
+      "fraction_ge_0_5": 0.5362769961357117,
+      "protected_fraction": 0.16302083333333334
+    },
+    {
+      "stem": "val_493_0000356_01765_d_0000638",
+      "boxes": 84,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.6064938306808472,
+      "fraction_ge_0_5": 0.615667462348938,
+      "protected_fraction": 0.1644868827160494
+    },
+    {
+      "stem": "val_494_0000356_01961_d_0000639",
+      "boxes": 111,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.5626630187034607,
+      "fraction_ge_0_5": 0.5674170255661011,
+      "protected_fraction": 0.1714911265432099
+    },
+    {
+      "stem": "val_495_0000356_02157_d_0000640",
+      "boxes": 54,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.5942974090576172,
+      "fraction_ge_0_5": 0.6023495197296143,
+      "protected_fraction": 0.13066550925925927
+    },
+    {
+      "stem": "val_496_0000356_02353_d_0000641",
+      "boxes": 106,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.6937516927719116,
+      "fraction_ge_0_5": 0.7018267512321472,
+      "protected_fraction": 0.11536458333333334
+    },
+    {
+      "stem": "val_497_0000356_02745_d_0000643",
+      "boxes": 97,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.5690432786941528,
+      "fraction_ge_0_5": 0.5815258622169495,
+      "protected_fraction": 0.1577662037037037
+    },
+    {
+      "stem": "val_498_0000356_02941_d_0000644",
+      "boxes": 108,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.6722031235694885,
+      "fraction_ge_0_5": 0.6788715124130249,
+      "protected_fraction": 0.12699074074074074
+    },
+    {
+      "stem": "val_499_0000356_03333_d_0000646",
+      "boxes": 80,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.7266232371330261,
+      "fraction_ge_0_5": 0.7326022386550903,
+      "protected_fraction": 0.10369405864197531
+    },
+    {
+      "stem": "val_49_0000086_01084_d_0000003",
+      "boxes": 146,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.6207607984542847,
+      "fraction_ge_0_5": 0.6250810027122498,
+      "protected_fraction": 0.13819637345679012
+    },
+    {
+      "stem": "val_4_0000001_05249_d_0000009",
+      "boxes": 113,
+      "original_width": 1920,
+      "original_height": 1080,
+      "mean_strength": 0.702366054058075,
+      "fraction_ge_0_5": 0.705167829990387,
+      "protected_fraction": 0.14086998456790123
+    },
+    {
+      "stem": "val_500_0000356_03529_d_0000647",
+      "boxes": 81,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.631097137928009,
+      "fraction_ge_0_5": 0.6370756030082703,
+      "protected_fraction": 0.13826774691358024
+    },
+    {
+      "stem": "val_501_0000356_03725_d_0000648",
+      "boxes": 94,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.5857319831848145,
+      "fraction_ge_0_5": 0.5922318696975708,
+      "protected_fraction": 0.14913194444444444
+    },
+    {
+      "stem": "val_502_0000356_03921_d_0000649",
+      "boxes": 72,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.7160187363624573,
+      "fraction_ge_0_5": 0.7257002592086792,
+      "protected_fraction": 0.10142168209876543
+    },
+    {
+      "stem": "val_503_0000356_04117_d_0000650",
+      "boxes": 93,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.6166340112686157,
+      "fraction_ge_0_5": 0.6215432286262512,
+      "protected_fraction": 0.15058063271604938
+    },
+    {
+      "stem": "val_504_0000356_04313_d_0000651",
+      "boxes": 99,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.674856424331665,
+      "fraction_ge_0_5": 0.6854880452156067,
+      "protected_fraction": 0.11395061728395062
+    },
+    {
+      "stem": "val_505_0000356_04705_d_0000653",
+      "boxes": 70,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.7046321034431458,
+      "fraction_ge_0_5": 0.7148977518081665,
+      "protected_fraction": 0.10060185185185185
+    },
+    {
+      "stem": "val_506_0000356_04901_d_0000654",
+      "boxes": 102,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.5964744687080383,
+      "fraction_ge_0_5": 0.6006770730018616,
+      "protected_fraction": 0.14611882716049382
+    },
+    {
+      "stem": "val_507_0000356_05097_d_0000655",
+      "boxes": 114,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.6296464204788208,
+      "fraction_ge_0_5": 0.6432580947875977,
+      "protected_fraction": 0.1254398148148148
+    },
+    {
+      "stem": "val_508_0000358_03333_d_0000697",
+      "boxes": 93,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.6845076084136963,
+      "fraction_ge_0_5": 0.6874074339866638,
+      "protected_fraction": 0.127602237654321
+    },
+    {
+      "stem": "val_509_0000359_00393_d_0000701",
+      "boxes": 39,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.8593561053276062,
+      "fraction_ge_0_5": 0.8637905120849609,
+      "protected_fraction": 0.043034336419753086
+    },
+    {
+      "stem": "val_50_0000086_01443_d_0000004",
+      "boxes": 107,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.6675371527671814,
+      "fraction_ge_0_5": 0.6700134873390198,
+      "protected_fraction": 0.1249729938271605
+    },
+    {
+      "stem": "val_510_0000359_00589_d_0000702",
+      "boxes": 39,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.6705397367477417,
+      "fraction_ge_0_5": 0.6790856719017029,
+      "protected_fraction": 0.11982445987654321
+    },
+    {
+      "stem": "val_511_0000359_00785_d_0000703",
+      "boxes": 30,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.615286648273468,
+      "fraction_ge_0_5": 0.633794367313385,
+      "protected_fraction": 0.16870563271604938
+    },
+    {
+      "stem": "val_512_0000359_00981_d_0000704",
+      "boxes": 33,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.6504534482955933,
+      "fraction_ge_0_5": 0.6602353453636169,
+      "protected_fraction": 0.14960648148148148
+    },
+    {
+      "stem": "val_513_0000359_01177_d_0000705",
+      "boxes": 59,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.4631282389163971,
+      "fraction_ge_0_5": 0.45811727643013,
+      "protected_fraction": 0.23325231481481482
+    },
+    {
+      "stem": "val_514_0000359_01373_d_0000706",
+      "boxes": 12,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.4074815809726715,
+      "fraction_ge_0_5": 0.41089504957199097,
+      "protected_fraction": 0.23271412037037037
+    },
+    {
+      "stem": "val_515_0000359_01961_d_0000707",
+      "boxes": 18,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.5930596590042114,
+      "fraction_ge_0_5": 0.5998977422714233,
+      "protected_fraction": 0.1630806327160494
+    },
+    {
+      "stem": "val_516_0000359_02353_d_0000708",
+      "boxes": 31,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.8832024931907654,
+      "fraction_ge_0_5": 0.8894965052604675,
+      "protected_fraction": 0.03123070987654321
+    },
+    {
+      "stem": "val_517_0000359_02549_d_0000709",
+      "boxes": 21,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.7000139951705933,
+      "fraction_ge_0_5": 0.7065625190734863,
+      "protected_fraction": 0.11758873456790124
+    },
+    {
+      "stem": "val_518_0000359_03333_d_0000711",
+      "boxes": 13,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.9220163226127625,
+      "fraction_ge_0_5": 0.9275289177894592,
+      "protected_fraction": 0.025520833333333333
+    },
+    {
+      "stem": "val_519_0000359_03529_d_0000712",
+      "boxes": 16,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.7266584634780884,
+      "fraction_ge_0_5": 0.7363734841346741,
+      "protected_fraction": 0.10106867283950617
+    },
+    {
+      "stem": "val_51_0000086_01954_d_0000005",
+      "boxes": 173,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.6450983881950378,
+      "fraction_ge_0_5": 0.6451793909072876,
+      "protected_fraction": 0.12777777777777777
+    },
+    {
+      "stem": "val_520_0000360_00001_d_0000713",
+      "boxes": 80,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.6378978490829468,
+      "fraction_ge_0_5": 0.6435667276382446,
+      "protected_fraction": 0.141616512345679
+    },
+    {
+      "stem": "val_521_0000360_00197_d_0000714",
+      "boxes": 79,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.5993245244026184,
+      "fraction_ge_0_5": 0.6036535501480103,
+      "protected_fraction": 0.14409336419753085
+    },
+    {
+      "stem": "val_522_0000360_00393_d_0000715",
+      "boxes": 79,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.6230306029319763,
+      "fraction_ge_0_5": 0.6235589981079102,
+      "protected_fraction": 0.14601466049382716
+    },
+    {
+      "stem": "val_523_0000360_00589_d_0000716",
+      "boxes": 60,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.636414110660553,
+      "fraction_ge_0_5": 0.63475501537323,
+      "protected_fraction": 0.13628086419753085
+    },
+    {
+      "stem": "val_524_0000360_00785_d_0000717",
+      "boxes": 59,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.7319180369377136,
+      "fraction_ge_0_5": 0.7376157641410828,
+      "protected_fraction": 0.09260223765432099
+    },
+    {
+      "stem": "val_525_0000360_00981_d_0000718",
+      "boxes": 65,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.6392354965209961,
+      "fraction_ge_0_5": 0.6509683728218079,
+      "protected_fraction": 0.1342091049382716
+    },
+    {
+      "stem": "val_526_0000360_02353_d_0000725",
+      "boxes": 72,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.5527848601341248,
+      "fraction_ge_0_5": 0.5577661991119385,
+      "protected_fraction": 0.1852835648148148
+    },
+    {
+      "stem": "val_527_0000360_02745_d_0000727",
+      "boxes": 81,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.525729775428772,
+      "fraction_ge_0_5": 0.5356153845787048,
+      "protected_fraction": 0.1955324074074074
+    },
+    {
+      "stem": "val_528_0000360_02941_d_0000728",
+      "boxes": 45,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.5448225736618042,
+      "fraction_ge_0_5": 0.5461882948875427,
+      "protected_fraction": 0.186508487654321
+    },
+    {
+      "stem": "val_529_0000360_03137_d_0000729",
+      "boxes": 56,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.6175523400306702,
+      "fraction_ge_0_5": 0.6108294725418091,
+      "protected_fraction": 0.15383487654320988
+    },
+    {
+      "stem": "val_52_0000103_00180_d_0000026",
+      "boxes": 1,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.9073792695999146,
+      "fraction_ge_0_5": 0.9124749302864075,
+      "protected_fraction": 0.02383101851851852
+    },
+    {
+      "stem": "val_530_0000360_03333_d_0000730",
+      "boxes": 56,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.6078773736953735,
+      "fraction_ge_0_5": 0.6067225933074951,
+      "protected_fraction": 0.1647164351851852
+    },
+    {
+      "stem": "val_531_0000360_03529_d_0000731",
+      "boxes": 31,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.7711396813392639,
+      "fraction_ge_0_5": 0.7801620364189148,
+      "protected_fraction": 0.07565007716049382
+    },
+    {
+      "stem": "val_532_0000360_03921_d_0000733",
+      "boxes": 52,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.7759315967559814,
+      "fraction_ge_0_5": 0.7828606963157654,
+      "protected_fraction": 0.07824652777777778
+    },
+    {
+      "stem": "val_533_0000360_04117_d_0000734",
+      "boxes": 18,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.33536553382873535,
+      "fraction_ge_0_5": 0.3209780156612396,
+      "protected_fraction": 0.26209297839506174
+    },
+    {
+      "stem": "val_534_0000360_04705_d_0000737",
+      "boxes": 9,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.8557455539703369,
+      "fraction_ge_0_5": 0.8649633526802063,
+      "protected_fraction": 0.04770061728395062
+    },
+    {
+      "stem": "val_535_0000360_05293_d_0000740",
+      "boxes": 70,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.47055965662002563,
+      "fraction_ge_0_5": 0.4693383574485779,
+      "protected_fraction": 0.24685956790123456
+    },
+    {
+      "stem": "val_536_0000360_05685_d_0000742",
+      "boxes": 60,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.6065890192985535,
+      "fraction_ge_0_5": 0.6234066486358643,
+      "protected_fraction": 0.14754436728395062
+    },
+    {
+      "stem": "val_537_0000360_06273_d_0000745",
+      "boxes": 17,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.8455240726470947,
+      "fraction_ge_0_5": 0.8534683585166931,
+      "protected_fraction": 0.051695601851851854
+    },
+    {
+      "stem": "val_538_0000360_06665_d_0000747",
+      "boxes": 48,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.4606837332248688,
+      "fraction_ge_0_5": 0.466564416885376,
+      "protected_fraction": 0.21747299382716048
+    },
+    {
+      "stem": "val_539_0000360_06861_d_0000748",
+      "boxes": 25,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.47126027941703796,
+      "fraction_ge_0_5": 0.4747318625450134,
+      "protected_fraction": 0.21001350308641975
+    },
+    {
+      "stem": "val_53_0000103_00502_d_0000027",
+      "boxes": 3,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.494424968957901,
+      "fraction_ge_0_5": 0.5253047943115234,
+      "protected_fraction": 0.22026041666666665
+    },
+    {
+      "stem": "val_540_0000360_07057_d_0000749",
+      "boxes": 15,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.5819172859191895,
+      "fraction_ge_0_5": 0.5921006798744202,
+      "protected_fraction": 0.18287422839506173
+    },
+    {
+      "stem": "val_541_0000360_07253_d_0000750",
+      "boxes": 28,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.3581089973449707,
+      "fraction_ge_0_5": 0.34594136476516724,
+      "protected_fraction": 0.2904706790123457
+    },
+    {
+      "stem": "val_542_0000360_07645_d_0000752",
+      "boxes": 16,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.6356796026229858,
+      "fraction_ge_0_5": 0.6514968872070312,
+      "protected_fraction": 0.1460378086419753
+    },
+    {
+      "stem": "val_543_0000364_00589_d_0000798",
+      "boxes": 62,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.5954174995422363,
+      "fraction_ge_0_5": 0.5925868153572083,
+      "protected_fraction": 0.17269868827160495
+    },
+    {
+      "stem": "val_544_0000364_01177_d_0000799",
+      "boxes": 80,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.663662314414978,
+      "fraction_ge_0_5": 0.6674209237098694,
+      "protected_fraction": 0.13792438271604937
+    },
+    {
+      "stem": "val_545_0000364_01373_d_0000780",
+      "boxes": 64,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.6248757839202881,
+      "fraction_ge_0_5": 0.6253838539123535,
+      "protected_fraction": 0.15475887345679012
+    },
+    {
+      "stem": "val_546_0000364_01569_d_0000781",
+      "boxes": 97,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.702599048614502,
+      "fraction_ge_0_5": 0.6993846297264099,
+      "protected_fraction": 0.1269849537037037
+    },
+    {
+      "stem": "val_547_0000364_01765_d_0000782",
+      "boxes": 81,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.5872052311897278,
+      "fraction_ge_0_5": 0.5917631387710571,
+      "protected_fraction": 0.17908757716049384
+    },
+    {
+      "stem": "val_54_0000103_01734_d_0000028",
+      "boxes": 4,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.02829873375594616,
+      "fraction_ge_0_5": 0.0,
+      "protected_fraction": 0.7158738425925926
+    },
+    {
+      "stem": "val_55_0000103_02544_d_0000029",
+      "boxes": 14,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.4591335654258728,
+      "fraction_ge_0_5": 0.4612615704536438,
+      "protected_fraction": 0.19931520061728394
+    },
+    {
+      "stem": "val_56_0000103_02964_d_0000030",
+      "boxes": 10,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.1335834562778473,
+      "fraction_ge_0_5": 0.10016203671693802,
+      "protected_fraction": 0.47301890432098764
+    },
+    {
+      "stem": "val_57_0000103_03349_d_0000031",
+      "boxes": 4,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.19451941549777985,
+      "fraction_ge_0_5": 0.19165894389152527,
+      "protected_fraction": 0.4639795524691358
+    },
+    {
+      "stem": "val_58_0000103_03738_d_0000032",
+      "boxes": 3,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.3997496962547302,
+      "fraction_ge_0_5": 0.42543789744377136,
+      "protected_fraction": 0.23276427469135802
+    },
+    {
+      "stem": "val_59_0000103_04122_d_0000033",
+      "boxes": 4,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.9526000618934631,
+      "fraction_ge_0_5": 0.9557638764381409,
+      "protected_fraction": 0.01732445987654321
+    },
+    {
+      "stem": "val_5_0000001_05499_d_0000010",
+      "boxes": 140,
+      "original_width": 1920,
+      "original_height": 1080,
+      "mean_strength": 0.44470059871673584,
+      "fraction_ge_0_5": 0.4317399561405182,
+      "protected_fraction": 0.3096527777777778
+    },
+    {
+      "stem": "val_60_0000103_04513_d_0000034",
+      "boxes": 2,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.877740740776062,
+      "fraction_ge_0_5": 0.8878742456436157,
+      "protected_fraction": 0.030478395061728395
+    },
+    {
+      "stem": "val_61_0000103_04948_d_0000035",
+      "boxes": 1,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.7943997979164124,
+      "fraction_ge_0_5": 0.8085397481918335,
+      "protected_fraction": 0.08350694444444444
+    },
+    {
+      "stem": "val_62_0000115_00315_d_0000080",
+      "boxes": 61,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.8384669423103333,
+      "fraction_ge_0_5": 0.8406983017921448,
+      "protected_fraction": 0.0625733024691358
+    },
+    {
+      "stem": "val_63_0000115_00796_d_0000081",
+      "boxes": 78,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.7349127531051636,
+      "fraction_ge_0_5": 0.732970654964447,
+      "protected_fraction": 0.11170524691358025
+    },
+    {
+      "stem": "val_64_0000115_01031_d_0000082",
+      "boxes": 63,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.7784066796302795,
+      "fraction_ge_0_5": 0.7737770080566406,
+      "protected_fraction": 0.10640239197530864
+    },
+    {
+      "stem": "val_65_0000116_00351_d_0000083",
+      "boxes": 74,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.7608331441879272,
+      "fraction_ge_0_5": 0.7628337144851685,
+      "protected_fraction": 0.10291280864197531
+    },
+    {
+      "stem": "val_66_0000116_00819_d_0000084",
+      "boxes": 36,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.8013121485710144,
+      "fraction_ge_0_5": 0.8039795756340027,
+      "protected_fraction": 0.08709297839506173
+    },
+    {
+      "stem": "val_67_0000116_01059_d_0000085",
+      "boxes": 70,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.7820678353309631,
+      "fraction_ge_0_5": 0.7815007567405701,
+      "protected_fraction": 0.0924633487654321
+    },
+    {
+      "stem": "val_68_0000116_01338_d_0000086",
+      "boxes": 54,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.7228687405586243,
+      "fraction_ge_0_5": 0.7279147505760193,
+      "protected_fraction": 0.12017168209876543
+    },
+    {
+      "stem": "val_69_0000117_00112_d_0000087",
+      "boxes": 129,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.5777407288551331,
+      "fraction_ge_0_5": 0.5853086709976196,
+      "protected_fraction": 0.16076003086419752
+    },
+    {
+      "stem": "val_6_0000001_05999_d_0000011",
+      "boxes": 115,
+      "original_width": 1920,
+      "original_height": 1080,
+      "mean_strength": 0.6627198457717896,
+      "fraction_ge_0_5": 0.6601195931434631,
+      "protected_fraction": 0.14387345679012345
+    },
+    {
+      "stem": "val_70_0000117_01326_d_0000088",
+      "boxes": 62,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.6718833446502686,
+      "fraction_ge_0_5": 0.6753433346748352,
+      "protected_fraction": 0.12163001543209877
+    },
+    {
+      "stem": "val_71_0000117_01731_d_0000089",
+      "boxes": 47,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.5472348928451538,
+      "fraction_ge_0_5": 0.5462095141410828,
+      "protected_fraction": 0.15710841049382715
+    },
+    {
+      "stem": "val_72_0000117_02708_d_0000090",
+      "boxes": 100,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.6561819911003113,
+      "fraction_ge_0_5": 0.6613001823425293,
+      "protected_fraction": 0.13924575617283952
+    },
+    {
+      "stem": "val_73_0000117_03096_d_0000091",
+      "boxes": 24,
+      "original_width": 1360,
+      "original_height": 765,
+      "mean_strength": 0.6805317997932434,
+      "fraction_ge_0_5": 0.6901851892471313,
+      "protected_fraction": 0.11395833333333333
+    },
+    {
+      "stem": "val_74_0000129_02411_d_0000138",
+      "boxes": 186,
+      "original_width": 1920,
+      "original_height": 1080,
+      "mean_strength": 0.6281108260154724,
+      "fraction_ge_0_5": 0.6204301714897156,
+      "protected_fraction": 0.16619598765432098
+    },
+    {
+      "stem": "val_75_0000153_00001_d_0000001",
+      "boxes": 55,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.7203604578971863,
+      "fraction_ge_0_5": 0.7264891862869263,
+      "protected_fraction": 0.09183256172839506
+    },
+    {
+      "stem": "val_76_0000153_00401_d_0000001",
+      "boxes": 59,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.6691558361053467,
+      "fraction_ge_0_5": 0.6789293885231018,
+      "protected_fraction": 0.15730902777777778
+    },
+    {
+      "stem": "val_77_0000153_00801_d_0000001",
+      "boxes": 49,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.8208823800086975,
+      "fraction_ge_0_5": 0.8216724395751953,
+      "protected_fraction": 0.06887345679012345
+    },
+    {
+      "stem": "val_78_0000153_01201_d_0000001",
+      "boxes": 59,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.9001838564872742,
+      "fraction_ge_0_5": 0.9031616449356079,
+      "protected_fraction": 0.0312866512345679
+    },
+    {
+      "stem": "val_79_0000153_01601_d_0000001",
+      "boxes": 63,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.7443646192550659,
+      "fraction_ge_0_5": 0.7502816319465637,
+      "protected_fraction": 0.08342013888888888
+    },
+    {
+      "stem": "val_7_0000001_07999_d_0000012",
+      "boxes": 136,
+      "original_width": 1920,
+      "original_height": 1080,
+      "mean_strength": 0.7900747060775757,
+      "fraction_ge_0_5": 0.7958352565765381,
+      "protected_fraction": 0.07786458333333333
+    },
+    {
+      "stem": "val_80_0000153_01801_d_0000001",
+      "boxes": 55,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.879605770111084,
+      "fraction_ge_0_5": 0.8831481337547302,
+      "protected_fraction": 0.038148148148148146
+    },
+    {
+      "stem": "val_81_0000154_00001_d_0000001",
+      "boxes": 51,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.8338268399238586,
+      "fraction_ge_0_5": 0.8400501608848572,
+      "protected_fraction": 0.0574633487654321
+    },
+    {
+      "stem": "val_82_0000154_00401_d_0000001",
+      "boxes": 60,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.8410144448280334,
+      "fraction_ge_0_5": 0.843993067741394,
+      "protected_fraction": 0.06262345679012346
+    },
+    {
+      "stem": "val_83_0000154_00801_d_0000001",
+      "boxes": 72,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.8053492903709412,
+      "fraction_ge_0_5": 0.8112711906433105,
+      "protected_fraction": 0.0676003086419753
+    },
+    {
+      "stem": "val_84_0000154_01201_d_0000001",
+      "boxes": 81,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.792383074760437,
+      "fraction_ge_0_5": 0.7993943095207214,
+      "protected_fraction": 0.06923611111111111
+    },
+    {
+      "stem": "val_85_0000154_01601_d_0000001",
+      "boxes": 101,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.7399985194206238,
+      "fraction_ge_0_5": 0.7437441945075989,
+      "protected_fraction": 0.10567708333333334
+    },
+    {
+      "stem": "val_86_0000154_02001_d_0000001",
+      "boxes": 83,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.7980733513832092,
+      "fraction_ge_0_5": 0.7979822754859924,
+      "protected_fraction": 0.09968942901234568
+    },
+    {
+      "stem": "val_87_0000155_00001_d_0000001",
+      "boxes": 97,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.5619545578956604,
+      "fraction_ge_0_5": 0.5561304092407227,
+      "protected_fraction": 0.1997048611111111
+    },
+    {
+      "stem": "val_88_0000155_00401_d_0000001",
+      "boxes": 122,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.6435032486915588,
+      "fraction_ge_0_5": 0.6503549218177795,
+      "protected_fraction": 0.1351099537037037
+    },
+    {
+      "stem": "val_89_0000155_00801_d_0000001",
+      "boxes": 106,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.6324577927589417,
+      "fraction_ge_0_5": 0.6324536800384521,
+      "protected_fraction": 0.16037037037037036
+    },
+    {
+      "stem": "val_8_0000001_08414_d_0000013",
+      "boxes": 164,
+      "original_width": 1920,
+      "original_height": 1080,
+      "mean_strength": 0.6449396014213562,
+      "fraction_ge_0_5": 0.6404051184654236,
+      "protected_fraction": 0.14733603395061728
+    },
+    {
+      "stem": "val_90_0000155_01201_d_0000001",
+      "boxes": 94,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.7382164001464844,
+      "fraction_ge_0_5": 0.7429205179214478,
+      "protected_fraction": 0.10137538580246913
+    },
+    {
+      "stem": "val_91_0000155_01601_d_0000001",
+      "boxes": 73,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.6878616809844971,
+      "fraction_ge_0_5": 0.6950945258140564,
+      "protected_fraction": 0.10884645061728396
+    },
+    {
+      "stem": "val_92_0000155_01871_d_0000001",
+      "boxes": 55,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.7575310468673706,
+      "fraction_ge_0_5": 0.7659432888031006,
+      "protected_fraction": 0.07867862654320988
+    },
+    {
+      "stem": "val_93_0000162_00001_d_0000001",
+      "boxes": 34,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.7273326516151428,
+      "fraction_ge_0_5": 0.743391215801239,
+      "protected_fraction": 0.09339506172839507
+    },
+    {
+      "stem": "val_94_0000162_00401_d_0000001",
+      "boxes": 45,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.7926989793777466,
+      "fraction_ge_0_5": 0.8000887632369995,
+      "protected_fraction": 0.06768132716049383
+    },
+    {
+      "stem": "val_95_0000162_00801_d_0000001",
+      "boxes": 30,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.6609097123146057,
+      "fraction_ge_0_5": 0.6775983572006226,
+      "protected_fraction": 0.10306134259259259
+    },
+    {
+      "stem": "val_96_0000162_01058_d_0000001",
+      "boxes": 57,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.7868401408195496,
+      "fraction_ge_0_5": 0.794623851776123,
+      "protected_fraction": 0.07868441358024691
+    },
+    {
+      "stem": "val_97_0000163_00001_d_0000001",
+      "boxes": 69,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.6791072487831116,
+      "fraction_ge_0_5": 0.6804668307304382,
+      "protected_fraction": 0.14514081790123456
+    },
+    {
+      "stem": "val_98_0000163_00359_d_0000001",
+      "boxes": 54,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.7932552099227905,
+      "fraction_ge_0_5": 0.8049826622009277,
+      "protected_fraction": 0.05577739197530864
+    },
+    {
+      "stem": "val_99_0000165_04325_d_0000105",
+      "boxes": 29,
+      "original_width": 1920,
+      "original_height": 1080,
+      "mean_strength": 0.8415147662162781,
+      "fraction_ge_0_5": 0.8482040762901306,
+      "protected_fraction": 0.056531635802469136
+    },
+    {
+      "stem": "val_9_0000021_00000_d_0000001",
+      "boxes": 31,
+      "original_width": 960,
+      "original_height": 540,
+      "mean_strength": 0.7335119843482971,
+      "fraction_ge_0_5": 0.7354012131690979,
+      "protected_fraction": 0.10236689814814814
+    }
+  ]
+}

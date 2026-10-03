@@ -1,0 +1,206 @@
+{
+  "preview_directory": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-09-17\\referenced-chatgpt-conversation-this-is-an\\outputs\\foveated_classification\\previews\\cub_bcd_native500_v1_2026-09-25",
+  "all_saved_png_and_source_checks_passed": true,
+  "samples": [
+    {
+      "stage": "wide_small_bird",
+      "image_id": 10140,
+      "checks_passed": true,
+      "mask_metrics": {
+        "mask_eq_255": {
+          "bird_pixel_count": 7329,
+          "protected_fraction": 1.0,
+          "D_changed_fraction": 0.0,
+          "D_mean_abs_rgb_difference": 0.0
+        },
+        "mask_ge_153": {
+          "bird_pixel_count": 8469,
+          "protected_fraction": 1.0,
+          "D_changed_fraction": 0.0,
+          "D_mean_abs_rgb_difference": 0.0
+        },
+        "mask_gt_0": {
+          "bird_pixel_count": 9732,
+          "protected_fraction": 1.0,
+          "D_changed_fraction": 0.0,
+          "D_mean_abs_rgb_difference": 0.0
+        }
+      }
+    },
+    {
+      "stage": "wide_medium_bird",
+      "image_id": 2568,
+      "checks_passed": true,
+      "mask_metrics": {
+        "mask_eq_255": {
+          "bird_pixel_count": 19964,
+          "protected_fraction": 1.0,
+          "D_changed_fraction": 0.0,
+          "D_mean_abs_rgb_difference": 0.0
+        },
+        "mask_ge_153": {
+          "bird_pixel_count": 23016,
+          "protected_fraction": 1.0,
+          "D_changed_fraction": 0.0,
+          "D_mean_abs_rgb_difference": 0.0
+        },
+        "mask_gt_0": {
+          "bird_pixel_count": 24658,
+          "protected_fraction": 1.0,
+          "D_changed_fraction": 0.0,
+          "D_mean_abs_rgb_difference": 0.0
+        }
+      }
+    },
+    {
+      "stage": "wide_large_bird",
+      "image_id": 6223,
+      "checks_passed": true,
+      "mask_metrics": {
+        "mask_eq_255": {
+          "bird_pixel_count": 36007,
+          "protected_fraction": 1.0,
+          "D_changed_fraction": 0.0,
+          "D_mean_abs_rgb_difference": 0.0
+        },
+        "mask_ge_153": {
+          "bird_pixel_count": 40001,
+          "protected_fraction": 1.0,
+          "D_changed_fraction": 0.0,
+          "D_mean_abs_rgb_difference": 0.0
+        },
+        "mask_gt_0": {
+          "bird_pixel_count": 44898,
+          "protected_fraction": 1.0,
+          "D_changed_fraction": 0.0,
+          "D_mean_abs_rgb_difference": 0.0
+        }
+      }
+    },
+    {
+      "stage": "portrait",
+      "image_id": 4786,
+      "checks_passed": true,
+      "mask_metrics": {
+        "mask_eq_255": {
+          "bird_pixel_count": 16853,
+          "protected_fraction": 1.0,
+          "D_changed_fraction": 0.0,
+          "D_mean_abs_rgb_difference": 0.0
+        },
+        "mask_ge_153": {
+          "bird_pixel_count": 18857,
+          "protected_fraction": 1.0,
+          "D_changed_fraction": 0.0,
+          "D_mean_abs_rgb_difference": 0.0
+        },
+        "mask_gt_0": {
+          "bird_pixel_count": 23035,
+          "protected_fraction": 1.0,
+          "D_changed_fraction": 0.0,
+          "D_mean_abs_rgb_difference": 0.0
+        }
+      }
+    },
+    {
+      "stage": "square",
+      "image_id": 9234,
+      "checks_passed": true,
+      "mask_metrics": {
+        "mask_eq_255": {
+          "bird_pixel_count": 25885,
+          "protected_fraction": 1.0,
+          "D_changed_fraction": 0.0,
+          "D_mean_abs_rgb_difference": 0.0
+        },
+        "mask_ge_153": {
+          "bird_pixel_count": 30930,
+          "protected_fraction": 1.0,
+          "D_changed_fraction": 0.0,
+          "D_mean_abs_rgb_difference": 0.0
+        },
+        "mask_gt_0": {
+          "bird_pixel_count": 35583,
+          "protected_fraction": 1.0,
+          "D_changed_fraction": 0.0,
+          "D_mean_abs_rgb_difference": 0.0
+        }
+      }
+    },
+    {
+      "stage": "small_native_image",
+      "image_id": 1767,
+      "checks_passed": true,
+      "mask_metrics": {
+        "mask_eq_255": {
+          "bird_pixel_count": 10554,
+          "protected_fraction": 1.0,
+          "D_changed_fraction": 0.0,
+          "D_mean_abs_rgb_difference": 0.0
+        },
+        "mask_ge_153": {
+          "bird_pixel_count": 12260,
+          "protected_fraction": 1.0,
+          "D_changed_fraction": 0.0,
+          "D_mean_abs_rgb_difference": 0.0
+        },
+        "mask_gt_0": {
+          "bird_pixel_count": 13683,
+          "protected_fraction": 1.0,
+          "D_changed_fraction": 0.0,
+          "D_mean_abs_rgb_difference": 0.0
+        }
+      }
+    },
+    {
+      "stage": "out_of_bounds_box",
+      "image_id": 1592,
+      "checks_passed": true,
+      "mask_metrics": {
+        "mask_eq_255": {
+          "bird_pixel_count": 18845,
+          "protected_fraction": 1.0,
+          "D_changed_fraction": 0.0,
+          "D_mean_abs_rgb_difference": 0.0
+        },
+        "mask_ge_153": {
+          "bird_pixel_count": 20980,
+          "protected_fraction": 1.0,
+          "D_changed_fraction": 0.0,
+          "D_mean_abs_rgb_difference": 0.0
+        },
+        "mask_gt_0": {
+          "bird_pixel_count": 23557,
+          "protected_fraction": 1.0,
+          "D_changed_fraction": 0.0,
+          "D_mean_abs_rgb_difference": 0.0
+        }
+      }
+    },
+    {
+      "stage": "grayscale_jpg",
+      "image_id": 3617,
+      "checks_passed": true,
+      "mask_metrics": {
+        "mask_eq_255": {
+          "bird_pixel_count": 16634,
+          "protected_fraction": 1.0,
+          "D_changed_fraction": 0.0,
+          "D_mean_abs_rgb_difference": 0.0
+        },
+        "mask_ge_153": {
+          "bird_pixel_count": 19331,
+          "protected_fraction": 1.0,
+          "D_changed_fraction": 0.0,
+          "D_mean_abs_rgb_difference": 0.0
+        },
+        "mask_gt_0": {
+          "bird_pixel_count": 21680,
+          "protected_fraction": 1.0,
+          "D_changed_fraction": 0.0,
+          "D_mean_abs_rgb_difference": 0.0
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,2337 @@
+{
+  "created_at": "2026-09-19T20:04:30.972549+08:00",
+  "status": "PREREGISTERED_BEFORE_FORMAL_ASAC_OUTPUT",
+  "probe_sha256": "a4a8b19b2dfe471004690ac86b30088bb444a61e104cb09bf0963445218000a7",
+  "checkpoint_sha256": "ac6833319b8b39509ac4b02cedcdd90994220620fc2559b6d0549eddc94e21d6",
+  "data_yaml_sha256": "5650b70651a70021b0a58fdb228db71cdc3324972352ef406cd1bd977d321d40",
+  "loader": {
+    "dataset_length": 16551,
+    "dataset_rect": false,
+    "dataset_augment": false,
+    "loader_workers": 4,
+    "loader_pin_memory": true,
+    "sampler_classes": [
+      "torch.utils.data.sampler.SequentialSampler",
+      "torch.utils.data.sampler.BatchSampler"
+    ],
+    "batch_size": 64,
+    "shuffle": false,
+    "fraction": 1.0,
+    "multi_scale": 0.0,
+    "cache": false
+  },
+  "gpu_precheck": {
+    "util": 0,
+    "compute_pids": []
+  },
+  "panel_content": {
+    "count": 256,
+    "sha256": "8636cc2983ff65e77de6351629817fb43d75ebb36a440df44e4026c13747a0fa",
+    "entries": [
+      {
+        "panel_image_index": 0,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000012.jpg",
+        "image_size": 56920,
+        "image_sha256": "91eef7ed32f8a26ac92b56aeb198a8b7058c47eb38e07d11213b4d123ba93999",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000012.txt",
+        "label_size": 52,
+        "label_sha256": "ef2d2f848bbfa9702bd9c865c11c3037fc152bf83074835aafb431a6738d5e6d"
+      },
+      {
+        "panel_image_index": 1,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000017.jpg",
+        "image_size": 95649,
+        "image_sha256": "8ba3a3be822dff2395c45381af2f6e8b15c6d26208c4dbfe0159a43f89fb73b2",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000017.txt",
+        "label_size": 149,
+        "label_sha256": "60dd838423c181508d9c25100246a32df1354eb0161e4b483ccb6dd4ad576800"
+      },
+      {
+        "panel_image_index": 2,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000023.jpg",
+        "image_size": 107335,
+        "image_sha256": "92f9f3d0af49c7e7eda7ccf756298682cf1c3921cc543fdbfc555b1d7678eb92",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000023.txt",
+        "label_size": 266,
+        "label_sha256": "54d9f5c31c41892a03daced46f06bc7d2aff37f19dafa4f419c379c707f28356"
+      },
+      {
+        "panel_image_index": 3,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000026.jpg",
+        "image_size": 70538,
+        "image_sha256": "27934aa93ea87a6fc59fdd68e92e5618008f436ae227c9a3b29815fe5c7335a0",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000026.txt",
+        "label_size": 53,
+        "label_sha256": "3a3987f101def3d4cadf5b61a8cf65f20d761fdbce177cbf2289b3204bda641f"
+      },
+      {
+        "panel_image_index": 4,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000032.jpg",
+        "image_size": 54757,
+        "image_sha256": "649c9780871519d61cd5be930fed97b443180a19ab63fce5b1e99d5479564dcd",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000032.txt",
+        "label_size": 263,
+        "label_sha256": "e0a18d21172faedd7fdc5f89aa03327a3e550214b46b2744ebc03cc79c115a1d"
+      },
+      {
+        "panel_image_index": 5,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000033.jpg",
+        "image_size": 71205,
+        "image_sha256": "23b51ccd1a19c6f1f75573b1903e19015bf98c159b03d497efa8e912f8ffbe8e",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000033.txt",
+        "label_size": 174,
+        "label_sha256": "7e7d1c9c4222abad14f1ba0d8319442fa82fbdc1afcd19684d3c089d122faeec"
+      },
+      {
+        "panel_image_index": 6,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000034.jpg",
+        "image_size": 115598,
+        "image_sha256": "186915e0566805579e820144200092782ba8fbe36325c8cc28d458b63a2164b7",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000034.txt",
+        "label_size": 120,
+        "label_sha256": "ed00841155fe322b35ec553672d2cfa4c82b66cc931d8f7b344ff4f1dcb43fe2"
+      },
+      {
+        "panel_image_index": 7,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000035.jpg",
+        "image_size": 85108,
+        "image_sha256": "f455d7ebbbe5da198a66d6f31eff2e9d22b7615e9e7d8a58c01a1c945f0390c1",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000035.txt",
+        "label_size": 106,
+        "label_sha256": "5d1de3eb8ecdac2087584e5176a91d86a09e8e05b7cabf2455f784618d1dd3a8"
+      },
+      {
+        "panel_image_index": 8,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000036.jpg",
+        "image_size": 117942,
+        "image_sha256": "20c0ca611b1fb796b6a915200b0a7e2ebf11b2e28f53349d5a42237d72e4e53c",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000036.txt",
+        "label_size": 53,
+        "label_sha256": "c32684d5c15b1ab3498d7c6d8958bce1c90077fbf63e7b2c6525574740ef608a"
+      },
+      {
+        "panel_image_index": 9,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000042.jpg",
+        "image_size": 82847,
+        "image_sha256": "ec16defce574c2f5c1113e09ea791cc339e777b47d76a4478f4b9412af8f59ec",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000042.txt",
+        "label_size": 124,
+        "label_sha256": "eb1efee21a36963000b84bdb197a4615e9b164f2a6d19f0980c395848a25a05b"
+      },
+      {
+        "panel_image_index": 10,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000044.jpg",
+        "image_size": 53138,
+        "image_sha256": "1694ecca7ffeebb1d097af516183874e90635d779099413559f330dbdf39faa4",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000044.txt",
+        "label_size": 122,
+        "label_sha256": "33fe7f40774bbf4507feb4dbe814d202644a97b84db1045a966b5e676bd7c766"
+      },
+      {
+        "panel_image_index": 11,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000047.jpg",
+        "image_size": 117605,
+        "image_sha256": "2023479977b4da944fa828c78064b90e61d3e6b3f92ce913b822c6a049d6ffcc",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000047.txt",
+        "label_size": 119,
+        "label_sha256": "c126ff8fda68eeca08bd7f2a0744a4bbf082d9342e6ca086484dc0e456d3a698"
+      },
+      {
+        "panel_image_index": 12,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000048.jpg",
+        "image_size": 96689,
+        "image_sha256": "2d78180ce407f52378e8078bcfe5beae61456e52ce640f7b67831f166d578263",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000048.txt",
+        "label_size": 121,
+        "label_sha256": "98c9c5f68de6051f735284396440ae4d292daeb3b0c77f28213ec4985edfc415"
+      },
+      {
+        "panel_image_index": 13,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000061.jpg",
+        "image_size": 73156,
+        "image_sha256": "c366bf1a3b0b4ad74898f1eeb58891fc94ac773b9cb1f994f579b590d7b18c61",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000061.txt",
+        "label_size": 108,
+        "label_sha256": "458fa4efe57e48f59104161c275141e9c6bbb5934372443d03d5ae13029e8218"
+      },
+      {
+        "panel_image_index": 14,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000064.jpg",
+        "image_size": 119012,
+        "image_sha256": "74bb6cac50d208b33435732ada9813c15dac449dfd441b243876d4818d0bb400",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000064.txt",
+        "label_size": 65,
+        "label_sha256": "76af97ce9c4b99fa087d9243292ca33dc1b3b7c3bbc2f2d195c12d6a32ca9e22"
+      },
+      {
+        "panel_image_index": 15,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000066.jpg",
+        "image_size": 90169,
+        "image_sha256": "bf84c8b5d6178518ce0e0e9c6fa914e22d8fd542c9e25bf71babb9c995301507",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000066.txt",
+        "label_size": 180,
+        "label_sha256": "dcababbea86e0625afcc9c932f1b3d08476fd92bd9ea8631e440ef9ff4a3c0cd"
+      },
+      {
+        "panel_image_index": 16,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000073.jpg",
+        "image_size": 121521,
+        "image_sha256": "e708209081284066fcc3cabcc235c8d96fdb1888dabb26289390b2c73d9bce76",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000073.txt",
+        "label_size": 219,
+        "label_sha256": "5ee75d4c560eb7a7494e77c5f47d8d58c0b738308b78a0803a3dd9cf5bc88930"
+      },
+      {
+        "panel_image_index": 17,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000077.jpg",
+        "image_size": 47370,
+        "image_sha256": "b82c49d85f0a9bbf060ff97a8ad4a50395b21e81293f4e8224abf89e5ed248ec",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000077.txt",
+        "label_size": 103,
+        "label_sha256": "9e0b5c702ceed3bc1aa08c4f1e46e54b6c6235e51b3713f3f0743ca147b0809e"
+      },
+      {
+        "panel_image_index": 18,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000078.jpg",
+        "image_size": 126406,
+        "image_sha256": "fd0aeed1e3e12a765ef5cdcd0a9664ab7ac63afdac8ebaefb8cf0ad222f46ffe",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000078.txt",
+        "label_size": 109,
+        "label_sha256": "fc521d23daa9ab942d26d0a241066c732b8d1d8f1c119c9cf2b70f18d188fb05"
+      },
+      {
+        "panel_image_index": 19,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000083.jpg",
+        "image_size": 92393,
+        "image_sha256": "60e7b4b90ec1f29827bff0cc5d0fa92552f6ff1d087b63fa4c3bd3a8ffd348f3",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000083.txt",
+        "label_size": 365,
+        "label_sha256": "4a19bbedc1a7b276aa3d2a59dbf9803efae9dcc7b4018635a6bbcaa71a064333"
+      },
+      {
+        "panel_image_index": 20,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000089.jpg",
+        "image_size": 72540,
+        "image_sha256": "6eddb43509a31dc3d66f61b83412abb5640fd25032f88b8b7947417746ba4d0a",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000089.txt",
+        "label_size": 215,
+        "label_sha256": "a88e02b9a8384c354a8eab0ebaad3ef8f03acce27084e7beb7c2ecf071cc5f15"
+      },
+      {
+        "panel_image_index": 21,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000091.jpg",
+        "image_size": 101783,
+        "image_sha256": "fcb98b032e8113807fba9922b69573c6238ed0a698f2beaf7a9e50d3540fbb84",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000091.txt",
+        "label_size": 133,
+        "label_sha256": "2619ccbd9f5039bb3c88d118af2c6261403e99d40904b7e9cf9af6d102067999"
+      },
+      {
+        "panel_image_index": 22,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000104.jpg",
+        "image_size": 58738,
+        "image_sha256": "61f5cee8bf6a352edb135d0580a7eb6b9b543a4e835dbbf08651271ef8c3d2bd",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000104.txt",
+        "label_size": 174,
+        "label_sha256": "cd1397cfbf1ca784d4e0aa9bc2fc4cc3cd9c5ea39ac0d37291aff9ec89915118"
+      },
+      {
+        "panel_image_index": 23,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000112.jpg",
+        "image_size": 64522,
+        "image_sha256": "c949f688c0eff9e46f552b9964d72931e1c0a1692d3e410c6c50d14d685fbb5a",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000112.txt",
+        "label_size": 120,
+        "label_sha256": "e65d8f3d4d76627519c78b7f631451d44e048ee025896f86e909a32e0224d88c"
+      },
+      {
+        "panel_image_index": 24,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000122.jpg",
+        "image_size": 64809,
+        "image_sha256": "1f9aba563e95e781f01e59595dbc33e6eb967cc6a60aade993a2af48d20f02ed",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000122.txt",
+        "label_size": 67,
+        "label_sha256": "b7e266589707304d620c7ac628f5e5b0b6fd5a1ada3f3d81f271003145a19547"
+      },
+      {
+        "panel_image_index": 25,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000129.jpg",
+        "image_size": 105670,
+        "image_sha256": "657b36fed1ea84a44fde2ad641d52726947e9ff23652836273730f7b1ee0d7d8",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000129.txt",
+        "label_size": 174,
+        "label_sha256": "22df9eff4fffbdd70dd098699eedca988c46fd9fae60ef5f5a4a213960cb39b9"
+      },
+      {
+        "panel_image_index": 26,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000133.jpg",
+        "image_size": 148956,
+        "image_sha256": "b3f06bb3dc32a403462a2ec9a6d229ee6c9527378b1ea1ceced856aca7fb64d1",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000133.txt",
+        "label_size": 108,
+        "label_sha256": "db62ce809504fd5c6ad6b27b4bea9a4a58b116591e8b57987717189f2f13b753"
+      },
+      {
+        "panel_image_index": 27,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000134.jpg",
+        "image_size": 91391,
+        "image_sha256": "537765a4146223306745f0e5e7c348c036ada82cc7513315c28f8d51c33a9b77",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000134.txt",
+        "label_size": 53,
+        "label_sha256": "b7807c03b83401100d14865e3af96ec6859932b49816df8d62761e63155b008d"
+      },
+      {
+        "panel_image_index": 28,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000138.jpg",
+        "image_size": 87499,
+        "image_sha256": "5fed1a1c77633d0a8db54904b885f5ef5d3ee25ec536788e3b787098f3ad17f3",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000138.txt",
+        "label_size": 214,
+        "label_sha256": "25f7fca2de35794a36a8b6842dfed3a1b5aee62af79734fe3586b4d0d4c5a071"
+      },
+      {
+        "panel_image_index": 29,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000140.jpg",
+        "image_size": 109304,
+        "image_sha256": "3c575136c29ff5274f0e86b1e798ff6e6db56a988e6dba830dfe9667c2ac6bd1",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000140.txt",
+        "label_size": 107,
+        "label_sha256": "96693e43097b7eed2a6ecd67f0b6ba780796329fe7fb80e728219a7ebe5ae190"
+      },
+      {
+        "panel_image_index": 30,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000141.jpg",
+        "image_size": 145452,
+        "image_sha256": "55b6430894e113b32df964ce94dc64e49e5cb06d8e0536c7114faeaaf4b444fc",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000141.txt",
+        "label_size": 52,
+        "label_sha256": "5c28394663b80efb641226cd269659d665c9ae905287c6ce4dafa9c5078bf6e3"
+      },
+      {
+        "panel_image_index": 31,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000147.jpg",
+        "image_size": 46630,
+        "image_sha256": "94bccd04cab1e1f5a8d98541e463c8b4867368e21bd6ead264543277530d966c",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000147.txt",
+        "label_size": 267,
+        "label_sha256": "dc383ec1164741cce1cb56d89df465c3c28c2cb8dc51b9adbfe3fa63e25df74c"
+      },
+      {
+        "panel_image_index": 32,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000153.jpg",
+        "image_size": 111040,
+        "image_sha256": "f2423bf291998226d4779356cfb3913f24b3e8e53a14d004afb24abbfc99c370",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000153.txt",
+        "label_size": 41,
+        "label_sha256": "88360aeeb613f0ec5db601fcca10fd7a807fb63ac05de39968249e8d75aa5941"
+      },
+      {
+        "panel_image_index": 33,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000154.jpg",
+        "image_size": 71186,
+        "image_sha256": "0f8d6cfde81779718cd2e45f9b7ac0ee8d126fffce0eab7694de87a37bad5d89",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000154.txt",
+        "label_size": 53,
+        "label_sha256": "91b627d040c040356be39b7f7e1c051b22365202c91175f2a9522c3a2df1e9b2"
+      },
+      {
+        "panel_image_index": 34,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000159.jpg",
+        "image_size": 75222,
+        "image_sha256": "8656fc0a0e93850ad87ebc14557c8551390da1da952ac0bd1aafcfaffb1186db",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000159.txt",
+        "label_size": 121,
+        "label_sha256": "1818c4d4728d9537b38adfca5ae2575d1ae267e448f39549cb0c546e0bcbec6a"
+      },
+      {
+        "panel_image_index": 35,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000161.jpg",
+        "image_size": 97434,
+        "image_sha256": "2959e0298642fd544561978a3288c889e0ea100002f5553636fc341bf363a424",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000161.txt",
+        "label_size": 106,
+        "label_sha256": "f1677373c55d22a5eca7b45567a28183e286f0e529c8d9a2733e036f865f9f08"
+      },
+      {
+        "panel_image_index": 36,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000162.jpg",
+        "image_size": 67150,
+        "image_sha256": "f2b89261f1ec72b9b5fcf4a0b7fb01973beaf12e3484e7076a95fd161dbc7e72",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000162.txt",
+        "label_size": 95,
+        "label_sha256": "f95dbcf7308f5f5e1ae613a184225227340029ad6eb4a74d267b7ee0716e0ea0"
+      },
+      {
+        "panel_image_index": 37,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000163.jpg",
+        "image_size": 104004,
+        "image_sha256": "8c316c9f2ba577613ad2401da88202ead6f5ec6442facb9529e517e3c472d4c0",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000163.txt",
+        "label_size": 107,
+        "label_sha256": "52a8afc7523246282ff19fd86a4976a62bd3b65a5096e8eca8d52e78d36fed7f"
+      },
+      {
+        "panel_image_index": 38,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000164.jpg",
+        "image_size": 91875,
+        "image_sha256": "6c76913ae5f69df51873ec5e9e23f82e6d2ce5861b758b8bbf67436495e35772",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000164.txt",
+        "label_size": 94,
+        "label_sha256": "be3f35122da468cea4b28334f70cb9c02db8646ba4ebb4c62696917f3d85658d"
+      },
+      {
+        "panel_image_index": 39,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000171.jpg",
+        "image_size": 87860,
+        "image_sha256": "9ca8e1a449494c45440ba7b2e163130bfcd970b4f649cb999ac2b8bc417d2b60",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000171.txt",
+        "label_size": 135,
+        "label_sha256": "7f6d4c0ba4dc6331831b564718ac6d783ead320723d0c3a55ed6500c221232ca"
+      },
+      {
+        "panel_image_index": 40,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000173.jpg",
+        "image_size": 100744,
+        "image_sha256": "00bc1ddc0127bb573e2ebae349c6bbd0d511f5299d0987e1d468ca461692bec1",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000173.txt",
+        "label_size": 161,
+        "label_sha256": "0ba7e8b05649e256e1a3075ceddd7652fe2f167efcd58a8b7f1daaa5699a6108"
+      },
+      {
+        "panel_image_index": 41,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000174.jpg",
+        "image_size": 74018,
+        "image_sha256": "2a9241783dfff265557d854c52e6e98cce1148992d90d4a78f0d4687aa572dce",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000174.txt",
+        "label_size": 79,
+        "label_sha256": "de23b5eed2fec7a449d138e6f69d8da54c98916b05c87a2f6811740e629f31d0"
+      },
+      {
+        "panel_image_index": 42,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000187.jpg",
+        "image_size": 89384,
+        "image_sha256": "c2f343394a02b3d58f968ac71ee4aa8fe002b45205d90518d6406051f9eeed75",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000187.txt",
+        "label_size": 69,
+        "label_sha256": "d8d5d25a6b4cb8878853e2c98b106f506d82f2baff9a8d28498fa03555546f23"
+      },
+      {
+        "panel_image_index": 43,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000189.jpg",
+        "image_size": 87304,
+        "image_sha256": "0d85c2cdefb916086fe5ab080615889430f149afc478c1bec2a0107b078e0e27",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000189.txt",
+        "label_size": 53,
+        "label_sha256": "9eb0cfbba77baf611234ca14dc6f55c2249c9c04dc92e39dca89c8b91982be1d"
+      },
+      {
+        "panel_image_index": 44,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000192.jpg",
+        "image_size": 70867,
+        "image_sha256": "4f32c79bb97f38e2f38893445b3dc5d63d04ab5b8ee3d9d0ea0c227878fe61a2",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000192.txt",
+        "label_size": 67,
+        "label_sha256": "f7e322b4ba4bf676e7fbdac2be1091d1f0af0a6769158450c8bc61a23a3eefb5"
+      },
+      {
+        "panel_image_index": 45,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000193.jpg",
+        "image_size": 90945,
+        "image_sha256": "397cd7cd629ddd1ea79ace9a44af27d9aa1c773cd8b85453818ed78d691d0d06",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000193.txt",
+        "label_size": 94,
+        "label_sha256": "e8236befe0a18cb526514feb42c03acaeb894fafb852a3358a818cb81adb6e7f"
+      },
+      {
+        "panel_image_index": 46,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000194.jpg",
+        "image_size": 46243,
+        "image_sha256": "f416dd708ffd8666999316accdba5f9dda80ecd6cfde62e1ba1e3186c4248f43",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000194.txt",
+        "label_size": 201,
+        "label_sha256": "b408e34d5550ddd22fade32a5e361f8d02760116cd6035caa1beedb361938d63"
+      },
+      {
+        "panel_image_index": 47,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000198.jpg",
+        "image_size": 128182,
+        "image_sha256": "bd7988ec19a2502883053638f6f6bd44d123a679d15d0dfbe41c975cf31204f9",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000198.txt",
+        "label_size": 55,
+        "label_sha256": "ad838be7771789682889513d0ff856fc7f9dbfd848f107d2bd365756497e36d4"
+      },
+      {
+        "panel_image_index": 48,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000200.jpg",
+        "image_size": 71102,
+        "image_sha256": "a905d4cdb0518902edd7b1414882e2eaa548b771d20c053af7906ef6b18f4103",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000200.txt",
+        "label_size": 389,
+        "label_sha256": "f2d30806c26566c6dad5f2cd92a75d177ade69f47a410185a937ee30413c0a36"
+      },
+      {
+        "panel_image_index": 49,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000207.jpg",
+        "image_size": 84659,
+        "image_sha256": "ae0a0b40eb8975199148193ee3e6b0118e35eee896cf32c5a3baec0b6e9cd7d9",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000207.txt",
+        "label_size": 53,
+        "label_sha256": "ea3c53689a18e5733dceecbd7982a9d1e67dbfe55996a7f88476b81616a241e8"
+      },
+      {
+        "panel_image_index": 50,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000209.jpg",
+        "image_size": 94589,
+        "image_sha256": "1321d442a75484d9dbd57c1d4edecd0ae34ac42fba15cd82caef616d6b29cecd",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000209.txt",
+        "label_size": 67,
+        "label_sha256": "1f23f747e0e244b685a30ff11d6b072bd5854b3760d4807712bd01b267f57648"
+      },
+      {
+        "panel_image_index": 51,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000219.jpg",
+        "image_size": 82682,
+        "image_sha256": "34190e3dd957189dfe9d19b98596510bf3eddbd816e43ba7eade406a52a99679",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000219.txt",
+        "label_size": 54,
+        "label_sha256": "c21ba11f7553955f19cc6903e7ba5090a775076e2208cbef7586964b3553aefa"
+      },
+      {
+        "panel_image_index": 52,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000220.jpg",
+        "image_size": 98073,
+        "image_sha256": "09a05701336525466654b4bf8488aca22364fcf803118b50f631c892cf92309d",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000220.txt",
+        "label_size": 149,
+        "label_sha256": "78c5044f97a7af7dd05e3433199024844a29a77df762fe03c10f7a257f6d58f6"
+      },
+      {
+        "panel_image_index": 53,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000222.jpg",
+        "image_size": 79581,
+        "image_sha256": "aca7876a5ba4a62b3c093aefd2a96ca02244b22ecfc59945a174df7673fca648",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000222.txt",
+        "label_size": 693,
+        "label_sha256": "8a72c25339bfc2fd0177566ca125263c9908c63feec055e9ff557b69616da505"
+      },
+      {
+        "panel_image_index": 54,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000225.jpg",
+        "image_size": 147588,
+        "image_sha256": "ed4e50ef3d9b6d77f682b657d0d6ae1659c0cc271b40daa87404404c70e0b511",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000225.txt",
+        "label_size": 121,
+        "label_sha256": "ac652c17399ad266bef064373f4fd44dce92d58a1d5a157cb0aa0ffaec41a1ce"
+      },
+      {
+        "panel_image_index": 55,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000228.jpg",
+        "image_size": 23898,
+        "image_sha256": "40469ed6943c1d1fda0a4957b6c18d6640299dbfdb696dc3ec857f57f8277053",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000228.txt",
+        "label_size": 54,
+        "label_sha256": "cae5ceefc0774cf0786280ac621cf25cdeb2186f09a3e91c04ff1a8af5b39d3a"
+      },
+      {
+        "panel_image_index": 56,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000235.jpg",
+        "image_size": 68118,
+        "image_sha256": "8746b09b1cdbdd9ab307152a2cfc856deda1d0023433d5b728a14d67e28614db",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000235.txt",
+        "label_size": 135,
+        "label_sha256": "3b1adb3b156c53a3ab8859ae6ae431be711caae6a5eb7375c5f329431fed9f46"
+      },
+      {
+        "panel_image_index": 57,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000242.jpg",
+        "image_size": 79403,
+        "image_sha256": "9225a840678fad0ada8dee8f2de45ccad05291e87895b5de162f6c0ae0c4b3ab",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000242.txt",
+        "label_size": 52,
+        "label_sha256": "1fe45cc66088fa8154676b68a4710ccd35df44d9588feff76f75bb1d78bc8dd8"
+      },
+      {
+        "panel_image_index": 58,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000250.jpg",
+        "image_size": 68708,
+        "image_sha256": "c0e18c0cbcae22ace1a9934291065118e6018bfe8b78219c165517132ddbb725",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000250.txt",
+        "label_size": 53,
+        "label_sha256": "b9263994a0449135bb0ceccca329f77a5f5f9cfacbf5abe4c7563330698baede"
+      },
+      {
+        "panel_image_index": 59,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000256.jpg",
+        "image_size": 67039,
+        "image_sha256": "086bdf3f70ae9d453c497859a2e7fb20c06a3626d22c4b06c97a7594c4836c55",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000256.txt",
+        "label_size": 53,
+        "label_sha256": "3ab109f670d5b43c8712b4fff508b39814c11d52314890ccb51d8796b20b7e0c"
+      },
+      {
+        "panel_image_index": 60,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000259.jpg",
+        "image_size": 67261,
+        "image_sha256": "10207a6dd682fd827cab66db4c6ecc303fd9049039be8a4e58d045662740a92b",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000259.txt",
+        "label_size": 109,
+        "label_sha256": "4071d4b7ade954a3dbda1671be6953b6dbdb39851e067a61a4149bef480f2c19"
+      },
+      {
+        "panel_image_index": 61,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000262.jpg",
+        "image_size": 52196,
+        "image_sha256": "a1b6bc3aceb20eaf4b9eb689bf276a2641c58b682cdeb2b42c86a57b0c4f9c14",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000262.txt",
+        "label_size": 53,
+        "label_sha256": "1c69ff611527f5ccd96ca443bd94b08a4b5bece3001f45d33e70fdec4bdbceb2"
+      },
+      {
+        "panel_image_index": 62,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000263.jpg",
+        "image_size": 111387,
+        "image_sha256": "1da2a65b18094353b80b048b72d995f78f9d120c8054d42cc0bcb8a4a84007e9",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000263.txt",
+        "label_size": 27,
+        "label_sha256": "127576a81f90da836009ad03c35e464f49efc99bfdfd1cf33d51471c6cc8aeb7"
+      },
+      {
+        "panel_image_index": 63,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000276.jpg",
+        "image_size": 57403,
+        "image_sha256": "0f24340792e4bc18a661a42b99e510376783b6072ce2dddb086bbe6b1f14dafb",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000276.txt",
+        "label_size": 136,
+        "label_sha256": "964533133f2ee5fdf71e23e0da3ac5be212ce6ccb0449b6ef8a9d6959634181d"
+      },
+      {
+        "panel_image_index": 64,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000278.jpg",
+        "image_size": 70569,
+        "image_sha256": "5fd29c3b739b2d1a1dea34752e046f716b3d546fa1bc5c62eb3559aa0930a10f",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000278.txt",
+        "label_size": 96,
+        "label_sha256": "e1a6b32e578fb9cf1f6e194f1cc0bf7232fcd57c5047ce752dc75e111f24d828"
+      },
+      {
+        "panel_image_index": 65,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000282.jpg",
+        "image_size": 79371,
+        "image_sha256": "0924ca9a18fe92ecd7a29220beef7f575e5641023c68071d85fad8aad5eb13df",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000282.txt",
+        "label_size": 227,
+        "label_sha256": "1ea2d3053c7ba89d6402280b856805dad84cdc1b25ae7e6f0be3ea5debae70e5"
+      },
+      {
+        "panel_image_index": 66,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000288.jpg",
+        "image_size": 85615,
+        "image_sha256": "8847eb73432fc48354714bb209fd9d2089defed418ae64b39bfd46d6d04e6781",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000288.txt",
+        "label_size": 633,
+        "label_sha256": "65cb6289172b2a3f9e100506f41403e02471896d12ff921914675aa7bae4aecb"
+      },
+      {
+        "panel_image_index": 67,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000294.jpg",
+        "image_size": 169379,
+        "image_sha256": "a3ab3ae65eec5d025bbbed450eb1ba38e47433af65dd69312d78828e4c6017b3",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000294.txt",
+        "label_size": 79,
+        "label_sha256": "8357b7e54640a745bef5bc43a3931d39f32cfcbe8c7dad32953112753eaf9a34"
+      },
+      {
+        "panel_image_index": 68,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000296.jpg",
+        "image_size": 98801,
+        "image_sha256": "8ad58f7c83f20d6735fbf36fd007ddaf31c8e2ea2d35cf9a0e7b5bb0f7972f0a",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000296.txt",
+        "label_size": 121,
+        "label_sha256": "b1fb951be104aad19ba6d48bed7e382fba426064e16a5a2d24514f2ee8935571"
+      },
+      {
+        "panel_image_index": 69,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000306.jpg",
+        "image_size": 65457,
+        "image_sha256": "2fd9cc3c6c63cc02d4e948652b46ab7023a70197719a9afd720617246dd2de84",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000306.txt",
+        "label_size": 162,
+        "label_sha256": "2d5a4770e41ee3901766f3bd686586ef685e7e420acdf4c3e5af540a1eebd8fe"
+      },
+      {
+        "panel_image_index": 70,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000307.jpg",
+        "image_size": 121447,
+        "image_sha256": "e00c88bd517ace7a35ff6c70ea2fd43230195bb266d0689c11e7a9fb1715d678",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000307.txt",
+        "label_size": 93,
+        "label_sha256": "f737878236b7084b4d96fb54b42daa2b9d5aff9e26d47abc364fedd62753f9fa"
+      },
+      {
+        "panel_image_index": 71,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000311.jpg",
+        "image_size": 80271,
+        "image_sha256": "9ba38eeab31cd371a9bf9d0f01f4e8ddf051a01833444b08ee2c10a5447ed666",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000311.txt",
+        "label_size": 54,
+        "label_sha256": "fadfb8e317879210311323c9545b63595532b5931304d39ccb1d6d5da38e75e7"
+      },
+      {
+        "panel_image_index": 72,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000312.jpg",
+        "image_size": 59919,
+        "image_sha256": "117082861e0c507b43650a6ae3ea0d3c930c7881a0c3fddd1994d33df9b666cf",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000312.txt",
+        "label_size": 54,
+        "label_sha256": "0afb300c873da344724068c3d17d9ccf34ba3e86df20e0acd2a405b7e87b3108"
+      },
+      {
+        "panel_image_index": 73,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000317.jpg",
+        "image_size": 96439,
+        "image_sha256": "4b19122505afa7324821a3d380c66a3e138c733615011531c4e776267205c682",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000317.txt",
+        "label_size": 53,
+        "label_sha256": "aff286a9a80fddbcca1299342c7b122873e21bd9ba4bf0c1c223ffd17736ceb1"
+      },
+      {
+        "panel_image_index": 74,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000320.jpg",
+        "image_size": 77156,
+        "image_sha256": "8df891ea9503b253f952a19800c0df0432e80672e11e6f2d216b7c7e3e42b00e",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000320.txt",
+        "label_size": 161,
+        "label_sha256": "1b8050c3ca7d49a21438ea8e75494b0437c634ee70fbbb9debd2a5a2eb9d6837"
+      },
+      {
+        "panel_image_index": 75,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000325.jpg",
+        "image_size": 57695,
+        "image_sha256": "836e60fa68c2affe926f8b15840733c64da7434323b5f1f593f851a07c3909a6",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000325.txt",
+        "label_size": 39,
+        "label_sha256": "d11e8625abdf7ae0589dc9300d2cef9617c67a947bb6f57631822d1d8995962d"
+      },
+      {
+        "panel_image_index": 76,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000331.jpg",
+        "image_size": 85712,
+        "image_sha256": "4a28a7406bbe2acc4f69adb3365488b67d43db58a16596b8b67024ab9bd74110",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000331.txt",
+        "label_size": 176,
+        "label_sha256": "e399486d68e923cc9a2360d636e16f3d80aba88fdaeec69b6b4bd36bd9e56505"
+      },
+      {
+        "panel_image_index": 77,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000334.jpg",
+        "image_size": 53832,
+        "image_sha256": "d7ba1203920221843142bc09a56dc387324f9bdedb4174eae9c55ec89ad100d9",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000334.txt",
+        "label_size": 67,
+        "label_sha256": "a61ebb08f12df31eafcf5509c5c0675425707a19caaeefcc74ce5f92532f04fa"
+      },
+      {
+        "panel_image_index": 78,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000337.jpg",
+        "image_size": 136986,
+        "image_sha256": "8be01ff3cf5378c05d11ead9b9838b85134ae91a8a0c4c9b805c267f45241998",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000337.txt",
+        "label_size": 439,
+        "label_sha256": "ea2154ad93ebe651a18e99c052e7bea4e26fba754a2fa22438e5809902d788fc"
+      },
+      {
+        "panel_image_index": 79,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000344.jpg",
+        "image_size": 62125,
+        "image_sha256": "d8a258654354e00f21af8bc336586f82d4bf063f134550b0e7ef27d4f542afec",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000344.txt",
+        "label_size": 53,
+        "label_sha256": "ddca529e3025050c70166ae2da30a707b0f8d8f4defc5ece5830370be5360bee"
+      },
+      {
+        "panel_image_index": 80,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000347.jpg",
+        "image_size": 93967,
+        "image_sha256": "9ee5f4a7a4c9ef2d9beaeeed28c09560ff89c8a241c2c551e47c62cac4743eb5",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000347.txt",
+        "label_size": 80,
+        "label_sha256": "736f6d951713461e1bda700e914f15e8505b0eccf3e460f8e1feeca557278369"
+      },
+      {
+        "panel_image_index": 81,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000349.jpg",
+        "image_size": 79798,
+        "image_sha256": "cb03ff905087d2fecbac586fd31079a1883af790fb19378f379f6491bf7b6831",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000349.txt",
+        "label_size": 284,
+        "label_sha256": "a0339b6ac8f82398257c77b033ead1e19d4c40ff72f3a6470800cf2c4e065699"
+      },
+      {
+        "panel_image_index": 82,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000355.jpg",
+        "image_size": 73680,
+        "image_sha256": "b4f7f53a399d8552d960593e335edfa197112dbfd1c04ab9ec2182f0b8af3e73",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000355.txt",
+        "label_size": 53,
+        "label_sha256": "b0100fc5fa232fe5550a957256bd57a21ee4e8018e4efbee17761c1906eed513"
+      },
+      {
+        "panel_image_index": 83,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000359.jpg",
+        "image_size": 122027,
+        "image_sha256": "67c6830584b31806747fec7cf3907350f4e0407724ba18affb3dd9c80fedff75",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000359.txt",
+        "label_size": 163,
+        "label_sha256": "fa698d062c98577c34cef4a0c7327d868fd4ec08c04dd2ca37cebb770d935e85"
+      },
+      {
+        "panel_image_index": 84,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000367.jpg",
+        "image_size": 91398,
+        "image_sha256": "28581f51752d037dad1850e33fe189969ce486751bdafb8fa160532e46a81061",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000367.txt",
+        "label_size": 294,
+        "label_sha256": "2e7fea425a50125f0c5f32ae15fbef5e8e8464e94b381fee57bd002e9027b681"
+      },
+      {
+        "panel_image_index": 85,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000370.jpg",
+        "image_size": 80458,
+        "image_sha256": "b83449397d8fa7721b57c1913d5e919cfc5b27ae490d3c24e81fcd66b4b897be",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000370.txt",
+        "label_size": 121,
+        "label_sha256": "ee1a5d4f7ade84e332ff05041650c17a0b2bca39db2975b735c7dd490bfde024"
+      },
+      {
+        "panel_image_index": 86,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000372.jpg",
+        "image_size": 114101,
+        "image_sha256": "db0781aa8371ba0073be675f8de6fb435705496b29145b1f145d4e49822dd6f4",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000372.txt",
+        "label_size": 175,
+        "label_sha256": "63cc57c3944cd948e545253655e17ef5d058f8812543e62b1e7dd414e45a791a"
+      },
+      {
+        "panel_image_index": 87,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000379.jpg",
+        "image_size": 111283,
+        "image_sha256": "0f6e295f0d0dbfbd41794702f39501f27c40218be1e22c64859e519a4a5fda53",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000379.txt",
+        "label_size": 54,
+        "label_sha256": "d89fa31d2368b2673fb3e7442208138d0cc13d85f68e8a89ebd69026dc21bb89"
+      },
+      {
+        "panel_image_index": 88,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000382.jpg",
+        "image_size": 36859,
+        "image_sha256": "a33d4bb8d8a0a49f4b110d120c7e4a0f24cbb0ae0cf676a987d5aee3ae5c854f",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000382.txt",
+        "label_size": 112,
+        "label_sha256": "10a568d4f8f00b5831cbe547aeeffad2ceaa15419ff42f024b33e14dc30cd1e5"
+      },
+      {
+        "panel_image_index": 89,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000387.jpg",
+        "image_size": 81174,
+        "image_sha256": "ddac483ceab6967c08aa628ca218758675c664b83136fac3d3b90e8a974de9c4",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000387.txt",
+        "label_size": 66,
+        "label_sha256": "cd538c2dfff13271c0635c0259a6ce98856f6c01e98733cc0b36887d1d6a6639"
+      },
+      {
+        "panel_image_index": 90,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000391.jpg",
+        "image_size": 115365,
+        "image_sha256": "17770c0c0f5df85f77fa34b84dfef30be9043ffb06d100b1058a5142ec1ea391",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000391.txt",
+        "label_size": 66,
+        "label_sha256": "04071df116ce4339cd846a603687f9be9edb3e4886e3713af48337300eb58480"
+      },
+      {
+        "panel_image_index": 91,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000394.jpg",
+        "image_size": 114375,
+        "image_sha256": "ced8c6310ea50c1958382eb9d72b9f290d999725dc5045941defd156a3662b77",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000394.txt",
+        "label_size": 216,
+        "label_sha256": "780f49ab5b06d68dbb63a3d31680322a6bc1f40a5a9506150494b472afe238d4"
+      },
+      {
+        "panel_image_index": 92,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000395.jpg",
+        "image_size": 97527,
+        "image_sha256": "422019905411bbfd16c31c94fecfaca4a219e9d8005b103470299bbd81223908",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000395.txt",
+        "label_size": 52,
+        "label_sha256": "8c60108caf8eaa982d46072d97e844e0c6dcb9ae8a05cf1e4798c89b0142a798"
+      },
+      {
+        "panel_image_index": 93,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000400.jpg",
+        "image_size": 99446,
+        "image_sha256": "37220f7fcd616d1fb1a02729b7aeb416548eb5cf15a5ff6055846f536a7d8561",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000400.txt",
+        "label_size": 40,
+        "label_sha256": "12355320f34d26082960de18805488883313468f54bb823a0872223fc98aaffa"
+      },
+      {
+        "panel_image_index": 94,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000404.jpg",
+        "image_size": 57239,
+        "image_sha256": "25ed04fae2036e8d65123ff653e9bf647c13b2f40a7d398f14ca01997185c1ad",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000404.txt",
+        "label_size": 53,
+        "label_sha256": "baac304949440177cbbb81a685adcf4025d94dc878d781d2f2ba3eaf40709d0a"
+      },
+      {
+        "panel_image_index": 95,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000406.jpg",
+        "image_size": 131083,
+        "image_sha256": "86ec0d4a3239ac528c8c47580747680fbfa7fe4280a142af824ded7f786e55e2",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000406.txt",
+        "label_size": 53,
+        "label_sha256": "9aef11c675ada57fe8954f6fd41c4ebdd953b17b51b5e9bddd904bcb9bfb7dbc"
+      },
+      {
+        "panel_image_index": 96,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000407.jpg",
+        "image_size": 105725,
+        "image_sha256": "ba3eeff0d2dbc1237ee460772511151a1531eb6a4c9e78ae3d37e5f808e5382e",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000407.txt",
+        "label_size": 163,
+        "label_sha256": "25c5140b864cdab8e638e925c7629a2fe7b702d5ab584c82bf7e3b5c7c8bca62"
+      },
+      {
+        "panel_image_index": 97,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000411.jpg",
+        "image_size": 55990,
+        "image_sha256": "afffd0326d971d12e448edc7cec40ea67a45d3705f774e3feb08234ab1c8eb63",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000411.txt",
+        "label_size": 372,
+        "label_sha256": "1b99391ef5676220649ebd6a4ed6eaa1d47a2b421c8e92ac865ae4a3937edcf7"
+      },
+      {
+        "panel_image_index": 98,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000416.jpg",
+        "image_size": 130445,
+        "image_sha256": "542fe141fc4774461aa59b835f2e597605689a5160590d9b8c15cf010233d2c7",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000416.txt",
+        "label_size": 121,
+        "label_sha256": "1c3748c3a76f2dcadd051aaf1abe9c5bf08c9f8a26a28ca7cb30c9cd22cc24aa"
+      },
+      {
+        "panel_image_index": 99,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000430.jpg",
+        "image_size": 90146,
+        "image_sha256": "ba68f346bf46198ccf024b70e3fb327c69f9d02d7a16ea4dc2fe88fcd023b506",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000430.txt",
+        "label_size": 53,
+        "label_sha256": "32d57d44dc56ff04d2d6dd91442a3b8246cc11f7967b958ef4b34d30ea28bf73"
+      },
+      {
+        "panel_image_index": 100,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000431.jpg",
+        "image_size": 49753,
+        "image_sha256": "d004000256eff6eb068b30025cc847621ccc85f473c8c09169924084aa202fd3",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000431.txt",
+        "label_size": 79,
+        "label_sha256": "ce43264243efc5959661bcd5033e2c739bcebd44b52b766ae8b30b8166139826"
+      },
+      {
+        "panel_image_index": 101,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000438.jpg",
+        "image_size": 78373,
+        "image_sha256": "095964422b829d5349e29c6ee3876cb12a1b8e37f7793550f90c1c721302adca",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000438.txt",
+        "label_size": 53,
+        "label_sha256": "5ec33d1cb12473af470823510b9b7441d258d46c1ba3b351938aeb8551552582"
+      },
+      {
+        "panel_image_index": 102,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000446.jpg",
+        "image_size": 86573,
+        "image_sha256": "c026bfe3be4ff0b08db3f77ca9ece008f520553594133e08a3fb139890973537",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000446.txt",
+        "label_size": 110,
+        "label_sha256": "54890c10ec8be2720b99903d2f73b7a126fcb81c2892b45b002b428fa7f0dccb"
+      },
+      {
+        "panel_image_index": 103,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000450.jpg",
+        "image_size": 79367,
+        "image_sha256": "dc65f3bc3a2deeb478de6b5c37c39b5bbb980a132c85a9641d24f5f7086982e2",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000450.txt",
+        "label_size": 53,
+        "label_sha256": "44b92c356de76946a87c27a781ba38c28cea1310802b40941b421d3ff73bddb7"
+      },
+      {
+        "panel_image_index": 104,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000454.jpg",
+        "image_size": 59151,
+        "image_sha256": "d1b803e7c27cdf24efc6260678e019a7122798286f1e131f2970bc7703733d48",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000454.txt",
+        "label_size": 54,
+        "label_sha256": "74c02bacda2ea054b84b02520b9563548cbb1b4a386cb83f3917f147ff5c94a9"
+      },
+      {
+        "panel_image_index": 105,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000463.jpg",
+        "image_size": 50278,
+        "image_sha256": "95a9cbf3ca03110c241adecda82115753bf7ee74a0e3d130bccfe2143031fcfa",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000463.txt",
+        "label_size": 107,
+        "label_sha256": "469855571a36d981fbe1f77764d7a191cdf12dd94d45162fca8a36ba4f1cd537"
+      },
+      {
+        "panel_image_index": 106,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000468.jpg",
+        "image_size": 74040,
+        "image_sha256": "4814729d2505fed2713a73cedddb7ba3449f51c12ecff6abfd4ef050d598847c",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000468.txt",
+        "label_size": 122,
+        "label_sha256": "280f778e5356101882963e11265c0dc3a8b3ce6fceeb5118ce87205f264b40a5"
+      },
+      {
+        "panel_image_index": 107,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000469.jpg",
+        "image_size": 109970,
+        "image_sha256": "ee89566f4a75daba91e8fa27222cbaf97439cc67b81958721183955691596169",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000469.txt",
+        "label_size": 54,
+        "label_sha256": "c4f5136bc06169a00677e3fc9aeb91b0ad974504ae9557f56d8a0b7810b8a9d2"
+      },
+      {
+        "panel_image_index": 108,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000470.jpg",
+        "image_size": 142667,
+        "image_sha256": "2e9c82413261b595a08ebb1f1cfd6641670d0b7ab1259eccc7b1dfe01385fd05",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000470.txt",
+        "label_size": 81,
+        "label_sha256": "00043b943967420091d1459fd8edff80b561da97f5f03acf25f4beb32002a5c1"
+      },
+      {
+        "panel_image_index": 109,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000474.jpg",
+        "image_size": 112159,
+        "image_sha256": "2bd946b7af1aa268c216c6aa356b0695a0bc0188675f5b00ebb1831ebabad68f",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000474.txt",
+        "label_size": 105,
+        "label_sha256": "4ba9a0c82f626dd1b51c01535bb924ff31f725c5d77fcaca4b4a583ed35c1171"
+      },
+      {
+        "panel_image_index": 110,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000476.jpg",
+        "image_size": 88290,
+        "image_sha256": "c2aa8204fcd6791cd311d7306cec0aecc10bbdf28a6523ae5e2d08849f478fc1",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000476.txt",
+        "label_size": 54,
+        "label_sha256": "613a4b28359a8aaf2456d9aff1beb843fb4abdef9bfa42fa338f539b50a21982"
+      },
+      {
+        "panel_image_index": 111,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000477.jpg",
+        "image_size": 111860,
+        "image_sha256": "a33ddca9972702ebfc7af6e101f3f55dba637c9602d07601660606011ba0c6da",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000477.txt",
+        "label_size": 794,
+        "label_sha256": "2c0c838ac1bbfa05a051b6040cf4426c7361d6fef164f84671eb049d04974c6c"
+      },
+      {
+        "panel_image_index": 112,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000484.jpg",
+        "image_size": 95649,
+        "image_sha256": "93863e03860aef1923523a8f9010f1e1375cf0eb59d400689323ae4c1ef43d52",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000484.txt",
+        "label_size": 137,
+        "label_sha256": "d25608d00947388e9430b69665c775f121cc652bfa751f26109402decb63966c"
+      },
+      {
+        "panel_image_index": 113,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000489.jpg",
+        "image_size": 123518,
+        "image_sha256": "a4bcdde5cabdcbe2b88834c043f4afd330b3a74bc4d3c1b675eb027beaa08dc1",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000489.txt",
+        "label_size": 54,
+        "label_sha256": "f95f8d5f6ed4780adef33069547428ace385f6e65eaa9a6b0524a97ce180f4c9"
+      },
+      {
+        "panel_image_index": 114,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000496.jpg",
+        "image_size": 79980,
+        "image_sha256": "a7d4f1dd51eb40d2c9ca04582ab8d5947b2101a07d9ffadc85ba2581d7c20989",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000496.txt",
+        "label_size": 53,
+        "label_sha256": "bd99a673fe5f4e6bb93390fd76889b676a2849750ea6b3833d39e908db1834d5"
+      },
+      {
+        "panel_image_index": 115,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000503.jpg",
+        "image_size": 89891,
+        "image_sha256": "a138be35bda709421d6ca99de5ba0c784f65232c4543eea04e468335a6135a23",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000503.txt",
+        "label_size": 108,
+        "label_sha256": "6889a44362aaed2526a02c3e0a89278ad4e04d92c421bc6f068fca67147d2c57"
+      },
+      {
+        "panel_image_index": 116,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000508.jpg",
+        "image_size": 121169,
+        "image_sha256": "215d7603921880c97140bdc5e5930b504a8d8d3370188cdb321eb8619249420b",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000508.txt",
+        "label_size": 266,
+        "label_sha256": "216579eafc1b079b4b279f2fdd3251c55c45927598bc11d573afa68032e2430c"
+      },
+      {
+        "panel_image_index": 117,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000516.jpg",
+        "image_size": 62298,
+        "image_sha256": "a43e1205ab9f48a21f4a5b09c486fa105a0d62c4a9240743050460589ade5793",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000516.txt",
+        "label_size": 107,
+        "label_sha256": "8b87db469110b81511dc2500e43f9b783bca872b8b9e55ee5d911f4f694ab6fa"
+      },
+      {
+        "panel_image_index": 118,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000518.jpg",
+        "image_size": 100687,
+        "image_sha256": "d7b53917fcadfcb131e76168c9162d9bb7c89ade9cd04e46d06f3d03d541702f",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000518.txt",
+        "label_size": 105,
+        "label_sha256": "8ad350455956871584bba39dd785172b2b0a81c4df57e2a333a5977111cb8646"
+      },
+      {
+        "panel_image_index": 119,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000519.jpg",
+        "image_size": 78973,
+        "image_sha256": "3715516ed9e194460e6ea7d2fb9ad5d1bfdba8bd6500a54172424fadb2b1bac7",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000519.txt",
+        "label_size": 161,
+        "label_sha256": "e31d16124897ab2987e00764a9b5525cb4d907bc8f60e32eaacb9a25177ee3ab"
+      },
+      {
+        "panel_image_index": 120,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000522.jpg",
+        "image_size": 115116,
+        "image_sha256": "0da469e01b852a3190f93bc72d53aa45564c2a524e7eaa1180588cf0436ffd51",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000522.txt",
+        "label_size": 53,
+        "label_sha256": "6de7b4804cdc14f2879edd061c7aa014df8efbcfd2cca944a4b18ae61e801540"
+      },
+      {
+        "panel_image_index": 121,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000524.jpg",
+        "image_size": 96394,
+        "image_sha256": "46571d208044840749f894289c3c0c39bfe35f2a047aecc2dafb83105fb85329",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000524.txt",
+        "label_size": 110,
+        "label_sha256": "bf54fc2dab3987f7d39b48012ff9fe831d485d741369bc1860ee4634ebf74de3"
+      },
+      {
+        "panel_image_index": 122,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000525.jpg",
+        "image_size": 56149,
+        "image_sha256": "f63f732ff83830eb325069cb3f4ee5690e609716d0e62b66333d741e95d23d52",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000525.txt",
+        "label_size": 161,
+        "label_sha256": "d391265cf885c65cb0add8513f04cbb132a3c321671d9f709e05db9ec8b6d412"
+      },
+      {
+        "panel_image_index": 123,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000526.jpg",
+        "image_size": 81760,
+        "image_sha256": "4e8c10caf54f63940aac4645f76f88ae2e4400cad29c84d9ddf5e3e88fb9b89c",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000526.txt",
+        "label_size": 255,
+        "label_sha256": "f3746261e26e59c4d183ab575950e587122aa0999f39d9d7642e482410950ab8"
+      },
+      {
+        "panel_image_index": 124,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000528.jpg",
+        "image_size": 131162,
+        "image_sha256": "e12611afc98b51a00e4fdb2c7e2bdffe22ad1854aa333e37f183f106857b92e9",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000528.txt",
+        "label_size": 52,
+        "label_sha256": "4997585d601cb984f723781e400d6fb346aad3c058518aa4bc89cbeabf7170c5"
+      },
+      {
+        "panel_image_index": 125,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000535.jpg",
+        "image_size": 76944,
+        "image_sha256": "b389fead17f83b823732c89b3c65a40fe8396795905a2879af906ccd5aa8997b",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000535.txt",
+        "label_size": 282,
+        "label_sha256": "cfaaacc1cc7643787b2e71674f5d7f4b0eb44e7fdd66b3ffb23a27c448ecf3a7"
+      },
+      {
+        "panel_image_index": 126,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000537.jpg",
+        "image_size": 79856,
+        "image_sha256": "322059c214eaf67947d986f3a0894171f2510f5f5123aa973735b5aebfd8d150",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000537.txt",
+        "label_size": 41,
+        "label_sha256": "f87b801c0a3f4210d0c67766206dbddee20a8b82ea6514af28767099030b0080"
+      },
+      {
+        "panel_image_index": 127,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000541.jpg",
+        "image_size": 126602,
+        "image_sha256": "9c8c1db1a1a55831ebfa5eb1391eadac797f56e316dc1db41c0162cbe4eeda36",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000541.txt",
+        "label_size": 54,
+        "label_sha256": "89bd7ca2af046282eb6bc7cf71be68fae48c803268c03040e91f2b088c366bbe"
+      },
+      {
+        "panel_image_index": 128,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000544.jpg",
+        "image_size": 76295,
+        "image_sha256": "723abc9d7a55c4fa6629a791c738410bfe59068053824e1a4329cf8f8bfb7c90",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000544.txt",
+        "label_size": 120,
+        "label_sha256": "3abab948039d47afb59092c93b322111701cd60b5f3ffcaf77632a417a87a13e"
+      },
+      {
+        "panel_image_index": 129,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000549.jpg",
+        "image_size": 73881,
+        "image_sha256": "b44e2b3bc4365a9c077d44bc7a8f9f69f26d1c1f6aa2abfde6487e4a9038f099",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000549.txt",
+        "label_size": 51,
+        "label_sha256": "1f25b8aa5dfd41b2b18d7184bc9e89ef7714d174dc36412b6b54a2d4e7d78ecc"
+      },
+      {
+        "panel_image_index": 130,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000550.jpg",
+        "image_size": 109560,
+        "image_sha256": "ba6b09122c962db339d0e27731196fabdaca20e9d8d1c42c5d2494bc96e2735b",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000550.txt",
+        "label_size": 176,
+        "label_sha256": "b054083953b221a708c6c3b62740c093d51cb9dddb7473b56e4e971be86582a3"
+      },
+      {
+        "panel_image_index": 131,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000552.jpg",
+        "image_size": 90808,
+        "image_sha256": "265b299e9ab7466eb0e216258c0baeb33aad732b1b2b3e3747965aec74086c22",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000552.txt",
+        "label_size": 106,
+        "label_sha256": "269b3416228cb13f0aa5b14726e8920af1185bc631fa81733d0cc356ef062c01"
+      },
+      {
+        "panel_image_index": 132,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000554.jpg",
+        "image_size": 90209,
+        "image_sha256": "388c3546b3375500195a592d34302a22e276a7f4374ea1b9199d8b2e57193115",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000554.txt",
+        "label_size": 310,
+        "label_sha256": "af433c3a895b41d5122f28a4d2e70cf141690a4d039a0b9e04e9a3a4c720c546"
+      },
+      {
+        "panel_image_index": 133,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000555.jpg",
+        "image_size": 107445,
+        "image_sha256": "87bc1dc71233bdb19a9be19fb43cd34c359df2127776cdae0d8469ddce54aa63",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000555.txt",
+        "label_size": 446,
+        "label_sha256": "de42dd057f0b0094fa6d55ba04ba9ce04a3cf9988a2b944c2490f5b040582676"
+      },
+      {
+        "panel_image_index": 134,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000559.jpg",
+        "image_size": 75049,
+        "image_sha256": "326b227a0b2e837204dce3eadca3bd43a459d6bf98fbbd70a036cf36deea1e02",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000559.txt",
+        "label_size": 121,
+        "label_sha256": "b2f879d75cac3164edeec725fc09e7d829136862e4950ddc52f47bf71526bdb1"
+      },
+      {
+        "panel_image_index": 135,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000565.jpg",
+        "image_size": 92865,
+        "image_sha256": "2a3eae3f9627d253fb0c4b6d463ca7a0cea6faaeaa9eb8c7619aa6e227721f5d",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000565.txt",
+        "label_size": 54,
+        "label_sha256": "75737a5f6df5920532feeaab58652e86c3f7475d047b149097e97c96939266b6"
+      },
+      {
+        "panel_image_index": 136,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000577.jpg",
+        "image_size": 57764,
+        "image_sha256": "b2bd461f3e214b9a2d911d483743f7f9b4310de1702c164afe0365b94e4714b2",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000577.txt",
+        "label_size": 80,
+        "label_sha256": "acc91642924fdac07ce5faef1a2de0aa7070282843801c74be5c77ddd9274e22"
+      },
+      {
+        "panel_image_index": 137,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000583.jpg",
+        "image_size": 82071,
+        "image_sha256": "028a92cb95ea76a77fad55d32a6e4f8dc9d547efc87731fb1b700a14f1e4585a",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000583.txt",
+        "label_size": 67,
+        "label_sha256": "1a47c11bb046793c4694fe986c2c9ea3e094f6f59717b96d37035279ffd9edd8"
+      },
+      {
+        "panel_image_index": 138,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000589.jpg",
+        "image_size": 92663,
+        "image_sha256": "17409d9115bd57c77e1b759d8fcb4626d9c8f69c9f441789c76e9c4285111029",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000589.txt",
+        "label_size": 152,
+        "label_sha256": "71736a08e1224b82eda5bd4541dbba86d0f202e4660eb1be3a8005dfc095dddf"
+      },
+      {
+        "panel_image_index": 139,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000590.jpg",
+        "image_size": 95287,
+        "image_sha256": "f370510f32cbfcdaa8173a3558ff3a61d025be3743ef2013482978556723f417",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000590.txt",
+        "label_size": 66,
+        "label_sha256": "18e02a15b60e8b01d813f634b8734f8bf5d4b6eb7097a4f5f12faa5293b4815e"
+      },
+      {
+        "panel_image_index": 140,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000592.jpg",
+        "image_size": 86699,
+        "image_sha256": "8a324b6227653bc31fe81bf8f1b3d0d7724801284eccf60cc0062d5842a05ce4",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000592.txt",
+        "label_size": 136,
+        "label_sha256": "a193d11af7a585802ea0fd713fe2645d62b97175e124a68d890e31c25649f07a"
+      },
+      {
+        "panel_image_index": 141,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000597.jpg",
+        "image_size": 95979,
+        "image_sha256": "e5209bb8a41c139ca1238acf8333000cbf138f109482a099f195e903b35b2d0d",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000597.txt",
+        "label_size": 448,
+        "label_sha256": "d71509c593243dc09ae4e3826eeae135d317605ad27fae44384f4cc8026c1f1c"
+      },
+      {
+        "panel_image_index": 142,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000605.jpg",
+        "image_size": 89465,
+        "image_sha256": "299c65c98f6a91929b7371171b9f499d534bcbcf425b44474e3c581a244b6fbd",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000605.txt",
+        "label_size": 54,
+        "label_sha256": "548282114b42a592a9d588a0c07991725c5b452aed9c5229f35b4c584b8b28fa"
+      },
+      {
+        "panel_image_index": 143,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000609.jpg",
+        "image_size": 85626,
+        "image_sha256": "dd43254a9408cc82293bc36128b0e407058c484786e4f36dbb619bea8ecf034d",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000609.txt",
+        "label_size": 55,
+        "label_sha256": "b8df5d8057f0ac8c4da45225d62a4426d09bcff11c102a8b59ecf53416f4761a"
+      },
+      {
+        "panel_image_index": 144,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000612.jpg",
+        "image_size": 83078,
+        "image_sha256": "57dc84521899f8782eabe98c9abe0e796da66ef996c069ec6f61d79291fdce33",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000612.txt",
+        "label_size": 149,
+        "label_sha256": "1279e7a63db3a7ff90dc8431049a94db155b6d97debd8634a75b3d6f30a60411"
+      },
+      {
+        "panel_image_index": 145,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000620.jpg",
+        "image_size": 76240,
+        "image_sha256": "c6b0056efecaf94803ea68bb45ce9c49530dc03989ec6a7962949d94e37fa30e",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000620.txt",
+        "label_size": 67,
+        "label_sha256": "cc971c40ceb0859bcb5710478006fbdd198baff1b8e00bf16aabffdd8d7e2d02"
+      },
+      {
+        "panel_image_index": 146,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000622.jpg",
+        "image_size": 81571,
+        "image_sha256": "7b056530419ef8517c56fc13155b7c8c10b2ee346e189626e5591104d7c353a2",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000622.txt",
+        "label_size": 52,
+        "label_sha256": "61d2bb90bfe07ced24faf84cd5ec143de7da5cac40410be7cd15508a610b05ba"
+      },
+      {
+        "panel_image_index": 147,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000625.jpg",
+        "image_size": 101007,
+        "image_sha256": "6328da428a73f5f50a44a8d989596ce5bdcbffb23d5b8dfa4d7bd7875aac8f35",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000625.txt",
+        "label_size": 698,
+        "label_sha256": "8e60de1e23c459bb9ea0cec89ec7fdac869a6ab8f9a7c8336ea841582d233dfd"
+      },
+      {
+        "panel_image_index": 148,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000632.jpg",
+        "image_size": 75878,
+        "image_sha256": "41bc318c39c0d25c58903f90223c47aa5fc1a56fbad3c99e77ed008be1c2738b",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000632.txt",
+        "label_size": 96,
+        "label_sha256": "98d84dcf0b34fefc09a32fa0d4e651ec818068a1a4f4de8d97dcb5c44bb030d6"
+      },
+      {
+        "panel_image_index": 149,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000633.jpg",
+        "image_size": 81538,
+        "image_sha256": "68fbe328af491eed5ad822305cdee0c27d8166f8a12360f5dd4d728785f4b12b",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000633.txt",
+        "label_size": 95,
+        "label_sha256": "b48f140e3a707cc6003509f44da37ee3a08b3b30643ea60c1290149eaf022661"
+      },
+      {
+        "panel_image_index": 150,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000635.jpg",
+        "image_size": 86115,
+        "image_sha256": "778f35439a4e5d9b4db8a865df9b085e5ab6f4c2ea75102f31105a6fa9cc5f41",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000635.txt",
+        "label_size": 54,
+        "label_sha256": "3bb6079c74c1f720f0de656c4f23f43b62f6713383101bc8c510ca7b2440a702"
+      },
+      {
+        "panel_image_index": 151,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000648.jpg",
+        "image_size": 72911,
+        "image_sha256": "63e86548671ddb232fa2e7dd0d58a51ac4d87ab7af026d80e78e038aeb784b2e",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000648.txt",
+        "label_size": 52,
+        "label_sha256": "5fc265048a6151db8f0c33c81e4470b76693c197fcd2133a59d46d1f01efb261"
+      },
+      {
+        "panel_image_index": 152,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000654.jpg",
+        "image_size": 100566,
+        "image_sha256": "3b5bca3265adf042f2271f875f33d67b5832660a83ef8f45b147ed121f2a3cfe",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000654.txt",
+        "label_size": 504,
+        "label_sha256": "6dd08e1f56a853dac9795ffed816f61b24b24f0967ddddc2ae779e424de4a326"
+      },
+      {
+        "panel_image_index": 153,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000657.jpg",
+        "image_size": 28009,
+        "image_sha256": "5dd5d012e385e04ad1cc2730558cd15c780ac39e425ce69e15e2256d920af234",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000657.txt",
+        "label_size": 217,
+        "label_sha256": "98054bec8a0fc915d1a82698c5aba3a5dc2c6abc7eb033c9206aefb75fe583ba"
+      },
+      {
+        "panel_image_index": 154,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000671.jpg",
+        "image_size": 90694,
+        "image_sha256": "1e9c08ae77a11254a0f7febc40a926c05bcce47b13fc0918dd6aeef7955b08f5",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000671.txt",
+        "label_size": 67,
+        "label_sha256": "ad9dc5e1c9c218798abd6917342d83180418df8d6bcc84825066aa27919b017b"
+      },
+      {
+        "panel_image_index": 155,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000672.jpg",
+        "image_size": 72715,
+        "image_sha256": "df547c2007fa8f5354db426947f2ea4221858be73b3876951f32c604768abe2f",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000672.txt",
+        "label_size": 27,
+        "label_sha256": "f199ccf519492ca4719269e3ff562a707b99f5f1e2d9a1689a305813c6144629"
+      },
+      {
+        "panel_image_index": 156,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000680.jpg",
+        "image_size": 166234,
+        "image_sha256": "b64a348248ac904183d7d657a252aa2d81eff37058fef84be4cd650465a2b4af",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000680.txt",
+        "label_size": 53,
+        "label_sha256": "85e3a4407cf2385d64276cf12262d97d1a637e31ac3ca45480e3bfa821f351f8"
+      },
+      {
+        "panel_image_index": 157,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000685.jpg",
+        "image_size": 126599,
+        "image_sha256": "d98d5a56aa547b311e88e1f486e17f64cea85248214118b999b9a92a0a68a68b",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000685.txt",
+        "label_size": 42,
+        "label_sha256": "12c29574cca377ad65e8e29b63b08a2b93515dabb81ff4eac0f3cb266c830683"
+      },
+      {
+        "panel_image_index": 158,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000688.jpg",
+        "image_size": 101208,
+        "image_sha256": "c3b93bd9eee496bf90b0c6855814a1b1fdef97aca6ea76b78c7321864fce366e",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000688.txt",
+        "label_size": 345,
+        "label_sha256": "d111e139881472fa695b07c9fa95092d72d37e6289bd5502f9d34801812180b2"
+      },
+      {
+        "panel_image_index": 159,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000689.jpg",
+        "image_size": 98795,
+        "image_sha256": "55695ca26c988b15abb8a3a3186c329c615160262658998bc50db83d5091f8a1",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000689.txt",
+        "label_size": 54,
+        "label_sha256": "bb73716b777495bdb2a7367d5257473b03e376da821d9e017381a48c32ee1501"
+      },
+      {
+        "panel_image_index": 160,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000695.jpg",
+        "image_size": 111479,
+        "image_sha256": "27e0878af24410d9a256b45aba2adc00e5a4bda9c8055511e6ff876fad428a2f",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000695.txt",
+        "label_size": 259,
+        "label_sha256": "7c655c7d486c2e602dfc6077b36bbae947836ed21b690f457131ab131bd71818"
+      },
+      {
+        "panel_image_index": 161,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000699.jpg",
+        "image_size": 93537,
+        "image_sha256": "ec08e7b11c4bd0b996864edbea78f121932472b3bb4773d5bc1bdfac2593b768",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000699.txt",
+        "label_size": 199,
+        "label_sha256": "8a8393dfbc0df4943a86ea3271f72a933586352e3cf76ebb0cc2964c81c08aa8"
+      },
+      {
+        "panel_image_index": 162,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000700.jpg",
+        "image_size": 79735,
+        "image_sha256": "2a6a9002dabec05e61801716a86d88ed0efc11e326f37f40ae015f9bcffcfe64",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000700.txt",
+        "label_size": 335,
+        "label_sha256": "59ca8e9f45aabe37ae77e590e2bc7237b8ba671efe8a0da43474ed6322408485"
+      },
+      {
+        "panel_image_index": 163,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000709.jpg",
+        "image_size": 74048,
+        "image_sha256": "cc79e8a027e01c29b5c21624fb796cb01cf30432d15ac013068216bdc28b3368",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000709.txt",
+        "label_size": 159,
+        "label_sha256": "26fc261ec543b35a0bbb9600a64f5caf35174f5e4fe269e459e24abea14c8c7d"
+      },
+      {
+        "panel_image_index": 164,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000710.jpg",
+        "image_size": 86009,
+        "image_sha256": "fca5450cdbdc5e532d112053aca809a979a4f83e4341017d816b155de6def629",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000710.txt",
+        "label_size": 150,
+        "label_sha256": "e23356108724410aa83ad10b4599a141382c41d085250117384db9609fe5fddb"
+      },
+      {
+        "panel_image_index": 165,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000711.jpg",
+        "image_size": 67045,
+        "image_sha256": "5b70525e8f92fb2480feaec0f8965e55b92b3f07b2f55444ddfc04ccff3e6b3e",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000711.txt",
+        "label_size": 55,
+        "label_sha256": "9699748df71fb197a8eac9f5a51b6e30e4e0403703c24e1e9570c48328876673"
+      },
+      {
+        "panel_image_index": 166,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000726.jpg",
+        "image_size": 72579,
+        "image_sha256": "ba72ca647a7581b0a83bfe0dd6dbb7fc5506761a55eb2ebb6ba44a96a7090bd5",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000726.txt",
+        "label_size": 188,
+        "label_sha256": "fbc693c42218c617363565847631a6b8d883f92b851230330ea28122b2ff7e75"
+      },
+      {
+        "panel_image_index": 167,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000729.jpg",
+        "image_size": 115582,
+        "image_sha256": "03d59fc9aaba87dbc192f04e365895a2a7a233c0c194abe7b74a84fccf0788bf",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000729.txt",
+        "label_size": 54,
+        "label_sha256": "ffdb1e92a38b9b9be5b952a9bbebf1e2f062896043060592f1b78cbbbeec64e1"
+      },
+      {
+        "panel_image_index": 168,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000731.jpg",
+        "image_size": 95160,
+        "image_sha256": "8a7366b87e916da186558180cf222b4db0ead8850f5cd3c588cf3c2327d04115",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000731.txt",
+        "label_size": 163,
+        "label_sha256": "2bff921cc381afa0b62040f8e4c0ab54304b8f219f98c0c70d84835c167be295"
+      },
+      {
+        "panel_image_index": 169,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000733.jpg",
+        "image_size": 143025,
+        "image_sha256": "12d146eff326cace006347a5be34c92444f3ed4b922809ba49b8851992533af9",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000733.txt",
+        "label_size": 131,
+        "label_sha256": "be3457062e41c400083bb9d54c05cccbd4a640dfb00b7781e6e9c5a0a571c186"
+      },
+      {
+        "panel_image_index": 170,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000739.jpg",
+        "image_size": 86217,
+        "image_sha256": "565f84ab86e003e4b56fa104d0f5e382e33e571c1b631f02e3aa8115943d1a0d",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000739.txt",
+        "label_size": 444,
+        "label_sha256": "c5e02b238d2af415c6d139f4df21cf8e5ed495731cc9fc9dcd22b399f2a4d5fd"
+      },
+      {
+        "panel_image_index": 171,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000740.jpg",
+        "image_size": 53600,
+        "image_sha256": "67d780b4fe39fde73d03feac5f687226c26675f5ed355d9097800bd63b626a20",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000740.txt",
+        "label_size": 120,
+        "label_sha256": "93ba37b248bd8dce1b153b6da96e219b431ea0f1fb1ef1692770b0e91b399c8f"
+      },
+      {
+        "panel_image_index": 172,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000753.jpg",
+        "image_size": 93399,
+        "image_sha256": "0e4c67e83525eff25d3a45f54e2aac7392235d4b144332b908c381839a154708",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000753.txt",
+        "label_size": 433,
+        "label_sha256": "aaa223c1d3634db48de31f717e19c0dae2e50b09407eaf8b5fc8840562a004fe"
+      },
+      {
+        "panel_image_index": 173,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000754.jpg",
+        "image_size": 48728,
+        "image_sha256": "cc1778849808985792f30252050e2b5d322f98ef9317433c4e4eb9f1c321084c",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000754.txt",
+        "label_size": 109,
+        "label_sha256": "dadcaa897c405f7cbc0b16c235f32be446c706a9bc59bf4563d2ed8988d35111"
+      },
+      {
+        "panel_image_index": 174,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000761.jpg",
+        "image_size": 99220,
+        "image_sha256": "f1db20936be00d3943e1520145127589ebc6330914af8904ee67655c454e4502",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000761.txt",
+        "label_size": 161,
+        "label_sha256": "7834c9360ede0bddade7d18e2cd793bd1dad1aa3a20f846d938b13e0cc0cb798"
+      },
+      {
+        "panel_image_index": 175,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000764.jpg",
+        "image_size": 80956,
+        "image_sha256": "811261612b1fa99ba1957843922b750f79a1af45ed78ee159c70ade5fce33982",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000764.txt",
+        "label_size": 67,
+        "label_sha256": "042eb9344e75b4a3ca11fc8b5002d008c08272852ecba8026bde1c9413bbed49"
+      },
+      {
+        "panel_image_index": 176,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000767.jpg",
+        "image_size": 113775,
+        "image_sha256": "6a3cb05e1484d0602b789f554490b0e5e46ab9a65f8d4c3d2a3db017dbf653e3",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000767.txt",
+        "label_size": 52,
+        "label_sha256": "bf726f98cbf9468acba65aecfabc04d07debae68aeeb51cf0e3e46775d5e2ae0"
+      },
+      {
+        "panel_image_index": 177,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000768.jpg",
+        "image_size": 86001,
+        "image_sha256": "e49b83417063bf64284fdba3a30bbd575111eb8082964c12fde6955a4ce4a997",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000768.txt",
+        "label_size": 78,
+        "label_sha256": "7de3f51ccef0c25fbaa4fe0cae9eeb192d5e95cefc93553ba3517a0f5114b88c"
+      },
+      {
+        "panel_image_index": 178,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000770.jpg",
+        "image_size": 94830,
+        "image_sha256": "4e8d2ed36e78a97f318194656aa20bc9dd0d65592ba06ad11a1d8d853ca38d65",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000770.txt",
+        "label_size": 186,
+        "label_sha256": "8b2acbbd486ab6e22f172ebca08565c71f6e95606b5220e4e8555e7b84f8a122"
+      },
+      {
+        "panel_image_index": 179,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000774.jpg",
+        "image_size": 94503,
+        "image_sha256": "86c1c7f7e541854f7ca07ca6b2b095ecb178fcf823ebc2959adc38c595d55f9d",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000774.txt",
+        "label_size": 54,
+        "label_sha256": "09d3a0273b8490ffeac2f88f1e8ed45f239c9bc832c5d5f9b802d325cc7da38a"
+      },
+      {
+        "panel_image_index": 180,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000793.jpg",
+        "image_size": 113503,
+        "image_sha256": "7e991a7293d099d16ff535467234f418261a47fadd04bcfcae12aa7ac62440d8",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000793.txt",
+        "label_size": 471,
+        "label_sha256": "c98f384528bcc31c7ad734b4d97e705fc5566b15d6996ce772680c8077764dd7"
+      },
+      {
+        "panel_image_index": 181,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000796.jpg",
+        "image_size": 72433,
+        "image_sha256": "bd74e16fbe8bc826e9f75a3d7b5e3e1b2a2fd58f22d8568332816207a97b4ccd",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000796.txt",
+        "label_size": 27,
+        "label_sha256": "0711f86ba677e812b684df72d9be07481df8de275801a733aeca262a373dcc69"
+      },
+      {
+        "panel_image_index": 182,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000804.jpg",
+        "image_size": 69005,
+        "image_sha256": "4359f32394f01a939bb0983d52d32d05b199f930e4972db9ebbe2e67feeb7274",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000804.txt",
+        "label_size": 124,
+        "label_sha256": "3024f766b8e5ff27a2c15e4f5b58df1b4ff4d700d3e3869fdca589b1ba965137"
+      },
+      {
+        "panel_image_index": 183,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000805.jpg",
+        "image_size": 72533,
+        "image_sha256": "fcee927f407d03244ad0db1e82fc59868d40a6496f7c46a263624f56a039d4f1",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000805.txt",
+        "label_size": 123,
+        "label_sha256": "92810338c4f11b3f8e795b51123da1958d56d6c6f66922f36ea4e34553538417"
+      },
+      {
+        "panel_image_index": 184,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000810.jpg",
+        "image_size": 61422,
+        "image_sha256": "99841aaf769a5f32c2db160e9aaf80586d0b861712d536b077ae6d732c18ba6c",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000810.txt",
+        "label_size": 67,
+        "label_sha256": "499d3668d6e3bc149ca896ca8da959c20c35ac905133391ded921f2d9926936a"
+      },
+      {
+        "panel_image_index": 185,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000812.jpg",
+        "image_size": 66630,
+        "image_sha256": "edba683b46bacf5c567212bf6d26489d4e42a1d19ae11fbea3c92b50ba6bced5",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000812.txt",
+        "label_size": 122,
+        "label_sha256": "e72a07b849ca18e57b223c8c54a66a19ce93ddbd4c6a97ddcbf96cb275917d6a"
+      },
+      {
+        "panel_image_index": 186,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000818.jpg",
+        "image_size": 94535,
+        "image_sha256": "8140d41e279046accb4d2bb1873520afc1b8dbb96b26d64b3b71dadb190e5bf3",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000818.txt",
+        "label_size": 121,
+        "label_sha256": "4ca403b4b0287b28ed4188e4dfe9f9f868320c29ae2241b7e09e8a82a357ad48"
+      },
+      {
+        "panel_image_index": 187,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000820.jpg",
+        "image_size": 134894,
+        "image_sha256": "9b600c951d01e9a5ad06a36cfa7906e07792ab601bfbe71e738dbe79d3513bdd",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000820.txt",
+        "label_size": 110,
+        "label_sha256": "f28fac58c33022498bafc359d136ae43e43abb36f9ba188b9dcc11baf606e1b9"
+      },
+      {
+        "panel_image_index": 188,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000822.jpg",
+        "image_size": 142234,
+        "image_sha256": "d07cb892331cf63e7cb70484e08cdf8d89ee2aa1ea81c1ff2919b6cea07e775a",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000822.txt",
+        "label_size": 108,
+        "label_sha256": "8112ca62411c557bfa4812c1af79d8fe8a0bcbe7be0d36923fde5a4767badc37"
+      },
+      {
+        "panel_image_index": 189,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000823.jpg",
+        "image_size": 84924,
+        "image_sha256": "b5e26935c8b981876dcabc31a2400e46ad4918c3e953d2c550c4cf70dc1b1a04",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000823.txt",
+        "label_size": 50,
+        "label_sha256": "be9cd781255927a71f3fee779ae2c38c67a88d6ce6ea3e25fcd14f02a05e4301"
+      },
+      {
+        "panel_image_index": 190,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000827.jpg",
+        "image_size": 111553,
+        "image_sha256": "850e0d095bafe1b51cbf2d538c0a689d391c88ab3b9a04429a40b16293bece7d",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000827.txt",
+        "label_size": 121,
+        "label_sha256": "aecf04bc904cc597a2b595c8583d625a00b7d434369fd1bd5ba1b9ad3bd319c6"
+      },
+      {
+        "panel_image_index": 191,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000828.jpg",
+        "image_size": 101973,
+        "image_sha256": "1a463a2df9f038e8165439d16925180df03bf902512725c32d0016adbb10cac5",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000828.txt",
+        "label_size": 259,
+        "label_sha256": "cc5f87da3379b2fa96812878b06bea4e81be17c0ca99fbba9639c92b448f9603"
+      },
+      {
+        "panel_image_index": 192,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000829.jpg",
+        "image_size": 88290,
+        "image_sha256": "c765a7452d71dc3d47515ee85d2fb0bb97a437e086e043f510e643caa7200dba",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000829.txt",
+        "label_size": 191,
+        "label_sha256": "23e9f5cef648c0f56b25282db5016dc26b90cc1e08fb81d547857afac23a2cae"
+      },
+      {
+        "panel_image_index": 193,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000830.jpg",
+        "image_size": 71975,
+        "image_sha256": "060760d29666b65849994308c47f9de8935bc6c4a6857efac0b6ecde252731ba",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000830.txt",
+        "label_size": 175,
+        "label_sha256": "4c499b88ae41fc2254f9f250ff7a8ad411c5dbc77b58276cb3c39ae9d1d2a307"
+      },
+      {
+        "panel_image_index": 194,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000845.jpg",
+        "image_size": 30871,
+        "image_sha256": "2543ea975ea96f6bb98eea9106bf1c6952f0811b5387144ee7cfa47278884c5c",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000845.txt",
+        "label_size": 52,
+        "label_sha256": "443bd93d8d4a4664c1bb928b71d318531376fa2b6d8eba4a38768146f41e51a2"
+      },
+      {
+        "panel_image_index": 195,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000849.jpg",
+        "image_size": 16717,
+        "image_sha256": "577eaa8eaad62e36ef8d4d6053000a8777065d6feb99ca9201cd6763db1d6a39",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000849.txt",
+        "label_size": 52,
+        "label_sha256": "2fb3f7aa65eca82374812df24c7827d0190e2fed9c50491d703df33e98e64bd4"
+      },
+      {
+        "panel_image_index": 196,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000850.jpg",
+        "image_size": 123934,
+        "image_sha256": "1e107ccdd22a1b388470c7916320862df646c451f8510bff5dbb1c7e21c89779",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000850.txt",
+        "label_size": 41,
+        "label_sha256": "40bed569a0536b55858bd16d6bc00a4854a7aedac0ce701f201f1097a801600c"
+      },
+      {
+        "panel_image_index": 197,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000851.jpg",
+        "image_size": 92022,
+        "image_sha256": "b06d9b4d43d664e780f47ada50e24d2af0ec0434acdd6e8b52874289777edb9c",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000851.txt",
+        "label_size": 110,
+        "label_sha256": "14b794b477237a0f5989cd5799cbe8899e32a719e55c814e5f5be253c27c2e43"
+      },
+      {
+        "panel_image_index": 198,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000859.jpg",
+        "image_size": 92541,
+        "image_sha256": "c6491eea35fc06e813fcc0ccb5dbbd6c43dc99ebabb72a1f5bd601b77e51b9af",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000859.txt",
+        "label_size": 108,
+        "label_sha256": "0ad5c00be743dd00dba13f3e5c71a514deeeab59ce6a378849182f64149c0070"
+      },
+      {
+        "panel_image_index": 199,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000860.jpg",
+        "image_size": 77425,
+        "image_sha256": "b2968b59a8e1b89be8074c30c1507e6eafd3839a5c931fa5a594204a5624d70c",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000860.txt",
+        "label_size": 176,
+        "label_sha256": "e33864c31b74c0f430de40be39e9c8c98f853e4935f4ad19fb45f47295a5addd"
+      },
+      {
+        "panel_image_index": 200,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000865.jpg",
+        "image_size": 76741,
+        "image_sha256": "c6d009d95271d644d3258752d313e1371dc69b996ee0b4dd7a6cb598089258e8",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000865.txt",
+        "label_size": 308,
+        "label_sha256": "3e00e113417935e0f18f24b79e022c128f995f011dadd0354bf3fd65f01bee62"
+      },
+      {
+        "panel_image_index": 201,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000867.jpg",
+        "image_size": 53517,
+        "image_sha256": "483e4ee24356b6c58b05569e4f67cc1c1e20883c6c3058523f37e2bd937a0ae0",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000867.txt",
+        "label_size": 68,
+        "label_sha256": "7a0fd6538af55fe8de0883574a05d711212e7e3905f89bf70cd858ef368bef98"
+      },
+      {
+        "panel_image_index": 202,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000871.jpg",
+        "image_size": 147185,
+        "image_sha256": "32490241e4a797d27edea81c54242d92a7483a0f0daaf13e174f462389729752",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000871.txt",
+        "label_size": 53,
+        "label_sha256": "f627b975d3d28f775e303c0309b3e5e77c8c53f8f28c4f752c19388a638b3b01"
+      },
+      {
+        "panel_image_index": 203,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000887.jpg",
+        "image_size": 63801,
+        "image_sha256": "3b2d58f679ae9ef0a235390070de2441773d5be5e3aa5100afe9177cd385305e",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000887.txt",
+        "label_size": 43,
+        "label_sha256": "392db6a8522164561d20517d5f1185e9b635bd2ba3070d7a21301ff117056833"
+      },
+      {
+        "panel_image_index": 204,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000888.jpg",
+        "image_size": 98289,
+        "image_sha256": "23613b92debe8103a8ea462db0174b01b067342c79235b1dfc12494a35664b01",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000888.txt",
+        "label_size": 108,
+        "label_sha256": "eaca9e606306915d619ea174d3df87dca89b688df61de0fb3129e619df3c9786"
+      },
+      {
+        "panel_image_index": 205,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000889.jpg",
+        "image_size": 147280,
+        "image_sha256": "011a614b34ce07c1581972a1fb8ce25c801c4a703ad9b8c719b198c2aaeb6f1a",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000889.txt",
+        "label_size": 175,
+        "label_sha256": "9de9a44a5fb4765f5adb93fa002e8054e8069c8e1603e3ac28cae147957ad5de"
+      },
+      {
+        "panel_image_index": 206,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000892.jpg",
+        "image_size": 107847,
+        "image_sha256": "af0a08c9f1196b5b9c5e1430b8ceeda212038afe87db681dde37900112c44809",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000892.txt",
+        "label_size": 83,
+        "label_sha256": "a4d57904238451e4e8b661ee895bec32c2f13c7fe80afcb95547d712aa2deada"
+      },
+      {
+        "panel_image_index": 207,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000898.jpg",
+        "image_size": 93292,
+        "image_sha256": "7c790c56056968ee5155f25aa8fc1ba8658e90d0288b593b5726c301e9a6eaa1",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000898.txt",
+        "label_size": 70,
+        "label_sha256": "6431c82da04aebe077a2b0e0e1932bcb8b87b3f7f3f5ddf22376c239ad011bc2"
+      },
+      {
+        "panel_image_index": 208,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000899.jpg",
+        "image_size": 78734,
+        "image_sha256": "c2a583d21b95df1b7874df51fe7b81c90f5babdf35845c06b920455ca3e50eb9",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000899.txt",
+        "label_size": 67,
+        "label_sha256": "4e7138676ada35f7226cb6545e5209af036c63801768277d29301d6ef8515549"
+      },
+      {
+        "panel_image_index": 209,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000900.jpg",
+        "image_size": 116322,
+        "image_sha256": "88a6740f1a806d13eeb5a474acf2c230ac072ea3684cf9b42c8be9d33b9c6632",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000900.txt",
+        "label_size": 177,
+        "label_sha256": "1d042561a60c6713be2189f492474c687bd3a8946615a80188b86ebeafd188a0"
+      },
+      {
+        "panel_image_index": 210,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000902.jpg",
+        "image_size": 105690,
+        "image_sha256": "ff9371552c7f02a699fbc8bd816d3c47b38029dabb77c89f862648f287267922",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000902.txt",
+        "label_size": 233,
+        "label_sha256": "f6dea008fc99fa480099e89c7e9938df223831c56e153276abb3f98c0a2a333d"
+      },
+      {
+        "panel_image_index": 211,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000904.jpg",
+        "image_size": 108153,
+        "image_sha256": "0f0f865c7c78ac4e43c39d7e49fccfaa0149dd74fd4796634eae4773b0f1b8db",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000904.txt",
+        "label_size": 106,
+        "label_sha256": "14b6a6ca78d11c414696a7675b56dea658e01a3a78416884f3132879aa5702ec"
+      },
+      {
+        "panel_image_index": 212,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000906.jpg",
+        "image_size": 93229,
+        "image_sha256": "ee0f57501cf704348cbca868bf923781ea89c5b09110f6fb74017f4ea601ce4c",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000906.txt",
+        "label_size": 364,
+        "label_sha256": "fc33ab4ca1f18f150633a103def6bed6c2b83a96248f6ed98d078586cf4539b9"
+      },
+      {
+        "panel_image_index": 213,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000908.jpg",
+        "image_size": 62216,
+        "image_sha256": "dc8da7fbfa5ba27c573fde492b21e971d2fef974092c17f5b8c4e69bdb0b25f2",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000908.txt",
+        "label_size": 53,
+        "label_sha256": "d501f33dab6a9fa21c81560e10643ed6a62aba48429c4eb51bf4fe88efc8ab14"
+      },
+      {
+        "panel_image_index": 214,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000912.jpg",
+        "image_size": 52339,
+        "image_sha256": "defb3c33136e42659f75d2e54c8a0b78e74a294ba47875e4b592b7880ec2fed1",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000912.txt",
+        "label_size": 66,
+        "label_sha256": "a693e6c97264ea1721cc06f8b9f03114cbc4f5ca2de60b7888932c2edb186da2"
+      },
+      {
+        "panel_image_index": 215,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000915.jpg",
+        "image_size": 93444,
+        "image_sha256": "b2fab19d1caec1ca3c8502a85f5dda24c9a46beb3d4b2f206057d8c748470a28",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000915.txt",
+        "label_size": 148,
+        "label_sha256": "98683ffafa42b7a54d21313470816e37b13ad12f33de6ec227f30adb52dde990"
+      },
+      {
+        "panel_image_index": 216,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000919.jpg",
+        "image_size": 54632,
+        "image_sha256": "cbea8e83c4538364a3faa4c62ee50125f0dc0ed4dff090abc7411fa64060e517",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000919.txt",
+        "label_size": 54,
+        "label_sha256": "9ec0fd8beb3a4288b7ce25c6471c28ab2ddccf322ac47a8e0968c24e95019b03"
+      },
+      {
+        "panel_image_index": 217,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000929.jpg",
+        "image_size": 131580,
+        "image_sha256": "35813d1bb4516768ef5489a6dd140f5937dcc5422cd5b4f5fabb1a7d57e1faaf",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000929.txt",
+        "label_size": 136,
+        "label_sha256": "7abf69258f19289f64723fb3a3a1c61de42d4a595c52c0cf99849ecc1a536b12"
+      },
+      {
+        "panel_image_index": 218,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000936.jpg",
+        "image_size": 42156,
+        "image_sha256": "c81ef18a0960ede0ff2136e3ad4092469a3bba0b0c39a8dd0fa4c342fc10535a",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000936.txt",
+        "label_size": 278,
+        "label_sha256": "dac37a8eb92f7ed6b7a876e3bdbf5b8071006b343f0ccfe95f1cced108030d3d"
+      },
+      {
+        "panel_image_index": 219,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000943.jpg",
+        "image_size": 89333,
+        "image_sha256": "1e574509c1486d87bdc9ee85e4a8e532efd45688775b117ee13b48d235597f9e",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000943.txt",
+        "label_size": 558,
+        "label_sha256": "25806fd69ff7137da8a67ad15d8dec93cb157b6e40b9a85774c1e6d67e80f634"
+      },
+      {
+        "panel_image_index": 220,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000950.jpg",
+        "image_size": 69657,
+        "image_sha256": "d3ba4912e4fd471bb67643d89fdc1486566b4609f74a8db19c278cfdfac26721",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000950.txt",
+        "label_size": 55,
+        "label_sha256": "cd2ee37cb62c25c884c7dc8e348c5a902bc37c2d2f69221a04b3c6f354929ab3"
+      },
+      {
+        "panel_image_index": 221,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000951.jpg",
+        "image_size": 98269,
+        "image_sha256": "a33b0cef3f7ed9e02f2af5e6fc25180fb3ebcb3cf443bfddbb4c19a6a1511bad",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000951.txt",
+        "label_size": 41,
+        "label_sha256": "ad63b7e41772b2317a2fd6a6da27f15d30b9da9844978441e156795be5279721"
+      },
+      {
+        "panel_image_index": 222,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000954.jpg",
+        "image_size": 59215,
+        "image_sha256": "8de4b7dff85f16de93321eb4bd8b66d8bca6ade30073425eeff18e7e735901f8",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000954.txt",
+        "label_size": 52,
+        "label_sha256": "75df80a37311dad041ab3fecac3d151fe2eee765cd4a4331a57dd7615721f5ed"
+      },
+      {
+        "panel_image_index": 223,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000958.jpg",
+        "image_size": 37164,
+        "image_sha256": "fd11a0942831d777d9cba35f546be64f304acfe039cd40f539739148d0fc5028",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000958.txt",
+        "label_size": 68,
+        "label_sha256": "b0e27b01603d7fd49b0ec1dc83e4ec3e66e54942a5f6fd8cf6249fe92da7733c"
+      },
+      {
+        "panel_image_index": 224,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000962.jpg",
+        "image_size": 60527,
+        "image_sha256": "cd592c785c86901c714e6fc0103e62688a5ccf9d1f169643163d5b92c39a31a0",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000962.txt",
+        "label_size": 53,
+        "label_sha256": "d69d403542d9cd6329326a9fdfd0166125fe5b5632b33bac317d1c1ba8db2597"
+      },
+      {
+        "panel_image_index": 225,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000964.jpg",
+        "image_size": 125675,
+        "image_sha256": "47993f3de060a78bd87be9b53318f250495626d65e20fbba8a080a6f7d19b552",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000964.txt",
+        "label_size": 108,
+        "label_sha256": "4e4955653de491fa90188f78ad20946e4ae3699db8b199d23bc73d205cdc8799"
+      },
+      {
+        "panel_image_index": 226,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000965.jpg",
+        "image_size": 95346,
+        "image_sha256": "e5a044a23ad5af742a92611500814b17eda96f42947ccbca4bb716b729ca8b47",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000965.txt",
+        "label_size": 110,
+        "label_sha256": "a7af0b086423be77227562c6ce6caf748cc6a1fc96ea42359f1931fe8e8d0728"
+      },
+      {
+        "panel_image_index": 227,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000966.jpg",
+        "image_size": 116142,
+        "image_sha256": "636e3d17b07f695011ee78fb1257ce62effc1e5efab3a31996a5b8352c10fa32",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000966.txt",
+        "label_size": 54,
+        "label_sha256": "3ffd5b172833d8e5ce79596872ea7d883fef1b3f5875e6e68045e79ca83bcb95"
+      },
+      {
+        "panel_image_index": 228,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000967.jpg",
+        "image_size": 80219,
+        "image_sha256": "9825418af90bb45c32bddc75f2c14b9f11e6ec282e98f8810b2dae472faa6311",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000967.txt",
+        "label_size": 284,
+        "label_sha256": "d02301b6076c43bc5d2fea8018ea1daac0db0092943db9c09860906af3e7257f"
+      },
+      {
+        "panel_image_index": 229,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000977.jpg",
+        "image_size": 81732,
+        "image_sha256": "30144ca1994dc422989f533820e977597080572f04c572c3c082ed980fa7086f",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000977.txt",
+        "label_size": 320,
+        "label_sha256": "3c27c2b6f1e6a757a9eb96d9ce572d8ff716a5000c8c9f081914effc590e98ca"
+      },
+      {
+        "panel_image_index": 230,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000980.jpg",
+        "image_size": 58074,
+        "image_sha256": "6249eba874f1c1db16725281478d03c7be2589d3ad3b8910693d34f89e0dd7ac",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000980.txt",
+        "label_size": 52,
+        "label_sha256": "e1bc7bafb323fcd371b47a9ac5f6c5b049c03405efe29a58ecd7ab93f1f683f5"
+      },
+      {
+        "panel_image_index": 231,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000987.jpg",
+        "image_size": 109391,
+        "image_sha256": "c21a2f81626f1a998bde04f394d36971af4cf88f52f90b6a78e666fac06eeb6a",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000987.txt",
+        "label_size": 244,
+        "label_sha256": "761a95502ddef649ae2fef7dc3adb32032498c6d6f6af014c361968b9ed5f70d"
+      },
+      {
+        "panel_image_index": 232,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000989.jpg",
+        "image_size": 56275,
+        "image_sha256": "74f169ba9833c5a2369141a785ff87d51cacc0d12160d418f7d559a6b0328d1a",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000989.txt",
+        "label_size": 56,
+        "label_sha256": "14da843a4959b41ebab454109c9244701b27f635130bbe072b8dd6aa7e3a77bb"
+      },
+      {
+        "panel_image_index": 233,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000991.jpg",
+        "image_size": 74405,
+        "image_sha256": "e073781e52def5fcb33c7e2e50e4eb3602dd7a812ba0d72f869243b2ae54d9a3",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000991.txt",
+        "label_size": 150,
+        "label_sha256": "f31330f1f0e445f83d1a31bb7b3f8531a212eb41bdeb6d6baf281ccaac8c4bba"
+      },
+      {
+        "panel_image_index": 234,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000993.jpg",
+        "image_size": 157392,
+        "image_sha256": "699c6703a6fbc52030e54455ea57e13066ac1bfa90fb4ecbd565522e2e416283",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000993.txt",
+        "label_size": 108,
+        "label_sha256": "81ce32e4ce9417c6dfe84bd3855a8dbc3144b7f04901c14fd075f52f2347c0b9"
+      },
+      {
+        "panel_image_index": 235,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000996.jpg",
+        "image_size": 109166,
+        "image_sha256": "3cf944367fb7c774f5f3214275cd118f2398c78ab87c6d0850c5f8a24b8ccb2e",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000996.txt",
+        "label_size": 228,
+        "label_sha256": "faf071df80def2667f289bacf226ebed6b53d97c19129cbfd7241f0e253ad432"
+      },
+      {
+        "panel_image_index": 236,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000997.jpg",
+        "image_size": 78224,
+        "image_sha256": "01a3202f971a9aafe1ba4277e2d79e7e744875bb8ee8aa74f2389c4d58c0baaf",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000997.txt",
+        "label_size": 139,
+        "label_sha256": "46b0bbed58c8ae3109eddd3d14d419acfc545a9a9941fcdf38bbd674dd8a96b9"
+      },
+      {
+        "panel_image_index": 237,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/000999.jpg",
+        "image_size": 74362,
+        "image_sha256": "6966b680c64a390a8868e7a1242cfa662417fd51efa8b4c989d507cc708e32bc",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/000999.txt",
+        "label_size": 107,
+        "label_sha256": "8eeef73e5d3e0ac3d523425ea06d10c2fef2945e5358ca1ce9a455f6e24f1f71"
+      },
+      {
+        "panel_image_index": 238,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/001001.jpg",
+        "image_size": 85109,
+        "image_sha256": "8d7b5969114f8a185bcc3a33d07b13f86740d6cc2ea20f0d466223a8cd12031e",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/001001.txt",
+        "label_size": 93,
+        "label_sha256": "98365bd7308506146fecd6e3fb8bb8b396009c6a8cbe9c1e1ea01cc1c4949160"
+      },
+      {
+        "panel_image_index": 239,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/001002.jpg",
+        "image_size": 61505,
+        "image_sha256": "38cf05ef0ae8c31f1655e3ce4e018f04e387052d53d5f84371127c36a3f38011",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/001002.txt",
+        "label_size": 117,
+        "label_sha256": "d6d443e62791344b0ec913ae365c5610dc390026155a3e5f947ebd1b2445797d"
+      },
+      {
+        "panel_image_index": 240,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/001008.jpg",
+        "image_size": 118472,
+        "image_sha256": "e68c01a26ffc66e20fa77c06852684475dfe601f1ffc0ac208bcc76926bb1d55",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/001008.txt",
+        "label_size": 41,
+        "label_sha256": "1f4b89884bb8959d6b9f1051ee178838a6824b0421a20e4fb68b6eaa432a2f0b"
+      },
+      {
+        "panel_image_index": 241,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/001010.jpg",
+        "image_size": 100786,
+        "image_sha256": "a0d00f8597107dcc397f09d86569c4e60d87e209b5941527cf97f524d0b31ca5",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/001010.txt",
+        "label_size": 55,
+        "label_sha256": "4d8db0d5afb582affdac8144299bab2b6e04caecc6246eab435905dcf713dd70"
+      },
+      {
+        "panel_image_index": 242,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/001011.jpg",
+        "image_size": 96113,
+        "image_sha256": "de72a8ab7c52779cf37661c01583a7a78553587a9140115b28ddd6b1f41a79e4",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/001011.txt",
+        "label_size": 110,
+        "label_sha256": "180b0e3fb056d4ab5d7b8996b5d749d86b6f62adfc663b12efd106f8e8905709"
+      },
+      {
+        "panel_image_index": 243,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/001014.jpg",
+        "image_size": 63409,
+        "image_sha256": "a42f67ec2d39cb790037694ffa47e26b65961f1bf57335c5629601900ce1ebda",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/001014.txt",
+        "label_size": 204,
+        "label_sha256": "6a0b64915d538cf4c7f975b899775b9881eff676d32ba3fdf531ff351ae5caae"
+      },
+      {
+        "panel_image_index": 244,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/001015.jpg",
+        "image_size": 39941,
+        "image_sha256": "068fd0589a0d8d7da0b58e6f71b767ec31e2ad7a8b81c00470a5ef1474010e1c",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/001015.txt",
+        "label_size": 138,
+        "label_sha256": "83c45c1d86bcbb0a523c56531b86c1e5fc5ad750c58847b6a16a7244d6d29e3f"
+      },
+      {
+        "panel_image_index": 245,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/001024.jpg",
+        "image_size": 75568,
+        "image_sha256": "48f8ff1aa5f70b02d76cb7d4448bd419b593d42fefee363668c8139236be3f46",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/001024.txt",
+        "label_size": 108,
+        "label_sha256": "ec3b8a2a7a35ade25c341da7932b72f8752241f0c94bf262a590dd401a054fc8"
+      },
+      {
+        "panel_image_index": 246,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/001036.jpg",
+        "image_size": 96233,
+        "image_sha256": "bb5f862eecfabac1a0fcc3f7175f4225d2db5fb8af60695f4c50ed69c115c5a8",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/001036.txt",
+        "label_size": 205,
+        "label_sha256": "fe558af5ba96604cb5a144cbe146f15dac73160d889de4778f80a8915730f059"
+      },
+      {
+        "panel_image_index": 247,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/001043.jpg",
+        "image_size": 47949,
+        "image_sha256": "926af0944ac924b31af72f6dc25eb2cbaa083c9d207a7001c30d1d74a2f33774",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/001043.txt",
+        "label_size": 53,
+        "label_sha256": "29409af664aa271d9520edb12bd195223de1490bcb6f3f97d3b9212d07fa145a"
+      },
+      {
+        "panel_image_index": 248,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/001050.jpg",
+        "image_size": 132414,
+        "image_sha256": "56a8a35989fda9bbc921c0ac5f90d25ebd63106e7873a031f8240a322b0b9c11",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/001050.txt",
+        "label_size": 95,
+        "label_sha256": "9f23bf92d5a14d071c5a6de5f81ab4f9d3a2dafcc84f53f49ef0cc320ee404fe"
+      },
+      {
+        "panel_image_index": 249,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/001057.jpg",
+        "image_size": 113196,
+        "image_sha256": "cd1510e5e373b2fff996f0ad712e5b39caf0517b56212290e91bbfc3f3b6296c",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/001057.txt",
+        "label_size": 122,
+        "label_sha256": "1e9f8fe5ad02c986af67c9d7be4468260bfcab91c3400a9dccf2b344d1d0fcba"
+      },
+      {
+        "panel_image_index": 250,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/001060.jpg",
+        "image_size": 104047,
+        "image_sha256": "0b13a7f5876395b48742ccebda2acae97e47cc33dbb7fa3b020c26fdddbadcce",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/001060.txt",
+        "label_size": 162,
+        "label_sha256": "a60ef76e13d432d51aaeda7786e8fa135358892559e704feae0d7436cda14fda"
+      },
+      {
+        "panel_image_index": 251,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/001064.jpg",
+        "image_size": 40912,
+        "image_sha256": "5f5317e3cd2aa7881f91fe22c8fa7778d474ab39ee77f22a6765a416a5437bfd",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/001064.txt",
+        "label_size": 141,
+        "label_sha256": "dec0769fd05f9644b62560b94f6bac6b603cb9d65b51ac4ce9be58cad8b2997b"
+      },
+      {
+        "panel_image_index": 252,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/001068.jpg",
+        "image_size": 86789,
+        "image_sha256": "b4a5f486b2b88ffb38c388e103a27d1ad6ef60eb7896ecee668b74b34cdc8952",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/001068.txt",
+        "label_size": 54,
+        "label_sha256": "e050dfe3a3ddf789848be8e6cc3ef3f5f87b511a7fb0bb60b88ae87b403fee3e"
+      },
+      {
+        "panel_image_index": 253,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/001071.jpg",
+        "image_size": 97747,
+        "image_sha256": "f55b0260bf1ac4b201aa375b8928229c2914e082ab9b30b55872e50727307a26",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/001071.txt",
+        "label_size": 245,
+        "label_sha256": "7d3a6b2a605f788c3cefd0336e8038f1b45c511a6f2134a8c2e5864d5a301fae"
+      },
+      {
+        "panel_image_index": 254,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/001073.jpg",
+        "image_size": 138505,
+        "image_sha256": "bf4e9b101865aa599539a5aabb71f0598524294ca856bee168cc3dfc0137cc1b",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/001073.txt",
+        "label_size": 267,
+        "label_sha256": "b3fecfd888652a50179c645cf046187522b2129571b7f74a61b0c06ecdf473fd"
+      },
+      {
+        "panel_image_index": 255,
+        "image_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/images/train2007/001077.jpg",
+        "image_size": 65741,
+        "image_sha256": "e4a6bf1a04e68a95e9c1f54ee8c7a2739e2d361f6d240c876d763c92f4ae2026",
+        "label_path": "/home/ubuntu/rz/yolo_study/datasets/VOC/labels/train2007/001077.txt",
+        "label_size": 39,
+        "label_sha256": "b71af7c1445dc8c73a57a631907652cd3ef1a053caf81a1ad92d48ff5a2e816a"
+      }
+    ]
+  }
+}

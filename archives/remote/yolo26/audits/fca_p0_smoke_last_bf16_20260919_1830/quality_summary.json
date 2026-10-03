@@ -1,0 +1,38 @@
+{
+  "last.pt:BF16:O2M:common_delta": {
+    "count": 149,
+    "mean": 0.0,
+    "median": 0.0,
+    "p10": 0.0,
+    "p25": 0.0,
+    "p75": 0.0,
+    "p90": 0.0
+  },
+  "last.pt:BF16:O2M:rewritten": {
+    "count": 149,
+    "mean": 0.0,
+    "median": 0.0,
+    "p10": 0.0,
+    "p25": 0.0,
+    "p75": 0.0,
+    "p90": 0.0
+  },
+  "last.pt:BF16:O2O:common_delta": {
+    "count": 149,
+    "mean": 0.0,
+    "median": 0.0,
+    "p10": 0.0,
+    "p25": 0.0,
+    "p75": 0.0,
+    "p90": 0.0
+  },
+  "last.pt:BF16:O2O:rewritten": {
+    "count": 149,
+    "mean": 0.0,
+    "median": 0.0,
+    "p10": 0.0,
+    "p25": 0.0,
+    "p75": 0.0,
+    "p90": 0.0
+  }
+}

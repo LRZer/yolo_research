@@ -1,0 +1,9 @@
+{"time": "2026-09-23T02:23:29.805366+08:00", "event": "blackout_manager_started"}
+{"time": "2026-09-23T02:23:29.805691+08:00", "event": "blackout_started", "mode": "new", "command": ["/home/ubuntu/rz/yolo_study/.conda/yolo26/bin/python", "-u", "/home/ubuntu/rz/progressive_blur_detection_research/tools/run_experiment.py", "oracle_blackout", "/home/ubuntu/rz/progressive_blur_detection_research/configs/voc_oracle_blackout_p1_e20.json"]}
+{"time": "2026-09-23T02:23:54.890379+08:00", "event": "blackout_failed", "returncode": 1}
+{"time": "2026-09-23T02:25:57.000429+08:00", "event": "blackout_manager_started"}
+{"time": "2026-09-23T02:25:57.000898+08:00", "event": "blackout_started", "mode": "new", "command": ["/home/ubuntu/rz/yolo_study/.conda/yolo26/bin/python", "-u", "/home/ubuntu/rz/progressive_blur_detection_research/tools/run_experiment.py", "oracle_blackout", "/home/ubuntu/rz/progressive_blur_detection_research/configs/voc_oracle_blackout_p1_e20.json"]}
+{"time": "2026-09-23T02:26:03.745607+08:00", "event": "blackout_failed", "returncode": 1}
+{"time": "2026-09-23T02:33:02.432274+08:00", "event": "blackout_manager_started"}
+{"time": "2026-09-23T02:33:02.432774+08:00", "event": "blackout_started", "mode": "new", "command": ["/home/ubuntu/rz/yolo_study/.conda/yolo26/bin/python", "-u", "/home/ubuntu/rz/progressive_blur_detection_research/tools/run_experiment.py", "oracle_blackout", "/home/ubuntu/rz/progressive_blur_detection_research/configs/voc_oracle_blackout_p1_e20.json"]}
+{"time": "2026-09-23T02:38:54.936400+08:00", "event": "blackout_verified_complete", "epochs": 20}

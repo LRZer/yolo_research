@@ -1,0 +1,19 @@
+{
+  "settings_version": "0.0.8",
+  "datasets_dir": "/home/ubuntu/rz/yolo_study/datasets",
+  "weights_dir": "/home/ubuntu/rz/yolo_study/ultralytics/weights",
+  "runs_dir": "/home/ubuntu/rz/yolo_study/ultralytics/runs",
+  "uuid": "e6a31fc6c5840697a2b9a0494baf1f79aafb2f303b8c800e40ece2ee49a72a82",
+  "sync": true,
+  "api_key": "",
+  "openai_api_key": "",
+  "clearml": true,
+  "comet": true,
+  "dvc": true,
+  "mlflow": true,
+  "raytune": true,
+  "tensorboard": false,
+  "wandb": false,
+  "vscode_msg": true,
+  "openvino_msg": true
+}

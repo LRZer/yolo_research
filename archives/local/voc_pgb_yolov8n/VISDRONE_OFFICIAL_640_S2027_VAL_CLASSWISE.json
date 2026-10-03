@@ -1,0 +1,80 @@
+{
+  "status": "raw_development_images_no_oracle_mask",
+  "generated": "2026-09-23T04:20:40.972748+08:00",
+  "data": "data_splits/visdrone_official/view_dataset.yaml",
+  "split": "val",
+  "imgsz": 640,
+  "max_det": 1000,
+  "selection": "existing best.pt; no new checkpoint selection",
+  "runs": [
+    {
+      "run": "runs/visdrone_official/yolov8n_scratch_official_640_s2027_e125",
+      "checkpoint": "runs/visdrone_official/yolov8n_scratch_official_640_s2027_e125/weights/best.pt",
+      "checkpoint_sha256": "2ec866256b8e991b70a864368ab54766545e6694db3764465389c4ccd59c9174",
+      "mAP50": 0.3090816682912239,
+      "mAP50_95": 0.1705474249338225,
+      "classes": [
+        {
+          "id": 0,
+          "name": "pedestrian",
+          "AP50": 0.3297777725012624,
+          "AP50_95": 0.13296678039366291
+        },
+        {
+          "id": 1,
+          "name": "people",
+          "AP50": 0.2581500105860799,
+          "AP50_95": 0.08511513439047426
+        },
+        {
+          "id": 2,
+          "name": "bicycle",
+          "AP50": 0.07209428928552375,
+          "AP50_95": 0.024378149647037294
+        },
+        {
+          "id": 3,
+          "name": "car",
+          "AP50": 0.7396641354794001,
+          "AP50_95": 0.48618603445206665
+        },
+        {
+          "id": 4,
+          "name": "van",
+          "AP50": 0.35712365271482593,
+          "AP50_95": 0.2359254617195842
+        },
+        {
+          "id": 5,
+          "name": "truck",
+          "AP50": 0.2479461477568018,
+          "AP50_95": 0.15422745599373192
+        },
+        {
+          "id": 6,
+          "name": "tricycle",
+          "AP50": 0.2019489192595434,
+          "AP50_95": 0.10288990556584347
+        },
+        {
+          "id": 7,
+          "name": "awning-tricycle",
+          "AP50": 0.09105080204865786,
+          "AP50_95": 0.05411301376088805
+        },
+        {
+          "id": 8,
+          "name": "bus",
+          "AP50": 0.4311312850253833,
+          "AP50_95": 0.2869987527380614
+        },
+        {
+          "id": 9,
+          "name": "motor",
+          "AP50": 0.3619296682547609,
+          "AP50_95": 0.14267356067687467
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+{"time": "2026-09-23T01:45:51.042130+08:00", "event": "oracle_manager_started"}
+{"time": "2026-09-23T01:45:51.042500+08:00", "event": "oracle_started", "mode": "new", "command": ["/home/ubuntu/rz/yolo_study/.conda/yolo26/bin/python", "-u", "/home/ubuntu/rz/progressive_blur_detection_research/tools/run_experiment.py", "oracle", "/home/ubuntu/rz/progressive_blur_detection_research/configs/voc_oracle_p1_e20.json"]}
+{"time": "2026-09-23T01:54:01.923453+08:00", "event": "oracle_verified_complete", "epochs": 20}

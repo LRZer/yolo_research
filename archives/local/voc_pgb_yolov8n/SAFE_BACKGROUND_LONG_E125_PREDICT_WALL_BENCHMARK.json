@@ -1,0 +1,72 @@
+{
+  "scope": "YOLO.predict on preloaded OpenCV image arrays; includes preprocessing, model, and postprocessing but excludes disk image decoding",
+  "image_count": 128,
+  "selected_paths_sha256": "ea7bc9f0671778604cdb2a9b85d15e564c87fb422948ae8ad0dc394b5b8611a9",
+  "method": "/home/ubuntu/rz/progressive_blur_detection_research/runs/sbg_long_e125/sbg_joint_voc_train90_e125_s2027_g0123_numa0/weights/last.pt",
+  "baseline": "/home/ubuntu/rz/progressive_blur_detection_research/runs/sbg_long_e125/baseline_voc_train90_e125_s2027_g0123_numa0/weights/last.pt",
+  "device": "0",
+  "imgsz": 640,
+  "half": false,
+  "conf": 0.25,
+  "iou": 0.7,
+  "max_det": 300,
+  "warmup": true,
+  "records": {
+    "baseline_batch1": {
+      "images": 64,
+      "seconds_repeats": [
+        0.16054174400051124,
+        0.14476506000210065,
+        0.138698305003345
+      ],
+      "median_ms_per_image": 2.2619540625328227,
+      "total_predicted_boxes_repeats": [
+        193,
+        193,
+        193
+      ]
+    },
+    "method_batch1": {
+      "images": 64,
+      "seconds_repeats": [
+        0.27854798099724576,
+        0.2727807199989911,
+        0.27158947099815123
+      ],
+      "median_ms_per_image": 4.262198749984236,
+      "total_predicted_boxes_repeats": [
+        203,
+        203,
+        203
+      ]
+    },
+    "baseline_batch16": {
+      "images": 128,
+      "seconds_repeats": [
+        0.2947136919974582,
+        0.30109806499967817,
+        0.29867019099765457
+      ],
+      "median_ms_per_image": 2.3333608671691763,
+      "total_predicted_boxes_repeats": [
+        346,
+        346,
+        346
+      ]
+    },
+    "method_batch16": {
+      "images": 128,
+      "seconds_repeats": [
+        0.78844075500092,
+        0.5631928090006113,
+        0.562786069996946
+      ],
+      "median_ms_per_image": 4.399943820317276,
+      "total_predicted_boxes_repeats": [
+        354,
+        354,
+        354
+      ]
+    }
+  }
+}

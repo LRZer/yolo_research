@@ -1,0 +1,136 @@
+{
+  "status": "verified_complete",
+  "shared_config_fields": [
+    "amp",
+    "batch",
+    "cache",
+    "close_mosaic",
+    "copy_paste",
+    "cos_lr",
+    "cutmix",
+    "data",
+    "deterministic",
+    "device",
+    "epochs",
+    "exist_ok",
+    "fliplr",
+    "flipud",
+    "fraction",
+    "freeze",
+    "hsv_h",
+    "hsv_s",
+    "hsv_v",
+    "imgsz",
+    "lr0",
+    "lrf",
+    "mixup",
+    "momentum",
+    "mosaic",
+    "optimizer",
+    "patience",
+    "plots",
+    "pretrained",
+    "project",
+    "save",
+    "save_period",
+    "scale",
+    "seed",
+    "translate",
+    "val",
+    "warmup_epochs",
+    "weight_decay",
+    "workers"
+  ],
+  "runs": {
+    "method": {
+      "run": "/home/ubuntu/rz/progressive_blur_detection_research/runs/sbg_long_e125/sbg_joint_voc_train90_e125_s2027_g0123_numa0",
+      "config_sha256": "4dd94bdf466e45d0b0df2372ea83e15257d02336c87eeaf3d2402e4529c38c8b",
+      "args_yaml_sha256": "e720094abd3fadaf25053bb0c93e16f9e49d7d13b79558e35d1121b6e30bf1d4",
+      "csv": {
+        "rows": 125,
+        "last_epoch": 125,
+        "last_time_seconds": 12196.8,
+        "last_map50": 0.69688,
+        "last_map50_95": 0.49529,
+        "sha256": "34762a1302dad6826c0bcafe8b6f6e035efd9e09d0e00c08ffd94da32244e063"
+      },
+      "weights": {
+        "best.pt": {
+          "sha256": "6fb20f70c73bec06b1aac2ee4a19c3129e2c0a5100a2a32dc187bb54dce6a929",
+          "bytes": 27496109,
+          "model_class": "SafeBackgroundDetectionModel",
+          "nc": 20,
+          "checkpoint_epoch_field": -1,
+          "train_args_checked": [
+            "batch",
+            "data",
+            "device",
+            "epochs",
+            "imgsz",
+            "seed"
+          ]
+        },
+        "last.pt": {
+          "sha256": "8e74a413300b670e2f0f53362e39e9a3b87510d63ea149f22049c6fef620bf01",
+          "bytes": 27496109,
+          "model_class": "SafeBackgroundDetectionModel",
+          "nc": 20,
+          "checkpoint_epoch_field": -1,
+          "train_args_checked": [
+            "batch",
+            "data",
+            "device",
+            "epochs",
+            "imgsz",
+            "seed"
+          ]
+        }
+      }
+    },
+    "baseline": {
+      "run": "/home/ubuntu/rz/progressive_blur_detection_research/runs/sbg_long_e125/baseline_voc_train90_e125_s2027_g0123_numa0",
+      "config_sha256": "b946cd73fd9186a3b0bf81178e75f8d0ae547bfb28a4ec17eddb4ce1d9802d64",
+      "args_yaml_sha256": "626665a98a7d305603c54e4bf3d13f90a6c135f0b628b25d6b7943d48f7b800b",
+      "csv": {
+        "rows": 125,
+        "last_epoch": 125,
+        "last_time_seconds": 1986.75,
+        "last_map50": 0.7025,
+        "last_map50_95": 0.50062,
+        "sha256": "c5c3e80884004aa54e0615c1b98098f0a6950ad282a4138f880b5a9703e1eb18"
+      },
+      "weights": {
+        "best.pt": {
+          "sha256": "fde0cff358941e4ca89463cdaf813861a753940cfad6bbb735cdd493fbb159f5",
+          "bytes": 6248547,
+          "model_class": "DetectionModel",
+          "nc": 20,
+          "checkpoint_epoch_field": -1,
+          "train_args_checked": [
+            "batch",
+            "data",
+            "device",
+            "epochs",
+            "imgsz",
+            "seed"
+          ]
+        },
+        "last.pt": {
+          "sha256": "557e970d864de28f48784c60f005bac3c673c13256b9829b2dc5e9300af683fd",
+          "bytes": 6248547,
+          "model_class": "DetectionModel",
+          "nc": 20,
+          "checkpoint_epoch_field": -1,
+          "train_args_checked": [
+            "batch",
+            "data",
+            "device",
+            "epochs",
+            "imgsz",
+            "seed"
+          ]
+        }
+      }
+    }
+  }
+}

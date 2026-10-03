@@ -1,0 +1,464 @@
+{
+  "purpose": "Visual inspection only; training NOT started",
+  "source": "/home/ubuntu/rz/foveated_classification_research/data/CUB-200-2011/extracted/CUB_200_2011",
+  "source_split": "official_train_only",
+  "bbox_or_segmentation_read": false,
+  "geometric_resize": false,
+  "native_pixel_processing_before_padding": true,
+  "canvas": [
+    500,
+    500
+  ],
+  "original_padding_rgb": [
+    124,
+    128,
+    111
+  ],
+  "edge_padding_rgb": [
+    0,
+    0,
+    0
+  ],
+  "per_image_minmax_normalization": false,
+  "gray_conversion": "PIL RGB.convert('L'); float32 / 255",
+  "border": "OpenCV BORDER_REFLECT_101",
+  "parameters": {
+    "scharr": {
+      "scale": 0.03125,
+      "gain": 4,
+      "magnitude": "hypot(gx, gy)"
+    },
+    "canny": {
+      "preblur_sigma": 1,
+      "thresholds": [
+        50,
+        100
+      ],
+      "L2gradient": true
+    },
+    "dog": {
+      "sigmas": [
+        1,
+        2,
+        4
+      ],
+      "response": "max(abs(G1-G2), abs(G2-G4))",
+      "gain": 8
+    },
+    "gabor": {
+      "wavelengths": [
+        4,
+        8
+      ],
+      "angles_degrees": [
+        0,
+        45,
+        90,
+        135
+      ],
+      "sigma_over_wavelength": 0.56,
+      "gamma": 0.5,
+      "phases": [
+        0,
+        1.5707963267948966
+      ],
+      "kernel": "zero mean, unit L1; radius=ceil(3*sigma)",
+      "response": "max over scale/orientation of hypot(even, odd)",
+      "gain": 8
+    }
+  },
+  "quantization": "round(255*clip(fixed_gain*response,0,1)); three equal RGB channels",
+  "versions": {
+    "python": "3.11.16",
+    "numpy": "2.4.6",
+    "opencv": "5.0.0",
+    "pillow": "12.3.0"
+  },
+  "self_tests": {
+    "uniform_input_zero_response": true,
+    "step_input_nonzero_response": true,
+    "canny_binary": true,
+    "native_pixels_unchanged_by_padding": true,
+    "gray_maps_replicated_to_three_equal_channels": true
+  },
+  "script_sha256": "bc6afa6de05226ff508dec1713db7c3f40896cfbb48e81f45ae2863455fae3c2",
+  "samples": [
+    {
+      "image_id": 10140,
+      "stage": "wide_small_bird",
+      "relative_path": "173.Orange_crowned_Warbler/Orange_Crowned_Warbler_0051_168002.jpg",
+      "official_train": true,
+      "source_sha256": "eac9794ba5e6ebb2c102b4ef0906f38c44904ae4f44cf94482802178ee9a8224",
+      "source_mode": "RGB",
+      "size_wh": [
+        500,
+        333
+      ],
+      "padding_offset_xy": [
+        0,
+        83
+      ],
+      "map_statistics_valid_pixels_only": {
+        "scharr": {
+          "mean_0_255": 17.843321321321323,
+          "nonzero_fraction": 0.8364444444444444,
+          "saturated_fraction": 0.006258258258258259
+        },
+        "canny": {
+          "mean_0_255": 10.853963963963963,
+          "nonzero_fraction": 0.04256456456456457,
+          "saturated_fraction": 0.04256456456456457
+        },
+        "dog": {
+          "mean_0_255": 32.003747747747745,
+          "nonzero_fraction": 0.9472132132132132,
+          "saturated_fraction": 0.002822822822822823
+        },
+        "gabor": {
+          "mean_0_255": 26.056396396396398,
+          "nonzero_fraction": 0.9966366366366366,
+          "saturated_fraction": 0.0023783783783783785
+        }
+      },
+      "output_sha256": {
+        "00_original.png": "df7bf9176879c7505087b305e6b2fe400abc0eee5d7d7d93418893df94cddc0a",
+        "01_scharr.png": "aa79bab9ce0617a5fd648bc9fa75febb19f2fdee5dc8d179966d5cddec996ecc",
+        "02_canny.png": "c539c985a135bde77dcd2aaeb03b1fc9d0324a67a8872a196fbc30f6961c1c8a",
+        "03_dog.png": "50d2d4bd9035003aea5bb63a9b3dc5d9b6a5bca15bdd092494f10fd038c8ebf3",
+        "04_gabor.png": "001baabb730fc81bdf3f695d657f7712898778c52a76fe708e578530ac1c800f",
+        "comparison_all.png": "d89832734cb2f9a1886a07764ea5d603609ca8e4143eaa9cb5ff170908b82beb",
+        "comparison_edges.png": "a1558f14afaf23f113adb54dd80cf0a721aff8465a134b0f718c2e3216275b45"
+      }
+    },
+    {
+      "image_id": 2568,
+      "stage": "wide_medium_bird",
+      "relative_path": "045.Northern_Fulmar/Northern_Fulmar_0047_43698.jpg",
+      "official_train": true,
+      "source_sha256": "34050877c7cbee369c5588a06b4a8071184702ddcb7b93bd620876bceb6f675b",
+      "source_mode": "RGB",
+      "size_wh": [
+        500,
+        369
+      ],
+      "padding_offset_xy": [
+        0,
+        65
+      ],
+      "map_statistics_valid_pixels_only": {
+        "scharr": {
+          "mean_0_255": 7.234905149051491,
+          "nonzero_fraction": 0.9790243902439024,
+          "saturated_fraction": 0.0
+        },
+        "canny": {
+          "mean_0_255": 3.1014634146341464,
+          "nonzero_fraction": 0.01216260162601626,
+          "saturated_fraction": 0.01216260162601626
+        },
+        "dog": {
+          "mean_0_255": 8.343127371273713,
+          "nonzero_fraction": 0.9625149051490515,
+          "saturated_fraction": 7.588075880758808e-05
+        },
+        "gabor": {
+          "mean_0_255": 8.968612466124661,
+          "nonzero_fraction": 1.0,
+          "saturated_fraction": 0.00033604336043360436
+        }
+      },
+      "output_sha256": {
+        "00_original.png": "dc6eafa5f09cf4938315b9b38879beb00cacbabdad36df3001acec26116b78c2",
+        "01_scharr.png": "92019201e52fa8c57db4bacd12a7a155623e4be91750195b29de8b892775dcbb",
+        "02_canny.png": "707411a5a6bb7f987cd13f6428b221f057770a783961a916a262400cc83d324a",
+        "03_dog.png": "c9072899fcec7613c70f0befe875957838bfecfd873e04ce5e8604c6ff38d128",
+        "04_gabor.png": "714be066feb26a6262bf9392ed3606e9655731acacc82178b857f4a66eca1a19",
+        "comparison_all.png": "ad557dd72dd0022b3a425040f99ef0ac8411d5f2c858c102ced4e1e0cb8f9652",
+        "comparison_edges.png": "124a77984b8cea3da0f88c20afc8c1bc768eefd3a28a638df9fa72338be97bcd"
+      }
+    },
+    {
+      "image_id": 6223,
+      "stage": "wide_large_bird",
+      "relative_path": "107.Common_Raven/Common_Raven_0007_102020.jpg",
+      "official_train": true,
+      "source_sha256": "0d0e55a072578cbc86cd3b130a9671b6c3ff6766ee1b1310943e5cf58ca1e0b6",
+      "source_mode": "RGB",
+      "size_wh": [
+        500,
+        333
+      ],
+      "padding_offset_xy": [
+        0,
+        83
+      ],
+      "map_statistics_valid_pixels_only": {
+        "scharr": {
+          "mean_0_255": 46.549033033033034,
+          "nonzero_fraction": 0.9975915915915916,
+          "saturated_fraction": 0.019075075075075075
+        },
+        "canny": {
+          "mean_0_255": 27.866216216216216,
+          "nonzero_fraction": 0.10927927927927927,
+          "saturated_fraction": 0.10927927927927927
+        },
+        "dog": {
+          "mean_0_255": 49.656216216216215,
+          "nonzero_fraction": 0.9985345345345346,
+          "saturated_fraction": 0.009195195195195195
+        },
+        "gabor": {
+          "mean_0_255": 49.34603003003003,
+          "nonzero_fraction": 1.0,
+          "saturated_fraction": 0.005081081081081081
+        }
+      },
+      "output_sha256": {
+        "00_original.png": "63a3eff1eeb2e7912b1f998b49c16c9b93e38991abf8b997ff3d167a8ddde927",
+        "01_scharr.png": "38e95e64a693d899a5cd7d0a24cb7c0581843893016744d49e3900d199162f2f",
+        "02_canny.png": "beef59a160509cf9a1486327bb1d7403250dafa4404f340e19aef8ff1028bd11",
+        "03_dog.png": "fa9cd35fe4890af95c793f30db02bd37d558c3b4d04557124ed706c0659ac2b6",
+        "04_gabor.png": "07d77037e6af688c64f682547acabf02685168224e1075fee03984a8b5f6c851",
+        "comparison_all.png": "7c784c85b5144c7a4c24df1cd41b145a12101c430150c063ff84f7ac728d87ff",
+        "comparison_edges.png": "d8eda0a8f847aae7d1f90d855e507bbce37420ab39a0d0f37d6d4f3461164aae"
+      }
+    },
+    {
+      "image_id": 4786,
+      "stage": "portrait",
+      "relative_path": "082.Ringed_Kingfisher/Ringed_Kingfisher_0008_72943.jpg",
+      "official_train": true,
+      "source_sha256": "d597072353353a29bf04f00c8628a3d86ab9967739f6646255d34ebdb02af07a",
+      "source_mode": "RGB",
+      "size_wh": [
+        317,
+        500
+      ],
+      "padding_offset_xy": [
+        91,
+        0
+      ],
+      "map_statistics_valid_pixels_only": {
+        "scharr": {
+          "mean_0_255": 21.09461829652997,
+          "nonzero_fraction": 0.6941766561514195,
+          "saturated_fraction": 0.025735015772870663
+        },
+        "canny": {
+          "mean_0_255": 12.777350157728707,
+          "nonzero_fraction": 0.05010725552050473,
+          "saturated_fraction": 0.05010725552050473
+        },
+        "dog": {
+          "mean_0_255": 39.31950157728706,
+          "nonzero_fraction": 0.8197160883280757,
+          "saturated_fraction": 0.03216403785488959
+        },
+        "gabor": {
+          "mean_0_255": 45.65491482649842,
+          "nonzero_fraction": 0.949230283911672,
+          "saturated_fraction": 0.03362776025236593
+        }
+      },
+      "output_sha256": {
+        "00_original.png": "39a5bba8cfbb024af89ff6140f80c12c8d8efd5e1e20c89599a32c330ec4ac9d",
+        "01_scharr.png": "ac126a1ca6d43f9510be3289cbd5e4848ea585f3c414f3d3bd47c1b2be6fc76a",
+        "02_canny.png": "3e28bb07b1d7c66a8ec87f339f5b8bb46a90f1287a6cb916cf8a6d07651b253f",
+        "03_dog.png": "e3523ecd75c1288845e7e52572619ee71befbdda66fd1e0ee65d0e1a40a790ca",
+        "04_gabor.png": "70776919126e7877402c9e39cde3a83bae36967eab434ba682d076d329646762",
+        "comparison_all.png": "d3e6d62e6a0fdd376287e76865f06dce66c0ac6aef5732752fed4b1aa4ea4f66",
+        "comparison_edges.png": "04457f76803f3be68961b83c8630d3c8a7c7c85e0f953af2a2c63653ce6ffa42"
+      }
+    },
+    {
+      "image_id": 9234,
+      "stage": "square",
+      "relative_path": "158.Bay_breasted_Warbler/Bay_Breasted_Warbler_0099_159753.jpg",
+      "official_train": true,
+      "source_sha256": "9cfe6a6c298e7a82d89df1bc749979c03f48798821374f9b7ab4d9d188ffb862",
+      "source_mode": "RGB",
+      "size_wh": [
+        500,
+        500
+      ],
+      "padding_offset_xy": [
+        0,
+        0
+      ],
+      "map_statistics_valid_pixels_only": {
+        "scharr": {
+          "mean_0_255": 35.181036,
+          "nonzero_fraction": 0.998384,
+          "saturated_fraction": 0.010472
+        },
+        "canny": {
+          "mean_0_255": 22.09932,
+          "nonzero_fraction": 0.086664,
+          "saturated_fraction": 0.086664
+        },
+        "dog": {
+          "mean_0_255": 63.247248,
+          "nonzero_fraction": 0.99942,
+          "saturated_fraction": 0.014984
+        },
+        "gabor": {
+          "mean_0_255": 47.365004,
+          "nonzero_fraction": 1.0,
+          "saturated_fraction": 0.005328
+        }
+      },
+      "output_sha256": {
+        "00_original.png": "5e7d0fa62f07d4a13ab423bce7895e63f03c9b4f9fa4227ca63587b651816150",
+        "01_scharr.png": "93e083e8b3d4b80149d40c58ff60018268679ebfe25175bddda3917516a0ff1e",
+        "02_canny.png": "972ae31e382637b16ac7031f448fe3c47d8a8e0fafdb387c8401b3974a425826",
+        "03_dog.png": "4c3cf240769632db2f904456adcc682c026868bccc5890b98fa7c4d586793ade",
+        "04_gabor.png": "6778d0e76f5109582abd4933a11afd20d5b435220bfc296b1fb2e0bd6b2eb65f",
+        "comparison_all.png": "8fc331f9cce73612185cbb195178b2c5091825b38c260a2e8bb1f68209eea97e",
+        "comparison_edges.png": "8215f2b87fbad93115b87eacf707a532f1e290863f080abe78ab1aa1d92ddb36"
+      }
+    },
+    {
+      "image_id": 1767,
+      "stage": "small_native_image",
+      "relative_path": "032.Mangrove_Cuckoo/Mangrove_Cuckoo_0020_794629.jpg",
+      "official_train": true,
+      "source_sha256": "2cb2069b307dcedad930a6124caa37dbced8558c5eae4164faa351bf7d1ae438",
+      "source_mode": "RGB",
+      "size_wh": [
+        300,
+        288
+      ],
+      "padding_offset_xy": [
+        100,
+        106
+      ],
+      "map_statistics_valid_pixels_only": {
+        "scharr": {
+          "mean_0_255": 33.26254629629629,
+          "nonzero_fraction": 0.9963425925925926,
+          "saturated_fraction": 0.006655092592592593
+        },
+        "canny": {
+          "mean_0_255": 20.64496527777778,
+          "nonzero_fraction": 0.08096064814814814,
+          "saturated_fraction": 0.08096064814814814
+        },
+        "dog": {
+          "mean_0_255": 61.00328703703704,
+          "nonzero_fraction": 0.9986921296296296,
+          "saturated_fraction": 0.013715277777777778
+        },
+        "gabor": {
+          "mean_0_255": 40.36530092592593,
+          "nonzero_fraction": 1.0,
+          "saturated_fraction": 0.0021643518518518518
+        }
+      },
+      "output_sha256": {
+        "00_original.png": "ac381190de93231a6a45ed1f5aa1e52c73a52235de845e6a771aa6998c2377cc",
+        "01_scharr.png": "fc9c079fa4c041e322734f9d45b7cf775ba53187a189b6e2e8d863b5d83595eb",
+        "02_canny.png": "1137085022b9dce1ba6b0476ab6337480b2bae7a0a0566bd4d2063ff727d4522",
+        "03_dog.png": "fba7b0e66f85a970b8324120b333dc316ba40507be3b411b584eac99d044d4dd",
+        "04_gabor.png": "8d52813bfcee6684c1089f06c4e653978cbc468f06ec23cb208fa22eca45f8f4",
+        "comparison_all.png": "98794c1b4d1d309cc12449965bc0f45c6b69b1f5e9469f6dcecc989c59891bb6",
+        "comparison_edges.png": "a42d6acabdec5bcbf05b19839a54a901f4f0897433dd4d81381c3afc484eefec"
+      }
+    },
+    {
+      "image_id": 1592,
+      "stage": "american_crow",
+      "relative_path": "029.American_Crow/American_Crow_0003_25130.jpg",
+      "official_train": true,
+      "source_sha256": "611399b27f6040cd9725d9b683b37c344006cbb67891800803fae23478deb200",
+      "source_mode": "RGB",
+      "size_wh": [
+        357,
+        500
+      ],
+      "padding_offset_xy": [
+        71,
+        0
+      ],
+      "map_statistics_valid_pixels_only": {
+        "scharr": {
+          "mean_0_255": 12.266728291316527,
+          "nonzero_fraction": 0.9872324929971988,
+          "saturated_fraction": 0.00021288515406162466
+        },
+        "canny": {
+          "mean_0_255": 5.897142857142857,
+          "nonzero_fraction": 0.023126050420168066,
+          "saturated_fraction": 0.023126050420168066
+        },
+        "dog": {
+          "mean_0_255": 15.965394957983193,
+          "nonzero_fraction": 0.9795294117647059,
+          "saturated_fraction": 0.00012324929971988796
+        },
+        "gabor": {
+          "mean_0_255": 14.58749019607843,
+          "nonzero_fraction": 1.0,
+          "saturated_fraction": 0.0
+        }
+      },
+      "output_sha256": {
+        "00_original.png": "33a88e757fe6d6012648d8e998081e59ee0f70c10b3d58c1c646646c749621cb",
+        "01_scharr.png": "e99c8e36176b4a9f7ba003e9727dc2167676cf437ae45a97de09ffba6728cf99",
+        "02_canny.png": "805fb78c3de7c4f6d1c002a2be28e01835af3d232b18df5a13f5ba1763c02d1b",
+        "03_dog.png": "6e4921a93c9309ce87431ec718587463afe81b79b9216c3879d3bd892054b502",
+        "04_gabor.png": "d52add933e952c39f567ca6e9c646ca1381518d02ea74554fae8df3154338b51",
+        "comparison_all.png": "9d4ff70ac57a94a290ff43301b97d0bae4fbdbca0ad0048c3e3bf230943f56fe",
+        "comparison_edges.png": "647a162bc9089c35b8fdf6b9f04b246588b08e7963b71c0f4672f0bf9bb64590"
+      }
+    },
+    {
+      "image_id": 3617,
+      "stage": "grayscale_source",
+      "relative_path": "063.Ivory_Gull/Ivory_Gull_0040_49180.jpg",
+      "official_train": true,
+      "source_sha256": "b68ead27a51c5f995ffb4b61b5c07d61ef6605cd6113abd5ebe193c21fa6059b",
+      "source_mode": "L",
+      "size_wh": [
+        500,
+        326
+      ],
+      "padding_offset_xy": [
+        0,
+        87
+      ],
+      "map_statistics_valid_pixels_only": {
+        "scharr": {
+          "mean_0_255": 21.54215337423313,
+          "nonzero_fraction": 0.9966748466257669,
+          "saturated_fraction": 0.00025153374233128836
+        },
+        "canny": {
+          "mean_0_255": 11.925552147239264,
+          "nonzero_fraction": 0.046766871165644174,
+          "saturated_fraction": 0.046766871165644174
+        },
+        "dog": {
+          "mean_0_255": 36.540269938650304,
+          "nonzero_fraction": 0.9986134969325153,
+          "saturated_fraction": 0.0032576687116564417
+        },
+        "gabor": {
+          "mean_0_255": 27.27965644171779,
+          "nonzero_fraction": 1.0,
+          "saturated_fraction": 0.0
+        }
+      },
+      "output_sha256": {
+        "00_original.png": "da820265d27f0236e71d39d9305f90300fe1e8b7cac26f29a0422c5eb49ee997",
+        "01_scharr.png": "2a89e871823deeae60dcb884b7f29ccb6bf488240509ef9ca935e4aa384f4e2a",
+        "02_canny.png": "820b2cbac3a50671d45affa59cf30664f5fa44ed4d5bb0359aff7939324e9661",
+        "03_dog.png": "05b09ca13791610197b6f47ac8183d0019fad6ccd3585aec540b1e9827bc026b",
+        "04_gabor.png": "402a83b4edc76d3aa2a799dc3e4f2fabc14cecd579a5fa4c642ece8b1a760ed2",
+        "comparison_all.png": "e052acf58f4edcdc6e8134df4cbb000f5f23e495b9ef67d9954ee8bda558bdb0",
+        "comparison_edges.png": "95a080c839f8cb9ed13de5b08be61359c5ee21c0495390e463b8eda882d27d8c"
+      }
+    }
+  ],
+  "overview_sha256": "daac7aa7c0037869fc3a4f85ef2e588565d719b77fce1839e38286e53f6d1f6c"
+}

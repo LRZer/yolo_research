@@ -1,0 +1,282 @@
+{
+  "checkpoint": "/home/ubuntu/rz/progressive_blur_detection_research/runs/visdrone_official/yolov8n_scratch_official_960_s2027_e125/weights/last.pt",
+  "checkpoint_sha256": "e352a00f73fe7926b87e3ae7a5f3b595265a3d95ee24d3e0a10ed2aab4491cc7",
+  "manifest": "/home/ubuntu/rz/progressive_blur_detection_research/data_splits/visdrone_official/val.txt",
+  "manifest_sha256": "dc54c818fb1050655fda38624d61fe20ce54be72414a9cc9d74b0489407ff994",
+  "images": 16,
+  "all_gt": 1191,
+  "eligible_gt": 851,
+  "confidence_levels": [
+    0.001,
+    0.01,
+    0.05
+  ],
+  "summary": {
+    "0.001": {
+      "mean_mask_boxes_per_image": 787.125,
+      "protected_fraction_selected_crop_pixels": 0.534046545489439,
+      "blur_permitted_fraction_selected_crop_pixels": 0.465953454510561,
+      "eligible_gt": 851,
+      "protected95_gt": 845,
+      "protected95_rate": 0.9929494712103408,
+      "mean_gt_box_coverage": 0.9947676746526246,
+      "size": {
+        "lt8": {
+          "eligible": 115,
+          "protected95": 112,
+          "protected95_rate": 0.9739130434782609
+        },
+        "8to16": {
+          "eligible": 367,
+          "protected95": 364,
+          "protected95_rate": 0.9918256130790191
+        },
+        "16to32": {
+          "eligible": 272,
+          "protected95": 272,
+          "protected95_rate": 1.0
+        },
+        "ge32": {
+          "eligible": 97,
+          "protected95": 97,
+          "protected95_rate": 1.0
+        }
+      },
+      "class": {
+        "0": {
+          "eligible": 181,
+          "protected95": 179,
+          "protected95_rate": 0.988950276243094
+        },
+        "1": {
+          "eligible": 192,
+          "protected95": 192,
+          "protected95_rate": 1.0
+        },
+        "2": {
+          "eligible": 17,
+          "protected95": 15,
+          "protected95_rate": 0.8823529411764706
+        },
+        "3": {
+          "eligible": 175,
+          "protected95": 175,
+          "protected95_rate": 1.0
+        },
+        "4": {
+          "eligible": 9,
+          "protected95": 9,
+          "protected95_rate": 1.0
+        },
+        "5": {
+          "eligible": 1,
+          "protected95": 1,
+          "protected95_rate": 1.0
+        },
+        "6": {
+          "eligible": 26,
+          "protected95": 26,
+          "protected95_rate": 1.0
+        },
+        "7": {
+          "eligible": 23,
+          "protected95": 23,
+          "protected95_rate": 1.0
+        },
+        "8": {
+          "eligible": 0,
+          "protected95": 0,
+          "protected95_rate": null
+        },
+        "9": {
+          "eligible": 227,
+          "protected95": 225,
+          "protected95_rate": 0.9911894273127754
+        }
+      }
+    },
+    "0.01": {
+      "mean_mask_boxes_per_image": 562.25,
+      "protected_fraction_selected_crop_pixels": 0.5096507367320948,
+      "blur_permitted_fraction_selected_crop_pixels": 0.4903492632679052,
+      "eligible_gt": 851,
+      "protected95_gt": 844,
+      "protected95_rate": 0.9917743830787309,
+      "mean_gt_box_coverage": 0.9934614268499949,
+      "size": {
+        "lt8": {
+          "eligible": 115,
+          "protected95": 111,
+          "protected95_rate": 0.9652173913043478
+        },
+        "8to16": {
+          "eligible": 367,
+          "protected95": 364,
+          "protected95_rate": 0.9918256130790191
+        },
+        "16to32": {
+          "eligible": 272,
+          "protected95": 272,
+          "protected95_rate": 1.0
+        },
+        "ge32": {
+          "eligible": 97,
+          "protected95": 97,
+          "protected95_rate": 1.0
+        }
+      },
+      "class": {
+        "0": {
+          "eligible": 181,
+          "protected95": 178,
+          "protected95_rate": 0.9834254143646409
+        },
+        "1": {
+          "eligible": 192,
+          "protected95": 192,
+          "protected95_rate": 1.0
+        },
+        "2": {
+          "eligible": 17,
+          "protected95": 15,
+          "protected95_rate": 0.8823529411764706
+        },
+        "3": {
+          "eligible": 175,
+          "protected95": 175,
+          "protected95_rate": 1.0
+        },
+        "4": {
+          "eligible": 9,
+          "protected95": 9,
+          "protected95_rate": 1.0
+        },
+        "5": {
+          "eligible": 1,
+          "protected95": 1,
+          "protected95_rate": 1.0
+        },
+        "6": {
+          "eligible": 26,
+          "protected95": 26,
+          "protected95_rate": 1.0
+        },
+        "7": {
+          "eligible": 23,
+          "protected95": 23,
+          "protected95_rate": 1.0
+        },
+        "8": {
+          "eligible": 0,
+          "protected95": 0,
+          "protected95_rate": null
+        },
+        "9": {
+          "eligible": 227,
+          "protected95": 225,
+          "protected95_rate": 0.9911894273127754
+        }
+      }
+    },
+    "0.05": {
+      "mean_mask_boxes_per_image": 232.125,
+      "protected_fraction_selected_crop_pixels": 0.44381863676140354,
+      "blur_permitted_fraction_selected_crop_pixels": 0.5561813632385965,
+      "eligible_gt": 851,
+      "protected95_gt": 833,
+      "protected95_rate": 0.9788484136310224,
+      "mean_gt_box_coverage": 0.9877946226681229,
+      "size": {
+        "lt8": {
+          "eligible": 115,
+          "protected95": 110,
+          "protected95_rate": 0.9565217391304348
+        },
+        "8to16": {
+          "eligible": 367,
+          "protected95": 361,
+          "protected95_rate": 0.9836512261580381
+        },
+        "16to32": {
+          "eligible": 272,
+          "protected95": 268,
+          "protected95_rate": 0.9852941176470589
+        },
+        "ge32": {
+          "eligible": 97,
+          "protected95": 94,
+          "protected95_rate": 0.9690721649484536
+        }
+      },
+      "class": {
+        "0": {
+          "eligible": 181,
+          "protected95": 178,
+          "protected95_rate": 0.9834254143646409
+        },
+        "1": {
+          "eligible": 192,
+          "protected95": 190,
+          "protected95_rate": 0.9895833333333334
+        },
+        "2": {
+          "eligible": 17,
+          "protected95": 14,
+          "protected95_rate": 0.8235294117647058
+        },
+        "3": {
+          "eligible": 175,
+          "protected95": 174,
+          "protected95_rate": 0.9942857142857143
+        },
+        "4": {
+          "eligible": 9,
+          "protected95": 9,
+          "protected95_rate": 1.0
+        },
+        "5": {
+          "eligible": 1,
+          "protected95": 1,
+          "protected95_rate": 1.0
+        },
+        "6": {
+          "eligible": 26,
+          "protected95": 24,
+          "protected95_rate": 0.9230769230769231
+        },
+        "7": {
+          "eligible": 23,
+          "protected95": 23,
+          "protected95_rate": 1.0
+        },
+        "8": {
+          "eligible": 0,
+          "protected95": 0,
+          "protected95_rate": null
+        },
+        "9": {
+          "eligible": 227,
+          "protected95": 220,
+          "protected95_rate": 0.9691629955947136
+        }
+      }
+    }
+  },
+  "protocol": {
+    "imgsz": 960,
+    "conf": 0.001,
+    "iou": 0.7,
+    "max_det": 1000,
+    "candidate_nms_multi_label": true,
+    "selected_cells": 4,
+    "crop_grid": "4x4",
+    "halo_fraction_each_side": 0.1,
+    "margin_fraction_each_side": 0.2,
+    "minimum_margin_at_full960": 8.0,
+    "gt_used_in_mask_or_selection": false,
+    "eligibility": "GT fully contained in any selected crop",
+    "safe": "at least 95 percent of integer-pixel GT box lies inside union predicted protection mask",
+    "size": "sqrt GT area at full960 letterbox scale; thresholds 8,16,32"
+  },
+  "caveat": "This audits a necessary coverage/area tradeoff only. No image is blurred and no new detection AP is measured. Full detector predictions are max_det1000 limited. Converted YOLO labels may omit ignored objects; val has been repeatedly inspected."
+}

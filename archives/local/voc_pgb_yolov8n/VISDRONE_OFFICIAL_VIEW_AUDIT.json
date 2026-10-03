@@ -1,0 +1,21 @@
+{
+  "status": "task_owned_symlink_view_ready",
+  "source_image_and_label_files_modified": false,
+  "cache_directory": "/home/ubuntu/rz/progressive_blur_detection_research/data_splits/visdrone_official/view/labels",
+  "splits": {
+    "train": {
+      "image_links": 6471,
+      "label_links": 6471
+    },
+    "val": {
+      "image_links": 548,
+      "label_links": 548
+    },
+    "test": {
+      "image_links": 1610,
+      "label_links": 1610
+    }
+  },
+  "view_yaml": "/home/ubuntu/rz/progressive_blur_detection_research/data_splits/visdrone_official/view_dataset.yaml",
+  "view_yaml_sha256": "715bfbfc0116fd90a2dc489f1cce1f6042311810aeb309def37a8caa2e84e334"
+}

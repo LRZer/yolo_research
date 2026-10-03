@@ -1,0 +1,16 @@
+{
+  "status": "verified_revised_e125",
+  "group": "D_gradual_background",
+  "epochs": 125,
+  "original_config_epochs": 200,
+  "learning_rate_schedule_total_epochs": 200,
+  "last_test_top1_percent": 53.45184673800483,
+  "last_test_top5_percent": 79.70314118053159,
+  "mean_epoch_seconds": 142.671808730544,
+  "final_epoch_seconds": 142.00999046300058,
+  "config_sha256": "3240c52c2971bd1748af2c031f90ea8e3b1b3851fa87bab15b82a2bf79fd1873",
+  "stats_sha256": "e1caf32dd617b8d91720d117ff8527c75a5dbc1b82c71fbb1eabaecd88a7b309",
+  "results_sha256": "4130f9e1d2a88e51b2c90da37174804a5f7147f070a7ae2ddb5474152fe802e8",
+  "last_checkpoint_sha256": "7b97fb32f668e86a1c71d341098c4d99d7f82ba0f26c9eea1c1778c010d6f75f",
+  "audited_utc": "2026-09-25T08:35:38.164642+00:00"
+}

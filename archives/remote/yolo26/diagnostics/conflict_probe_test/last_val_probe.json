@@ -1,0 +1,33 @@
+[
+  {
+    "checkpoint": "/home/ubuntu/rz/yolo_study/yolo26_voc_research/runs/d0_diag_yolo26n_voc_e150_g4567_s42/weights/last.pt",
+    "checkpoint_name": "last.pt",
+    "epoch": 150,
+    "split": "val",
+    "images": 4952,
+    "batches": 78,
+    "kd_common_count": 11901.0,
+    "kd_candidate_count": 0.0,
+    "kd_effective_count": 0.0,
+    "kd_candidate_rate_global": 0.0,
+    "kd_effective_rate_global": 0.0,
+    "teacher_better": 0.0,
+    "teacher_cls_better": 0.0,
+    "quality_gap": 0.0,
+    "head_box_iou": 0.9999999961135027,
+    "kd_p_teacher_mean": 0.0,
+    "kd_p_student_mean": 0.0,
+    "kd_y_mean": 0.0,
+    "kd_student_below_y": 0.0,
+    "kd_grad_direction_agree": 0.0,
+    "kd_teacher_closer": 0.0,
+    "kd_teacher_overshoot": 0.0,
+    "o2o_box_loss": 3.8051691844890883,
+    "o2o_cls_loss": 11.085979589545476,
+    "o2o_l1_loss": 0.08177499292547753,
+    "o2m_box_loss": 4.610174843875965,
+    "o2m_cls_loss": 5.633668958851902,
+    "o2m_l1_loss": 0.1161252995757371,
+    "o2o_kd_loss": 0.0
+  }
+]

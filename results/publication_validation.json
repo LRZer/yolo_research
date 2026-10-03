@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "archived_evidence_files": 1812,
+  "canonical_training_csvs": 96,
+  "canonical_epoch_rows": 6056,
+  "dataset_baselines": 22,
+  "cub_completed125": 8,
+  "cub_stopped50": 1,
+  "lossless_large_records_verified": 4,
+  "archived_python_files": 362,
+  "historical_markdown": 374,
+  "figure_panels_png_svg": 21,
+  "curated_local_links_checked": 1367,
+  "checkpoint_binaries_reloaded": false,
+  "checkpoint_scope": "Saved server loading audits are preserved; weight binaries are not redistributed or reloaded by this validator.",
+  "errors": []
+}

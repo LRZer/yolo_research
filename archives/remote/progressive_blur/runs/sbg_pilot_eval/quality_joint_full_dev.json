@@ -1,0 +1,53 @@
+{
+  "checkpoint": "runs/sbg_pilot/voc_joint_f10_e3_g12_s2027/weights/last.pt",
+  "images": 1655,
+  "instances": 3882,
+  "instance_safe_fraction_at_0_1": 0.8892323544564658,
+  "instance_by_size": {
+    "small": {
+      "total": 101,
+      "safe_at_0_1": 86,
+      "safe_fraction": 0.8514851485148515
+    },
+    "medium": {
+      "total": 927,
+      "safe_at_0_1": 847,
+      "safe_fraction": 0.9137001078748651
+    },
+    "large": {
+      "total": 2854,
+      "safe_at_0_1": 2519,
+      "safe_fraction": 0.8826208829712684
+    }
+  },
+  "max_permission": 0.9960867166519165,
+  "pixel_region": {
+    "protected": {
+      "pixels": 270572728,
+      "mean_permission": 0.022223757902745035,
+      "fraction_permission_above": {
+        "0.1": 0.0470238227409231,
+        "0.25": 0.017975211455901054,
+        "0.5": 0.005842144593375279
+      }
+    },
+    "far": {
+      "pixels": 63224598,
+      "mean_permission": 0.2606018606075783,
+      "fraction_permission_above": {
+        "0.1": 0.5641468056467516,
+        "0.25": 0.39342409104760145,
+        "0.5": 0.2227598505252655
+      }
+    },
+    "all_valid": {
+      "pixels": 490469760,
+      "mean_permission": 0.09171424135938598,
+      "fraction_permission_above": {
+        "0.1": 0.20721857551421724,
+        "0.25": 0.12437840816118817,
+        "0.5": 0.06277499554712608
+      }
+    }
+  }
+}

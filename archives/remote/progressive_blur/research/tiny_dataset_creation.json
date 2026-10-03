@@ -1,0 +1,12 @@
+{
+  "status": "created",
+  "train": {
+    "images": 12,
+    "boxes": 16
+  },
+  "val": {
+    "images": 6,
+    "boxes": 8
+  },
+  "yaml": "/home/ubuntu/rz/progressive_blur_detection_research/audit_data/tiny.yaml"
+}

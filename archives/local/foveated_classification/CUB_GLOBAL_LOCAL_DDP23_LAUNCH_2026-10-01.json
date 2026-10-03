@@ -1,0 +1,19 @@
+{
+  "manager_pid": 1849623,
+  "hashes": {
+    "/home/ubuntu/rz/foveated_classification_research/configs/cub_resnet50_G4_global_crop_s2005_e125_ddp23.json": "f3581f75fe29751a7a27667c11c08745cd91e7bf0284caa29d126b201a820ba7",
+    "/home/ubuntu/rz/foveated_classification_research/configs/cub_resnet50_G5_blank_crop_s2005_e125_ddp23.json": "fdb4f14dcd665a207d4ce125e5db0092dc4dbee86bb2fe708b1af959b036824e",
+    "/home/ubuntu/rz/foveated_classification_research/src/train_cub_global_local_ddp.py": "55a65aa4717c531c852ad68f8f1523be10c8324aa138874c1211c64fabf6c464",
+    "/home/ubuntu/rz/foveated_classification_research/src/train_cub_resnet50_a.py": "6aa91ec82be7cee3dc985e2e5824ed8a5470cd7e7f2dc7cfd5e6a1f702a9f8a2",
+    "/home/ubuntu/rz/foveated_classification_research/src/run_cub_global_local_pair.py": "b10b9bcdf0ca4f5a1aba07b4d4b5547645aaae0c1fb22687d828378e9e90542a"
+  },
+  "devices_physical": [
+    2,
+    3
+  ],
+  "numa_node": 0,
+  "actual_epochs_each": 125,
+  "lr_horizon": 200,
+  "control": "sequential G4 full-global+crop then G5 constant-global+identical-crop",
+  "allowed_external_action": "share existing GPUs without changing other jobs"
+}

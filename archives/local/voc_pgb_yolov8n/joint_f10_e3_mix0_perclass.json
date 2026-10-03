@@ -1,0 +1,39 @@
+{
+  "checkpoint": "runs/sbg_pilot/voc_joint_f10_e3_g12_s2027/weights/last.pt",
+  "data": "data_splits/voc_strict_seed2027.yaml",
+  "mix": 0.0,
+  "has_frontend": true,
+  "precision": 0.3464126472286996,
+  "recall": 0.2932218500539281,
+  "map50": 0.25524289279804924,
+  "map50_95": 0.13788896176136542,
+  "per_class_map50_95": {
+    "aeroplane": 0.3010027613746873,
+    "bicycle": 0.2419920126111982,
+    "bird": 0.08110294899201463,
+    "boat": 0.04464872223372991,
+    "bottle": 0.013655646116928427,
+    "bus": 0.29299554140252854,
+    "car": 0.20564733816625527,
+    "cat": 0.15095361424216083,
+    "chair": 0.03422301519411007,
+    "cow": 0.09686242707948026,
+    "diningtable": 0.07108147666313955,
+    "dog": 0.16041842139632662,
+    "horse": 0.14957101935510445,
+    "motorbike": 0.2106142538868267,
+    "person": 0.20556743741049677,
+    "pottedplant": 0.020978560390768772,
+    "sheep": 0.09166739085245448,
+    "sofa": 0.07097133794104485,
+    "train": 0.17599561591928606,
+    "tvmonitor": 0.13782969399876674
+  },
+  "speed_ms_per_image": {
+    "preprocess": 0.33517259032543945,
+    "inference": 2.189261896073786,
+    "loss": 8.060785926304465e-05,
+    "postprocess": 0.27829999033097186
+  },
+  "save_dir": "/home/ubuntu/rz/progressive_blur_detection_research/runs/sbg_pilot_eval/joint_f10_e3_mix0_perclass"
+}

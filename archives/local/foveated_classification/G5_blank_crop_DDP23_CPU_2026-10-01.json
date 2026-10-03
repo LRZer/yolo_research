@@ -1,0 +1,38 @@
+{
+  "status": "verified_cpu_pair_pipeline",
+  "group": "G5_blank_crop",
+  "config_sha256": "fdb4f14dcd665a207d4ce125e5db0092dc4dbee86bb2fe708b1af959b036824e",
+  "source_sha256": {
+    "trainer": "55a65aa4717c531c852ad68f8f1523be10c8324aa138874c1211c64fabf6c464",
+    "historical_engine": "6aa91ec82be7cee3dc985e2e5824ed8a5470cd7e7f2dc7cfd5e6a1f702a9f8a2",
+    "stats": "e1caf32dd617b8d91720d117ff8527c75a5dbc1b82c71fbb1eabaecd88a7b309",
+    "bbox": "c19d9f096c15564793408e5ba054b8d715a6805819d98f037c977f369ef4abd3"
+  },
+  "train_count": 5994,
+  "test_count": 5794,
+  "boxes_checked": 11788,
+  "preview_ids_matched": [
+    10140,
+    2568,
+    6223,
+    4786,
+    1767,
+    1592
+  ],
+  "exact_updates_per_epoch": 94,
+  "tail_group_pairs": 42,
+  "tail_per_rank_microbatches": [
+    8,
+    8,
+    5
+  ],
+  "gradient_max_abs_errors": [
+    5.551115123125783e-16,
+    4.440892098500626e-16
+  ],
+  "same_crop_across_groups": true,
+  "blank_exact_zero": true,
+  "torch": "2.6.0+cu118",
+  "torchvision": "0.21.0+cu118",
+  "pillow": "12.3.0"
+}

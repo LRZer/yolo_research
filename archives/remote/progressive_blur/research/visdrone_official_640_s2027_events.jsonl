@@ -1,0 +1,2 @@
+{"time": "2026-09-23T03:59:33.414476+08:00", "event": "started", "mode": "new", "command": ["/home/ubuntu/rz/yolo_study/.conda/yolo26/bin/python", "-u", "/home/ubuntu/rz/progressive_blur_detection_research/tools/run_experiment.py", "baseline", "/home/ubuntu/rz/progressive_blur_detection_research/configs/visdrone_official_yolov8n_scratch_640_s2027_e125.json"]}
+{"time": "2026-09-23T04:16:46.463025+08:00", "event": "verified_complete", "epochs": 125}

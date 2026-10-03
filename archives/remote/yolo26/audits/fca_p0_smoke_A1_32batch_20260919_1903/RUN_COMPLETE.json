@@ -1,0 +1,18 @@
+{
+  "bootstrap": null,
+  "elapsed_seconds": 14.819190502166748,
+  "finished_unix": 1789815734.2870982,
+  "geometry_sha256": "e40dbb20efb0dcf549e9d229c4121472d1b1eb4ad2ddaeb19b08a5cfe9c47483",
+  "kernel_health": {
+    "checked_at": "2026-09-19T19:02:14.286875+08:00",
+    "event_count": 0,
+    "events": [],
+    "fault_pattern": "Uncorrected hardware memory error|Sending SIGBUS|Memory failure|EDAC.*(?:error|corrected|uncorrected)",
+    "journal_returncode": 0,
+    "since": "2026-09-19T19:01:59.467910+08:00",
+    "valid": true
+  },
+  "started_unix": 1789815719.467908,
+  "status": "COMPLETE",
+  "verdict": "SMOKE_PASS"
+}

@@ -1,0 +1,16 @@
+{
+  "status": "verified_revised_e125",
+  "group": "B_global_blur",
+  "epochs": 125,
+  "original_config_epochs": 200,
+  "learning_rate_schedule_total_epochs": 200,
+  "last_test_top1_percent": 29.668622713151535,
+  "last_test_top5_percent": 57.386952019330344,
+  "mean_epoch_seconds": 66.30395468721545,
+  "final_epoch_seconds": 66.36646155400376,
+  "config_sha256": "cd73fe9645abbc8a37bcb1ed0682137129e457bfca746e50f53bc3dd7c359068",
+  "stats_sha256": "e1caf32dd617b8d91720d117ff8527c75a5dbc1b82c71fbb1eabaecd88a7b309",
+  "results_sha256": "61a4a9e11225425e87a6afac028aad8004898e371333ae93208ab570e5158ef6",
+  "last_checkpoint_sha256": "6cf654b1687b1fe5ba3e9bc04ed28e17a04381b86d934857fea7b1e5429a54cf",
+  "audited_utc": "2026-09-25T00:36:25.128525+00:00"
+}

@@ -1,0 +1,16 @@
+# SARC causal control R1: fixed-cost single 7x7 depthwise residual block.
+experiment: R1
+module: SingleDW7StagingBlock
+levels: [P3, P4, P5]
+channels: [64, 128, 256]
+strides: [8, 16, 32]
+kernel_size: 7
+gamma_init: 0.01
+calibration_gain: 0.0
+deploy: one_dw7_silu_gamma_residual
+fixed_protocol:
+  epochs: 50
+  seed: 42
+  random_init: true
+  final_epoch_only: true
+

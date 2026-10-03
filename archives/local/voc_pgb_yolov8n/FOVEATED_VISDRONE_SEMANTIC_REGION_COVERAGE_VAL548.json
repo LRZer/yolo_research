@@ -1,0 +1,40 @@
+{
+  "checkpoint": "/home/ubuntu/rz/progressive_blur_detection_research/runs/visdrone_official/yolov8n_scratch_official_960_s2027_e125/weights/last.pt",
+  "checkpoint_sha256": "e352a00f73fe7926b87e3ae7a5f3b595265a3d95ee24d3e0a10ed2aab4491cc7",
+  "manifest": "/home/ubuntu/rz/progressive_blur_detection_research/data_splits/visdrone_official/val.txt",
+  "manifest_sha256": "dc54c818fb1050655fda38624d61fe20ce54be72414a9cc9d74b0489407ff994",
+  "images": 548,
+  "gt_boxes": 38759,
+  "coarse_missed_gt_boxes": 10303,
+  "coarse_found_fraction_any_same_class_iou50": 0.7341778683660569,
+  "grid": "4x4",
+  "selector": "sum of confidence of same-image coarse YOLO detections by cell, conf>=0.001, no GT; stable tie by cell ID",
+  "inference": {
+    "imgsz": 960,
+    "conf": 0.001,
+    "iou": 0.7,
+    "max_det": 1000,
+    "half": false,
+    "device": "0",
+    "batch": 8
+  },
+  "top_k": {
+    "2": {
+      "selected_area_fraction": 0.125,
+      "all_gt_center_coverage": 0.4683299362728657,
+      "coarse_missed_gt_center_coverage": 0.5354751043385422
+    },
+    "4": {
+      "selected_area_fraction": 0.25,
+      "all_gt_center_coverage": 0.708042003147656,
+      "coarse_missed_gt_center_coverage": 0.7566728137435699
+    },
+    "8": {
+      "selected_area_fraction": 0.5,
+      "all_gt_center_coverage": 0.9251270672617973,
+      "coarse_missed_gt_center_coverage": 0.9386586431136562
+    }
+  },
+  "wall_seconds_including_model_load": 6.776643322999007,
+  "caveat": "This measures GT-center coverage, not AP. Coarse-found matching is any same-class IoU>=0.5, not one-to-one detection recall. Selected cells are not run through a second detector. Full coarse inference cost must be counted in any future hybrid pipeline."
+}

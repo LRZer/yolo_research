@@ -1,0 +1,33 @@
+id: TQGB-T1-CLS-M2O-PROJ-G008-Y26N-VOC-E50-S0-W4-PIN-NUMA1
+hypothesis: "Paired seed-0 replication of receiver-bounded O2M-to-O2O classification transfer."
+train:
+  model: /home/ubuntu/rz/yolo_study/yolo26_voc_research/configs/models/yolo26n_baseline.yaml
+  data: /home/ubuntu/rz/yolo_study/yolo26_voc_research/configs/datasets/voc_server.yaml
+  epochs: 50
+  patience: 50
+  batch: 64
+  imgsz: 640
+  device: "4,5,6,7"
+  workers: 4
+  pretrained: false
+  cls_remap: true
+  optimizer: auto
+  seed: 0
+  deterministic: true
+  amp: bf16
+  fraction: 1.0
+  val: true
+  nms: false
+  plots: false
+  save: true
+  save_period: 10
+  project: /home/ubuntu/rz/yolo_study/yolo26_voc_research/runs
+  name: tqgb_t1_cls_m2o_proj_g008_e50_g4567_s0_w4_pin_numa1
+  exist_ok: false
+  o2o_kd_gain: 0.0
+  tqgb_cls_m2o_gain: 0.08
+  tqgb_cls_o2m_gain: 0.0
+  tqgb_min_score: 0.25
+  tqgb_cls_margin: 0.05
+  tqgb_direction: m2o
+  tqgb_projection: true

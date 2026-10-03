@@ -1,0 +1,27 @@
+{
+  "status": "verified_complete",
+  "epochs": 1,
+  "loss_columns": [
+    "train/box_loss",
+    "train/cls_loss",
+    "train/dfl_loss",
+    "train/map_loss",
+    "val/box_loss",
+    "val/cls_loss",
+    "val/dfl_loss",
+    "val/map_loss"
+  ],
+  "model_class": "PGBDetectionModel",
+  "pgb_config": {
+    "pgb_map_loss_weight": 1.0,
+    "pgb_eval_mix": 0.5,
+    "pgb_zero_mix_epochs": 0,
+    "pgb_ramp_epochs": 1,
+    "pgb_target_margin": 0.1,
+    "pgb_target_transition": 0.5,
+    "pgb_target_min_radius": 8.0
+  },
+  "frontend_in_checkpoint": true,
+  "world_size_expected": 2,
+  "checkpoint_version": "8.4.146"
+}

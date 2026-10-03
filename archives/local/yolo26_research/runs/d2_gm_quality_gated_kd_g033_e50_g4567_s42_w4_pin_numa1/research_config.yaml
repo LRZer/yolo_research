@@ -1,0 +1,35 @@
+id: D2-GM-QUALITY-GATED-KD-Y26N-VOC-E50-S42-W4-PIN-NUMA1
+hypothesis: "If D2's gain comes from quality selection rather than a larger selected-anchor gradient, it should remain positive when its KD gradient magnitude is matched to D1 using a training-only fixed-batch calibration."
+train:
+  model: /home/ubuntu/rz/yolo_study/yolo26_voc_research/configs/models/yolo26n_baseline.yaml
+  data: /home/ubuntu/rz/yolo_study/yolo26_voc_research/configs/datasets/voc_server.yaml
+  epochs: 50
+  patience: 50
+  batch: 64
+  imgsz: 640
+  device: "4,5,6,7"
+  workers: 4
+  pretrained: false
+  cls_remap: true
+  optimizer: auto
+  seed: 42
+  deterministic: true
+  amp: bf16
+  fraction: 1.0
+  val: true
+  nms: false
+  plots: false
+  save: true
+  save_period: 10
+  project: /home/ubuntu/rz/yolo_study/yolo26_voc_research/runs
+  name: d2_gm_quality_gated_kd_g033_e50_g4567_s42_w4_pin_numa1
+  exist_ok: false
+  o2o_kd_gain: 0.3333333333
+  o2o_kd_temp: 1.0
+  o2o_kd_min_quality: 0.25
+  o2o_kd_margin: 0.05
+  o2o_kd_warmup: 5.0
+  o2o_kd_ramp: 10.0
+  o2o_kd_fade: 10.0
+  o2o_kd_gate: true
+  o2o_kd_supervision_gate: none

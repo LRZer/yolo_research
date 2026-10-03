@@ -1,0 +1,30 @@
+# SARC R3: multi-branch re-parameterization plus train-assignment calibration.
+experiment: R3
+module: SARCStagingBlock
+levels: [P3, P4, P5]
+channels: [64, 128, 256]
+strides: [8, 16, 32]
+main_kernel: 7
+branch_kernels: [3, 3, 3]
+branch_dilations: [1, 2, 3]
+branch_weighting: softmax_static_parameters
+gamma_init: 0.01
+assignment_scale: log2_sqrt_wh_over_stride
+histogram:
+  centers: [2.25, 3.00, 3.75]
+  soft_temperature: 0.50
+  ema_decay: 0.99
+  min_updates_before_loss: 16
+  primary_source: o2m_positive_anchor
+  ddp_contract: all_reduce_soft_counts_and_mass_before_ema
+calibration:
+  loss: kl_ema_hist_to_branch_softmax
+  gain: 0.01
+  target_detached: true
+deploy: one_dw7_silu_gamma_residual
+fixed_protocol:
+  epochs: 50
+  seed: 42
+  random_init: true
+  final_epoch_only: true
+

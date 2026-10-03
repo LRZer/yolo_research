@@ -1,0 +1,27 @@
+{
+  "audit": "FCA-P0",
+  "bitwise_control": {
+    "O2M": {
+      "fg_mask": true,
+      "num_gt": true,
+      "pred_bboxes": true,
+      "target_bboxes": true,
+      "target_gt_idx": true,
+      "target_labels": true,
+      "target_scores": true
+    },
+    "O2O": {
+      "fg_mask": true,
+      "num_gt": true,
+      "pred_bboxes": true,
+      "target_bboxes": true,
+      "target_gt_idx": true,
+      "target_labels": true,
+      "target_scores": true
+    }
+  },
+  "go": null,
+  "note": "Smoke does not evaluate FCA-P0 GO/NO-GO thresholds.",
+  "o2m_s2_s3_control": "PASS",
+  "verdict": "SMOKE_PASS"
+}

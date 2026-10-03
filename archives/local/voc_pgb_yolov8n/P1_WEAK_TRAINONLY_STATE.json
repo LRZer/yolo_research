@@ -1,0 +1,8 @@
+{
+  "updated": "2026-09-23T03:33:09.953852+08:00",
+  "status": "verified_complete",
+  "reason": null,
+  "completed_epochs": 20,
+  "expected_epochs": 20,
+  "run_dir": "/home/ubuntu/rz/progressive_blur_detection_research/runs/voc_p1/oracle_weak_trainonly_s8_e20_b64_s2027"
+}
