@@ -2,7 +2,7 @@
 
 [中文](README.zh-CN.md) · [Complete tables](docs/en/tables.md) · [Historical document index](docs/en/archive_index.md) · [Evidence manifest](results/evidence_manifest.csv)
 
-**Research period: 17 September–4 October 2026.** This repository documents the complete recorded research sequence: YOLO26 dual-head supervision, cross-domain YOLOv8n baselines, target-protected background blur, VisDrone feature smoothing and foveated inference, CUB-200-2011 image representations, global/local classification and a stopped normalization experiment. It contains positive signals, negative results, implementation audits and incomplete work—not a claim of a finished state-of-the-art method.
+This repository documents the complete recorded research sequence: YOLO26 dual-head supervision, cross-domain YOLOv8n baselines, target-protected background blur, VisDrone feature smoothing and foveated inference, CUB-200-2011 image representations, global/local classification and a stopped normalization experiment. It contains positive signals, negative results, implementation audits and incomplete work—not a claim of a finished state-of-the-art method.
 
 ## Principal results
 
